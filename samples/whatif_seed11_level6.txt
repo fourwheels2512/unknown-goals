@@ -1,0 +1,12 @@
+unknown-goals demo build 0.5.0-demo.1  engine config=v0.2.0 rules=v0.2.0
+seed=11  scenario=wh_l6_11  policy=counterfactual
+
+TARGET: hammer_9   removing source: anonymous_tip   (2 claims)
+
+location            actual  without it     shift
+bay_2                1.000       0.000    -1.000
+bay_1                0.000       0.474    +0.474
+storage              0.000       0.041    +0.041
+workbench_7          0.000       0.484    +0.484
+
+VERDICT: removing 2 claim(s) shifts belief 100% away from bay_2 — that evidence was load-bearing

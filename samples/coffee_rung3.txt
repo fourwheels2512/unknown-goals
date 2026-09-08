@@ -1,0 +1,23 @@
+unknown-goals demo build 0.5.0-demo.1  engine config=v0.2.0 rules=v0.2.0
+seed=70005  scenario=home_70005  policy=baseline
+
+THE COFFEE LADDER, rung 3 -- an unfamiliar house, 4 scattered coffee items
+
+  [FOUND] #1 grounds_jar  -> pantry       (truth: pantry, 1 actions)
+  [FOUND] #2 filter_pack  -> office       (truth: office, 1 actions)
+  [FOUND] #3 mug_9        -> kitchen      (truth: kitchen, 3 actions)
+  [FOUND] #4 kettle_2     -> office       (truth: office, 2 actions)
+
+search actions: 7
+collection: 9 actions, 0 failures, all in kitchen: True
+
+BREW LOG:
+  ok fill_kettle (needs kettle_2: verified in kitchen)
+  ok boil_water (needs kettle_2: verified in kitchen)
+  ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)
+  ok add_grounds (needs grounds_jar: verified in kitchen)
+  ok brew (needs coffee_machine: verified in kitchen)
+  ok pour_into_mug (needs mug_9: verified in kitchen)
+  COFFEE SERVED.
+
+RESULT: PASSED rung 3

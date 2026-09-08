@@ -1,0 +1,155 @@
+unknown-goals demo build 0.5.0-demo.1  engine config=v0.2.0 rules=v0.2.0
+seed=42  scenario=wh_l6_42  policy=baseline
+
+GOAL: locate(hammer_9)
+
+EVIDENCE TIMELINE (what the mind was given):
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY chisel_5 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY clamp_6 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY drill_2 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY driver_5 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY file_8 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY hammer_3 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY hammer_9 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY level_6 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY plier_3 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY saw_4 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY spanner_7 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY tape_4 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY torch_8 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY wrench_12 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_1 CAN_CARRY wrench_18 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY chisel_5 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY clamp_6 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY drill_2 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY driver_5 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY file_8 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY hammer_3 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY hammer_9 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY level_6 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY plier_3 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY saw_4 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY spanner_7 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY tape_4 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY torch_8 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY wrench_12 conf=0.99 src=registry
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY wrench_18 conf=0.99 src=registry
+  ... and 13 more
+
+--- step 1 (t=15) --------------------------------------------
++----------------------+----------------------+----------------------+
+| storage              | bay_1                | bay_2                |
+| P(hammer_9)=0.47     |                      |                      |
++----------------------+----------------------+----------------------+
+| workbench_7          | bay_3                | bay_4                |
+| P(hammer_9)=0.47     | P(hammer_9)=0.05     | ROBOT                |
+| [cart_2]             | [cart_1]             | P(hammer_9)=0.01     |
++----------------------+----------------------+----------------------+
+
+BELIEFS:
+  storage          ##################                       0.469
+  workbench_7      ##################                       0.468
+  bay_3            #                                        0.049
+  bay_4                                                     0.014
+
+HYPOTHESES:
+  [0.264] dana carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.264] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.205] iris carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.204] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.049] hammer_9 remains at bay_3 (absence may be a missed detection)  (HYPOTHESIZED)
+  [0.014] hammer_9 remains at bay_4 (absence may be a missed detection)  (HYPOTHESIZED)
+
+SELECTED ACTION: INSPECT_LOCATION(bay_4)
+  rationale: belief(bay_4)=1.000, distance=3
+OUTCOME: SUCCESS  reward=-1.40  entropy 0.00 -> 1.32
+  new evidence: hammer_9 ABSENT_FROM bay_4 conf=0.95 [OBSERVED]
+
+--- step 2 (t=18) --------------------------------------------
++----------------------+----------------------+----------------------+
+| storage              | bay_1                | bay_2                |
+| P(hammer_9)=0.47     |                      |                      |
++----------------------+----------------------+----------------------+
+| workbench_7          | bay_3                | bay_4                |
+| ROBOT                | P(hammer_9)=0.05     | P(hammer_9)=0.01     |
+| P(hammer_9)=0.47     | [cart_1]             |                      |
+| [cart_2]             |                      |                      |
++----------------------+----------------------+----------------------+
+
+BELIEFS:
+  storage          ##################                       0.469
+  workbench_7      ##################                       0.468
+  bay_3            #                                        0.049
+  bay_4                                                     0.014
+
+HYPOTHESES:
+  [0.264] dana carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.264] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.205] iris carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.204] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.049] hammer_9 remains at bay_3 (absence may be a missed detection)  (HYPOTHESIZED)
+  [0.014] hammer_9 remains at bay_4 (absence may be a missed detection)  (HYPOTHESIZED)
+
+SELECTED ACTION: INSPECT_LOCATION(workbench_7)
+  rationale: belief(workbench_7)=0.468, distance=2
+OUTCOME: SUCCESS  reward=-0.30  entropy 1.32 -> 1.36
+  new evidence: hammer_9 ABSENT_FROM workbench_7 conf=0.95 [OBSERVED]
+  new evidence: cart_2 LOCATED_AT workbench_7 conf=0.96 [OBSERVED]
+
+--- step 3 (t=19) --------------------------------------------
++----------------------+----------------------+----------------------+
+| storage              | bay_1                | bay_2                |
+| P(hammer_9)=0.48     |                      |                      |
++----------------------+----------------------+----------------------+
+| workbench_7          | bay_3                | bay_4                |
+| ROBOT                | P(hammer_9)=0.05     | P(hammer_9)=0.02     |
+| P(hammer_9)=0.45     | [cart_1]             |                      |
+| [cart_2]             |                      |                      |
++----------------------+----------------------+----------------------+
+
+BELIEFS:
+  storage          ###################                      0.480
+  workbench_7      #################                        0.447
+  bay_3            ##                                       0.055
+  bay_4                                                     0.019
+
+HYPOTHESES:
+  [0.270] dana carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.252] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.209] iris carried hammer_9 to storage  (HYPOTHESIZED)
+  [0.195] cart_2 transported hammer_9 from storage to workbench_7  (HYPOTHESIZED)
+  [0.055] hammer_9 remains at bay_3 (absence may be a missed detection)  (HYPOTHESIZED)
+  [0.019] hammer_9 remains at bay_4 (absence may be a missed detection)  (HYPOTHESIZED)
+
+SELECTED ACTION: SCAN_CONTAINER(cart_2)
+  rationale: hypothesis 'cart_2 transported hammer_9 from storage to workbench_7' belief=0.252
+OUTCOME: FOUND  reward=+11.90  entropy 1.36 -> 0.00
+  new evidence: hammer_9 INSIDE cart_2 conf=0.98 [OBSERVED]
+  new evidence: hammer_9 LOCATED_AT workbench_7 conf=0.98 [OBSERVED]
+
+==================================================================
+RESULT: ACHIEVED -- hammer_9 found at workbench_7
+ground truth: workbench_7  (branch: transport)
+actions used: 3  total reward: +10.20
+
+PROOF PATH (top derived conclusion):
+  c_wh_l6_42_baseline_hammer_9_00034  [CANDIDATE_LOCATION -> storage] conf=0.270 via temporal_graph_traversal
+    <- c_wh_l6_42_031: hammer_9 LOCATED_AT bay_3 @t=0 conf=0.92 src=camera
+    <- c_wh_l6_42_032: hammer_9 NEAR dana @t=2 conf=0.76 src=camera
+    <- c_wh_l6_42_033: dana ENTERED storage @t=5 conf=0.94 src=badge_reader
+    ** rule rule_carrier_location_v1
+    ?? assumes dana_kept_hammer_9
+    :: c_wh_l6_42_032.event_time >= c_wh_l6_42_031.event_time - window
+    :: c_wh_l6_42_033.event_time >= c_wh_l6_42_032.event_time
+
+proof audit: 12/12 derived claims fully valid
+
+FINAL HYPOTHESIS STATES:
+  [0.270] dana carried hammer_9 to storage  (REJECTED)
+  [0.252] cart_2 transported hammer_9 from storage to workbench_7  (VALIDATED_RULE)
+  [0.209] iris carried hammer_9 to storage  (REJECTED)
+  [0.195] cart_2 transported hammer_9 from storage to workbench_7  (VALIDATED_RULE)
+  [0.055] hammer_9 remains at bay_3 (absence may be a missed detection)  (REJECTED)
+  [0.019] hammer_9 remains at bay_4 (absence may be a missed detection)  (REJECTED)
+
+LEARNED STRATEGY: none deployed -- run `benchmark` first to train one

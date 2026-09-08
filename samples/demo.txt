@@ -1,0 +1,67 @@
+unknown-goals demo build 0.5.0-demo.1  engine config=v0.2.0 rules=v0.2.0
+seed=0  scenario=wrench_canonical  policy=baseline
+
+GOAL: locate(wrench_12)
+
+EVIDENCE TIMELINE (what the mind was given):
+  t=  0 [OBSERVED ] wrench_12 LOCATED_AT workbench_7 conf=0.93 src=camera_3
+  t=  0 [OBSERVED ] cart_2 CAN_CARRY wrench_12 conf=0.99 src=registry
+  t=  2 [OBSERVED ] wrench_12 NEAR iris conf=0.83 src=camera_3
+  t=  5 [OBSERVED ] iris ENTERED bay_4 conf=0.98 src=badge_reader
+  t=  7 [OBSERVED ] wrench_12 ABSENT_FROM workbench_7 conf=0.92 src=camera_3
+  t=  9 [OBSERVED ] cart_2 MOVED_TO bay_2 conf=0.95 src=cart_tracker
+  t=  9 [OBSERVED ] cart_2 EXITED bay_4 conf=0.95 src=cart_tracker
+
+--- step 1 (t=13) --------------------------------------------
++----------------------+----------------------+----------------------+
+| storage              | bay_1                | bay_2                |
+|                      |                      | ROBOT                |
+|                      |                      | P(wrench_12)=0.52    |
+|                      |                      | [cart_2]             |
++----------------------+----------------------+----------------------+
+| workbench_7          | bay_3                | bay_4                |
+| P(wrench_12)=0.04    |                      | P(wrench_12)=0.44    |
++----------------------+----------------------+----------------------+
+
+BELIEFS:
+  bay_2            ####################                     0.517
+  bay_4            #################                        0.441
+  workbench_7      #                                        0.042
+
+HYPOTHESES:
+  [0.517] cart_2 transported wrench_12 from bay_4 to bay_2  (HYPOTHESIZED)
+  [0.441] iris carried wrench_12 to bay_4  (HYPOTHESIZED)
+  [0.042] wrench_12 remains at workbench_7 (absence may be a missed detection)  (HYPOTHESIZED)
+
+SELECTED ACTION: SCAN_CONTAINER(cart_2)
+  rationale: hypothesis 'cart_2 transported wrench_12 from bay_4 to bay_2' belief=0.517
+OUTCOME: FOUND  reward=+11.70  entropy 1.21 -> 0.00
+  new evidence: wrench_12 INSIDE cart_2 conf=0.98 [OBSERVED]
+  new evidence: wrench_12 LOCATED_AT bay_2 conf=0.98 [OBSERVED]
+
+==================================================================
+RESULT: ACHIEVED -- wrench_12 found at bay_2
+ground truth: bay_2  (branch: scripted)
+actions used: 1  total reward: +11.70
+
+PROOF PATH (top derived conclusion):
+  c_wrench_canonical_baseline_wrench_12_00006  [CANDIDATE_LOCATION -> bay_2] conf=0.517 via temporal_graph_traversal
+    <- c_near: wrench_12 NEAR iris @t=2 conf=0.83 src=camera_3
+    <- c_badge: iris ENTERED bay_4 @t=5 conf=0.98 src=badge_reader
+    <- c_can: cart_2 CAN_CARRY wrench_12 @t=0 conf=0.99 src=registry
+    <- c_exit: cart_2 EXITED bay_4 @t=9 conf=0.95 src=cart_tracker
+    <- c_dest: cart_2 MOVED_TO bay_2 @t=9 conf=0.95 src=cart_tracker
+    ** rule rule_carrier_location_v1
+    ** rule rule_cart_transport_v1
+    ?? assumes wrench_12_loaded_into_cart_2_at_bay_4
+    :: c_badge.event_time <= c_exit.event_time
+    :: c_exit.event_time <= c_dest.event_time
+
+proof audit: 3/3 derived claims fully valid
+
+FINAL HYPOTHESIS STATES:
+  [0.517] cart_2 transported wrench_12 from bay_4 to bay_2  (VALIDATED_RULE)
+  [0.441] iris carried wrench_12 to bay_4  (REJECTED)
+  [0.042] wrench_12 remains at workbench_7 (absence may be a missed detection)  (REJECTED)
+
+LEARNED STRATEGY: none deployed -- run `benchmark` first to train one

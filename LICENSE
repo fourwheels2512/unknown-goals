@@ -1,0 +1,38 @@
+Unknown Goals demonstration build
+Evaluation license
+
+Copyright 2026 Kiran Nayudu. All rights reserved.
+
+1. Grant. Permission is granted, free of charge, to any person who obtains a
+   copy of the demonstration binary distributed from this repository (the
+   "Software") to run the Software for evaluation, research, teaching and
+   review, and to publish, quote and compare the outputs it produces,
+   provided that the outputs are attributed to the Software and to the
+   paper named in CITATION.cff.
+
+2. Restrictions. Except to the extent that applicable law prohibits such a
+   restriction, you may not:
+   (a) modify, decompile, disassemble or reverse engineer the Software, or
+       attempt to derive its source code, parameters or internal mechanisms;
+   (b) redistribute, sell, rent, sublicense or bundle the Software, or make
+       it available as part of another product or service; point others to
+       this repository instead;
+   (c) remove or alter any notice in the Software or in this repository.
+
+3. Ownership. The Software is licensed, not sold. All rights not expressly
+   granted here are reserved by the copyright holder.
+
+4. Termination. This license ends automatically if you breach any term of
+   it. On termination you must stop using the Software and delete every copy
+   you hold.
+
+5. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+   NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+   OR ITS USE.
+
+The paper in paper/ is licensed separately under Creative Commons
+Attribution 4.0 International (CC BY 4.0). Sample outputs in samples/ are
+CC BY 4.0.

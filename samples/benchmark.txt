@@ -1,0 +1,24 @@
+unknown-goals demo build 0.5.0-demo.1
+training on 1000 episodes, evaluating on 300 held-out episodes (levels [2, 3, 4, 5]) ...
+
+config=v0.2.0 rules=v0.2.0
+learned rule: learned_cart_transport [VALIDATED] support=450 precision=0.7133 holdout=0.7692 -> deployed reliability=0.7133
+bandit: 18 context/action values learned
+
+metric                          baseline     learned     delta
+--------------------------------------------------------------
+success rate                       1.000       1.000    +0.000
+correct rate                       1.000       1.000    +0.000
+avg actions to success             1.773       1.470    -0.303
+avg reward                        11.110      10.932    -0.178
+entropy drop / action              0.620       0.745    +0.125
+proof validity                     1.000       1.000    +0.000
+
+failures baseline: none
+failures learned : none
+  L2: baseline 75/75 (1.15 acts)  learned 75/75 (1.15 acts)
+  L3: baseline 75/75 (1.73 acts)  learned 75/75 (1.37 acts)
+  L4: baseline 75/75 (1.81 acts)  learned 75/75 (1.48 acts)
+  L5: baseline 75/75 (2.40 acts)  learned 75/75 (1.88 acts)
+
+saved validated rule -> data/artifacts/learned_rules.json (the `demo` command now uses it)

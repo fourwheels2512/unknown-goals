@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this demonstration build or its outputs, please cite the paper below."
+title: "Unknown Goals: demonstration build of the robot_mind engine"
+type: software
+version: 0.5.0-demo.1
+date-released: 2026-09-08
+authors:
+  - family-names: Nayudu
+    given-names: Kiran
+repository-code: "https://github.com/fourwheels2512/unknown-goals"
+license-url: "https://github.com/fourwheels2512/unknown-goals/blob/main/LICENSE"
+preferred-citation:
+  type: unpublished
+  title: "Evidence-Based Robot Cognition: An Auditable, LLM-Free Reasoning Engine That Verifies Before It Trusts"
+  authors:
+    - family-names: Nayudu
+      given-names: Kiran
+  year: 2026
+  month: 9
+  notes: "Working paper v0.5. Public rendering in paper/ of the repository above."

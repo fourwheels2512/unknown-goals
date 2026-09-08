@@ -1,0 +1,5 @@
+unknown-goals demo build 0.5.0-demo.1  engine config=v0.2.0 rules=v0.2.0
+seed=7  scenario=wh_l3_7  policy=baseline
+run A: ACHIEVED found_at=bay_3 actions=2 reward=+13.60
+run B: ACHIEVED found_at=bay_3 actions=2 reward=+13.60
+records identical: True

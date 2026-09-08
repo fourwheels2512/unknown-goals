@@ -1,0 +1,5 @@
+# produced by `unknown-goals-demo benchmark` when run from a clone
+data/
+# binaries live on the Releases page, never in the tree
+*.exe
+unknown-goals-demo*
