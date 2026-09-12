@@ -1,0 +1,14 @@
+{
+  "suite": "s5_determinism",
+  "elapsed_s": 7.4,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [],
+  "in_process_digest": "4671a370d3ef43cda4b7c1304056e1b25f4bfb116e32983af9befad52b4c5ecf",
+  "subprocess_digests": {
+    "0": "4671a370d3ef43cda4b7c1304056e1b25f4bfb116e32983af9befad52b4c5ecf",
+    "1": "4671a370d3ef43cda4b7c1304056e1b25f4bfb116e32983af9befad52b4c5ecf",
+    "2": "4671a370d3ef43cda4b7c1304056e1b25f4bfb116e32983af9befad52b4c5ecf",
+    "random": "4671a370d3ef43cda4b7c1304056e1b25f4bfb116e32983af9befad52b4c5ecf"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "seed": 7,
+      "policy": "engine",
+      "target": "heat_probe",
+      "instance": "heat_probe_1",
+      "moved_to": "st_0_11",
+      "intended_truth": "st_0_11",
+      "placed": [
+        30.677,
+        -36.736,
+        -12.188
+      ],
+      "ecm_pose": [
+        30.677,
+        -36.736,
+        -12.188
+      ],
+      "found_at": "st_0_11",
+      "correct": true,
+      "env_actions": 59,
+      "wall_s": 234.4
+    }
+  ],
+  "summary": {
+    "engine": {
+      "episodes": 1,
+      "correct": 1,
+      "mean_visits": 59.0
+    }
+  },
+  "episodes": 1,
+  "stations": 169,
+  "search_area": [
+    -36.0,
+    36.0,
+    -36.0,
+    36.0
+  ],
+  "sense_range": 8.0,
+  "station_pitch": 6.0,
+  "max_env_actions": 250
+}

@@ -1,0 +1,37 @@
+{
+  "suite": "s6_gaslight_flood",
+  "elapsed_s": 16.1,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [],
+  "degradation_curve": {
+    "0": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "1": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "2": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "5": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "10": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "20": {
+      "correct_rate": 1.0,
+      "n": 30
+    },
+    "40": {
+      "correct_rate": 0.9333,
+      "n": 30
+    }
+  }
+}

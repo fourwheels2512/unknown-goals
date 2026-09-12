@@ -1,0 +1,12 @@
+{
+  "suite": "s7_crash_recovery",
+  "elapsed_s": 1.9,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [
+    {
+      "kind": "HARD_KILL_SURVIVORS",
+      "detail": "73 claims committed before kill"
+    }
+  ]
+}

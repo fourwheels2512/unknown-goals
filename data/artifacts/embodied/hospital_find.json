@@ -1,0 +1,78 @@
+{
+  "rows": [
+    {
+      "seed": 7,
+      "target": "patientwheelchair",
+      "moved_to": "adjtable_2",
+      "found_at": "adjtable_2",
+      "correct": true,
+      "env_actions": 1,
+      "wall_s": 10.1
+    },
+    {
+      "seed": 11,
+      "target": "mopcart3",
+      "moved_to": "trash_01_2",
+      "found_at": "trash_01_2",
+      "correct": true,
+      "env_actions": 1,
+      "wall_s": 9.2
+    },
+    {
+      "seed": 23,
+      "target": "surgicaltrolleymed",
+      "moved_to": "drawer_2",
+      "found_at": "drawer_2",
+      "correct": true,
+      "env_actions": 10,
+      "wall_s": 100.7
+    },
+    {
+      "seed": 42,
+      "target": "mopcart3",
+      "moved_to": "kitchensink_1",
+      "found_at": "kitchensink_1",
+      "correct": true,
+      "env_actions": 10,
+      "wall_s": 99.9
+    },
+    {
+      "seed": 99,
+      "target": "bmwcart",
+      "moved_to": "trolleybedpatient_1",
+      "found_at": "trolleybedpatient_1",
+      "correct": true,
+      "env_actions": 19,
+      "wall_s": 190.7
+    },
+    {
+      "seed": 137,
+      "target": "parkingtrolleymax",
+      "moved_to": "potatochipchair_12",
+      "found_at": "potatochipchair_12",
+      "correct": true,
+      "env_actions": 13,
+      "wall_s": 129.9
+    },
+    {
+      "seed": 256,
+      "target": "mopcart3",
+      "moved_to": "metalcabinet_4",
+      "found_at": "metalcabinet_4",
+      "correct": true,
+      "env_actions": 14,
+      "wall_s": 140.7
+    },
+    {
+      "seed": 314,
+      "target": "patientwheelchair",
+      "moved_to": "kitchencabinet_01_1",
+      "found_at": "kitchencabinet_01_1",
+      "correct": true,
+      "env_actions": 21,
+      "wall_s": 212.0
+    }
+  ],
+  "correct": 8,
+  "episodes": 8
+}

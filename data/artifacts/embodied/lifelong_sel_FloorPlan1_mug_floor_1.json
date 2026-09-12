@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "episode": 1,
+      "seed": 1,
+      "habit_episode": true,
+      "staged_on_habit": true,
+      "truth": [
+        "floor_1"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": false,
+        "picked_up": false,
+        "found_at": "",
+        "ground_truth": [
+          "floor_1"
+        ],
+        "env_actions": 250,
+        "seeks": 11,
+        "receptacles": 37,
+        "log": [],
+        "lifelong": {},
+        "wall_s": 107.2,
+        "truth_at_start": [
+          "floor_1"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": false,
+        "picked_up": false,
+        "found_at": "",
+        "ground_truth": [
+          "floor_1"
+        ],
+        "env_actions": 250,
+        "seeks": 11,
+        "receptacles": 37,
+        "log": [],
+        "lifelong": {
+          "episodes_seen": 0,
+          "rules": [],
+          "bandit": false
+        },
+        "wall_s": 99.2,
+        "truth_at_start": [
+          "floor_1"
+        ]
+      },
+      "habits_after": {}
+    }
+  ],
+  "summary": {
+    "episodes": 1,
+    "scene": "FloorPlan1",
+    "target": "mug",
+    "habit_recep": "floor_1",
+    "p_habit": 1.0,
+    "final_habits": {},
+    "fresh": {
+      "fetched": 0,
+      "mean_env_actions": 250.0,
+      "first_third": 250.0,
+      "last_third": 250.0,
+      "habit_episodes": 250.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    },
+    "lifelong": {
+      "fetched": 0,
+      "mean_env_actions": 250.0,
+      "first_third": 250.0,
+      "last_third": 250.0,
+      "habit_episodes": 250.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    }
+  }
+}

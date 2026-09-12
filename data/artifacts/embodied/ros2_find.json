@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "success": true,
+      "found_at": "bay_3",
+      "engine_actions": 2,
+      "env_actions": 2,
+      "truth": "bay_3",
+      "correct": true
+    },
+    {
+      "success": true,
+      "found_at": "bay_1",
+      "engine_actions": 4,
+      "env_actions": 4,
+      "truth": "bay_1",
+      "correct": true
+    },
+    {
+      "success": true,
+      "found_at": "bay_4",
+      "engine_actions": 1,
+      "env_actions": 1,
+      "truth": "bay_4",
+      "correct": true
+    },
+    {
+      "success": true,
+      "found_at": "bay_2",
+      "engine_actions": 3,
+      "env_actions": 3,
+      "truth": "bay_2",
+      "correct": true
+    }
+  ],
+  "correct": 4,
+  "episodes": 4,
+  "stack": "gz-sim Harmonic 8.15 + ROS 2 Jazzy ros_gz bridge + name-preserving pose shim; diff-drive via /cmd_vel, odometry via /scout/odom, no robot teleports"
+}

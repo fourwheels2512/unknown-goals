@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "seed": 57,
+      "policy": "engine",
+      "target": "PatientWheelChair_1",
+      "truth": "sofab_01_2",
+      "tip": "scrubs_4",
+      "twin": "patientwheelchair_9",
+      "committed_instance": "patientwheelchair_1",
+      "found": "sofab_01_2",
+      "correct": true,
+      "fooled_by_twin": false,
+      "visits": 5,
+      "wall_s": 103.7
+    },
+    {
+      "seed": 57,
+      "policy": "sweep",
+      "target": "PatientWheelChair_1",
+      "truth": "sofab_01_2",
+      "tip": "scrubs_4",
+      "twin": "patientwheelchair_9",
+      "committed_instance": "patientwheelchair_9",
+      "found": "storagerackcovered_1",
+      "correct": false,
+      "fooled_by_twin": true,
+      "visits": 3,
+      "wall_s": 58.5
+    },
+    {
+      "seed": 57,
+      "policy": "tipfollow",
+      "target": "PatientWheelChair_1",
+      "truth": "sofab_01_2",
+      "tip": "scrubs_4",
+      "twin": "patientwheelchair_9",
+      "committed_instance": "patientwheelchair_9",
+      "found": "storagerackcovered_1",
+      "correct": false,
+      "fooled_by_twin": true,
+      "visits": 1,
+      "wall_s": 19.4
+    },
+    {
+      "seed": 57,
+      "policy": "tipfollow_id",
+      "target": "PatientWheelChair_1",
+      "truth": "sofab_01_2",
+      "tip": "scrubs_4",
+      "twin": "patientwheelchair_9",
+      "committed_instance": "PatientWheelChair_1",
+      "found": "sofab_01_2",
+      "correct": true,
+      "fooled_by_twin": false,
+      "visits": 24,
+      "wall_s": 479.2
+    }
+  ]
+}

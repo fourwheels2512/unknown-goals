@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "world": "cave_circuit_practice_01",
+      "seed": 7,
+      "target": "backpack",
+      "tiles": 57,
+      "env_actions": 12,
+      "wall_s": 0.1,
+      "report": "backpack_3",
+      "found_tile": "tile_17",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "cave_circuit_practice_01",
+      "seed": 11,
+      "target": "rescue_randy",
+      "tiles": 57,
+      "env_actions": 22,
+      "wall_s": 0.1,
+      "report": "rescue_randy_2",
+      "found_tile": "tile_44",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "cave_circuit_practice_01",
+      "seed": 23,
+      "target": "rescue_randy",
+      "tiles": 57,
+      "env_actions": 22,
+      "wall_s": 0.1,
+      "report": "rescue_randy_2",
+      "found_tile": "tile_44",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_01",
+      "seed": 7,
+      "target": "rescue_randy",
+      "tiles": 438,
+      "env_actions": 87,
+      "wall_s": 5.0,
+      "report": "rescue_randy_3",
+      "found_tile": "tile_331",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_01",
+      "seed": 11,
+      "target": "backpack",
+      "tiles": 438,
+      "env_actions": 26,
+      "wall_s": 1.6,
+      "report": "backpack_2",
+      "found_tile": "tile_410",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_01",
+      "seed": 23,
+      "target": "rescue_randy",
+      "tiles": 438,
+      "env_actions": 87,
+      "wall_s": 4.7,
+      "report": "rescue_randy_3",
+      "found_tile": "tile_331",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_02",
+      "seed": 7,
+      "target": "extinguisher",
+      "tiles": 192,
+      "env_actions": 12,
+      "wall_s": 0.2,
+      "report": "extinguisher_1",
+      "found_tile": "tile_26",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_02",
+      "seed": 11,
+      "target": "extinguisher",
+      "tiles": 192,
+      "env_actions": 12,
+      "wall_s": 0.2,
+      "report": "extinguisher_1",
+      "found_tile": "tile_26",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "tunnel_circuit_practice_02",
+      "seed": 23,
+      "target": "backpack",
+      "tiles": 192,
+      "env_actions": 75,
+      "wall_s": 1.1,
+      "report": "backpack_4",
+      "found_tile": "tile_176",
+      "dist_m": 0.0,
+      "scored": true
+    }
+  ],
+  "scored": 9,
+  "episodes": 9
+}

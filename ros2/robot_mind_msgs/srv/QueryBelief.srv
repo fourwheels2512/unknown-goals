@@ -1,0 +1,9 @@
+# Ask the engine where it currently believes an entity is, with the
+# ranked hypothesis list and epistemic bookkeeping — the auditable
+# read-side of the ledger.
+string target                  # entity id or class
+---
+string resolved_location       # non-empty only when the engine is sure
+string[] hypothesis_locations  # ranked candidate location entity ids
+float32[] hypothesis_probabilities
+string[] missing_variables     # what the engine says it does not know

@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "episode": 1,
+      "seed": 1,
+      "habit_episode": true,
+      "staged_on_habit": true,
+      "truth": [
+        "shelf_1"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "shelf_1",
+        "ground_truth": [
+          "shelf_1"
+        ],
+        "env_actions": 29,
+        "seeks": 3,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at shelf_1 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 24.9,
+        "truth_at_start": [
+          "shelf_1"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "shelf_1",
+        "ground_truth": [
+          "shelf_1"
+        ],
+        "env_actions": 29,
+        "seeks": 3,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at shelf_1 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 0,
+          "rules": [],
+          "bandit": false
+        },
+        "wall_s": 27.7,
+        "truth_at_start": [
+          "shelf_1"
+        ]
+      },
+      "habits_after": {}
+    }
+  ],
+  "summary": {
+    "episodes": 1,
+    "scene": "FloorPlan1",
+    "target": "mug",
+    "habit_recep": "shelf_1",
+    "p_habit": 1.0,
+    "final_habits": {},
+    "fresh": {
+      "fetched": 1,
+      "mean_env_actions": 29.0,
+      "first_third": 29.0,
+      "last_third": 29.0,
+      "habit_episodes": 29.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    },
+    "lifelong": {
+      "fetched": 1,
+      "mean_env_actions": 29.0,
+      "first_third": 29.0,
+      "last_third": 29.0,
+      "habit_episodes": 29.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    }
+  }
+}

@@ -1,8 +1,9 @@
-# Unknown Goals: demonstration build
+# Unknown Goals: benchmark kit and demonstration build
 
 A run-only build of **robot_mind**, the evidence-based reasoning engine
-evaluated in the working paper *Evidence-Based Robot Cognition: An Auditable,
-LLM-Free Reasoning Engine That Verifies Before It Trusts* (Nayudu, 2026;
+evaluated in the working paper *A Decision Layer for Robot Object Search
+Under Unreliable Evidence, With a Checkable Provenance Record for Every
+Commitment* (Nayudu, 2026;
 public rendering in [`paper/`](paper/)). The engine keeps an append-only
 evidence ledger, holds competing explanations at once, picks the physical
 check that teaches it the most, verifies tips before trusting them, and
@@ -113,27 +114,157 @@ numeric window constants inside proof time constraints (they appear as
 code with docstrings and assertions stripped. It is a demonstration, not a
 library: it has no importable API and no configuration surface.
 
-## What is coming
+## The benchmark kit
 
-The benchmark kit described in the paper (scenario generator, the scripted
-and exact belief-space baselines, the LLM comparison harness, the independent
-proof checker, the ROS 2 message definitions, and every engine trace and
-artifact the paper reports) is released here at the paper's deposit, under
-Apache-2.0 with data under CC BY 4.0.
+The kit in this repository is the other half of the claim the paper makes.
+The demonstration build above lets you watch the engine decide. The kit
+lets you check what it decided, on the episodes the paper counts, without
+taking the engine's word for anything and without the engine being present.
+
+```
+pip install -e .          # Python 3.12+, pydantic and networkx
+```
+
+### What ships
+
+| directory | what is in it |
+|---|---|
+| `unknown_goals/` | the scenario generator, the world and executor, the episode contract, the evidence ledger and belief graph, the proof checker, the decision replayer, the verifier |
+| `baselines/` | every policy the engine is measured against: sweep, random, last-seen, a Bayesian filter, the exact finite-horizon belief-space planner, and the LLM comparison harness |
+| `data/artifacts/` | the per-episode results of every suite the paper reports |
+| `data/exports/` | the ledger export of every engine episode whose commitment the paper counts: its entities, every claim with status, confidence, times and provenance, the rules in force, every decision with its rationale and outcome, and the proof path of every derived claim |
+| `docs/`, `paper/` | the paper's public rendering and the protocol documents |
+| `ros2/robot_mind_msgs/` | the typed ROS 2 interfaces the engine speaks on a robot |
+
+### Where each number comes from
+
+| ledger export | artifact | episodes | compressed | artifact vs. this build |
+|---|---|---:|---:|---|
+| `absent_target.jsonl.gz` | `data/artifacts/absent_target.json` | 2400 | 5.54 MB | identical |
+| `audit_unseen_repro.jsonl.gz` | `data/artifacts/audit_unseen_repro.json` | 71 | 0.14 MB | identical |
+| `battery_final.jsonl.gz` | `data/artifacts/battery_final.json` | 1059 | 1.37 MB | identical |
+| `budget_sweep.jsonl.gz` | `data/artifacts/budget_sweep.json` | 360 | 0.42 MB | identical |
+| `budget_sweep_100.jsonl.gz` | `data/artifacts/budget_sweep_100.json` | 3000 | 3.42 MB | identical |
+| `calibration.jsonl.gz` | `data/artifacts/calibration.json` | 150 | 0.15 MB | identical |
+| `head_to_head.jsonl.gz` | `data/artifacts/head_to_head.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
+| `head_to_head_deepseek-chat_strong.jsonl.gz` | `data/artifacts/head_to_head_deepseek-chat_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
+| `head_to_head_gemini-3.7-flash_strong.jsonl.gz` | `data/artifacts/head_to_head_gemini-3.7-flash_strong.json` | 12 | 0.02 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
+| `head_to_head_gemini-3.7-flash_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_gemini-3.7-flash_strong_l2345.json` | 48 | 0.05 MB | identical |
+| `head_to_head_qwen2.5_7b-instruct_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_qwen2.5_7b-instruct_strong_l2345.json` | 48 | 0.05 MB | identical |
+| `head_to_head_strong.jsonl.gz` | `data/artifacts/head_to_head_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
+| `woz_dynamic.jsonl.gz` | `data/artifacts/woz_dynamic.json` | 758 | 3.56 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_dynamic_night480.jsonl.gz` | `data/artifacts/woz_dynamic_night480.json` | 756 | 3.03 MB | **differs** -- every key and value in the artifact is reproduced exactly; the current script writes two keys the artifact predates |
+| `woz_selfimprove.jsonl.gz` | `data/artifacts/woz_selfimprove.json` | 767 | 2.68 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_test.jsonl.gz` | `data/artifacts/woz_test.json` | 435 | 0.15 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+
+#### Artifacts not in the kit
+
+| file | why it is not in the kit |
+|---|---|
+| `data/artifacts/evolved_config.json` | a full serialisation of the engine's tuned configuration |
+| `data/artifacts/self_repair_exam.json` | names configuration fields and the values repaired to |
+| `data/artifacts/self_repair_exam2.json` | names configuration fields and the values repaired to |
+| `data/artifacts/stress/s8_selfrepair_redteam.json` | records a configuration field and the value it was sabotaged to |
+| `data/artifacts/staleness_ordering.json` | carries engine constants: the study is of the withheld belief arithmetic and publishes its constants as numbers |
+| `data/artifacts/audit_unseen_repro_two.json` | superseded, uncited: the committed file is from an earlier build (12/17) and the paper does not cite it |
+| `data/exports/audit_unseen_repro_two.jsonl.gz` | superseded, uncited: the artifact it belongs to does not ship |
+
+Artifacts that ship without a ledger export:
+
+| artifact | why there is no export |
+|---|---|
+| `data/artifacts/audit_unseen_sweep.json` | the scripted-sweep ablation runs no engine episode at all (policy=sweep replaces every FIND decision; the artifact's own `seeks` column is 0 in all 30 rows), so there is nothing to export. |
+| `data/artifacts/audit_unseen_sweep_two.json` | same: 0 engine seeks in all 17 rows. |
+| `data/artifacts/woz_dynamic_*.json (12 ablation variants)` | deferred: no recorded invocation. The variants (clock_decay, clock_nodecay, decay, nodecay, full_decay, full_nodecay, meta, night480_meta, night480_reflect, reflect, w3_decay, w3_nodecay) carry no metadata, and no script, document or docstring records the flags each was run with; guessing the mapping would fabricate provenance. woz_dynamic.json (defaults) and woz_dynamic_night480.json (--night-minutes 480, the command printed in the paper's reproduction block) are exported. |
+
+The full version of both tables, with what each export covers, is in
+[`docs/ARTIFACTS.md`](docs/ARTIFACTS.md).
+
+### What the kit lets you check
+
+```
+python -m unknown_goals.verify --quick
+```
+
+Regenerates every baseline from its integer seed and compares the result
+with the artifact committed here, field by field. A baseline that does not
+come back identical is a failure of the kit, not of the artifact. Then it
+re-validates every proof in `data/exports/` and, where a summary artifact
+records a proof-validity fraction of its own, requires the checker's
+fraction to equal it exactly. Drop `--quick` to include the 100-seed
+suites.
+
+```
+python -m unknown_goals.checker data/exports/battery_final.jsonl.gz
+```
+
+The independent proof checker. For every claim the engine derived, it
+confirms the proof exists, names an operator, cites only claims that were
+on that episode's ledger, applies only rules that episode knew, and asserts
+only time constraints the cited claims satisfy. No engine code runs.
+
+```
+python -m unknown_goals.replay data/exports/battery_final.jsonl.gz --list
+python -m unknown_goals.replay data/exports/battery_final.jsonl.gz --episode test=T2 seed=10007 level=6
+```
+
+The replayer walks one episode decision by decision: what was on the ledger
+when the engine chose, the hypotheses it held with their belief and status,
+the action and the rationale it gave, the outcome, the evidence that
+outcome produced — then the result against hidden ground truth and the
+proof path of the last claim it derived, with the checker's verdict.
+
+```
+python -m baselines.belief_planner --seeds 12 --out /tmp/planner.json
+```
+
+Any baseline can also be run on its own, on any seeds, at any budget.
+
+### What the checker certifies, and what it does not
+
+The checker **replays provenance. It does not re-derive conclusions.** It
+establishes that every conclusion the engine committed to is traceable to
+evidence that was on the ledger at the time, under rules that episode
+declared, in an order time allows — and that nothing in the chain is
+missing, dangling or anachronistic. That is what makes a commitment
+auditable after the fact.
+
+It does not recompute the belief arithmetic, and it cannot: how support,
+contradiction, age and rule reliability combine into a belief, and the
+constants they combine under, are withheld from this release, as they are
+from the public paper. Nor does the checker grade correctness — whether a
+commitment was *right* is the hidden-truth grading in the artifacts, not
+the checker's verdict.
+
+The engine arm of a comparison is likewise **read, not recomputed**: those
+rows in `data/artifacts/` are the engine's measured output, committed with
+the paper. What the kit gives you instead of trust is the ledger export
+behind them, which the checker and the replayer take apart episode by
+episode.
+
+### Licensing
+
+Code Apache-2.0 (`LICENSE`). Data, documents and the paper CC BY 4.0
+(`LICENSE-DATA`). The demonstration binaries keep their evaluation license
+(`LICENSE-DEMO`).
 
 ## License
 
+The benchmark kit -- the code in `unknown_goals/`, `baselines/` and `tests/`
+-- is Apache-2.0 ([`LICENSE`](LICENSE)). The artifacts, ledger exports,
+documents and paper under `data/`, `docs/`, `paper/` and `samples/` are
+CC BY 4.0 ([`LICENSE-DATA`](LICENSE-DATA)).
+
 The demonstration binary is free to run for evaluation, research, teaching
-and review under the terms in [`LICENSE`](LICENSE). It may not be
-redistributed, modified or reverse engineered. The paper is CC BY 4.0.
+and review under the terms in [`LICENSE-DEMO`](LICENSE-DEMO). It may not be
+redistributed, modified or reverse engineered.
 
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff).
 
 ```
-Nayudu, K. (2026). Evidence-Based Robot Cognition: An Auditable, LLM-Free
-Reasoning Engine That Verifies Before It Trusts. Working paper v0.5.
+Nayudu, K. (2026). A Decision Layer for Robot Object Search Under Unreliable Evidence, With a Checkable Provenance Record for Every Commitment. Working paper v0.5.
 ```
 
 ## Contact

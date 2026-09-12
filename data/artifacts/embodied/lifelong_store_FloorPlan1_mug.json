@@ -1,0 +1,312 @@
+{
+ "version": 1,
+ "outcomes": [
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "coffeemachine_1",
+   "found_class": "coffeemachine",
+   "visits": 11,
+   "scene": "FloorPlan1",
+   "seed": 1
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "fridge_1",
+   "found_class": "fridge",
+   "visits": 47,
+   "scene": "FloorPlan1",
+   "seed": 2
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 3
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "coffeemachine_1",
+   "found_class": "coffeemachine",
+   "visits": 11,
+   "scene": "FloorPlan1",
+   "seed": 4
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 5
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 6
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "microwave_1",
+   "found_class": "microwave",
+   "visits": 31,
+   "scene": "FloorPlan1",
+   "seed": 7
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 8
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 9
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "stool_1",
+   "found_class": "stool",
+   "visits": 19,
+   "scene": "FloorPlan1",
+   "seed": 10
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 11
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "coffeemachine_1",
+   "found_class": "coffeemachine",
+   "visits": 11,
+   "scene": "FloorPlan1",
+   "seed": 12
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "cabinet_2",
+   "found_class": "cabinet",
+   "visits": 139,
+   "scene": "FloorPlan1",
+   "seed": 13
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 14
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 15
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 16
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 17
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 18
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_1",
+   "found_class": "countertop",
+   "visits": 32,
+   "scene": "FloorPlan1",
+   "seed": 19
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 95,
+   "scene": "FloorPlan1",
+   "seed": 20
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 21
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 22
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 23
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 24
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 25
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 26
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 27
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 28
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 29
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "countertop_2",
+   "found_class": "countertop",
+   "visits": 10,
+   "scene": "FloorPlan1",
+   "seed": 30
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "coffeemachine_1",
+   "found_class": "coffeemachine",
+   "visits": 12,
+   "scene": "FloorPlan1",
+   "seed": 31
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "shelf_3",
+   "found_class": "shelf",
+   "visits": 12,
+   "scene": "FloorPlan1",
+   "seed": 32
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "drawer_3",
+   "found_class": "drawer",
+   "visits": 85,
+   "scene": "FloorPlan1",
+   "seed": 33
+  },
+  {
+   "target_class": "mug",
+   "success": true,
+   "found_at": "sinkbasin_1",
+   "found_class": "sinkbasin",
+   "visits": 7,
+   "scene": "FloorPlan1",
+   "seed": 34
+  }
+ ],
+ "bandit_json": ""
+}

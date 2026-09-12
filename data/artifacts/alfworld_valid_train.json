@@ -1,0 +1,683 @@
+[
+  {
+    "game": "pick_two_obj_and_place-Book-None-Desk-302/trial_T20190906_181314_259738",
+    "task": "find two book and put them in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found book_4 at bed_1 (6 engine actions)",
+      "take book_4: 'ok'",
+      "put book_4 in desk_1: 'ok'",
+      "found book_1 at bed_1 (1 engine actions)",
+      "take book_1: 'ok'",
+      "put book_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Book-None-Desk-309/trial_T20190909_061156_951604",
+    "task": "put two book in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found book_2 at bed_1 (4 engine actions)",
+      "take book_2: 'ok'",
+      "put book_2 in desk_1: 'ok'",
+      "found book_1 at bed_1 (1 engine actions)",
+      "take book_1: 'ok'",
+      "put book_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Box-None-CoffeeTable-230/trial_T20190908_124255_946115",
+    "task": "find two box and put them in coffeetable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found box_3 at diningtable_1 (5 engine actions)",
+      "take box_3: 'ok'",
+      "put box_3 in coffeetable_1: 'ok'",
+      "found box_1 at diningtable_1 (1 engine actions)",
+      "take box_1: 'ok'",
+      "put box_1 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CD-None-Drawer-306/trial_T20190907_025539_829173",
+    "task": "put two cd in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found cd_1 at sidetable_1 (1 engine actions)",
+      "take cd_1: 'ok'",
+      "put cd_1 in drawer_1: 'ok'",
+      "found cd_2 at shelf_1 (3 engine actions)",
+      "take cd_2: 'ok'",
+      "put cd_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CD-None-Dresser-303/trial_T20190908_085826_396748",
+    "task": "put two cd in dresser",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 23,
+    "seeks": 3,
+    "log": [
+      "found cd_2 at shelf_1 (6 engine actions)",
+      "take cd_2: 'ok'",
+      "put cd_2 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Candle-None-CounterTop-406/trial_T20190908_045958_916084",
+    "task": "put two candle in countertop",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 10,
+    "seeks": 2,
+    "log": [
+      "found candle_2 at toilet_1 (3 engine actions)",
+      "take candle_2: 'ok'",
+      "put candle_2 in countertop_1: 'ok'",
+      "found candle_1 at toilet_1 (1 engine actions)",
+      "take candle_1: 'ok'",
+      "put candle_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CellPhone-None-Desk-312/trial_T20190908_122230_946481",
+    "task": "put two cellphone in desk",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found cellphone_1 at shelf_4 (6 engine actions)",
+      "take cellphone_1: 'ok'",
+      "put cellphone_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CellPhone-None-Drawer-318/trial_T20190908_104535_936869",
+    "task": "find two cellphone and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 10,
+    "seeks": 2,
+    "log": [
+      "found cellphone_4 at dresser_2 (2 engine actions)",
+      "take cellphone_4: 'ok'",
+      "put cellphone_4 in drawer_1: 'ok'",
+      "found cellphone_3 at dresser_2 (1 engine actions)",
+      "take cellphone_3: 'ok'",
+      "put cellphone_3 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CellPhone-None-Drawer-329/trial_T20190909_030028_020737",
+    "task": "find two cellphone and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 3,
+    "log": [
+      "found cellphone_1 at sidetable_1 (2 engine actions)",
+      "take cellphone_1: 'ok'",
+      "put cellphone_1 in drawer_1: 'ok'",
+      "found cellphone_2 at diningtable_1 (1 engine actions)",
+      "take cellphone_2: 'ok'",
+      "put cellphone_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CellPhone-None-Dresser-330/trial_T20190909_060924_095249",
+    "task": "put two cellphone in dresser",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 23,
+    "seeks": 2,
+    "log": []
+  },
+  {
+    "game": "pick_two_obj_and_place-CellPhone-None-Sofa-224/trial_T20190918_223409_525979",
+    "task": "find two cellphone and put them in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found cellphone_2 at sidetable_2 (5 engine actions)",
+      "take cellphone_2: 'ok'",
+      "put cellphone_2 in sofa_1: 'ok'",
+      "found cellphone_1 at sidetable_2 (1 engine actions)",
+      "take cellphone_1: 'ok'",
+      "put cellphone_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Cloth-None-Drawer-411/trial_T20190908_190008_902235",
+    "task": "put two cloth in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found cloth_2 at countertop_1 (5 engine actions)",
+      "take cloth_2: 'ok'",
+      "put cloth_2 in drawer_1: 'ok'",
+      "found cloth_1 at countertop_1 (1 engine actions)",
+      "take cloth_1: 'ok'",
+      "put cloth_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-Desk-313/trial_T20190909_104504_038752",
+    "task": "put two creditcard in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found creditcard_3 at sidetable_1 (1 engine actions)",
+      "take creditcard_3: 'ok'",
+      "put creditcard_3 in desk_1: 'ok'",
+      "found creditcard_2 at sidetable_1 (1 engine actions)",
+      "take creditcard_2: 'ok'",
+      "put creditcard_2 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-DiningTable-329/trial_T20190918_154222_318527",
+    "task": "find two creditcard and put them in diningtable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 10,
+    "seeks": 2,
+    "log": [
+      "found creditcard_2 at sidetable_2 (1 engine actions)",
+      "take creditcard_2: 'ok'",
+      "put creditcard_2 in diningtable_1: 'ok'",
+      "found creditcard_1 at sidetable_1 (3 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-Safe-323/trial_T20190907_001424_961488",
+    "task": "find two creditcard and put them in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found creditcard_2 at dresser_1 (5 engine actions)",
+      "take creditcard_2: 'ok'",
+      "put creditcard_2 in safe_1: 'ok'",
+      "found creditcard_1 at dresser_1 (1 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-Sofa-206/trial_T20190906_203615_424745",
+    "task": "put two creditcard in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 3,
+    "log": [
+      "found creditcard_4 at tvstand_1 (2 engine actions)",
+      "take creditcard_4: 'ok'",
+      "put creditcard_4 in sofa_1: 'ok'",
+      "found creditcard_3 at shelf_4 (2 engine actions)",
+      "take creditcard_3: 'ok'",
+      "put creditcard_3 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Cup-None-Shelf-1/trial_T20190908_015402_128805",
+    "task": "put two cup in shelf",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 44,
+    "seeks": 5,
+    "log": [
+      "found cup_3 at sinkbasin_1 (6 engine actions)",
+      "take cup_3: 'ok'",
+      "put cup_3 in shelf_1: 'ok'",
+      "found cup_4 at countertop_3 (3 engine actions)",
+      "take cup_4: 'ok'",
+      "put cup_4 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-KeyChain-None-Dresser-318/trial_T20190907_181205_590674",
+    "task": "find two keychain and put them in dresser",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 34,
+    "seeks": 4,
+    "log": [
+      "found keychain_4 at desk_2 (3 engine actions)",
+      "take keychain_4: 'ok'",
+      "put keychain_4 in dresser_1: 'ok'",
+      "found keychain_3 at desk_2 (1 engine actions)",
+      "take keychain_3: 'ok'",
+      "put keychain_3 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-KeyChain-None-Ottoman-208/trial_T20190907_232759_901444",
+    "task": "put two keychain in ottoman",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found keychain_3 at tvstand_1 (1 engine actions)",
+      "take keychain_3: 'ok'",
+      "put keychain_3 in ottoman_1: 'ok'",
+      "found keychain_2 at sidetable_1 (4 engine actions)",
+      "take keychain_2: 'ok'",
+      "put keychain_2 in ottoman_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-KeyChain-None-Sofa-225/trial_T20190907_143028_102387",
+    "task": "find two keychain and put them in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 3,
+    "log": [
+      "found keychain_1 at sidetable_1 (4 engine actions)",
+      "take keychain_1: 'ok'",
+      "put keychain_1 in sofa_1: 'ok'",
+      "found keychain_2 at coffeetable_1 (6 engine actions)",
+      "take keychain_2: 'ok'",
+      "put keychain_2 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Newspaper-None-ArmChair-214/trial_T20190909_010843_771227",
+    "task": "put two newspaper in armchair",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 2,
+    "log": [
+      "found newspaper_2 at shelf_1 (5 engine actions)",
+      "take newspaper_2: 'ok'",
+      "put newspaper_2 in armchair_1: 'ok'",
+      "found newspaper_1 at coffeetable_1 (8 engine actions)",
+      "take newspaper_1: 'ok'",
+      "put newspaper_1 in armchair_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Newspaper-None-Sofa-230/trial_T20190908_035335_001162",
+    "task": "find two newspaper and put them in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 2,
+    "log": [
+      "found newspaper_1 at diningtable_1 (5 engine actions)",
+      "take newspaper_1: 'ok'",
+      "put newspaper_1 in sofa_1: 'ok'",
+      "found newspaper_2 at coffeetable_1 (8 engine actions)",
+      "take newspaper_2: 'ok'",
+      "put newspaper_2 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pencil-None-Drawer-327/trial_T20190908_103604_088470",
+    "task": "find two pencil and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found pencil_2 at shelf_1 (5 engine actions)",
+      "take pencil_2: 'ok'",
+      "put pencil_2 in drawer_1: 'ok'",
+      "found pencil_1 at shelf_1 (1 engine actions)",
+      "take pencil_1: 'ok'",
+      "put pencil_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pencil-None-SideTable-329/trial_T20190909_040132_412120",
+    "task": "find two pencil and put them in sidetable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 17,
+    "seeks": 2,
+    "log": [
+      "found pencil_4 at diningtable_1 (8 engine actions)",
+      "take pencil_4: 'ok'",
+      "put pencil_4 in sidetable_1: 'ok'",
+      "found pencil_1 at diningtable_1 (1 engine actions)",
+      "take pencil_1: 'ok'",
+      "put pencil_1 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pillow-None-Ottoman-208/trial_T20190907_030106_770418",
+    "task": "put two pillow in ottoman",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 27,
+    "seeks": 4,
+    "log": [
+      "found pillow_1 at sofa_1 (2 engine actions)",
+      "take pillow_1: 'ok'",
+      "put pillow_1 in ottoman_1: 'ok'",
+      "found pillow_2 at armchair_1 (3 engine actions)",
+      "take pillow_2: 'ok'",
+      "put pillow_2 in ottoman_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-RemoteControl-None-ArmChair-208/trial_T20190908_000903_032547",
+    "task": "find two remotecontrol and put them in armchair",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 2,
+    "log": [
+      "found remotecontrol_2 at sofa_1 (2 engine actions)",
+      "take remotecontrol_2: 'ok'",
+      "put remotecontrol_2 in armchair_1: 'ok'",
+      "found remotecontrol_1 at sofa_1 (1 engine actions)",
+      "take remotecontrol_1: 'ok'",
+      "put remotecontrol_1 in armchair_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-RemoteControl-None-Ottoman-210/trial_T20190906_202114_729948",
+    "task": "put two remotecontrol in ottoman",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found remotecontrol_2 at sofa_1 (1 engine actions)",
+      "take remotecontrol_2: 'ok'",
+      "put remotecontrol_2 in ottoman_1: 'ok'",
+      "found remotecontrol_1 at dresser_1 (6 engine actions)",
+      "take remotecontrol_1: 'ok'",
+      "put remotecontrol_1 in ottoman_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-RemoteControl-None-Sofa-207/trial_T20190908_111223_597180",
+    "task": "put two remotecontrol in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found remotecontrol_2 at tvstand_1 (1 engine actions)",
+      "take remotecontrol_2: 'ok'",
+      "put remotecontrol_2 in sofa_1: 'ok'",
+      "found remotecontrol_1 at tvstand_1 (1 engine actions)",
+      "take remotecontrol_1: 'ok'",
+      "put remotecontrol_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-Cabinet-428/trial_T20190910_231209_039518",
+    "task": "find two soapbar and put them in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found soapbar_1 at toilet_1 (3 engine actions)",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in cabinet_1: 'ok'",
+      "found soapbar_2 at sinkbasin_1 (6 engine actions)",
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-Drawer-420/trial_T20190908_124733_053705",
+    "task": "find two soapbar and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 17,
+    "seeks": 2,
+    "log": [
+      "found soapbar_1 at toilet_1 (4 engine actions)",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in drawer_1: 'ok'",
+      "found soapbar_2 at sinkbasin_1 (6 engine actions)",
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBottle-None-Cabinet-417/trial_T20190909_211711_664720",
+    "task": "put two soapbottle in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 2,
+    "log": [
+      "found soapbottle_2 at toilet_1 (3 engine actions)",
+      "take soapbottle_2: 'ok'",
+      "put soapbottle_2 in cabinet_1: 'ok'",
+      "found soapbottle_1 at garbagecan_1 (8 engine actions)",
+      "take soapbottle_1: 'ok'",
+      "put soapbottle_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBottle-None-Cart-401/trial_T20190908_215242_345375",
+    "task": "put two soapbottle in cart",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 20,
+    "seeks": 3,
+    "log": [
+      "found soapbottle_1 at shelf_1 (1 engine actions)",
+      "take soapbottle_1: 'ok'",
+      "put soapbottle_1 in cart_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBottle-None-Toilet-426/trial_T20190907_184729_585161",
+    "task": "put two soapbottle in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 30,
+    "seeks": 3,
+    "log": [
+      "found soapbottle_3 at countertop_1 (8 engine actions)",
+      "take soapbottle_3: 'ok'",
+      "put soapbottle_3 in toilet_1: 'ok'",
+      "found soapbottle_1 at countertop_1 (1 engine actions)",
+      "take soapbottle_1: 'ok'",
+      "put soapbottle_1 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-CounterTop-409/trial_T20190908_131755_202053",
+    "task": "find two spraybottle and put them in countertop",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_2 at toilet_1 (4 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in countertop_1: 'ok'",
+      "found spraybottle_1 at toilet_1 (1 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-GarbageCan-413/trial_T20190912_044451_035192",
+    "task": "put two spraybottle in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_2 at dresser_1 (8 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in garbagecan_1: 'ok'",
+      "found spraybottle_1 at dresser_1 (1 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-GarbageCan-420/trial_T20190907_174658_354066",
+    "task": "find two spraybottle and put them in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_3 at sidetable_1 (6 engine actions)",
+      "take spraybottle_3: 'ok'",
+      "put spraybottle_3 in garbagecan_1: 'ok'",
+      "found spraybottle_1 at sidetable_1 (1 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-Toilet-417/trial_T20190908_071820_505015",
+    "task": "put two spraybottle in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_4 at countertop_1 (8 engine actions)",
+      "take spraybottle_4: 'ok'",
+      "put spraybottle_4 in toilet_1: 'ok'",
+      "found spraybottle_1 at countertop_1 (1 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Statue-None-Dresser-213/trial_T20190909_065309_623947",
+    "task": "find two statue and put them in dresser",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": []
+  },
+  {
+    "game": "pick_two_obj_and_place-TissueBox-None-CoffeeTable-220/trial_T20190909_145750_484036",
+    "task": "find two tissuebox and put them in coffeetable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found tissuebox_4 at sidetable_1 (4 engine actions)",
+      "take tissuebox_4: 'ok'",
+      "put tissuebox_4 in coffeetable_1: 'ok'",
+      "found tissuebox_1 at sidetable_1 (1 engine actions)",
+      "take tissuebox_1: 'ok'",
+      "put tissuebox_1 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-TissueBox-None-CoffeeTable-230/trial_T20190909_145658_750781",
+    "task": "put two tissuebox in coffeetable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found tissuebox_4 at sidetable_1 (3 engine actions)",
+      "take tissuebox_4: 'ok'",
+      "put tissuebox_4 in coffeetable_1: 'ok'",
+      "found tissuebox_3 at diningtable_1 (6 engine actions)",
+      "take tissuebox_3: 'ok'",
+      "put tissuebox_3 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-TissueBox-None-DiningTable-230/trial_T20190909_145553_211575",
+    "task": "put two tissuebox in diningtable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found tissuebox_2 at coffeetable_2 (6 engine actions)",
+      "take tissuebox_2: 'ok'",
+      "put tissuebox_2 in diningtable_1: 'ok'",
+      "found tissuebox_1 at coffeetable_2 (1 engine actions)",
+      "take tissuebox_1: 'ok'",
+      "put tissuebox_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Cabinet-412/trial_T20190908_141555_713466",
+    "task": "put two toiletpaper in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 3,
+    "log": [
+      "found toiletpaper_3 at toilet_1 (3 engine actions)",
+      "take toiletpaper_3: 'ok'",
+      "put toiletpaper_3 in cabinet_1: 'ok'",
+      "found toiletpaper_1 at garbagecan_1 (1 engine actions)",
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Drawer-409/trial_T20190906_193417_937668",
+    "task": "put two toiletpaper in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found toiletpaper_2 at toilet_1 (4 engine actions)",
+      "take toiletpaper_2: 'ok'",
+      "put toiletpaper_2 in drawer_1: 'ok'",
+      "found toiletpaper_1 at toilet_1 (1 engine actions)",
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Toilet-405/trial_T20190909_065947_451268",
+    "task": "put two toiletpaper in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found toiletpaper_3 at toiletpaperhanger_1 (2 engine actions)",
+      "take toiletpaper_3: 'ok'",
+      "put toiletpaper_3 in toilet_1: 'ok'",
+      "found toiletpaper_2 at garbagecan_1 (8 engine actions)",
+      "take toiletpaper_2: 'ok'",
+      "put toiletpaper_2 in toilet_1: 'ok'"
+    ]
+  }
+]

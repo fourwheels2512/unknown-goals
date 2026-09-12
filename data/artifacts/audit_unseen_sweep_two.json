@@ -1,0 +1,238 @@
+[
+  {
+    "game": "pick_two_obj_and_place-CD-None-Safe-308/trial_T20190907_050942_897916",
+    "task": "put two cd in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 0,
+    "log": [
+      "take cd_2: 'ok'",
+      "put cd_2 in safe_1: 'ok'",
+      "take cd_1: 'ok'",
+      "put cd_1 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CD-None-Safe-308/trial_T20190907_051013_060265",
+    "task": "find two cd and put them in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 0,
+    "log": [
+      "take cd_1: 'ok'",
+      "put cd_1 in safe_1: 'ok'",
+      "take cd_2: 'ok'",
+      "put cd_2 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CD-None-Safe-308/trial_T20190907_051056_585414",
+    "task": "put two cd in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 0,
+    "log": [
+      "take cd_2: 'ok'",
+      "put cd_2 in safe_1: 'ok'",
+      "take cd_1: 'ok'",
+      "put cd_1 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-KeyChain-None-Safe-219/trial_T20190909_011803_423115",
+    "task": "put two keychain in safe",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 50,
+    "seeks": 0,
+    "log": [
+      "take keychain_1: 'ok'",
+      "put keychain_1 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-KeyChain-None-Safe-219/trial_T20190909_012027_782483",
+    "task": "put two keychain in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 34,
+    "seeks": 0,
+    "log": [
+      "take keychain_3: 'ok'",
+      "put keychain_3 in safe_1: 'ok'",
+      "take keychain_2: 'ok'",
+      "put keychain_2 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-PepperShaker-None-Drawer-10/trial_T20190908_010306_215435",
+    "task": "put two peppershaker in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 0,
+    "log": [
+      "take peppershaker_2: 'ok'",
+      "put peppershaker_2 in drawer_1: 'ok'",
+      "take peppershaker_1: 'ok'",
+      "put peppershaker_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-PepperShaker-None-Drawer-10/trial_T20190912_221016_460197",
+    "task": "put two peppershaker in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 0,
+    "log": [
+      "take peppershaker_1: 'ok'",
+      "put peppershaker_1 in drawer_1: 'ok'",
+      "take peppershaker_2: 'ok'",
+      "put peppershaker_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-PepperShaker-None-Drawer-10/trial_T20190912_221141_608117",
+    "task": "find two peppershaker and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 0,
+    "log": [
+      "take peppershaker_2: 'ok'",
+      "put peppershaker_2 in drawer_1: 'ok'",
+      "take peppershaker_1: 'ok'",
+      "put peppershaker_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pillow-None-Sofa-219/trial_T20190907_163240_345855",
+    "task": "find two pillow and put them in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 0,
+    "log": [
+      "take pillow_2: 'ok'",
+      "put pillow_2 in sofa_1: 'ok'",
+      "take pillow_1: 'ok'",
+      "put pillow_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pillow-None-Sofa-219/trial_T20190907_163327_486300",
+    "task": "put two pillow in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 0,
+    "log": [
+      "take pillow_2: 'ok'",
+      "put pillow_2 in sofa_1: 'ok'",
+      "take pillow_1: 'ok'",
+      "put pillow_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pillow-None-Sofa-219/trial_T20190907_163408_914117",
+    "task": "put two pillow in sofa",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 0,
+    "log": [
+      "take pillow_2: 'ok'",
+      "put pillow_2 in sofa_1: 'ok'",
+      "take pillow_1: 'ok'",
+      "put pillow_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-Cabinet-424/trial_T20190909_081720_491733",
+    "task": "find two soapbar and put them in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 0,
+    "log": [
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in cabinet_1: 'ok'",
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-Cabinet-424/trial_T20190909_081746_857594",
+    "task": "find two soapbar and put them in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 20,
+    "seeks": 0,
+    "log": [
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in cabinet_1: 'ok'",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064053_839817",
+    "task": "put two soapbar in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 20,
+    "seeks": 0,
+    "log": [
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in garbagecan_1: 'ok'",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064221_368939",
+    "task": "put two soapbar in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 0,
+    "log": [
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in garbagecan_1: 'ok'",
+      "take soapbar_4: 'ok'",
+      "put soapbar_4 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064309_357168",
+    "task": "put two soapbar in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 32,
+    "seeks": 0,
+    "log": [
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in garbagecan_1: 'ok'",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Cabinet-424/trial_T20190906_202926_527010",
+    "task": "find two toiletpaper and put them in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 0,
+    "log": [
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in cabinet_1: 'ok'",
+      "take toiletpaper_3: 'ok'",
+      "put toiletpaper_3 in cabinet_1: 'ok'"
+    ]
+  }
+]

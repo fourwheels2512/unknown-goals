@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "episode": 1,
+      "seed": 1,
+      "habit_episode": true,
+      "staged_on_habit": true,
+      "truth": [
+        "countertop_2"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "countertop_2",
+        "ground_truth": [
+          "countertop_2"
+        ],
+        "env_actions": 95,
+        "seeks": 4,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at countertop_2 (2 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 55.1,
+        "truth_at_start": [
+          "countertop_2"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "countertop_2",
+        "ground_truth": [
+          "countertop_2"
+        ],
+        "env_actions": 95,
+        "seeks": 4,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at countertop_2 (2 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 0,
+          "rules": [],
+          "bandit": false
+        },
+        "wall_s": 41.3,
+        "truth_at_start": [
+          "countertop_2"
+        ]
+      },
+      "habits_after": {}
+    }
+  ],
+  "summary": {
+    "episodes": 1,
+    "scene": "FloorPlan1",
+    "target": "mug",
+    "habit_recep": "countertop_2",
+    "p_habit": 1.0,
+    "final_habits": {},
+    "fresh": {
+      "fetched": 1,
+      "mean_env_actions": 95.0,
+      "first_third": 95.0,
+      "last_third": 95.0,
+      "habit_episodes": 95.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    },
+    "lifelong": {
+      "fetched": 1,
+      "mean_env_actions": 95.0,
+      "first_third": 95.0,
+      "last_third": 95.0,
+      "habit_episodes": 95.0,
+      "other_episodes": NaN,
+      "wrong_commitments": 0
+    }
+  }
+}

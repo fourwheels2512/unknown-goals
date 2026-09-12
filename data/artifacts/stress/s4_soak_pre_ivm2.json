@@ -1,0 +1,64 @@
+{
+  "suite": "s4_soak",
+  "elapsed_s": 106.4,
+  "n_breaks": 1,
+  "breaks": [
+    {
+      "kind": "LATENCY_BLOWUP",
+      "detail": "day-latency grew 0.0685s -> 0.5479s (8.0x) over 300 days",
+      "seed": 90000
+    }
+  ],
+  "notes": [],
+  "houses": [
+    {
+      "seed": 90000,
+      "days_run": 300,
+      "total_brewed": 300,
+      "windows": [
+        {
+          "day": 50,
+          "mean_day_s": 0.0685,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 2544,
+          "now": 25233
+        },
+        {
+          "day": 100,
+          "mean_day_s": 0.1677,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 5418,
+          "now": 50955
+        },
+        {
+          "day": 150,
+          "mean_day_s": 0.3947,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 8271,
+          "now": 76635
+        },
+        {
+          "day": 200,
+          "mean_day_s": 0.4739,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 11161,
+          "now": 102296
+        },
+        {
+          "day": 250,
+          "mean_day_s": 0.4745,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 14023,
+          "now": 128022
+        },
+        {
+          "day": 300,
+          "mean_day_s": 0.5479,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 16905,
+          "now": 153685
+        }
+      ]
+    }
+  ]
+}

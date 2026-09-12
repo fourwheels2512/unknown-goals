@@ -1,0 +1,302 @@
+{
+  "rows": [
+    {
+      "seed": 7,
+      "policy": "engine",
+      "target": "flight_data_recorder",
+      "instance": "flight_data_recorder",
+      "moved_to": "sv_2_3",
+      "intended_truth": "sv_2_3",
+      "placed": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "ecm_pose": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "found_at": "sv_2_3",
+      "correct": true,
+      "env_actions": 11,
+      "wall_s": 11.5
+    },
+    {
+      "seed": 7,
+      "policy": "sweep",
+      "target": "flight_data_recorder",
+      "instance": "flight_data_recorder",
+      "moved_to": "sv_2_3",
+      "intended_truth": "sv_2_3",
+      "placed": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "ecm_pose": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "found_at": "sv_2_3",
+      "correct": true,
+      "env_actions": 13,
+      "wall_s": 11.9
+    },
+    {
+      "seed": 7,
+      "policy": "random",
+      "target": "flight_data_recorder",
+      "instance": "flight_data_recorder",
+      "moved_to": "sv_2_3",
+      "intended_truth": "sv_2_3",
+      "placed": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "ecm_pose": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "found_at": "sv_2_3",
+      "correct": true,
+      "env_actions": 5,
+      "wall_s": 4.6
+    },
+    {
+      "seed": 11,
+      "policy": "engine",
+      "target": "uxo_c",
+      "instance": "uxo_c",
+      "moved_to": "sv_2_2",
+      "intended_truth": "sv_2_2",
+      "placed": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "ecm_pose": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "found_at": "sv_2_2",
+      "correct": true,
+      "env_actions": 12,
+      "wall_s": 12.1
+    },
+    {
+      "seed": 11,
+      "policy": "sweep",
+      "target": "uxo_c",
+      "instance": "uxo_c",
+      "moved_to": "sv_2_2",
+      "intended_truth": "sv_2_2",
+      "placed": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "ecm_pose": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "found_at": "sv_2_2",
+      "correct": true,
+      "env_actions": 3,
+      "wall_s": 2.9
+    },
+    {
+      "seed": 11,
+      "policy": "random",
+      "target": "uxo_c",
+      "instance": "uxo_c",
+      "moved_to": "sv_2_2",
+      "intended_truth": "sv_2_2",
+      "placed": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "ecm_pose": [
+        4.55,
+        -10.893,
+        -94.5
+      ],
+      "found_at": "sv_2_2",
+      "correct": true,
+      "env_actions": 6,
+      "wall_s": 6.0
+    },
+    {
+      "seed": 23,
+      "policy": "engine",
+      "target": "uxo_b",
+      "instance": "uxo_b",
+      "moved_to": "sv_5_7",
+      "intended_truth": "sv_5_7",
+      "placed": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "ecm_pose": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "found_at": "sv_5_7",
+      "correct": true,
+      "env_actions": 6,
+      "wall_s": 5.1
+    },
+    {
+      "seed": 23,
+      "policy": "sweep",
+      "target": "uxo_b",
+      "instance": "uxo_b",
+      "moved_to": "sv_5_7",
+      "intended_truth": "sv_5_7",
+      "placed": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "ecm_pose": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "found_at": "sv_5_7",
+      "correct": true,
+      "env_actions": 47,
+      "wall_s": 43.1
+    },
+    {
+      "seed": 23,
+      "policy": "random",
+      "target": "uxo_b",
+      "instance": "uxo_b",
+      "moved_to": "sv_5_7",
+      "intended_truth": "sv_5_7",
+      "placed": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "ecm_pose": [
+        29.019,
+        5.194,
+        -94.5
+      ],
+      "found_at": "sv_5_7",
+      "correct": true,
+      "env_actions": 2,
+      "wall_s": 2.1
+    },
+    {
+      "seed": 42,
+      "policy": "engine",
+      "target": "hardhat_ribbed",
+      "instance": "hardhat_ribbed",
+      "moved_to": "sv_3_2",
+      "intended_truth": "sv_3_2",
+      "placed": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "ecm_pose": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "found_at": "sv_3_2",
+      "correct": true,
+      "env_actions": 2,
+      "wall_s": 2.2
+    },
+    {
+      "seed": 42,
+      "policy": "sweep",
+      "target": "hardhat_ribbed",
+      "instance": "hardhat_ribbed",
+      "moved_to": "sv_3_2",
+      "intended_truth": "sv_3_2",
+      "placed": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "ecm_pose": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "found_at": "sv_3_2",
+      "correct": true,
+      "env_actions": 22,
+      "wall_s": 21.7
+    },
+    {
+      "seed": 42,
+      "policy": "random",
+      "target": "hardhat_ribbed",
+      "instance": "hardhat_ribbed",
+      "moved_to": "sv_3_2",
+      "intended_truth": "sv_3_2",
+      "placed": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "ecm_pose": [
+        5.291,
+        -4.043,
+        -94.5
+      ],
+      "found_at": "sv_3_2",
+      "correct": true,
+      "env_actions": 4,
+      "wall_s": 3.6
+    }
+  ],
+  "summary": {
+    "engine": {
+      "episodes": 4,
+      "correct": 4,
+      "mean_visits": 7.75
+    },
+    "sweep": {
+      "episodes": 4,
+      "correct": 4,
+      "mean_visits": 21.25
+    },
+    "random": {
+      "episodes": 4,
+      "correct": 4,
+      "mean_visits": 4.25
+    }
+  },
+  "episodes": 12,
+  "stations": 70,
+  "grid": [
+    -5.0,
+    40.0,
+    -20.0,
+    12.0
+  ],
+  "station_pitch": 5.0,
+  "max_env_actions": 250,
+  "sonar": {
+    "range_m": 10.0,
+    "fov_rad": 2.26894,
+    "headings": 3,
+    "strength_curve": "0.95*0.5^((r/range)^2)",
+    "gate": 0.5
+  }
+}

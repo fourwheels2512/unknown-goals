@@ -1,0 +1,38 @@
+[
+  {
+    "rule_id": "rule_stay_put_v1",
+    "description": "An object tends to remain at its last directly observed location.",
+    "status": "VALIDATED",
+    "version": "1"
+  },
+  {
+    "rule_id": "rule_carrier_location_v1",
+    "description": "An object last associated with a carrier may be at the carrier's later location.",
+    "status": "VALIDATED",
+    "version": "1"
+  },
+  {
+    "rule_id": "rule_cart_transport_v1",
+    "description": "A tool-capable container that left a location after the object plausibly arrived there may have transported the object to its destination.",
+    "status": "VALIDATED",
+    "version": "1"
+  },
+  {
+    "rule_id": "rule_sensor_error_v1",
+    "description": "An ambiguous identification may mean the object was never where the ambiguous track was seen; its last unambiguous location stands.",
+    "status": "VALIDATED",
+    "version": "1"
+  },
+  {
+    "rule_id": "rule_occlusion_v1",
+    "description": "A low-confidence absence report may be a missed detection; the object may remain at its last observed location, occluded.",
+    "status": "VALIDATED",
+    "version": "1"
+  },
+  {
+    "rule_id": "rule_container_stash_v1",
+    "description": "An object that vanished while with a carrier may be inside a capable STATIONARY container at one of the carrier's stops \u2014 invisible to inspection, revealed only by a scan.",
+    "status": "VALIDATED",
+    "version": "1"
+  }
+]

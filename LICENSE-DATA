@@ -1,0 +1,40 @@
+Unknown Goals benchmark kit — data and documents
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright 2026 Kiran Nayudu.
+
+This license covers everything in these directories:
+
+  data/     the benchmark artifacts (per-episode results for every suite
+            the paper reports) and the ledger exports (entities, claims,
+            rules, decisions and proof paths for every engine episode whose
+            commitment the paper counts)
+  docs/     the paper's public rendering and the protocol documents
+  paper/    the compiled public paper
+  samples/  recorded outputs of the demonstration build
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the license,
+and indicate if changes were made.
+
+Attribute as:
+
+  Nayudu, K. (2026). A Decision Layer for Robot Object Search Under Unreliable Evidence, With a Checkable Provenance Record for Every Commitment. Working paper v0.5.
+  Benchmark kit and data, CC BY 4.0.
+  https://github.com/fourwheels2512/unknown-goals
+
+The full license text is at:
+
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+A human-readable summary is at:
+
+  https://creativecommons.org/licenses/by/4.0/
+
+The code of the kit is licensed separately under Apache-2.0; see LICENSE.
+The demonstration binaries are covered by the evaluation license in
+LICENSE-DEMO and are neither Apache-2.0 nor CC BY 4.0.
+
+No warranty is given. The material is provided as-is, and the licensor
+makes no representations or warranties about it, to the extent possible
+under law.

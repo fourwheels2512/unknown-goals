@@ -1,0 +1,1362 @@
+[
+  {
+    "seed": 90000,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90001,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90002,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90003,
+    "level": 1,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90004,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 1,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90005,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90006,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90007,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90008,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90009,
+    "level": 1,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90010,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90011,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90012,
+    "level": 1,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 2,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90013,
+    "level": 1,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90014,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90015,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90016,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90017,
+    "level": 1,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90018,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90019,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 2,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90020,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90021,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90022,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 6,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90023,
+    "level": 1,
+    "found": {
+      "mug": "mug_blue",
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 4,
+    "rooms_total": 7,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90024,
+    "level": 1,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 3,
+    "rooms_total": 5,
+    "actions": 5,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90000,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90001,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90002,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_red"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90003,
+    "level": 2,
+    "found": {
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {
+      "grounds": "CLASS_NEVER_SEEN",
+      "filter": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 43,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90004,
+    "level": 2,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_tin",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "filter": "filter_box"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90005,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90006,
+    "level": 2,
+    "found": {
+      "mug": "mug_red",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "grounds": "grounds_tin"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90007,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "mug": "mug_blue",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 21,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90008,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_green",
+      "filter": "filter_box"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 21,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90009,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_red"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90010,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90011,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90012,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_red"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90013,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90014,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90015,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90016,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90017,
+    "level": 2,
+    "found": {
+      "mug": "mug_green",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "grounds": "grounds_tin",
+      "filter": "filter_box"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 21,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90018,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_red"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90019,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90020,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip"
+    },
+    "failures": {
+      "mug": "CLASS_NEVER_SEEN",
+      "filter": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 3,
+    "rooms_total": 5,
+    "actions": 35,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90021,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90022,
+    "level": 2,
+    "found": {
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_red"
+    },
+    "failures": {
+      "grounds": "CLASS_NEVER_SEEN",
+      "filter": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 43,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90023,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90024,
+    "level": 2,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 13,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90000,
+    "level": 3,
+    "found": {},
+    "failures": {
+      "mug": "CLASS_NEVER_SEEN",
+      "grounds": "CLASS_NEVER_SEEN",
+      "filter": "CLASS_NEVER_SEEN",
+      "kettle": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 1,
+    "rooms_total": 6,
+    "actions": 40,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90001,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "machine": "machine_drip",
+      "mug": "mug_blue",
+      "kettle": "kettle_steel"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90002,
+    "level": 3,
+    "found": {
+      "mug": "mug_red",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "grounds": "grounds_tin"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90003,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90004,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_tin",
+      "mug": "mug_green"
+    },
+    "failures": {
+      "filter": "CLASS_NEVER_SEEN",
+      "kettle": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 6,
+    "actions": 42,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90005,
+    "level": 3,
+    "found": {
+      "mug": "mug_green",
+      "filter": "filter_box",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "grounds": "grounds_tin"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90006,
+    "level": 3,
+    "found": {
+      "mug": "mug_blue",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "grounds": "grounds_bag"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90007,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90008,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90009,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "kettle": "kettle_steel",
+      "machine": "machine_press",
+      "mug": "mug_blue",
+      "filter": "filter_box"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90010,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_green"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90011,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "kettle": "kettle_glass",
+      "mug": "mug_green"
+    },
+    "failures": {
+      "filter": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 43,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90012,
+    "level": 3,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_bag",
+      "kettle": "kettle_steel",
+      "filter": "filter_box",
+      "machine": "machine_drip"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90013,
+    "level": 3,
+    "found": {
+      "mug": "mug_blue",
+      "kettle": "kettle_glass",
+      "grounds": "grounds_bag"
+    },
+    "failures": {
+      "filter": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 44,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90014,
+    "level": 3,
+    "found": {
+      "mug": "mug_green",
+      "grounds": "grounds_tin",
+      "kettle": "kettle_steel",
+      "machine": "machine_press"
+    },
+    "failures": {
+      "filter": "SEARCH_FAILED"
+    },
+    "rooms_discovered": 5,
+    "rooms_total": 5,
+    "actions": 20,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90015,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "machine": "machine_drip",
+      "mug": "mug_blue",
+      "kettle": "kettle_glass"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90016,
+    "level": 3,
+    "found": {
+      "mug": "mug_green",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "grounds": "grounds_tin",
+      "machine": "machine_press"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90017,
+    "level": 3,
+    "found": {
+      "mug": "mug_green",
+      "filter": "filter_box"
+    },
+    "failures": {
+      "grounds": "CLASS_NEVER_SEEN",
+      "kettle": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 1,
+    "rooms_total": 5,
+    "actions": 43,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90018,
+    "level": 3,
+    "found": {
+      "mug": "mug_blue",
+      "filter": "filter_box",
+      "machine": "machine_press",
+      "grounds": "grounds_bag",
+      "kettle": "kettle_steel"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90019,
+    "level": 3,
+    "found": {
+      "mug": "mug_red",
+      "grounds": "grounds_tin",
+      "machine": "machine_press",
+      "filter": "filter_pack"
+    },
+    "failures": {
+      "kettle": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 4,
+    "rooms_total": 5,
+    "actions": 37,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90020,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_bag",
+      "filter": "filter_pack",
+      "kettle": "kettle_steel",
+      "machine": "machine_drip",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90021,
+    "level": 3,
+    "found": {
+      "mug": "mug_blue",
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "grounds": "grounds_bag"
+    },
+    "failures": {},
+    "rooms_discovered": 6,
+    "rooms_total": 6,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90022,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_tin"
+    },
+    "failures": {
+      "mug": "CLASS_NEVER_SEEN",
+      "filter": "CLASS_NEVER_SEEN",
+      "kettle": "CLASS_NEVER_SEEN",
+      "machine": "CLASS_NEVER_SEEN"
+    },
+    "rooms_discovered": 2,
+    "rooms_total": 5,
+    "actions": 41,
+    "collected": false,
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 90023,
+    "level": 3,
+    "found": {
+      "grounds": "grounds_tin",
+      "filter": "filter_pack",
+      "kettle": "kettle_glass",
+      "machine": "machine_press",
+      "mug": "mug_blue"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 14,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 90024,
+    "level": 3,
+    "found": {
+      "filter": "filter_box",
+      "kettle": "kettle_glass",
+      "machine": "machine_drip",
+      "mug": "mug_blue",
+      "grounds": "grounds_bag"
+    },
+    "failures": {},
+    "rooms_discovered": 7,
+    "rooms_total": 7,
+    "actions": 22,
+    "collected": true,
+    "brewed": true,
+    "passed": true
+  }
+]

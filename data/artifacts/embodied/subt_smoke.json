@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "world": "tunnel_circuit_practice_01",
+      "seed": 7,
+      "target": "rescue_randy",
+      "tiles": 438,
+      "env_actions": 84,
+      "wall_s": 3.8,
+      "report": "rescue_randy_3",
+      "found_tile": "tile_331",
+      "dist_m": 0.0,
+      "scored": true
+    }
+  ],
+  "scored": 1,
+  "episodes": 1
+}

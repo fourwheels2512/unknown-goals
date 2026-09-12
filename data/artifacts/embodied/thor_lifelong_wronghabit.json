@@ -1,0 +1,376 @@
+{
+  "rows": [
+    {
+      "episode": 31,
+      "seed": 31,
+      "habit_episode": false,
+      "staged_on_habit": false,
+      "truth": [
+        "coffeemachine_1",
+        "countertop_3"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "coffeemachine_1",
+        "ground_truth": [
+          "coffeemachine_1",
+          "countertop_3"
+        ],
+        "env_actions": 11,
+        "seeks": 2,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at coffeemachine_1 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 20.2,
+        "truth_at_start": [
+          "coffeemachine_1",
+          "countertop_3"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "coffeemachine_1",
+        "ground_truth": [
+          "coffeemachine_1",
+          "countertop_3"
+        ],
+        "env_actions": 12,
+        "seeks": 2,
+        "receptacles": 37,
+        "log": [
+          "lifelong prior: Learned across 15 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "lifelong prior: Learned across 15 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "found mug_1 at coffeemachine_1 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 30,
+          "rules": [
+            {
+              "rule_id": "habitual_location:unknown:mug",
+              "room": "countertop_1",
+              "reliability": 0.7333,
+              "support": 15
+            },
+            {
+              "rule_id": "habitual_location:mug_1",
+              "room": "countertop_1",
+              "reliability": 0.7333,
+              "support": 15
+            }
+          ],
+          "bandit": false
+        },
+        "wall_s": 20.2,
+        "truth_at_start": [
+          "coffeemachine_1",
+          "countertop_3"
+        ]
+      },
+      "habits_after": {
+        "mug": {
+          "room_class": "countertop",
+          "status": "VALIDATED",
+          "support": 16,
+          "precision": 0.75,
+          "holdout_precision": 0.7333,
+          "reliability": 0.7333
+        }
+      }
+    },
+    {
+      "episode": 32,
+      "seed": 32,
+      "habit_episode": false,
+      "staged_on_habit": false,
+      "truth": [
+        "shelf_3"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "shelf_3",
+        "ground_truth": [
+          "shelf_3"
+        ],
+        "env_actions": 25,
+        "seeks": 2,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at shelf_3 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 28.2,
+        "truth_at_start": [
+          "shelf_3"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "shelf_3",
+        "ground_truth": [
+          "shelf_3"
+        ],
+        "env_actions": 12,
+        "seeks": 2,
+        "receptacles": 37,
+        "log": [
+          "lifelong prior: Learned across 16 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "lifelong prior: Learned across 16 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "found mug_1 at shelf_3 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 31,
+          "rules": [
+            {
+              "rule_id": "habitual_location:unknown:mug",
+              "room": "countertop_1",
+              "reliability": 0.7333,
+              "support": 16
+            },
+            {
+              "rule_id": "habitual_location:mug_1",
+              "room": "countertop_1",
+              "reliability": 0.7333,
+              "support": 16
+            }
+          ],
+          "bandit": false
+        },
+        "wall_s": 23.0,
+        "truth_at_start": [
+          "shelf_3"
+        ]
+      },
+      "habits_after": {
+        "mug": {
+          "room_class": "countertop",
+          "status": "VALIDATED",
+          "support": 16,
+          "precision": 0.75,
+          "holdout_precision": 0.6875,
+          "reliability": 0.6875
+        }
+      }
+    },
+    {
+      "episode": 33,
+      "seed": 33,
+      "habit_episode": false,
+      "staged_on_habit": false,
+      "truth": [
+        "drawer_3"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "drawer_3",
+        "ground_truth": [
+          "drawer_3"
+        ],
+        "env_actions": 78,
+        "seeks": 3,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at drawer_3 (6 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 41.5,
+        "truth_at_start": [
+          "drawer_3"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "drawer_3",
+        "ground_truth": [
+          "drawer_3"
+        ],
+        "env_actions": 85,
+        "seeks": 4,
+        "receptacles": 37,
+        "log": [
+          "lifelong prior: Learned across 16 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "lifelong prior: Learned across 16 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "found mug_1 at drawer_3 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 32,
+          "rules": [
+            {
+              "rule_id": "habitual_location:unknown:mug",
+              "room": "countertop_1",
+              "reliability": 0.6875,
+              "support": 16
+            },
+            {
+              "rule_id": "habitual_location:mug_1",
+              "room": "countertop_1",
+              "reliability": 0.6875,
+              "support": 16
+            }
+          ],
+          "bandit": false
+        },
+        "wall_s": 48.0,
+        "truth_at_start": [
+          "drawer_3"
+        ]
+      },
+      "habits_after": {
+        "mug": {
+          "room_class": "countertop",
+          "status": "VALIDATED",
+          "support": 17,
+          "precision": 0.7059,
+          "holdout_precision": 0.6875,
+          "reliability": 0.6875
+        }
+      }
+    },
+    {
+      "episode": 34,
+      "seed": 34,
+      "habit_episode": false,
+      "staged_on_habit": false,
+      "truth": [
+        "sinkbasin_1"
+      ],
+      "placement_identical": true,
+      "fresh": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "sinkbasin_1",
+        "ground_truth": [
+          "sinkbasin_1"
+        ],
+        "env_actions": 22,
+        "seeks": 1,
+        "receptacles": 37,
+        "log": [
+          "found mug_1 at sinkbasin_1 (8 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {},
+        "wall_s": 21.7,
+        "truth_at_start": [
+          "sinkbasin_1"
+        ]
+      },
+      "lifelong": {
+        "scene": "FloorPlan1",
+        "target_class": "mug",
+        "found": true,
+        "picked_up": true,
+        "found_at": "sinkbasin_1",
+        "ground_truth": [
+          "sinkbasin_1"
+        ],
+        "env_actions": 7,
+        "seeks": 2,
+        "receptacles": 37,
+        "log": [
+          "lifelong prior: Learned across 17 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "lifelong prior: Learned across 17 own finds: mug is habitually at a countertop (here: countertop_1).",
+          "found mug_1 at sinkbasin_1 (1 engine actions)",
+          "pick_up mug_1: ok"
+        ],
+        "lifelong": {
+          "episodes_seen": 33,
+          "rules": [
+            {
+              "rule_id": "habitual_location:unknown:mug",
+              "room": "countertop_1",
+              "reliability": 0.6875,
+              "support": 17
+            },
+            {
+              "rule_id": "habitual_location:mug_1",
+              "room": "countertop_1",
+              "reliability": 0.6875,
+              "support": 17
+            }
+          ],
+          "bandit": false
+        },
+        "wall_s": 20.3,
+        "truth_at_start": [
+          "sinkbasin_1"
+        ]
+      },
+      "habits_after": {
+        "mug": {
+          "room_class": "countertop",
+          "status": "VALIDATED",
+          "support": 17,
+          "precision": 0.7059,
+          "holdout_precision": 0.6471,
+          "reliability": 0.6471
+        }
+      }
+    }
+  ],
+  "summary": {
+    "episodes": 4,
+    "scene": "FloorPlan1",
+    "target": "mug",
+    "habit_recep": "countertop_2",
+    "p_habit": 0.0,
+    "final_habits": {
+      "mug": {
+        "room_class": "countertop",
+        "status": "VALIDATED",
+        "support": 17,
+        "precision": 0.7059,
+        "holdout_precision": 0.6471,
+        "reliability": 0.6471
+      }
+    },
+    "fresh": {
+      "fetched": 4,
+      "mean_env_actions": 34.0,
+      "first_third": 11.0,
+      "last_third": 22.0,
+      "habit_episodes": NaN,
+      "other_episodes": 34.0,
+      "wrong_commitments": 0
+    },
+    "lifelong": {
+      "fetched": 4,
+      "mean_env_actions": 29.0,
+      "first_third": 12.0,
+      "last_third": 7.0,
+      "habit_episodes": NaN,
+      "other_episodes": 29.0,
+      "wrong_commitments": 0
+    }
+  }
+}

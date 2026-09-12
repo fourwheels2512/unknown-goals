@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan401",
+      "target_class": "soapbar",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "bathtub_1"
+      ],
+      "env_actions": 50,
+      "seeks": 3,
+      "receptacles": 17,
+      "log": [],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 130.6,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 48,
+        "detections": 267,
+        "matched": 51,
+        "claims": 37
+      },
+      "clip": "FloorPlan401_s11.gif"
+    }
+  ],
+  "fetched": 0,
+  "episodes": 1
+}

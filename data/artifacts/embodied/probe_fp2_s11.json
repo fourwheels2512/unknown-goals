@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan2",
+      "target_class": "fork",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 250,
+      "seeks": 10,
+      "receptacles": 38,
+      "log": [],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 868.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 198,
+        "detections": 2814,
+        "matched": 137,
+        "claims": 66
+      },
+      "clip": "FloorPlan2_s11.gif"
+    }
+  ],
+  "fetched": 0,
+  "episodes": 1
+}

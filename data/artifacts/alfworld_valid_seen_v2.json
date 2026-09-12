@@ -1,0 +1,1967 @@
+[
+  {
+    "game": "look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790",
+    "task": "look at alarmclock under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 2,
+    "log": [
+      "found alarmclock_3 at sidetable_1 (2 engine actions)",
+      "take alarmclock_3: 'ok'",
+      "found desklamp_2 at sidetable_2 (1 engine actions)",
+      "use desklamp_2: 'You turn on the desklamp 2.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Bowl-None-DeskLamp-301/trial_T20190909_150719_492274",
+    "task": "examine the bowl with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 36,
+    "seeks": 5,
+    "log": [
+      "found bowl_1 at desk_1 (5 engine actions)",
+      "take bowl_1: 'ok'",
+      "found desklamp_1 at dresser_1 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Bowl-None-DeskLamp-316/trial_T20190908_230702_962704",
+    "task": "examine the bowl with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found bowl_1 at desk_1 (6 engine actions)",
+      "take bowl_1: 'ok'",
+      "desklamp_1 resolved at current spot desk_1",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Box-None-DeskLamp-205/trial_T20190907_074425_330493",
+    "task": "look at box under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 3,
+    "log": [
+      "found box_1 at diningtable_1 (4 engine actions)",
+      "take box_1: 'ok'",
+      "found desklamp_1 at sidetable_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-302/trial_T20190907_154618_526741",
+    "task": "examine the cd with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found cd_1 at shelf_3 (5 engine actions)",
+      "take cd_1: 'ok'",
+      "found desklamp_1 at sidetable_2 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-314/trial_T20190907_114323_767231",
+    "task": "look at cd under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found cd_1 at garbagecan_1 (1 engine actions)",
+      "take cd_1: 'ok'",
+      "found desklamp_1 at desk_1 (8 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+    "task": "look at cd under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found cd_2 at shelf_1 (5 engine actions)",
+      "take cd_2: 'ok'",
+      "found desklamp_1 at shelf_2 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-KeyChain-None-DeskLamp-327/trial_T20190906_202601_548273",
+    "task": "examine the keychain with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found keychain_1 at shelf_3 (3 engine actions)",
+      "take keychain_1: 'ok'",
+      "found desklamp_1 at dresser_1 (7 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Laptop-None-DeskLamp-328/trial_T20190908_201550_622420",
+    "task": "look at laptop under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 10,
+    "seeks": 1,
+    "log": [
+      "found laptop_1 at desk_1 (6 engine actions)",
+      "take laptop_1: 'ok'",
+      "desklamp_1 resolved at current spot desk_1",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Pillow-None-DeskLamp-302/trial_T20190909_150916_682139",
+    "task": "look at pillow under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 20,
+    "seeks": 3,
+    "log": [
+      "found pillow_1 at bed_1 (6 engine actions)",
+      "take pillow_1: 'ok'",
+      "found desklamp_1 at sidetable_2 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Pillow-None-DeskLamp-323/trial_T20190908_053153_077977",
+    "task": "examine the pillow with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 33,
+    "seeks": 4,
+    "log": [
+      "found pillow_2 at bed_2 (3 engine actions)",
+      "take pillow_2: 'ok'",
+      "found desklamp_1 at desk_1 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Statue-None-DeskLamp-216/trial_T20190909_193045_208933",
+    "task": "examine the statue with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found statue_4 at sidetable_3 (2 engine actions)",
+      "take statue_4: 'ok'",
+      "found desklamp_1 at sidetable_1 (4 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Vase-None-DeskLamp-303/trial_T20190907_150418_457594",
+    "task": "look at vase under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 27,
+    "seeks": 4,
+    "log": [
+      "found vase_2 at shelf_9 (2 engine actions)",
+      "take vase_2: 'ok'",
+      "found desklamp_1 at desk_1 (7 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Book-None-SideTable-329/trial_T20190908_050633_745514",
+    "task": "put some book on sidetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found book_3 at diningtable_1 (8 engine actions)",
+      "take book_3: 'ok'",
+      "put book_3 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Book-None-Sofa-229/trial_T20190907_042856_259139",
+    "task": "put a book in sofa",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 1,
+    "log": [
+      "found book_1 at sidetable_3 (2 engine actions)",
+      "take book_1: 'ok'",
+      "put book_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Bowl-None-CoffeeTable-201/trial_T20190907_171639_045329",
+    "task": "put some bowl on coffeetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found bowl_1 at diningtable_2 (8 engine actions)",
+      "take bowl_1: 'ok'",
+      "put bowl_1 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Box-None-Dresser-224/trial_T20190907_164104_229696",
+    "task": "put some box on dresser",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 4,
+    "seeks": 1,
+    "log": [
+      "found box_3 at sofa_1 (1 engine actions)",
+      "take box_3: 'ok'",
+      "put box_3 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+    "task": "put a candle in cart",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found candle_1 at toilet_1 (4 engine actions)",
+      "take candle_1: 'ok'",
+      "put candle_1 in cart_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Candle-None-Toilet-407/trial_T20190909_055248_059513",
+    "task": "put a candle in toilet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 1,
+    "log": [
+      "found candle_4 at countertop_1 (8 engine actions)",
+      "take candle_4: 'ok'",
+      "put candle_4 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Candle-None-Toilet-429/trial_T20190908_052232_887934",
+    "task": "put some candle on toilet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found candle_2 at shelf_3 (5 engine actions)",
+      "take candle_2: 'ok'",
+      "put candle_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-CellPhone-None-ArmChair-318/trial_T20190909_120047_968274",
+    "task": "put a cellphone in armchair",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 1,
+    "log": [
+      "found cellphone_3 at dresser_2 (2 engine actions)",
+      "take cellphone_3: 'ok'",
+      "put cellphone_3 in armchair_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-CellPhone-None-Bed-324/trial_T20190907_233817_198528",
+    "task": "put some cellphone on bed",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found cellphone_1 at dresser_1 (3 engine actions)",
+      "take cellphone_1: 'ok'",
+      "put cellphone_1 in bed_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-CreditCard-None-ArmChair-201/trial_T20190908_124340_258012",
+    "task": "put some creditcard on armchair",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 4,
+    "seeks": 1,
+    "log": [
+      "found creditcard_1 at tvstand_1 (1 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in armchair_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-CreditCard-None-Drawer-227/trial_T20190909_010644_297017",
+    "task": "put some creditcard on drawer",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 33,
+    "seeks": 3,
+    "log": [
+      "found creditcard_1 at diningtable_1 (7 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Egg-None-Microwave-4/trial_T20190906_234406_356490",
+    "task": "put some egg on microwave",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found egg_2 at sinkbasin_1 (6 engine actions)",
+      "take egg_2: 'ok'",
+      "put egg_2 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Knife-None-SideTable-3/trial_T20190918_184236_557252",
+    "task": "put a knife in sidetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 30,
+    "seeks": 3,
+    "log": [
+      "found knife_4 at countertop_1 (5 engine actions)",
+      "take knife_4: 'ok'",
+      "put knife_4 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-Dresser-311/trial_T20190909_152837_739016",
+    "task": "put some mug on dresser",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 1,
+    "log": [
+      "found mug_1 at diningtable_1 (7 engine actions)",
+      "take mug_1: 'ok'",
+      "put mug_1 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-SideTable-329/trial_T20190909_032318_169393",
+    "task": "put some mug on sidetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found mug_1 at diningtable_1 (8 engine actions)",
+      "take mug_1: 'ok'",
+      "put mug_1 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-SideTable-329/trial_T20190909_032340_274147",
+    "task": "put a mug in sidetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found mug_3 at diningtable_1 (8 engine actions)",
+      "take mug_3: 'ok'",
+      "put mug_3 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Newspaper-None-Sofa-224/trial_T20190909_111324_949106",
+    "task": "put a newspaper in sofa",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found newspaper_1 at sidetable_3 (4 engine actions)",
+      "take newspaper_1: 'ok'",
+      "put newspaper_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Pencil-None-Desk-310/trial_T20190909_113054_894334",
+    "task": "put some pencil on desk",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 1,
+    "log": [
+      "found pencil_3 at shelf_1 (2 engine actions)",
+      "take pencil_3: 'ok'",
+      "put pencil_3 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Pencil-None-Dresser-330/trial_T20190909_071128_012892",
+    "task": "put some pencil on dresser",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 1,
+    "log": [
+      "found pencil_1 at sidetable_1 (2 engine actions)",
+      "take pencil_1: 'ok'",
+      "put pencil_1 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-RemoteControl-None-ArmChair-230/trial_T20190909_021000_274398",
+    "task": "put some remotecontrol on armchair",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found remotecontrol_3 at diningtable_1 (5 engine actions)",
+      "take remotecontrol_3: 'ok'",
+      "put remotecontrol_3 in armchair_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-RemoteControl-None-Sofa-207/trial_T20190909_153609_373481",
+    "task": "put some remotecontrol on sofa",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 4,
+    "seeks": 1,
+    "log": [
+      "found remotecontrol_1 at tvstand_1 (1 engine actions)",
+      "take remotecontrol_1: 'ok'",
+      "put remotecontrol_1 in sofa_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SoapBar-None-Cart-401/trial_T20190907_054906_608944",
+    "task": "put a soapbar in cart",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 1,
+    "log": [
+      "found soapbar_1 at shelf_2 (8 engine actions)",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in cart_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SoapBottle-None-Cabinet-414/trial_T20190908_110131_524518",
+    "task": "put some soapbottle on cabinet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found soapbottle_1 at countertop_1 (1 engine actions)",
+      "take soapbottle_1: 'ok'",
+      "put soapbottle_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SoapBottle-None-CounterTop-417/trial_T20190910_112922_368384",
+    "task": "put a soapbottle in countertop",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 6,
+    "seeks": 1,
+    "log": [
+      "found soapbottle_3 at toilet_1 (3 engine actions)",
+      "take soapbottle_3: 'ok'",
+      "put soapbottle_3 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SprayBottle-None-Cabinet-413/trial_T20190907_114931_692464",
+    "task": "put a spraybottle in cabinet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found spraybottle_3 at toilet_1 (3 engine actions)",
+      "take spraybottle_3: 'ok'",
+      "put spraybottle_3 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SprayBottle-None-GarbageCan-409/trial_T20190908_054742_818364",
+    "task": "put a spraybottle in garbagecan",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found spraybottle_1 at toilet_1 (4 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SprayBottle-None-Toilet-415/trial_T20190909_075955_678702",
+    "task": "put some spraybottle on toilet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found spraybottle_2 at shelf_1 (6 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SprayBottle-None-Toilet-418/trial_T20190906_190942_706186",
+    "task": "put some spraybottle on toilet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 1,
+    "log": [
+      "found spraybottle_2 at countertop_1 (8 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-TissueBox-None-Toilet-426/trial_T20190910_155319_795672",
+    "task": "put some tissuebox on toilet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 2,
+    "log": [
+      "found tissuebox_2 at drawer_4 (4 engine actions)",
+      "take tissuebox_2: 'ok'",
+      "put tissuebox_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-406/trial_T20190908_122858_883968",
+    "task": "put a toiletpaper in toiletpaperhanger",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 2,
+    "log": [
+      "found toiletpaper_1 at cabinet_1 (1 engine actions)",
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in toiletpaperhanger_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415/trial_T20190908_050518_595510",
+    "task": "put a toiletpaper in toiletpaperhanger",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 6,
+    "seeks": 1,
+    "log": [
+      "found toiletpaper_2 at toilet_1 (3 engine actions)",
+      "take toiletpaper_2: 'ok'",
+      "put toiletpaper_2 in toiletpaperhanger_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Tomato-None-Microwave-13/trial_T20190908_124829_632660",
+    "task": "put some tomato on microwave",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 10,
+    "seeks": 1,
+    "log": [
+      "found tomato_2 at sinkbasin_1 (6 engine actions)",
+      "take tomato_2: 'ok'",
+      "put tomato_2 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Vase-None-CoffeeTable-207/trial_T20190909_091246_807206",
+    "task": "put a vase in coffeetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 4,
+    "seeks": 1,
+    "log": [
+      "found vase_1 at tvstand_1 (1 engine actions)",
+      "take vase_1: 'ok'",
+      "put vase_1 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569",
+    "task": "put some watch on sidetable",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 21,
+    "seeks": 2,
+    "log": [
+      "found watch_2 at coffeetable_1 (7 engine actions)",
+      "take watch_2: 'ok'",
+      "put watch_2 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-WineBottle-None-Shelf-7/trial_T20190907_200154_378982",
+    "task": "put some winebottle on shelf",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 3,
+    "log": [
+      "found winebottle_1 at diningtable_1 (1 engine actions)",
+      "take winebottle_1: 'ok'",
+      "put winebottle_1 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-ButterKnife-None-CounterTop-8/trial_T20190909_105559_983897",
+    "task": "put a clean butterknife in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 31,
+    "seeks": 3,
+    "log": [
+      "found butterknife_3 at countertop_4 (1 engine actions)",
+      "take butterknife_3: 'ok'",
+      "clean butterknife_3: 'ok'",
+      "put butterknife_3 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-ButterKnife-None-DiningTable-16/trial_T20190909_114508_617301",
+    "task": "put a clean butterknife in diningtable",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 32,
+    "seeks": 3,
+    "log": [
+      "found butterknife_4 at drawer_12 (3 engine actions)",
+      "take butterknife_4: 'ok'",
+      "clean butterknife_4: 'ok'",
+      "put butterknife_4 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-2/trial_T20190908_121728_511866",
+    "task": "put a clean butterknife in drawer",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 41,
+    "seeks": 4,
+    "log": [
+      "found butterknife_4 at countertop_2 (3 engine actions)",
+      "take butterknife_4: 'ok'",
+      "clean butterknife_4: 'ok'",
+      "put butterknife_4 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30/trial_T20190908_052007_212776",
+    "task": "put a clean butterknife in drawer",
+    "kind": "CLEAN",
+    "won": false,
+    "env_steps": 50,
+    "seeks": 4,
+    "log": []
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-8/trial_T20190909_124425_112757",
+    "task": "clean some butterknife and put it in drawer",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 31,
+    "seeks": 3,
+    "log": [
+      "found butterknife_2 at countertop_4 (1 engine actions)",
+      "take butterknife_2: 'ok'",
+      "clean butterknife_2: 'ok'",
+      "put butterknife_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-405/trial_T20190907_080903_889497",
+    "task": "put a clean cloth in cabinet",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 2,
+    "log": [
+      "found cloth_1 at cabinet_4 (2 engine actions)",
+      "take cloth_1: 'ok'",
+      "clean cloth_1: 'ok'",
+      "put cloth_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Cloth-None-Drawer-423/trial_T20190908_140701_251653",
+    "task": "clean some cloth and put it in drawer",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 2,
+    "log": [
+      "found cloth_3 at drawer_8 (3 engine actions)",
+      "take cloth_3: 'ok'",
+      "clean cloth_3: 'ok'",
+      "put cloth_3 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-DishSponge-None-Cart-401/trial_T20190907_024634_972453",
+    "task": "put a clean dishsponge in cart",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found dishsponge_1 at toilet_1 (4 engine actions)",
+      "take dishsponge_1: 'ok'",
+      "clean dishsponge_1: 'ok'",
+      "put dishsponge_1 in cart_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-DishSponge-None-CounterTop-403/trial_T20190908_144357_621068",
+    "task": "clean some dishsponge and put it in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found dishsponge_3 at toilet_1 (4 engine actions)",
+      "take dishsponge_3: 'ok'",
+      "clean dishsponge_3: 'ok'",
+      "put dishsponge_3 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Fork-None-CounterTop-23/trial_T20190908_233922_171295",
+    "task": "put a clean fork in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 20,
+    "seeks": 2,
+    "log": [
+      "found fork_4 at diningtable_1 (4 engine actions)",
+      "take fork_4: 'ok'",
+      "clean fork_4: 'ok'",
+      "put fork_4 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Fork-None-Drawer-8/trial_T20190908_132152_999725",
+    "task": "clean some fork and put it in drawer",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 32,
+    "seeks": 3,
+    "log": [
+      "found fork_1 at countertop_3 (2 engine actions)",
+      "take fork_1: 'ok'",
+      "clean fork_1: 'ok'",
+      "put fork_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-14/trial_T20190909_113844_191747",
+    "task": "clean some ladle and put it in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 18,
+    "seeks": 2,
+    "log": [
+      "found ladle_1 at countertop_1 (3 engine actions)",
+      "take ladle_1: 'ok'",
+      "clean ladle_1: 'ok'",
+      "put ladle_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Ladle-None-CounterTop-8/trial_T20190909_121908_219603",
+    "task": "put a clean ladle in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 32,
+    "seeks": 3,
+    "log": [
+      "found ladle_1 at countertop_3 (2 engine actions)",
+      "take ladle_1: 'ok'",
+      "clean ladle_1: 'ok'",
+      "put ladle_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-16/trial_T20190909_183724_205399",
+    "task": "put a clean ladle in diningtable",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 39,
+    "seeks": 3,
+    "log": [
+      "found ladle_1 at diningtable_1 (7 engine actions)",
+      "take ladle_1: 'ok'",
+      "clean ladle_1: 'ok'",
+      "put ladle_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-27/trial_T20190911_131350_027076",
+    "task": "clean some ladle and put it in diningtable",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 2,
+    "log": [
+      "found ladle_1 at diningtable_1 (5 engine actions)",
+      "take ladle_1: 'ok'",
+      "clean ladle_1: 'ok'",
+      "put ladle_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4/trial_T20190909_164840_568811",
+    "task": "clean some ladle and put it in diningtable",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 3,
+    "log": [
+      "found ladle_2 at diningtable_1 (3 engine actions)",
+      "take ladle_2: 'ok'",
+      "clean ladle_2: 'ok'",
+      "put ladle_2 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16/trial_T20190909_051630_092360",
+    "task": "put a clean lettuce in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 39,
+    "seeks": 3,
+    "log": [
+      "found lettuce_2 at diningtable_1 (7 engine actions)",
+      "take lettuce_2: 'ok'",
+      "clean lettuce_2: 'ok'",
+      "put lettuce_2 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Lettuce-None-Fridge-19/trial_T20190908_100138_446072",
+    "task": "clean some lettuce and put it in fridge",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found lettuce_1 at countertop_1 (1 engine actions)",
+      "take lettuce_1: 'ok'",
+      "clean lettuce_1: 'ok'",
+      "put lettuce_1 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-26/trial_T20190907_233056_022802",
+    "task": "clean some mug and put it in coffeemachine",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found mug_1 at fridge_1 (3 engine actions)",
+      "take mug_1: 'ok'",
+      "clean mug_1: 'ok'",
+      "put mug_1 in coffeemachine_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Plate-None-CounterTop-19/trial_T20190908_212725_836398",
+    "task": "put a clean plate in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found plate_1 at fridge_1 (1 engine actions)",
+      "take plate_1: 'ok'",
+      "clean plate_1: 'ok'",
+      "put plate_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Plate-None-Fridge-5/trial_T20190909_112854_740612",
+    "task": "clean some plate and put it in fridge",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 2,
+    "log": [
+      "found plate_2 at countertop_3 (8 engine actions)",
+      "take plate_2: 'ok'",
+      "clean plate_2: 'ok'",
+      "put plate_2 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342",
+    "task": "put a clean soapbar in cabinet",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found soapbar_2 at shelf_1 (7 engine actions)",
+      "take soapbar_2: 'ok'",
+      "clean soapbar_2: 'ok'",
+      "put soapbar_2 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423/trial_T20190906_202340_749336",
+    "task": "put a clean soapbar in drawer",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 32,
+    "seeks": 3,
+    "log": [
+      "found soapbar_4 at countertop_2 (3 engine actions)",
+      "take soapbar_4: 'ok'",
+      "clean soapbar_4: 'ok'",
+      "put soapbar_4 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410/trial_T20190906_201106_979461",
+    "task": "put a clean soapbar in toilet",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 2,
+    "log": [
+      "found soapbar_3 at garbagecan_1 (1 engine actions)",
+      "take soapbar_3: 'ok'",
+      "clean soapbar_3: 'ok'",
+      "put soapbar_3 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-SoapBar-None-Toilet-428/trial_T20190907_041436_588106",
+    "task": "put a clean soapbar in toilet",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found soapbar_2 at toilet_1 (3 engine actions)",
+      "take soapbar_2: 'ok'",
+      "clean soapbar_2: 'ok'",
+      "put soapbar_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Spatula-None-DiningTable-4/trial_T20190909_002804_564168",
+    "task": "clean some spatula and put it in diningtable",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 3,
+    "log": [
+      "found spatula_2 at diningtable_1 (3 engine actions)",
+      "take spatula_2: 'ok'",
+      "clean spatula_2: 'ok'",
+      "put spatula_2 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_clean_then_place_in_recep-Tomato-None-CounterTop-25/trial_T20190909_012550_586494",
+    "task": "clean some tomato and put it in countertop",
+    "kind": "CLEAN",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found tomato_1 at fridge_1 (1 engine actions)",
+      "take tomato_1: 'ok'",
+      "clean tomato_1: 'ok'",
+      "put tomato_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Apple-None-CounterTop-14/trial_T20190909_044933_815840",
+    "task": "cool some apple and put it in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found apple_1 at microwave_1 (7 engine actions)",
+      "take apple_1: 'ok'",
+      "cool apple_1: 'ok'",
+      "put apple_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2/trial_T20190906_195943_081289",
+    "task": "put a cool apple in garbagecan",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 41,
+    "seeks": 4,
+    "log": [
+      "found apple_1 at countertop_2 (3 engine actions)",
+      "take apple_1: 'ok'",
+      "cool apple_1: 'ok'",
+      "put apple_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Apple-None-Microwave-19/trial_T20190906_210937_878489",
+    "task": "cool some apple and put it in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 2,
+    "log": [
+      "found apple_1 at diningtable_1 (7 engine actions)",
+      "take apple_1: 'ok'",
+      "cool apple_1: 'ok'",
+      "put apple_1 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Apple-None-Microwave-5/trial_T20190908_150807_823817",
+    "task": "put a cool apple in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 27,
+    "seeks": 3,
+    "log": [
+      "found apple_1 at countertop_2 (1 engine actions)",
+      "take apple_1: 'ok'",
+      "cool apple_1: 'ok'",
+      "put apple_1 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20/trial_T20190909_112912_154874",
+    "task": "put a cool bowl in cabinet",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 2,
+    "log": [
+      "found bowl_1 at diningtable_1 (6 engine actions)",
+      "take bowl_1: 'ok'",
+      "cool bowl_1: 'ok'",
+      "put bowl_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Bread-None-CounterTop-7/trial_T20190909_045605_307949",
+    "task": "cool some bread and put it in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 3,
+    "log": [
+      "found bread_1 at countertop_2 (2 engine actions)",
+      "take bread_1: 'ok'",
+      "cool bread_1: 'ok'",
+      "put bread_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Cup-None-Microwave-17/trial_T20190906_192817_654400",
+    "task": "put a cool cup in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found cup_1 at microwave_1 (7 engine actions)",
+      "take cup_1: 'ok'",
+      "cool cup_1: 'ok'",
+      "put cup_1 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Cup-None-SideTable-21/trial_T20190906_192823_237997",
+    "task": "put a cool cup in sidetable",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 1,
+    "log": [
+      "found cup_2 at sidetable_1 (7 engine actions)",
+      "take cup_2: 'ok'",
+      "cool cup_2: 'ok'",
+      "put cup_2 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Egg-None-Microwave-24/trial_T20190908_234112_645480",
+    "task": "put a cool egg in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": [
+      "found egg_1 at diningtable_1 (6 engine actions)",
+      "take egg_1: 'ok'",
+      "cool egg_1: 'ok'",
+      "put egg_1 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616",
+    "task": "cool some lettuce and put it in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 39,
+    "seeks": 4,
+    "log": [
+      "found lettuce_1 at countertop_1 (3 engine actions)",
+      "take lettuce_1: 'ok'",
+      "cool lettuce_1: 'ok'",
+      "put lettuce_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-11/trial_T20190908_222555_651605",
+    "task": "put a cool lettuce in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 3,
+    "log": [
+      "found lettuce_1 at countertop_3 (3 engine actions)",
+      "take lettuce_1: 'ok'",
+      "cool lettuce_1: 'ok'",
+      "put lettuce_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-16/trial_T20190908_184242_348366",
+    "task": "put a cool mug in coffeemachine",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 38,
+    "seeks": 3,
+    "log": [
+      "found mug_1 at countertop_2 (8 engine actions)",
+      "take mug_1: 'ok'",
+      "cool mug_1: 'ok'",
+      "put mug_1 in coffeemachine_1: 'no admissible put/move'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Pan-None-DiningTable-7/trial_T20190908_232648_241836",
+    "task": "cool some pan and put it in diningtable",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found pan_1 at stoveburner_4 (2 engine actions)",
+      "take pan_1: 'ok'",
+      "cool pan_1: 'ok'",
+      "put pan_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Pan-None-StoveBurner-18/trial_T20190906_181023_216915",
+    "task": "put a cool pan in stoveburner",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found pan_1 at stoveburner_3 (3 engine actions)",
+      "take pan_1: 'ok'",
+      "cool pan_1: 'ok'",
+      "put pan_1 in stoveburner_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Pan-None-StoveBurner-23/trial_T20190906_215856_374127",
+    "task": "cool some pan and put it in stoveburner",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 5,
+    "seeks": 1,
+    "log": [
+      "found pan_2 at stoveburner_4 (2 engine actions)",
+      "take pan_2: 'ok'",
+      "cool pan_2: 'ok'",
+      "put pan_2 in stoveburner_1: 'no admissible put/move'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Plate-None-Cabinet-27/trial_T20190906_173120_350651",
+    "task": "put a cool plate in cabinet",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 2,
+    "log": [
+      "found plate_1 at diningtable_1 (5 engine actions)",
+      "take plate_1: 'ok'",
+      "cool plate_1: 'ok'",
+      "put plate_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424",
+    "task": "cool some plate and put it in cabinet",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 1,
+    "log": [
+      "found plate_2 at shelf_2 (8 engine actions)",
+      "take plate_2: 'ok'",
+      "cool plate_2: 'ok'",
+      "put plate_2 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Plate-None-CounterTop-1/trial_T20190906_205324_559361",
+    "task": "cool some plate and put it in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 38,
+    "seeks": 4,
+    "log": [
+      "found plate_1 at countertop_2 (2 engine actions)",
+      "take plate_1: 'ok'",
+      "cool plate_1: 'ok'",
+      "put plate_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Pot-None-DiningTable-21/trial_T20190909_004531_429065",
+    "task": "put a cool pot in diningtable",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 7,
+    "seeks": 1,
+    "log": [
+      "found pot_1 at stoveburner_4 (2 engine actions)",
+      "take pot_1: 'ok'",
+      "cool pot_1: 'ok'",
+      "put pot_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12/trial_T20190909_063754_216554",
+    "task": "put a cool tomato in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 1,
+    "log": [
+      "found tomato_2 at garbagecan_1 (8 engine actions)",
+      "take tomato_2: 'ok'",
+      "cool tomato_2: 'ok'",
+      "put tomato_2 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12/trial_T20190909_063844_274181",
+    "task": "put a cool tomato in countertop",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 2,
+    "log": [
+      "found tomato_2 at countertop_3 (6 engine actions)",
+      "take tomato_2: 'ok'",
+      "cool tomato_2: 'ok'",
+      "put tomato_2 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Tomato-None-GarbageCan-6/trial_T20190909_082934_483899",
+    "task": "cool some tomato and put it in garbagecan",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 1,
+    "log": [
+      "found tomato_1 at garbagecan_1 (8 engine actions)",
+      "take tomato_1: 'ok'",
+      "cool tomato_1: 'ok'",
+      "put tomato_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Tomato-None-Microwave-13/trial_T20190910_173916_331859",
+    "task": "cool some tomato and put it in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 1,
+    "log": [
+      "found tomato_3 at garbagecan_1 (8 engine actions)",
+      "take tomato_3: 'ok'",
+      "cool tomato_3: 'ok'",
+      "put tomato_3 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-Tomato-None-Microwave-18/trial_T20190909_012524_159092",
+    "task": "put a cool tomato in microwave",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 2,
+    "log": [
+      "found tomato_2 at diningtable_1 (8 engine actions)",
+      "take tomato_2: 'ok'",
+      "cool tomato_2: 'ok'",
+      "put tomato_2 in microwave_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_cool_then_place_in_recep-WineBottle-None-DiningTable-17/trial_T20190908_024426_412044",
+    "task": "cool some winebottle and put it in diningtable",
+    "kind": "COOL",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found winebottle_1 at diningtable_1 (2 engine actions)",
+      "take winebottle_1: 'ok'",
+      "cool winebottle_1: 'ok'",
+      "put winebottle_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Apple-None-DiningTable-26/trial_T20190907_060234_011675",
+    "task": "heat some apple and put it in diningtable",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 2,
+    "log": [
+      "found apple_1 at diningtable_2 (7 engine actions)",
+      "take apple_1: 'ok'",
+      "heat apple_1: 'ok'",
+      "put apple_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Cup-None-Cabinet-22/trial_T20190907_173251_960848",
+    "task": "put a hot cup in cabinet",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found cup_4 at sinkbasin_1 (6 engine actions)",
+      "take cup_4: 'ok'",
+      "heat cup_4: 'ok'",
+      "put cup_4 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Egg-None-CounterTop-2/trial_T20190908_122951_021026",
+    "task": "heat some egg and put it in countertop",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 41,
+    "seeks": 4,
+    "log": [
+      "found egg_3 at countertop_2 (3 engine actions)",
+      "take egg_3: 'ok'",
+      "heat egg_3: 'ok'",
+      "put egg_3 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Egg-None-Fridge-14/trial_T20190909_091314_636733",
+    "task": "put a hot egg in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 1,
+    "log": [
+      "found egg_2 at garbagecan_1 (8 engine actions)",
+      "take egg_2: 'ok'",
+      "heat egg_2: 'ok'",
+      "put egg_2 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Mug-None-Cabinet-26/trial_T20190909_062333_424779",
+    "task": "heat some mug and put it in cabinet",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": [
+      "found mug_1 at diningtable_1 (8 engine actions)",
+      "take mug_1: 'ok'",
+      "heat mug_1: 'ok'",
+      "put mug_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Mug-None-Cabinet-3/trial_T20190909_014639_335717",
+    "task": "put a hot mug in cabinet",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 33,
+    "seeks": 3,
+    "log": [
+      "found mug_2 at countertop_1 (5 engine actions)",
+      "take mug_2: 'ok'",
+      "heat mug_2: 'ok'",
+      "put mug_2 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1/trial_T20190907_222640_487432",
+    "task": "put a hot mug in coffeemachine",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 19,
+    "seeks": 2,
+    "log": [
+      "found mug_1 at fridge_1 (6 engine actions)",
+      "take mug_1: 'ok'",
+      "heat mug_1: 'ok'",
+      "put mug_1 in coffeemachine_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Mug-None-SideTable-21/trial_T20190909_090729_088825",
+    "task": "put a hot mug in sidetable",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": [
+      "found mug_1 at coffeemachine_1 (8 engine actions)",
+      "take mug_1: 'ok'",
+      "heat mug_1: 'ok'",
+      "put mug_1 in sidetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Plate-None-Cabinet-1/trial_T20190908_070946_578973",
+    "task": "put a hot plate in cabinet",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 36,
+    "seeks": 3,
+    "log": [
+      "found plate_3 at countertop_3 (8 engine actions)",
+      "take plate_3: 'ok'",
+      "heat plate_3: 'ok'",
+      "put plate_3 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Plate-None-DiningTable-28/trial_T20190908_001247_096796",
+    "task": "put a hot plate in diningtable",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 2,
+    "log": [
+      "found plate_1 at diningtable_1 (7 engine actions)",
+      "take plate_1: 'ok'",
+      "heat plate_1: 'ok'",
+      "put plate_1 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Potato-None-Fridge-11/trial_T20190909_011341_436523",
+    "task": "put a hot potato in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 29,
+    "seeks": 3,
+    "log": [
+      "found potato_1 at countertop_3 (3 engine actions)",
+      "take potato_1: 'ok'",
+      "heat potato_1: 'ok'",
+      "put potato_1 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Potato-None-Fridge-12/trial_T20190908_014451_271080",
+    "task": "put a hot potato in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found potato_2 at fridge_1 (1 engine actions)",
+      "take potato_2: 'ok'",
+      "heat potato_2: 'ok'",
+      "put potato_2 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Tomato-None-DiningTable-16/trial_T20190907_201243_698086",
+    "task": "heat some tomato and put it in diningtable",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 1,
+    "log": [
+      "found tomato_2 at garbagecan_1 (8 engine actions)",
+      "take tomato_2: 'ok'",
+      "heat tomato_2: 'ok'",
+      "put tomato_2 in diningtable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Tomato-None-Fridge-15/trial_T20190909_020200_054379",
+    "task": "heat some tomato and put it in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found tomato_2 at fridge_1 (1 engine actions)",
+      "take tomato_2: 'ok'",
+      "heat tomato_2: 'ok'",
+      "put tomato_2 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Tomato-None-Fridge-23/trial_T20190909_082320_103350",
+    "task": "heat some tomato and put it in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found tomato_4 at fridge_1 (1 engine actions)",
+      "take tomato_4: 'ok'",
+      "heat tomato_4: 'ok'",
+      "put tomato_4 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_heat_then_place_in_recep-Tomato-None-Fridge-24/trial_T20190908_033721_967359",
+    "task": "put a hot tomato in fridge",
+    "kind": "HEAT",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": [
+      "found tomato_3 at diningtable_1 (6 engine actions)",
+      "take tomato_3: 'ok'",
+      "heat tomato_3: 'ok'",
+      "put tomato_3 in fridge_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-AlarmClock-None-Dresser-305/trial_T20190907_165826_194855",
+    "task": "put two alarmclock in dresser",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 20,
+    "seeks": 3,
+    "log": [
+      "found alarmclock_3 at desk_1 (3 engine actions)",
+      "take alarmclock_3: 'ok'",
+      "put alarmclock_3 in dresser_1: 'ok'",
+      "found alarmclock_1 at desk_1 (1 engine actions)",
+      "take alarmclock_1: 'ok'",
+      "put alarmclock_1 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Book-None-Desk-302/trial_T20190906_181233_363875",
+    "task": "find two book and put them in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found book_3 at sidetable_1 (2 engine actions)",
+      "take book_3: 'ok'",
+      "put book_3 in desk_1: 'ok'",
+      "found book_2 at bed_1 (5 engine actions)",
+      "take book_2: 'ok'",
+      "put book_2 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Book-None-Desk-313/trial_T20190908_125930_920681",
+    "task": "put two book in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 3,
+    "log": [
+      "found book_2 at bed_1 (4 engine actions)",
+      "take book_2: 'ok'",
+      "put book_2 in desk_1: 'ok'",
+      "found book_1 at bed_1 (1 engine actions)",
+      "take book_1: 'ok'",
+      "put book_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Box-None-CoffeeTable-213/trial_T20190906_200927_069627",
+    "task": "put two box in coffeetable",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found box_3 at sofa_1 (1 engine actions)",
+      "take box_3: 'ok'",
+      "put box_3 in coffeetable_1: 'ok'",
+      "found box_2 at dresser_1 (6 engine actions)",
+      "take box_2: 'ok'",
+      "put box_2 in coffeetable_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CD-None-Drawer-304/trial_T20190907_230232_832893",
+    "task": "put two cd in drawer",
+    "kind": "TWO",
+    "won": false,
+    "env_steps": 12,
+    "seeks": 4,
+    "log": [
+      "found cd_3 at shelf_1 (1 engine actions)",
+      "take cd_3: 'ok'",
+      "put cd_3 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-Dresser-311/trial_T20190907_201917_045715",
+    "task": "put two creditcard in dresser",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found creditcard_2 at sidetable_1 (1 engine actions)",
+      "take creditcard_2: 'ok'",
+      "put creditcard_2 in dresser_1: 'ok'",
+      "found creditcard_1 at sidetable_1 (1 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in dresser_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-CreditCard-None-Safe-323/trial_T20190907_001129_214240",
+    "task": "put two creditcard in safe",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 33,
+    "seeks": 3,
+    "log": [
+      "found creditcard_1 at dresser_1 (5 engine actions)",
+      "take creditcard_1: 'ok'",
+      "put creditcard_1 in safe_1: 'ok'",
+      "found creditcard_4 at drawer_10 (4 engine actions)",
+      "take creditcard_4: 'ok'",
+      "put creditcard_4 in safe_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Glassbottle-None-Shelf-1/trial_T20190907_122204_941737",
+    "task": "find two glassbottle and put them in shelf",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found glassbottle_4 at sinkbasin_1 (6 engine actions)",
+      "take glassbottle_4: 'ok'",
+      "put glassbottle_4 in shelf_1: 'ok'",
+      "found glassbottle_3 at sinkbasin_1 (1 engine actions)",
+      "take glassbottle_3: 'ok'",
+      "put glassbottle_3 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Knife-None-Drawer-18/trial_T20190907_065232_689984",
+    "task": "find two knife and put them in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 31,
+    "seeks": 3,
+    "log": [
+      "found knife_2 at diningtable_1 (8 engine actions)",
+      "take knife_2: 'ok'",
+      "put knife_2 in drawer_1: 'ok'",
+      "found knife_1 at diningtable_1 (1 engine actions)",
+      "take knife_1: 'ok'",
+      "put knife_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Newspaper-None-Drawer-224/trial_T20190911_101248_326533",
+    "task": "put two newspaper in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found newspaper_1 at sofa_1 (1 engine actions)",
+      "take newspaper_1: 'ok'",
+      "put newspaper_1 in drawer_1: 'ok'",
+      "found newspaper_2 at dresser_1 (8 engine actions)",
+      "take newspaper_2: 'ok'",
+      "put newspaper_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Pan-None-CounterTop-14/trial_T20190907_012519_974044",
+    "task": "find two pan and put them in countertop",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found pan_2 at stoveburner_4 (2 engine actions)",
+      "take pan_2: 'ok'",
+      "put pan_2 in countertop_1: 'ok'",
+      "found pan_1 at stoveburner_2 (3 engine actions)",
+      "take pan_1: 'ok'",
+      "put pan_1 in countertop_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-RemoteControl-None-Ottoman-203/trial_T20190906_182952_858723",
+    "task": "find two remotecontrol and put them in ottoman",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 3,
+    "log": [
+      "found remotecontrol_2 at sofa_1 (1 engine actions)",
+      "take remotecontrol_2: 'ok'",
+      "put remotecontrol_2 in ottoman_1: 'ok'",
+      "found remotecontrol_1 at coffeetable_1 (5 engine actions)",
+      "take remotecontrol_1: 'ok'",
+      "put remotecontrol_1 in ottoman_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-GarbageCan-418/trial_T20190909_055538_380023",
+    "task": "put two soapbar in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found soapbar_3 at sinkbasin_1 (4 engine actions)",
+      "take soapbar_3: 'ok'",
+      "put soapbar_3 in garbagecan_1: 'ok'",
+      "found soapbar_2 at sinkbasin_1 (1 engine actions)",
+      "take soapbar_2: 'ok'",
+      "put soapbar_2 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SoapBar-None-GarbageCan-418/trial_T20190909_055649_717880",
+    "task": "find two soapbar and put them in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 15,
+    "seeks": 2,
+    "log": [
+      "found soapbar_1 at sinkbasin_1 (4 engine actions)",
+      "take soapbar_1: 'ok'",
+      "put soapbar_1 in garbagecan_1: 'ok'",
+      "found soapbar_3 at countertop_1 (5 engine actions)",
+      "take soapbar_3: 'ok'",
+      "put soapbar_3 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Spatula-None-Drawer-13/trial_T20190908_183331_203888",
+    "task": "put two spatula in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 41,
+    "seeks": 4,
+    "log": [
+      "found spatula_2 at countertop_2 (7 engine actions)",
+      "take spatula_2: 'ok'",
+      "put spatula_2 in drawer_1: 'ok'",
+      "found spatula_1 at countertop_1 (2 engine actions)",
+      "take spatula_1: 'ok'",
+      "put spatula_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-Cabinet-407/trial_T20190907_144556_144188",
+    "task": "put two spraybottle in cabinet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_2 at toilet_1 (3 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in cabinet_1: 'ok'",
+      "found spraybottle_1 at countertop_1 (6 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-GarbageCan-419/trial_T20190908_164236_518264",
+    "task": "put two spraybottle in garbagecan",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_2 at sidetable_1 (5 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in garbagecan_1: 'ok'",
+      "found spraybottle_1 at sidetable_1 (1 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in garbagecan_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-Toilet-402/trial_T20190910_222914_814642",
+    "task": "find two spraybottle and put them in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found spraybottle_1 at garbagecan_1 (2 engine actions)",
+      "take spraybottle_1: 'ok'",
+      "put spraybottle_1 in toilet_1: 'ok'",
+      "found spraybottle_2 at cabinet_3 (4 engine actions)",
+      "take spraybottle_2: 'ok'",
+      "put spraybottle_2 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-SprayBottle-None-Toilet-429/trial_T20190907_033843_707544",
+    "task": "put two spraybottle in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found spraybottle_4 at shelf_3 (5 engine actions)",
+      "take spraybottle_4: 'ok'",
+      "put spraybottle_4 in toilet_1: 'ok'",
+      "found spraybottle_3 at shelf_3 (1 engine actions)",
+      "take spraybottle_3: 'ok'",
+      "put spraybottle_3 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-TissueBox-None-Toilet-426/trial_T20190909_044602_338962",
+    "task": "find two tissuebox and put them in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 30,
+    "seeks": 3,
+    "log": [
+      "found tissuebox_4 at drawer_5 (3 engine actions)",
+      "take tissuebox_4: 'ok'",
+      "put tissuebox_4 in toilet_1: 'ok'",
+      "found tissuebox_3 at countertop_1 (6 engine actions)",
+      "take tissuebox_3: 'ok'",
+      "put tissuebox_3 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Drawer-423/trial_T20190907_111251_461099",
+    "task": "put two toiletpaper in drawer",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 2,
+    "log": [
+      "found toiletpaper_2 at toilet_1 (3 engine actions)",
+      "take toiletpaper_2: 'ok'",
+      "put toiletpaper_2 in drawer_1: 'ok'",
+      "found toiletpaper_1 at toilet_1 (1 engine actions)",
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-ToiletPaper-None-Toilet-408/trial_T20190909_080302_174780",
+    "task": "put two toiletpaper in toilet",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 14,
+    "seeks": 2,
+    "log": [
+      "found toiletpaper_4 at toiletpaperhanger_1 (2 engine actions)",
+      "take toiletpaper_4: 'ok'",
+      "put toiletpaper_4 in toilet_1: 'ok'",
+      "found toiletpaper_1 at garbagecan_1 (6 engine actions)",
+      "take toiletpaper_1: 'ok'",
+      "put toiletpaper_1 in toilet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Vase-None-Desk-204/trial_T20190906_181531_703961",
+    "task": "put two vase in desk",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 2,
+    "log": [
+      "found vase_4 at tvstand_1 (1 engine actions)",
+      "take vase_4: 'ok'",
+      "put vase_4 in desk_1: 'ok'",
+      "found vase_2 at shelf_1 (6 engine actions)",
+      "take vase_2: 'ok'",
+      "put vase_2 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_two_obj_and_place-Watch-None-Dresser-205/trial_T20190907_182211_592010",
+    "task": "put two watch in dresser",
+    "kind": "TWO",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 3,
+    "log": [
+      "found watch_2 at diningtable_1 (4 engine actions)",
+      "take watch_2: 'ok'",
+      "put watch_2 in dresser_1: 'ok'",
+      "found watch_1 at diningtable_1 (1 engine actions)",
+      "take watch_1: 'ok'",
+      "put watch_1 in dresser_1: 'ok'"
+    ]
+  }
+]

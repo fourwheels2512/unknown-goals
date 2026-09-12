@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unknown-goals"
+version = "0.5.0"
+description = "Benchmark kit for the Unknown Goals evidence-based reasoning engine: scenario generator, scripted and belief-space baselines, LLM comparison harness, independent proof checker, decision replayer."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Kiran Nayudu" }]
+keywords = ["robotics", "object search", "benchmark", "proof checking",
+            "epistemic reasoning", "reproducibility"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "pydantic>=2.7",
+  "networkx>=3.3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/fourwheels2512/unknown-goals"
+Repository = "https://github.com/fourwheels2512/unknown-goals"
+
+[project.scripts]
+unknown-goals-check = "unknown_goals.checker:main"
+unknown-goals-replay = "unknown_goals.replay:main"
+unknown-goals-verify = "unknown_goals.verify:main"
+
+[tool.setuptools]
+packages = [
+  "unknown_goals",
+  "unknown_goals.core",
+  "unknown_goals.models",
+  "unknown_goals.storage",
+  "unknown_goals.simulation",
+  "unknown_goals.execution",
+  "unknown_goals.llm",
+  "baselines",
+]
+
+[tool.setuptools.package-data]
+unknown_goals = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

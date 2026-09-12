@@ -1,0 +1,4055 @@
+{
+ "policy": "exact belief-space planner (finite-horizon DP over the filter's belief with the true sensor model)",
+ "config_version": "0.2.0",
+ "seeds": [
+  20000,
+  20001,
+  20002,
+  20003,
+  20004,
+  20005,
+  20006,
+  20007,
+  20008,
+  20009,
+  20010,
+  20011
+ ],
+ "levels": [
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "budgets": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  8
+ ],
+ "results": {
+  "2": {
+   "n": 60,
+   "success": 0.4,
+   "correct": 0.4,
+   "correct_wilson95": [
+    0.2857,
+    0.5263
+   ],
+   "wrong": 0,
+   "mean_steps": 1.683,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 0.1667,
+     "correct": 0.1667,
+     "correct_wilson95": [
+      0.047,
+      0.448
+     ],
+     "wrong": 0,
+     "mean_steps": 1.917
+    },
+    "4": {
+     "n": 12,
+     "success": 0.3333,
+     "correct": 0.3333,
+     "correct_wilson95": [
+      0.1381,
+      0.6094
+     ],
+     "wrong": 0,
+     "mean_steps": 1.833
+    },
+    "5": {
+     "n": 12,
+     "success": 0.4167,
+     "correct": 0.4167,
+     "correct_wilson95": [
+      0.1933,
+      0.6805
+     ],
+     "wrong": 0,
+     "mean_steps": 1.667
+    },
+    "6": {
+     "n": 12,
+     "success": 0.0833,
+     "correct": 0.0833,
+     "correct_wilson95": [
+      0.0149,
+      0.3539
+     ],
+     "wrong": 0,
+     "mean_steps": 1.917
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 2,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  },
+  "3": {
+   "n": 60,
+   "success": 0.55,
+   "correct": 0.55,
+   "correct_wilson95": [
+    0.4249,
+    0.6691
+   ],
+   "wrong": 0,
+   "mean_steps": 2.283,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 0.6667,
+     "correct": 0.6667,
+     "correct_wilson95": [
+      0.3906,
+      0.8619
+     ],
+     "wrong": 0,
+     "mean_steps": 2.75
+    },
+    "4": {
+     "n": 12,
+     "success": 0.5,
+     "correct": 0.5,
+     "correct_wilson95": [
+      0.2538,
+      0.7462
+     ],
+     "wrong": 0,
+     "mean_steps": 2.5
+    },
+    "5": {
+     "n": 12,
+     "success": 0.4167,
+     "correct": 0.4167,
+     "correct_wilson95": [
+      0.1933,
+      0.6805
+     ],
+     "wrong": 0,
+     "mean_steps": 2.25
+    },
+    "6": {
+     "n": 12,
+     "success": 0.1667,
+     "correct": 0.1667,
+     "correct_wilson95": [
+      0.047,
+      0.448
+     ],
+     "wrong": 0,
+     "mean_steps": 2.833
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  },
+  "4": {
+   "n": 60,
+   "success": 0.7667,
+   "correct": 0.7667,
+   "correct_wilson95": [
+    0.6456,
+    0.8556
+   ],
+   "wrong": 0,
+   "mean_steps": 2.733,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "4": {
+     "n": 12,
+     "success": 0.9167,
+     "correct": 0.9167,
+     "correct_wilson95": [
+      0.6461,
+      0.9851
+     ],
+     "wrong": 0,
+     "mean_steps": 3.0
+    },
+    "5": {
+     "n": 12,
+     "success": 0.6667,
+     "correct": 0.6667,
+     "correct_wilson95": [
+      0.3906,
+      0.8619
+     ],
+     "wrong": 0,
+     "mean_steps": 2.833
+    },
+    "6": {
+     "n": 12,
+     "success": 0.25,
+     "correct": 0.25,
+     "correct_wilson95": [
+      0.0889,
+      0.5323
+     ],
+     "wrong": 0,
+     "mean_steps": 3.667
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  },
+  "5": {
+   "n": 60,
+   "success": 0.8833,
+   "correct": 0.8833,
+   "correct_wilson95": [
+    0.7782,
+    0.9423
+   ],
+   "wrong": 0,
+   "mean_steps": 2.967,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "4": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "5": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.167
+    },
+    "6": {
+     "n": 12,
+     "success": 0.4167,
+     "correct": 0.4167,
+     "correct_wilson95": [
+      0.1933,
+      0.6805
+     ],
+     "wrong": 0,
+     "mean_steps": 4.417
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  },
+  "6": {
+   "n": 60,
+   "success": 0.95,
+   "correct": 0.95,
+   "correct_wilson95": [
+    0.863,
+    0.9829
+   ],
+   "wrong": 0,
+   "mean_steps": 3.083,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "4": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "5": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.167
+    },
+    "6": {
+     "n": 12,
+     "success": 0.75,
+     "correct": 0.75,
+     "correct_wilson95": [
+      0.4677,
+      0.9111
+     ],
+     "wrong": 0,
+     "mean_steps": 5.0
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": false,
+     "found_at": null,
+     "correct": false,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  },
+  "8": {
+   "n": 60,
+   "success": 1.0,
+   "correct": 1.0,
+   "correct_wilson95": [
+    0.9398,
+    1.0
+   ],
+   "wrong": 0,
+   "mean_steps": 3.133,
+   "per_level": {
+    "2": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 1.083
+    },
+    "3": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "4": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.083
+    },
+    "5": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 3.167
+    },
+    "6": {
+     "n": 12,
+     "success": 1.0,
+     "correct": 1.0,
+     "correct_wilson95": [
+      0.7575,
+      1.0
+     ],
+     "wrong": 0,
+     "mean_steps": 5.25
+    }
+   },
+   "episodes": [
+    {
+     "seed": 20000,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20001,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20003,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20004,
+     "truth": "carrier",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20006,
+     "truth": "carrier",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20010,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 2
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 2
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20005,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 1,
+     "level": 3
+    },
+    {
+     "seed": 20006,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20009,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 3
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 3
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 3,
+     "level": 3
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 4
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20007,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20008,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 1,
+     "level": 4
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 2,
+     "level": 4
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 4
+    },
+    {
+     "seed": 20011,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 3,
+     "level": 4
+    },
+    {
+     "seed": 20000,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20002,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 2,
+     "level": 5
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "storage",
+     "success": true,
+     "found_at": "storage",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 4,
+     "level": 5
+    },
+    {
+     "seed": 20009,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20010,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 5
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 1,
+     "level": 5
+    },
+    {
+     "seed": 20000,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 7,
+     "level": 6
+    },
+    {
+     "seed": 20001,
+     "truth": "transport",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 7,
+     "level": 6
+    },
+    {
+     "seed": 20002,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20003,
+     "truth": "transport",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20004,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20005,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 5,
+     "level": 6
+    },
+    {
+     "seed": 20006,
+     "truth": "occluded",
+     "ground_truth": "bay_1",
+     "success": true,
+     "found_at": "bay_1",
+     "correct": true,
+     "steps": 4,
+     "level": 6
+    },
+    {
+     "seed": 20007,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20008,
+     "truth": "transport",
+     "ground_truth": "bay_3",
+     "success": true,
+     "found_at": "bay_3",
+     "correct": true,
+     "steps": 7,
+     "level": 6
+    },
+    {
+     "seed": 20009,
+     "truth": "transport",
+     "ground_truth": "bay_2",
+     "success": true,
+     "found_at": "bay_2",
+     "correct": true,
+     "steps": 6,
+     "level": 6
+    },
+    {
+     "seed": 20010,
+     "truth": "occluded",
+     "ground_truth": "bay_4",
+     "success": true,
+     "found_at": "bay_4",
+     "correct": true,
+     "steps": 3,
+     "level": 6
+    },
+    {
+     "seed": 20011,
+     "truth": "carrier_kept",
+     "ground_truth": "workbench_7",
+     "success": true,
+     "found_at": "workbench_7",
+     "correct": true,
+     "steps": 1,
+     "level": 6
+    }
+   ]
+  }
+ }
+}

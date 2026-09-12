@@ -1,0 +1,208 @@
+{
+  "checks": {
+    "nav_server_up": true,
+    "no_server_unconfigured": true,
+    "configure": true,
+    "goal_rejected_inactive": true,
+    "activate": true,
+    "state_active": true,
+    "ingest_refused_no_episode": true,
+    "find_4_of_4_correct": true,
+    "visits_match_feedback_all": true,
+    "proof_present_all": true,
+    "grasp_pose_all": true,
+    "tip_staging": true,
+    "tip_accepted": true,
+    "tip_not_committed": true,
+    "tip_verified": true,
+    "tip_visits_match_feedback": true,
+    "query_agrees": true,
+    "deactivate": true,
+    "goal_rejected_after_deactivate": true
+  },
+  "episodes": [
+    {
+      "index": 0,
+      "truth": "bay_3",
+      "accepted": true,
+      "status_code": 4,
+      "found": true,
+      "entity_id": "target_box",
+      "location": "bay_3",
+      "visits": 2,
+      "proof_len": 136,
+      "grasp_pose": [
+        10.0,
+        10.0
+      ],
+      "grasp_frame": "odom",
+      "wall_s": 29.0,
+      "feedback": {
+        "navigating": 2,
+        "verifying": 2,
+        "sequence": [
+          "bay_4",
+          "bay_3"
+        ]
+      },
+      "node_log": [
+        "[cognition]: visit bay_4: seen=['distractor_box_b']",
+        "[cognition]: visit bay_3: seen=['target_box']"
+      ],
+      "correct": true,
+      "visits_match_feedback": true,
+      "grasp_pose_ok": true
+    },
+    {
+      "index": 1,
+      "truth": "bay_1",
+      "accepted": true,
+      "status_code": 4,
+      "found": true,
+      "entity_id": "target_box",
+      "location": "bay_1",
+      "visits": 4,
+      "proof_len": 136,
+      "grasp_pose": [
+        -10.0,
+        10.0
+      ],
+      "grasp_frame": "odom",
+      "wall_s": 64.7,
+      "feedback": {
+        "navigating": 4,
+        "verifying": 4,
+        "sequence": [
+          "bay_4",
+          "bay_3",
+          "bay_2",
+          "bay_1"
+        ]
+      },
+      "node_log": [
+        "[cognition]: visit bay_4: seen=['distractor_box_b']",
+        "[cognition]: visit bay_3: seen=[]",
+        "[cognition]: visit bay_2: seen=[]"
+      ],
+      "correct": true,
+      "visits_match_feedback": true,
+      "grasp_pose_ok": true
+    },
+    {
+      "index": 2,
+      "truth": "bay_4",
+      "accepted": true,
+      "status_code": 4,
+      "found": true,
+      "entity_id": "target_box",
+      "location": "bay_4",
+      "visits": 1,
+      "proof_len": 136,
+      "grasp_pose": [
+        10.0,
+        -10.0
+      ],
+      "grasp_frame": "odom",
+      "wall_s": 19.4,
+      "feedback": {
+        "navigating": 1,
+        "verifying": 1,
+        "sequence": [
+          "bay_4"
+        ]
+      },
+      "node_log": [],
+      "correct": true,
+      "visits_match_feedback": true,
+      "grasp_pose_ok": true
+    },
+    {
+      "index": 3,
+      "truth": "bay_2",
+      "accepted": true,
+      "status_code": 4,
+      "found": true,
+      "entity_id": "target_box",
+      "location": "bay_2",
+      "visits": 3,
+      "proof_len": 136,
+      "grasp_pose": [
+        -10.0,
+        -10.0
+      ],
+      "grasp_frame": "odom",
+      "wall_s": 34.3,
+      "feedback": {
+        "navigating": 3,
+        "verifying": 3,
+        "sequence": [
+          "bay_4",
+          "bay_3",
+          "bay_2"
+        ]
+      },
+      "node_log": [
+        "[cognition]: visit bay_4: seen=['distractor_box_b']",
+        "[cognition]: visit bay_3: seen=[]",
+        "[cognition]: visit bay_2: seen=['target_box']"
+      ],
+      "correct": true,
+      "visits_match_feedback": true,
+      "grasp_pose_ok": true
+    }
+  ],
+  "stack": "gz-sim Harmonic 8.15 + ROS 2 Jazzy; robot_mind_ros cognition_node (LifecycleNode) + demo_driver_node (nav2_msgs/NavigateToPose server over /cmd_vel, /scout/odom) + frustum_sensor_node; ros_gz parameter_bridge + name-preserving pose shim; no robot teleports; results read from message fields",
+  "state_after_activate": "active",
+  "ingest_no_episode": {
+    "accepted": false,
+    "claim_id": "",
+    "reject_reason": "no live episode to ingest into"
+  },
+  "false_tip": {
+    "truth": "bay_2",
+    "tip": "bay_4",
+    "tip_ingest": {
+      "accepted": true,
+      "claim_id": "ros_ros2_findobject_baseline_target_box_00016",
+      "reject_reason": "",
+      "feedback_events_before_tip": 1
+    },
+    "accepted": true,
+    "status_code": 4,
+    "found": true,
+    "entity_id": "target_box",
+    "location": "bay_2",
+    "visits": 4,
+    "proof_len": 149,
+    "grasp_pose": [
+      -10.0,
+      -10.0
+    ],
+    "grasp_frame": "odom",
+    "wall_s": 61.0,
+    "feedback": {
+      "navigating": 4,
+      "verifying": 4,
+      "sequence": [
+        "bay_4",
+        "bay_3",
+        "bay_4",
+        "bay_2"
+      ]
+    },
+    "node_log": [
+      "[cognition]: visit bay_4: seen=['distractor_box_b']",
+      "[cognition]: external claim ingested: target_box LOCATED_AT bay_4 @0.8999999761581421 from tipster",
+      "[cognition]: visit bay_3: seen=[]",
+      "[cognition]: visit bay_4: seen=['distractor_box_b']",
+      "[cognition]: visit bay_2: seen=['target_box']"
+    ]
+  },
+  "query_after_tip": {
+    "resolved_location": "bay_2",
+    "hypothesis_locations": [],
+    "hypothesis_probabilities": [],
+    "missing_variables": []
+  },
+  "all_pass": true
+}

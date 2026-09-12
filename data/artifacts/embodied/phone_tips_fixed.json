@@ -1,0 +1,3315 @@
+{
+  "dry_run": false,
+  "dry_run_note": "",
+  "source": "data/phone",
+  "mode": "video",
+  "tip": {
+    "confidence": 0.75,
+    "status": "REPORTED",
+    "subject": "unknown:<class>"
+  },
+  "detector": {
+    "weights": "/root/yolo/yolov8x-worldv2.pt",
+    "imgsz": 1088,
+    "vocab": "phone",
+    "detect_conf": 0.02,
+    "claim_min_conf": 0.05,
+    "frame_stride": 10,
+    "iou_gate": null,
+    "frames_detected": 517
+  },
+  "manifest_sha256": "5f7a330086a216fb67981859cda69fd4e86e61a19dc3de29f7875b2054fb24c5",
+  "tips_sha256": "7300a711f6b1562d4b1a39cc493dafbdb31275fc069f4762c7f5052afb32c6a4",
+  "engine_variant": {
+    "sighting_resolves_at": 0.9,
+    "note": "engine changed AFTER the pre-registered run (weak sightings); see phone_find.py"
+  },
+  "seeds_missing_footage": [],
+  "by_arm_cell": {
+    "engine/true": {
+      "n": 18,
+      "correct": 14,
+      "wrong": 4,
+      "miss": 0,
+      "visits": 92,
+      "committed_or_belief_correct": 14,
+      "mean_visits": 5.11
+    },
+    "sweep/true": {
+      "n": 18,
+      "correct": 5,
+      "wrong": 13,
+      "miss": 0,
+      "visits": 30,
+      "mean_visits": 1.67
+    },
+    "tipfollow/true": {
+      "n": 18,
+      "correct": 16,
+      "wrong": 2,
+      "miss": 0,
+      "visits": 22,
+      "mean_visits": 1.22
+    },
+    "engine/false": {
+      "n": 18,
+      "correct": 14,
+      "wrong": 3,
+      "miss": 1,
+      "visits": 106,
+      "committed_or_belief_correct": 15,
+      "mean_visits": 5.89
+    },
+    "sweep/false": {
+      "n": 18,
+      "correct": 7,
+      "wrong": 11,
+      "miss": 0,
+      "visits": 33,
+      "mean_visits": 1.83
+    },
+    "tipfollow/false": {
+      "n": 18,
+      "correct": 4,
+      "wrong": 14,
+      "miss": 0,
+      "visits": 34,
+      "mean_visits": 1.89
+    }
+  },
+  "rows": [
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2653,
+        "zone3": 0.2132,
+        "zone4": 0.0,
+        "zone5": 0.9317,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 10.9,
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2653,
+        "zone3": 0.2132,
+        "zone4": 0.0,
+        "zone5": 0.9317,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2653,
+        "zone3": 0.2132,
+        "zone4": 0.0,
+        "zone5": 0.9317,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.9161,
+        "zone2": 0.2847,
+        "zone3": 0.2799,
+        "zone4": 0.0,
+        "zone5": 0.0561,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.9161,
+        "zone2": 0.2847,
+        "zone3": 0.2799,
+        "zone4": 0.0,
+        "zone5": 0.0561,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.9161,
+        "zone2": 0.2847,
+        "zone3": 0.2799,
+        "zone4": 0.0,
+        "zone5": 0.0561,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 4,
+      "visited": [
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5898,
+        "zone3": 0.0,
+        "zone4": 0.7763,
+        "zone5": 0.0,
+        "zone6": 0.9808
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5898,
+        "zone3": 0.0,
+        "zone4": 0.7763,
+        "zone5": 0.0,
+        "zone6": 0.9808
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone3",
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5898,
+        "zone3": 0.0,
+        "zone4": 0.7763,
+        "zone5": 0.0,
+        "zone6": 0.9808
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1",
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.495,
+        "zone3": 0.5385,
+        "zone4": 0.8138,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.495,
+        "zone3": 0.5385,
+        "zone4": 0.8138,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.495,
+        "zone3": 0.5385,
+        "zone4": 0.8138,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7451,
+        "zone3": 0.5514,
+        "zone4": 0.2158,
+        "zone5": 0.0323,
+        "zone6": 0.081
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7451,
+        "zone3": 0.5514,
+        "zone4": 0.2158,
+        "zone5": 0.0323,
+        "zone6": 0.081
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7451,
+        "zone3": 0.5514,
+        "zone4": 0.2158,
+        "zone5": 0.0323,
+        "zone6": 0.081
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4145,
+        "zone3": 0.9036,
+        "zone4": 0.4926,
+        "zone5": 0.0,
+        "zone6": 0.0218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4145,
+        "zone3": 0.9036,
+        "zone4": 0.4926,
+        "zone5": 0.0,
+        "zone6": 0.0218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4145,
+        "zone3": 0.9036,
+        "zone4": 0.4926,
+        "zone5": 0.0,
+        "zone6": 0.0218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0226,
+        "zone2": 0.0,
+        "zone3": 0.5704,
+        "zone4": 0.0334,
+        "zone5": 0.0228,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 10.4,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0226,
+        "zone2": 0.0,
+        "zone3": 0.5704,
+        "zone4": 0.0334,
+        "zone5": 0.0228,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 4,
+      "visited": [
+        "zone5",
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0226,
+        "zone2": 0.0,
+        "zone3": 0.5704,
+        "zone4": 0.0334,
+        "zone5": 0.0228,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8795,
+        "zone2": 0.7201,
+        "zone3": 0.3318,
+        "zone4": 0.1305,
+        "zone5": 0.0492,
+        "zone6": 0.032
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 11,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8795,
+        "zone2": 0.7201,
+        "zone3": 0.3318,
+        "zone4": 0.1305,
+        "zone5": 0.0492,
+        "zone6": 0.032
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone6",
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8795,
+        "zone2": 0.7201,
+        "zone3": 0.3318,
+        "zone4": 0.1305,
+        "zone5": 0.0492,
+        "zone6": 0.032
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.2178,
+        "zone2": 0.91,
+        "zone3": 0.0962,
+        "zone4": 0.0,
+        "zone5": 0.0256,
+        "zone6": 0.7995
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.2178,
+        "zone2": 0.91,
+        "zone3": 0.0962,
+        "zone4": 0.0,
+        "zone5": 0.0256,
+        "zone6": 0.7995
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.2178,
+        "zone2": 0.91,
+        "zone3": 0.0962,
+        "zone4": 0.0,
+        "zone5": 0.0256,
+        "zone6": 0.7995
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone4"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0617,
+        "zone2": 0.2177,
+        "zone3": 0.5185,
+        "zone4": 0.637,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 11,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0617,
+        "zone2": 0.2177,
+        "zone3": 0.5185,
+        "zone4": 0.637,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone6",
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0617,
+        "zone2": 0.2177,
+        "zone3": 0.5185,
+        "zone4": 0.637,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3",
+        "zone5"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.4901,
+        "zone2": 0.0346,
+        "zone3": 0.6033,
+        "zone4": 0.1421,
+        "zone5": 0.6497,
+        "zone6": 0.0693
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.4901,
+        "zone2": 0.0346,
+        "zone3": 0.6033,
+        "zone4": 0.1421,
+        "zone5": 0.6497,
+        "zone6": 0.0693
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.4901,
+        "zone2": 0.0346,
+        "zone3": 0.6033,
+        "zone4": 0.1421,
+        "zone5": 0.6497,
+        "zone6": 0.0693
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.048,
+        "zone3": 0.7327,
+        "zone4": 0.918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.048,
+        "zone3": 0.7327,
+        "zone4": 0.918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone2",
+        "zone1",
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.048,
+        "zone3": 0.7327,
+        "zone4": 0.918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3",
+        "zone2",
+        "zone4"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0598,
+        "zone3": 0.5443,
+        "zone4": 0.8116,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 10.4,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0598,
+        "zone3": 0.5443,
+        "zone4": 0.8116,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0598,
+        "zone3": 0.5443,
+        "zone4": 0.8116,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8003,
+        "zone3": 0.1334,
+        "zone4": 0.073,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 23,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8003,
+        "zone3": 0.1334,
+        "zone4": 0.073,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": true,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8003,
+        "zone3": 0.1334,
+        "zone4": 0.073,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.1431,
+        "zone2": 0.6885,
+        "zone3": 0.0859,
+        "zone4": 0.0382,
+        "zone5": 0.3084,
+        "zone6": 0.9777
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.1431,
+        "zone2": 0.6885,
+        "zone3": 0.0859,
+        "zone4": 0.0382,
+        "zone5": 0.3084,
+        "zone6": 0.9777
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.1431,
+        "zone2": 0.6885,
+        "zone3": 0.0859,
+        "zone4": 0.0382,
+        "zone5": 0.3084,
+        "zone6": 0.9777
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone2",
+        "zone1",
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0811,
+        "zone2": 0.1425,
+        "zone3": 0.2447,
+        "zone4": 0.7933,
+        "zone5": 0.5743,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 23,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0811,
+        "zone2": 0.1425,
+        "zone3": 0.2447,
+        "zone4": 0.7933,
+        "zone5": 0.5743,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0811,
+        "zone2": 0.1425,
+        "zone3": 0.2447,
+        "zone4": 0.7933,
+        "zone5": 0.5743,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3",
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8575,
+        "zone2": 0.0444,
+        "zone3": 0.5491,
+        "zone4": 0.038,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8575,
+        "zone2": 0.0444,
+        "zone3": 0.5491,
+        "zone4": 0.038,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone5",
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8575,
+        "zone2": 0.0444,
+        "zone3": 0.5491,
+        "zone4": 0.038,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone2",
+        "zone1",
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4061,
+        "zone3": 0.8973,
+        "zone4": 0.3719,
+        "zone5": 0.034,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4061,
+        "zone3": 0.8973,
+        "zone4": 0.3719,
+        "zone5": 0.034,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.4061,
+        "zone3": 0.8973,
+        "zone4": 0.3719,
+        "zone5": 0.034,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0426,
+        "zone3": 0.2696,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 11.2,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0426,
+        "zone3": 0.2696,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 4,
+      "visited": [
+        "zone4",
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0426,
+        "zone3": 0.2696,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0455,
+        "zone2": 0.7652,
+        "zone3": 0.4333,
+        "zone4": 0.0248,
+        "zone5": 0.0571,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 42,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0455,
+        "zone2": 0.7652,
+        "zone3": 0.4333,
+        "zone4": 0.0248,
+        "zone5": 0.0571,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0455,
+        "zone2": 0.7652,
+        "zone3": 0.4333,
+        "zone4": 0.0248,
+        "zone5": 0.0571,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6397,
+        "zone3": 0.9489,
+        "zone4": 0.3978,
+        "zone5": 0.2178,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6397,
+        "zone3": 0.9489,
+        "zone4": 0.3978,
+        "zone5": 0.2178,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6397,
+        "zone3": 0.9489,
+        "zone4": 0.3978,
+        "zone5": 0.2178,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3145,
+        "zone3": 0.9027,
+        "zone4": 0.7059,
+        "zone5": 0.4762,
+        "zone6": 0.0502
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 42,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3145,
+        "zone3": 0.9027,
+        "zone4": 0.7059,
+        "zone5": 0.4762,
+        "zone6": 0.0502
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": true,
+      "tip_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3145,
+        "zone3": 0.9027,
+        "zone4": 0.7059,
+        "zone5": 0.4762,
+        "zone6": 0.0502
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.9675,
+        "zone2": 0.4346,
+        "zone3": 0.2631,
+        "zone4": 0.6668,
+        "zone5": 0.0,
+        "zone6": 0.096
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.9675,
+        "zone2": 0.4346,
+        "zone3": 0.2631,
+        "zone4": 0.6668,
+        "zone5": 0.0,
+        "zone6": 0.096
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.9675,
+        "zone2": 0.4346,
+        "zone3": 0.2631,
+        "zone4": 0.6668,
+        "zone5": 0.0,
+        "zone6": 0.096
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1974,
+        "zone3": 0.7112,
+        "zone4": 0.5168,
+        "zone5": 0.0,
+        "zone6": 0.7373
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1974,
+        "zone3": 0.7112,
+        "zone4": 0.5168,
+        "zone5": 0.0,
+        "zone6": 0.7373
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1974,
+        "zone3": 0.7112,
+        "zone4": 0.5168,
+        "zone5": 0.0,
+        "zone6": 0.7373
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone4",
+        "zone5"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0554,
+        "zone3": 0.3174,
+        "zone4": 0.0,
+        "zone5": 0.9051,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 10.8,
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0554,
+        "zone3": 0.3174,
+        "zone4": 0.0,
+        "zone5": 0.9051,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone4",
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0554,
+        "zone3": 0.3174,
+        "zone4": 0.0,
+        "zone5": 0.9051,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8871,
+        "zone2": 0.4485,
+        "zone3": 0.1587,
+        "zone4": 0.0778,
+        "zone5": 0.0687,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 99,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8871,
+        "zone2": 0.4485,
+        "zone3": 0.1587,
+        "zone4": 0.0778,
+        "zone5": 0.0687,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8871,
+        "zone2": 0.4485,
+        "zone3": 0.1587,
+        "zone4": 0.0778,
+        "zone5": 0.0687,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone5",
+        "zone6",
+        "zone4",
+        "zone3"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7295,
+        "zone3": 0.9555,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7295,
+        "zone3": 0.9555,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": false,
+      "tip_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone5",
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7295,
+        "zone3": 0.9555,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6553,
+        "zone3": 0.8694,
+        "zone4": 0.7425,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 99,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6553,
+        "zone3": 0.8694,
+        "zone4": 0.7425,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6553,
+        "zone3": 0.8694,
+        "zone4": 0.7425,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8286,
+        "zone2": 0.0607,
+        "zone3": 0.3896,
+        "zone4": 0.228,
+        "zone5": 0.0427,
+        "zone6": 0.7597
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.8286,
+        "zone2": 0.0607,
+        "zone3": 0.3896,
+        "zone4": 0.228,
+        "zone5": 0.0427,
+        "zone6": 0.7597
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8286,
+        "zone2": 0.0607,
+        "zone3": 0.3896,
+        "zone4": 0.228,
+        "zone5": 0.0427,
+        "zone6": 0.7597
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone4"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1389,
+        "zone3": 0.7977,
+        "zone4": 0.9349,
+        "zone5": 0.2572,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1389,
+        "zone3": 0.7977,
+        "zone4": 0.9349,
+        "zone5": 0.2572,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": true,
+      "tip_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1389,
+        "zone3": 0.7977,
+        "zone4": 0.9349,
+        "zone5": 0.2572,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3795,
+        "zone3": 0.9062,
+        "zone4": 0.0673,
+        "zone5": 0.0653,
+        "zone6": 0.0434
+      },
+      "unresolved_labels": 0,
+      "wall_s": 9.8,
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3795,
+        "zone3": 0.9062,
+        "zone4": 0.0673,
+        "zone5": 0.0653,
+        "zone6": 0.0434
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "tipfollow",
+      "truth_zone": "zone3",
+      "tip_true": true,
+      "tip_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3795,
+        "zone3": 0.9062,
+        "zone4": 0.0673,
+        "zone5": 0.0653,
+        "zone6": 0.0434
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone6"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3452,
+        "zone3": 0.2325,
+        "zone4": 0.0318,
+        "zone5": 0.0735,
+        "zone6": 0.8807
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 137,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3452,
+        "zone3": 0.2325,
+        "zone4": 0.0318,
+        "zone5": 0.0735,
+        "zone6": 0.8807
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Book",
+      "arm": "tipfollow",
+      "truth_zone": "zone6",
+      "tip_true": true,
+      "tip_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3452,
+        "zone3": 0.2325,
+        "zone4": 0.0318,
+        "zone5": 0.0735,
+        "zone6": 0.8807
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 3,
+      "visited": [
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7004,
+        "zone3": 0.0,
+        "zone4": 0.9598,
+        "zone5": 0.9172,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7004,
+        "zone3": 0.0,
+        "zone4": 0.9598,
+        "zone5": 0.9172,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "tipfollow",
+      "truth_zone": "zone5",
+      "tip_true": false,
+      "tip_zone": "zone2",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.7004,
+        "zone3": 0.0,
+        "zone4": 0.9598,
+        "zone5": 0.9172,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3049,
+        "zone3": 0.4034,
+        "zone4": 0.8044,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 137,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3049,
+        "zone3": 0.4034,
+        "zone4": 0.8044,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "CellPhone",
+      "arm": "tipfollow",
+      "truth_zone": "zone4",
+      "tip_true": false,
+      "tip_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3049,
+        "zone3": 0.4034,
+        "zone4": 0.8044,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": null,
+      "correct": false,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 12,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone6",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6997,
+        "zone3": 0.3391,
+        "zone4": 0.1794,
+        "zone5": 0.0,
+        "zone6": 0.0813
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "went_to_tip_first": false,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6997,
+        "zone3": 0.3391,
+        "zone4": 0.1794,
+        "zone5": 0.0,
+        "zone6": 0.0813
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "tipfollow",
+      "truth_zone": "zone2",
+      "tip_true": false,
+      "tip_zone": "zone6",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.6997,
+        "zone3": 0.3391,
+        "zone4": 0.1794,
+        "zone5": 0.0,
+        "zone6": 0.0813
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8846,
+        "zone2": 0.2328,
+        "zone3": 0.7028,
+        "zone4": 0.3436,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8846,
+        "zone2": 0.2328,
+        "zone3": 0.7028,
+        "zone4": 0.3436,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "tipfollow",
+      "truth_zone": "zone1",
+      "tip_true": true,
+      "tip_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "committed_to_tip": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "went_to_tip_first": true,
+      "target_conf_by_zone": {
+        "zone1": 0.8846,
+        "zone2": 0.2328,
+        "zone3": 0.7028,
+        "zone4": 0.3436,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    }
+  ]
+}

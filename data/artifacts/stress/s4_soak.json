@@ -1,0 +1,58 @@
+{
+  "suite": "s4_soak",
+  "elapsed_s": 10.0,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [],
+  "houses": [
+    {
+      "seed": 90000,
+      "days_run": 300,
+      "total_brewed": 300,
+      "windows": [
+        {
+          "day": 50,
+          "mean_day_s": 0.0125,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 2544,
+          "now": 25233
+        },
+        {
+          "day": 100,
+          "mean_day_s": 0.0191,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 5418,
+          "now": 50955
+        },
+        {
+          "day": 150,
+          "mean_day_s": 0.034,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 8271,
+          "now": 76635
+        },
+        {
+          "day": 200,
+          "mean_day_s": 0.0362,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 11161,
+          "now": 102296
+        },
+        {
+          "day": 250,
+          "mean_day_s": 0.0455,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 14023,
+          "now": 128022
+        },
+        {
+          "day": 300,
+          "mean_day_s": 0.0525,
+          "brewed_in_window": 50.0,
+          "ledger_claims": 16905,
+          "now": 153685
+        }
+      ]
+    }
+  ]
+}

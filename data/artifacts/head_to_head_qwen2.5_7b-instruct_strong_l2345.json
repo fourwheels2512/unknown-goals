@@ -1,0 +1,935 @@
+[
+  {
+    "level": 2,
+    "seed": 20000,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 7,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 25.8,
+    "llm_actions": [
+      "REPLAY_CAMERA(bay_4)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20001,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.4,
+    "llm_actions": [
+      "REPLAY_CAMERA(workbench_7)",
+      "REPLAY_CAMERA(storage)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(bay_2)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20002,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.8,
+    "llm_actions": [
+      "REPLAY_CAMERA(bay_3)",
+      "REPLAY_CAMERA(marco)",
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20003,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.3,
+    "llm_actions": [
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_4)",
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20004,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.3,
+    "llm_actions": [
+      "REPLAY_CAMERA(bay_1)",
+      "REPLAY_CAMERA(bay_2)",
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20005,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.4,
+    "llm_actions": [
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_4)",
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20006,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.3,
+    "llm_actions": [
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20007,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.8,
+    "llm_actions": [
+      "REPLAY_CAMERA(storage)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20008,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.4,
+    "llm_actions": [
+      "REPLAY_CAMERA(bay_1)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20009,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 5,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.9,
+    "llm_actions": [
+      "REPLAY_CAMERA(storage)",
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20010,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "REPLAY_CAMERA(storage)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(workbench_7)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20011,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 5,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "REPLAY_CAMERA(bay_2)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20000,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 5,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_1)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "REPLAY_CAMERA(bay_4)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20002,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "REPLAY_CAMERA(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.3,
+    "llm_actions": [
+      "REPLAY_CAMERA(storage)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20005,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "REPLAY_CAMERA(bay_2)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20006,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20007,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20008,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20009,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.0,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "REPLAY_CAMERA(bay_1)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20011,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20000,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "REPLAY_CAMERA(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "REPLAY_CAMERA(workbench_7)",
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20002,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "REPLAY_CAMERA(bay_2)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "REPLAY_CAMERA(bay_4)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20005,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20006,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 2.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20007,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.7,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "REPLAY_CAMERA(bay_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(bay_3)",
+      "REPLAY_CAMERA(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "REPLAY_CAMERA(bay_2)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20008,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.5,
+    "llm_actions": [
+      "REPLAY_CAMERA(workbench_7)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_3)",
+      "INSPECT_LOCATION(bay_1)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20009,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "REPLAY_CAMERA(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(workbench_7)",
+      "REPLAY_CAMERA(bay_2)",
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_3)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(workbench_7)",
+      "INSPECT_LOCATION(bay_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20011,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20000,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "REPLAY_CAMERA(bay_1)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_2)",
+      "REPLAY_CAMERA(bay_3)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_4)",
+      "REPLAY_CAMERA(bay_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(bay_4)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(storage)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20002,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "REPLAY_CAMERA(bay_1)",
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_1)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20005,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "REPLAY_CAMERA(bay_4)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20006,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 2.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20007,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20008,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20009,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 15.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "REPLAY_CAMERA(bay_2)",
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20011,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": false,
+    "llm_success_any": false,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "REPLAY_CAMERA(bay_3)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_2)",
+      "REPLAY_CAMERA(bay_4)",
+      "REPLAY_CAMERA(bay_2)",
+      "REPLAY_CAMERA(bay_1)"
+    ]
+  }
+]

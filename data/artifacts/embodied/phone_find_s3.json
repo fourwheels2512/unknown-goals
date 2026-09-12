@@ -1,0 +1,5292 @@
+{
+  "dry_run": false,
+  "dry_run_note": "",
+  "source": "data/phone_s3",
+  "mode": "video",
+  "detector": {
+    "weights": "/root/yolo/yolov8x-worldv2.pt",
+    "imgsz": 1088,
+    "vocab": "phone",
+    "detect_conf": 0.02,
+    "claim_min_conf": 0.05,
+    "frame_stride": 10,
+    "iou_gate": null,
+    "absent_conf": 0.9,
+    "frames_detected": 446
+  },
+  "manifest_sha256": "aa1f8618955fba6d9f7f05e8b32a8623b37b328f6c81008656e122c899d69923",
+  "engine_variant": {
+    "sighting_resolves_at": 0.9,
+    "note": "engine changed AFTER the pre-registered run (weak sightings); see module docstring"
+  },
+  "seeds_missing_footage": [],
+  "by_arm": {
+    "engine": {
+      "n": 36,
+      "correct": 33,
+      "wrong": 3,
+      "miss": 0,
+      "visits": 191,
+      "n_expected": 36,
+      "committed_or_belief_correct": 33,
+      "mean_visits": 5.31
+    },
+    "sweep": {
+      "n": 36,
+      "correct": 13,
+      "wrong": 23,
+      "miss": 0,
+      "visits": 72,
+      "n_expected": 36,
+      "mean_visits": 2.0
+    },
+    "random": {
+      "n": 36,
+      "correct": 20,
+      "wrong": 16,
+      "miss": 0,
+      "visits": 87,
+      "n_expected": 36,
+      "mean_visits": 2.42
+    }
+  },
+  "rows": [
+    {
+      "seed": 3,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9041,
+        "zone2": 0.1525,
+        "zone3": 0.0407,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 9.1,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 3,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9041,
+        "zone2": 0.1525,
+        "zone3": 0.0407,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9041,
+        "zone2": 0.1525,
+        "zone3": 0.0407,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0902,
+        "zone3": 0.6218,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        },
+        "zone2": {
+          "apple": 0.0339,
+          "book": 0.0902,
+          "bottle": 0.0567,
+          "bowl": 0.834,
+          "box": 0.2164,
+          "cd": 0.179,
+          "cellphone": 0.2706,
+          "cup": 0.1068,
+          "footstool": 0.0577,
+          "knife": 0.0521,
+          "laptop": 0.1157,
+          "mug": 0.1525,
+          "papertowelroll": 0.0944,
+          "pencil": 0.0311,
+          "pillow": 0.0217,
+          "plate": 0.0487,
+          "remotecontrol": 0.3065,
+          "soapbottle": 0.0285,
+          "spoon": 0.2381,
+          "tissuebox": 0.3674,
+          "toiletpaper": 0.0475
+        },
+        "zone3": {
+          "book": 0.6218,
+          "bottle": 0.0723,
+          "box": 0.3293,
+          "butterknife": 0.0254,
+          "candle": 0.0265,
+          "cup": 0.1649,
+          "fork": 0.029,
+          "handtowel": 0.8153,
+          "knife": 0.0541,
+          "ladle": 0.3648,
+          "mug": 0.0407,
+          "papertowelroll": 0.6299,
+          "plate": 0.0664,
+          "remotecontrol": 0.0208,
+          "soapbottle": 0.0976,
+          "spatula": 0.5786,
+          "spoon": 0.0551,
+          "tissuebox": 0.0972,
+          "towel": 0.7949,
+          "vase": 0.0237
+        },
+        "zone4": {
+          "bottle": 0.3701,
+          "box": 0.0772,
+          "cellphone": 0.852,
+          "footstool": 0.0205,
+          "laptop": 0.0493,
+          "remotecontrol": 0.9568,
+          "wateringcan": 0.0304
+        },
+        "zone5": {
+          "bottle": 0.6277,
+          "bowl": 0.0288,
+          "box": 0.2507,
+          "footstool": 0.0355,
+          "soapbottle": 0.9099,
+          "tissuebox": 0.5227,
+          "towel": 0.0313
+        },
+        "zone6": {
+          "box": 0.0232,
+          "cellphone": 0.8243,
+          "footstool": 0.0264,
+          "laptop": 0.0454,
+          "remotecontrol": 0.5218,
+          "towel": 0.0372
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 3,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0902,
+        "zone3": 0.6218,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone6",
+        "zone1",
+        "zone4",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0902,
+        "zone3": 0.6218,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3065,
+        "zone3": 0.0208,
+        "zone4": 0.9568,
+        "zone5": 0.0,
+        "zone6": 0.5218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        },
+        "zone2": {
+          "apple": 0.0339,
+          "book": 0.0902,
+          "bottle": 0.0567,
+          "bowl": 0.834,
+          "box": 0.2164,
+          "cd": 0.179,
+          "cellphone": 0.2706,
+          "cup": 0.1068,
+          "footstool": 0.0577,
+          "knife": 0.0521,
+          "laptop": 0.1157,
+          "mug": 0.1525,
+          "papertowelroll": 0.0944,
+          "pencil": 0.0311,
+          "pillow": 0.0217,
+          "plate": 0.0487,
+          "remotecontrol": 0.3065,
+          "soapbottle": 0.0285,
+          "spoon": 0.2381,
+          "tissuebox": 0.3674,
+          "toiletpaper": 0.0475
+        },
+        "zone3": {
+          "book": 0.6218,
+          "bottle": 0.0723,
+          "box": 0.3293,
+          "butterknife": 0.0254,
+          "candle": 0.0265,
+          "cup": 0.1649,
+          "fork": 0.029,
+          "handtowel": 0.8153,
+          "knife": 0.0541,
+          "ladle": 0.3648,
+          "mug": 0.0407,
+          "papertowelroll": 0.6299,
+          "plate": 0.0664,
+          "remotecontrol": 0.0208,
+          "soapbottle": 0.0976,
+          "spatula": 0.5786,
+          "spoon": 0.0551,
+          "tissuebox": 0.0972,
+          "towel": 0.7949,
+          "vase": 0.0237
+        },
+        "zone4": {
+          "bottle": 0.3701,
+          "box": 0.0772,
+          "cellphone": 0.852,
+          "footstool": 0.0205,
+          "laptop": 0.0493,
+          "remotecontrol": 0.9568,
+          "wateringcan": 0.0304
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 3,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3065,
+        "zone3": 0.0208,
+        "zone4": 0.9568,
+        "zone5": 0.0,
+        "zone6": 0.5218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone3",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3065,
+        "zone3": 0.0208,
+        "zone4": 0.9568,
+        "zone5": 0.0,
+        "zone6": 0.5218
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2706,
+        "zone3": 0.0,
+        "zone4": 0.852,
+        "zone5": 0.0,
+        "zone6": 0.8243
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        },
+        "zone2": {
+          "apple": 0.0339,
+          "book": 0.0902,
+          "bottle": 0.0567,
+          "bowl": 0.834,
+          "box": 0.2164,
+          "cd": 0.179,
+          "cellphone": 0.2706,
+          "cup": 0.1068,
+          "footstool": 0.0577,
+          "knife": 0.0521,
+          "laptop": 0.1157,
+          "mug": 0.1525,
+          "papertowelroll": 0.0944,
+          "pencil": 0.0311,
+          "pillow": 0.0217,
+          "plate": 0.0487,
+          "remotecontrol": 0.3065,
+          "soapbottle": 0.0285,
+          "spoon": 0.2381,
+          "tissuebox": 0.3674,
+          "toiletpaper": 0.0475
+        },
+        "zone3": {
+          "book": 0.6218,
+          "bottle": 0.0723,
+          "box": 0.3293,
+          "butterknife": 0.0254,
+          "candle": 0.0265,
+          "cup": 0.1649,
+          "fork": 0.029,
+          "handtowel": 0.8153,
+          "knife": 0.0541,
+          "ladle": 0.3648,
+          "mug": 0.0407,
+          "papertowelroll": 0.6299,
+          "plate": 0.0664,
+          "remotecontrol": 0.0208,
+          "soapbottle": 0.0976,
+          "spatula": 0.5786,
+          "spoon": 0.0551,
+          "tissuebox": 0.0972,
+          "towel": 0.7949,
+          "vase": 0.0237
+        },
+        "zone4": {
+          "bottle": 0.3701,
+          "box": 0.0772,
+          "cellphone": 0.852,
+          "footstool": 0.0205,
+          "laptop": 0.0493,
+          "remotecontrol": 0.9568,
+          "wateringcan": 0.0304
+        },
+        "zone5": {
+          "bottle": 0.6277,
+          "bowl": 0.0288,
+          "box": 0.2507,
+          "footstool": 0.0355,
+          "soapbottle": 0.9099,
+          "tissuebox": 0.5227,
+          "towel": 0.0313
+        },
+        "zone6": {
+          "box": 0.0232,
+          "cellphone": 0.8243,
+          "footstool": 0.0264,
+          "laptop": 0.0454,
+          "remotecontrol": 0.5218,
+          "towel": 0.0372
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 3,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2706,
+        "zone3": 0.0,
+        "zone4": 0.852,
+        "zone5": 0.0,
+        "zone6": 0.8243
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone5",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2706,
+        "zone3": 0.0,
+        "zone4": 0.852,
+        "zone5": 0.0,
+        "zone6": 0.8243
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0567,
+        "zone3": 0.0723,
+        "zone4": 0.3701,
+        "zone5": 0.6277,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        },
+        "zone2": {
+          "apple": 0.0339,
+          "book": 0.0902,
+          "bottle": 0.0567,
+          "bowl": 0.834,
+          "box": 0.2164,
+          "cd": 0.179,
+          "cellphone": 0.2706,
+          "cup": 0.1068,
+          "footstool": 0.0577,
+          "knife": 0.0521,
+          "laptop": 0.1157,
+          "mug": 0.1525,
+          "papertowelroll": 0.0944,
+          "pencil": 0.0311,
+          "pillow": 0.0217,
+          "plate": 0.0487,
+          "remotecontrol": 0.3065,
+          "soapbottle": 0.0285,
+          "spoon": 0.2381,
+          "tissuebox": 0.3674,
+          "toiletpaper": 0.0475
+        },
+        "zone3": {
+          "book": 0.6218,
+          "bottle": 0.0723,
+          "box": 0.3293,
+          "butterknife": 0.0254,
+          "candle": 0.0265,
+          "cup": 0.1649,
+          "fork": 0.029,
+          "handtowel": 0.8153,
+          "knife": 0.0541,
+          "ladle": 0.3648,
+          "mug": 0.0407,
+          "papertowelroll": 0.6299,
+          "plate": 0.0664,
+          "remotecontrol": 0.0208,
+          "soapbottle": 0.0976,
+          "spatula": 0.5786,
+          "spoon": 0.0551,
+          "tissuebox": 0.0972,
+          "towel": 0.7949,
+          "vase": 0.0237
+        },
+        "zone4": {
+          "bottle": 0.3701,
+          "box": 0.0772,
+          "cellphone": 0.852,
+          "footstool": 0.0205,
+          "laptop": 0.0493,
+          "remotecontrol": 0.9568,
+          "wateringcan": 0.0304
+        },
+        "zone5": {
+          "bottle": 0.6277,
+          "bowl": 0.0288,
+          "box": 0.2507,
+          "footstool": 0.0355,
+          "soapbottle": 0.9099,
+          "tissuebox": 0.5227,
+          "towel": 0.0313
+        },
+        "zone6": {
+          "box": 0.0232,
+          "cellphone": 0.8243,
+          "footstool": 0.0264,
+          "laptop": 0.0454,
+          "remotecontrol": 0.5218,
+          "towel": 0.0372
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 3,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0567,
+        "zone3": 0.0723,
+        "zone4": 0.3701,
+        "zone5": 0.6277,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0567,
+        "zone3": 0.0723,
+        "zone4": 0.3701,
+        "zone5": 0.6277,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.834,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0288,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0764,
+          "cup": 0.8516,
+          "footstool": 0.5098,
+          "mug": 0.9041,
+          "pillow": 0.6429,
+          "tabletopdecor": 0.0322,
+          "teddybear": 0.5255,
+          "towel": 0.0333
+        },
+        "zone2": {
+          "apple": 0.0339,
+          "book": 0.0902,
+          "bottle": 0.0567,
+          "bowl": 0.834,
+          "box": 0.2164,
+          "cd": 0.179,
+          "cellphone": 0.2706,
+          "cup": 0.1068,
+          "footstool": 0.0577,
+          "knife": 0.0521,
+          "laptop": 0.1157,
+          "mug": 0.1525,
+          "papertowelroll": 0.0944,
+          "pencil": 0.0311,
+          "pillow": 0.0217,
+          "plate": 0.0487,
+          "remotecontrol": 0.3065,
+          "soapbottle": 0.0285,
+          "spoon": 0.2381,
+          "tissuebox": 0.3674,
+          "toiletpaper": 0.0475
+        },
+        "zone3": {
+          "book": 0.6218,
+          "bottle": 0.0723,
+          "box": 0.3293,
+          "butterknife": 0.0254,
+          "candle": 0.0265,
+          "cup": 0.1649,
+          "fork": 0.029,
+          "handtowel": 0.8153,
+          "knife": 0.0541,
+          "ladle": 0.3648,
+          "mug": 0.0407,
+          "papertowelroll": 0.6299,
+          "plate": 0.0664,
+          "remotecontrol": 0.0208,
+          "soapbottle": 0.0976,
+          "spatula": 0.5786,
+          "spoon": 0.0551,
+          "tissuebox": 0.0972,
+          "towel": 0.7949,
+          "vase": 0.0237
+        },
+        "zone4": {
+          "bottle": 0.3701,
+          "box": 0.0772,
+          "cellphone": 0.852,
+          "footstool": 0.0205,
+          "laptop": 0.0493,
+          "remotecontrol": 0.9568,
+          "wateringcan": 0.0304
+        },
+        "zone5": {
+          "bottle": 0.6277,
+          "bowl": 0.0288,
+          "box": 0.2507,
+          "footstool": 0.0355,
+          "soapbottle": 0.9099,
+          "tissuebox": 0.5227,
+          "towel": 0.0313
+        },
+        "zone6": {
+          "box": 0.0232,
+          "cellphone": 0.8243,
+          "footstool": 0.0264,
+          "laptop": 0.0454,
+          "remotecontrol": 0.5218,
+          "towel": 0.0372
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 3,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.834,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0288,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 3,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone6",
+        "zone3",
+        "zone5",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.834,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0288,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9222,
+        "zone3": 0.1349,
+        "zone4": 0.0238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 7.7,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        },
+        "zone2": {
+          "apple": 0.0218,
+          "book": 0.5167,
+          "bottle": 0.2793,
+          "bowl": 0.0958,
+          "box": 0.4358,
+          "cd": 0.3674,
+          "cellphone": 0.1593,
+          "cup": 0.8592,
+          "footstool": 0.2057,
+          "laptop": 0.1475,
+          "mug": 0.9222,
+          "pan": 0.1061,
+          "papertowelroll": 0.285,
+          "pillow": 0.0768,
+          "plate": 0.1769,
+          "remotecontrol": 0.5261,
+          "soapbottle": 0.0593,
+          "spoon": 0.4679,
+          "tabletopdecor": 0.1735,
+          "tissuebox": 0.3332,
+          "towel": 0.0545
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 5,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9222,
+        "zone3": 0.1349,
+        "zone4": 0.0238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone4",
+        "zone5",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9222,
+        "zone3": 0.1349,
+        "zone4": 0.0238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9111,
+        "zone2": 0.5167,
+        "zone3": 0.0361,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.1217
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 5,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9111,
+        "zone2": 0.5167,
+        "zone3": 0.0361,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.1217
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone5",
+        "zone4",
+        "zone3",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9111,
+        "zone2": 0.5167,
+        "zone3": 0.0361,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.1217
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5261,
+        "zone3": 0.0453,
+        "zone4": 0.9081,
+        "zone5": 0.0,
+        "zone6": 0.0798
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        },
+        "zone2": {
+          "apple": 0.0218,
+          "book": 0.5167,
+          "bottle": 0.2793,
+          "bowl": 0.0958,
+          "box": 0.4358,
+          "cd": 0.3674,
+          "cellphone": 0.1593,
+          "cup": 0.8592,
+          "footstool": 0.2057,
+          "laptop": 0.1475,
+          "mug": 0.9222,
+          "pan": 0.1061,
+          "papertowelroll": 0.285,
+          "pillow": 0.0768,
+          "plate": 0.1769,
+          "remotecontrol": 0.5261,
+          "soapbottle": 0.0593,
+          "spoon": 0.4679,
+          "tabletopdecor": 0.1735,
+          "tissuebox": 0.3332,
+          "towel": 0.0545
+        },
+        "zone3": {
+          "book": 0.0361,
+          "bottle": 0.851,
+          "bowl": 0.3554,
+          "box": 0.1555,
+          "cellphone": 0.041,
+          "cup": 0.3695,
+          "footstool": 0.025,
+          "handtowel": 0.8583,
+          "kettle": 0.3807,
+          "knife": 0.0289,
+          "ladle": 0.7088,
+          "mug": 0.1349,
+          "papertowelroll": 0.5085,
+          "pencil": 0.0211,
+          "peppershaker": 0.0307,
+          "pot": 0.0793,
+          "remotecontrol": 0.0453,
+          "soapbottle": 0.5713,
+          "spatula": 0.2206,
+          "spoon": 0.1063,
+          "tissuebox": 0.4748,
+          "toiletpaper": 0.0736,
+          "towel": 0.7663,
+          "vase": 0.1194,
+          "wateringcan": 0.0337
+        },
+        "zone4": {
+          "bottle": 0.0409,
+          "cellphone": 0.8612,
+          "footstool": 0.0208,
+          "mug": 0.0238,
+          "remotecontrol": 0.9081
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 5,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5261,
+        "zone3": 0.0453,
+        "zone4": 0.9081,
+        "zone5": 0.0,
+        "zone6": 0.0798
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.5261,
+        "zone3": 0.0453,
+        "zone4": 0.9081,
+        "zone5": 0.0,
+        "zone6": 0.0798
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1593,
+        "zone3": 0.041,
+        "zone4": 0.8612,
+        "zone5": 0.0,
+        "zone6": 0.7926
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        },
+        "zone2": {
+          "apple": 0.0218,
+          "book": 0.5167,
+          "bottle": 0.2793,
+          "bowl": 0.0958,
+          "box": 0.4358,
+          "cd": 0.3674,
+          "cellphone": 0.1593,
+          "cup": 0.8592,
+          "footstool": 0.2057,
+          "laptop": 0.1475,
+          "mug": 0.9222,
+          "pan": 0.1061,
+          "papertowelroll": 0.285,
+          "pillow": 0.0768,
+          "plate": 0.1769,
+          "remotecontrol": 0.5261,
+          "soapbottle": 0.0593,
+          "spoon": 0.4679,
+          "tabletopdecor": 0.1735,
+          "tissuebox": 0.3332,
+          "towel": 0.0545
+        },
+        "zone3": {
+          "book": 0.0361,
+          "bottle": 0.851,
+          "bowl": 0.3554,
+          "box": 0.1555,
+          "cellphone": 0.041,
+          "cup": 0.3695,
+          "footstool": 0.025,
+          "handtowel": 0.8583,
+          "kettle": 0.3807,
+          "knife": 0.0289,
+          "ladle": 0.7088,
+          "mug": 0.1349,
+          "papertowelroll": 0.5085,
+          "pencil": 0.0211,
+          "peppershaker": 0.0307,
+          "pot": 0.0793,
+          "remotecontrol": 0.0453,
+          "soapbottle": 0.5713,
+          "spatula": 0.2206,
+          "spoon": 0.1063,
+          "tissuebox": 0.4748,
+          "toiletpaper": 0.0736,
+          "towel": 0.7663,
+          "vase": 0.1194,
+          "wateringcan": 0.0337
+        },
+        "zone4": {
+          "bottle": 0.0409,
+          "cellphone": 0.8612,
+          "footstool": 0.0208,
+          "mug": 0.0238,
+          "remotecontrol": 0.9081
+        },
+        "zone5": {
+          "bowl": 0.5261,
+          "box": 0.2932,
+          "footstool": 0.0598,
+          "papertowelroll": 0.1265,
+          "plate": 0.0415,
+          "tissuebox": 0.199
+        },
+        "zone6": {
+          "book": 0.1217,
+          "box": 0.0294,
+          "cellphone": 0.7926,
+          "laptop": 0.0235,
+          "remotecontrol": 0.0798
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 5,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1593,
+        "zone3": 0.041,
+        "zone4": 0.8612,
+        "zone5": 0.0,
+        "zone6": 0.7926
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1593,
+        "zone3": 0.041,
+        "zone4": 0.8612,
+        "zone5": 0.0,
+        "zone6": 0.7926
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2793,
+        "zone3": 0.851,
+        "zone4": 0.0409,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        },
+        "zone2": {
+          "apple": 0.0218,
+          "book": 0.5167,
+          "bottle": 0.2793,
+          "bowl": 0.0958,
+          "box": 0.4358,
+          "cd": 0.3674,
+          "cellphone": 0.1593,
+          "cup": 0.8592,
+          "footstool": 0.2057,
+          "laptop": 0.1475,
+          "mug": 0.9222,
+          "pan": 0.1061,
+          "papertowelroll": 0.285,
+          "pillow": 0.0768,
+          "plate": 0.1769,
+          "remotecontrol": 0.5261,
+          "soapbottle": 0.0593,
+          "spoon": 0.4679,
+          "tabletopdecor": 0.1735,
+          "tissuebox": 0.3332,
+          "towel": 0.0545
+        },
+        "zone3": {
+          "book": 0.0361,
+          "bottle": 0.851,
+          "bowl": 0.3554,
+          "box": 0.1555,
+          "cellphone": 0.041,
+          "cup": 0.3695,
+          "footstool": 0.025,
+          "handtowel": 0.8583,
+          "kettle": 0.3807,
+          "knife": 0.0289,
+          "ladle": 0.7088,
+          "mug": 0.1349,
+          "papertowelroll": 0.5085,
+          "pencil": 0.0211,
+          "peppershaker": 0.0307,
+          "pot": 0.0793,
+          "remotecontrol": 0.0453,
+          "soapbottle": 0.5713,
+          "spatula": 0.2206,
+          "spoon": 0.1063,
+          "tissuebox": 0.4748,
+          "toiletpaper": 0.0736,
+          "towel": 0.7663,
+          "vase": 0.1194,
+          "wateringcan": 0.0337
+        },
+        "zone4": {
+          "bottle": 0.0409,
+          "cellphone": 0.8612,
+          "footstool": 0.0208,
+          "mug": 0.0238,
+          "remotecontrol": 0.9081
+        },
+        "zone5": {
+          "bowl": 0.5261,
+          "box": 0.2932,
+          "footstool": 0.0598,
+          "papertowelroll": 0.1265,
+          "plate": 0.0415,
+          "tissuebox": 0.199
+        },
+        "zone6": {
+          "book": 0.1217,
+          "box": 0.0294,
+          "cellphone": 0.7926,
+          "laptop": 0.0235,
+          "remotecontrol": 0.0798
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 5,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2793,
+        "zone3": 0.851,
+        "zone4": 0.0409,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone6",
+        "zone5",
+        "zone4",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2793,
+        "zone3": 0.851,
+        "zone4": 0.0409,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0958,
+        "zone3": 0.3554,
+        "zone4": 0.0,
+        "zone5": 0.5261,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.116,
+          "book": 0.9111,
+          "footstool": 0.5456,
+          "pillow": 0.8233,
+          "tabletopdecor": 0.095,
+          "teddybear": 0.4816,
+          "towel": 0.0497
+        },
+        "zone2": {
+          "apple": 0.0218,
+          "book": 0.5167,
+          "bottle": 0.2793,
+          "bowl": 0.0958,
+          "box": 0.4358,
+          "cd": 0.3674,
+          "cellphone": 0.1593,
+          "cup": 0.8592,
+          "footstool": 0.2057,
+          "laptop": 0.1475,
+          "mug": 0.9222,
+          "pan": 0.1061,
+          "papertowelroll": 0.285,
+          "pillow": 0.0768,
+          "plate": 0.1769,
+          "remotecontrol": 0.5261,
+          "soapbottle": 0.0593,
+          "spoon": 0.4679,
+          "tabletopdecor": 0.1735,
+          "tissuebox": 0.3332,
+          "towel": 0.0545
+        },
+        "zone3": {
+          "book": 0.0361,
+          "bottle": 0.851,
+          "bowl": 0.3554,
+          "box": 0.1555,
+          "cellphone": 0.041,
+          "cup": 0.3695,
+          "footstool": 0.025,
+          "handtowel": 0.8583,
+          "kettle": 0.3807,
+          "knife": 0.0289,
+          "ladle": 0.7088,
+          "mug": 0.1349,
+          "papertowelroll": 0.5085,
+          "pencil": 0.0211,
+          "peppershaker": 0.0307,
+          "pot": 0.0793,
+          "remotecontrol": 0.0453,
+          "soapbottle": 0.5713,
+          "spatula": 0.2206,
+          "spoon": 0.1063,
+          "tissuebox": 0.4748,
+          "toiletpaper": 0.0736,
+          "towel": 0.7663,
+          "vase": 0.1194,
+          "wateringcan": 0.0337
+        },
+        "zone4": {
+          "bottle": 0.0409,
+          "cellphone": 0.8612,
+          "footstool": 0.0208,
+          "mug": 0.0238,
+          "remotecontrol": 0.9081
+        },
+        "zone5": {
+          "bowl": 0.5261,
+          "box": 0.2932,
+          "footstool": 0.0598,
+          "papertowelroll": 0.1265,
+          "plate": 0.0415,
+          "tissuebox": 0.199
+        },
+        "zone6": {
+          "book": 0.1217,
+          "box": 0.0294,
+          "cellphone": 0.7926,
+          "laptop": 0.0235,
+          "remotecontrol": 0.0798
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 5,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0958,
+        "zone3": 0.3554,
+        "zone4": 0.0,
+        "zone5": 0.5261,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 5,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0958,
+        "zone3": 0.3554,
+        "zone4": 0.0,
+        "zone5": 0.5261,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0458,
+        "zone3": 0.1159,
+        "zone4": 0.8756,
+        "zone5": 0.0,
+        "zone6": 0.0437
+      },
+      "unresolved_labels": 0,
+      "wall_s": 7.5,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        },
+        "zone4": {
+          "book": 0.0489,
+          "bottle": 0.674,
+          "box": 0.2351,
+          "cup": 0.7829,
+          "footstool": 0.0262,
+          "mug": 0.8756,
+          "soapbottle": 0.0383,
+          "spoon": 0.0297,
+          "tabletopdecor": 0.0244,
+          "tissuebox": 0.0406
+        },
+        "zone5": {
+          "box": 0.4196,
+          "footstool": 0.0321,
+          "remotecontrol": 0.9633,
+          "tissuebox": 0.4075
+        },
+        "zone6": {
+          "book": 0.0322,
+          "box": 0.0587,
+          "cup": 0.0377,
+          "footstool": 0.0298,
+          "mug": 0.0437,
+          "papertowelroll": 0.0424,
+          "soapbottle": 0.8415
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 13,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0458,
+        "zone3": 0.1159,
+        "zone4": 0.8756,
+        "zone5": 0.0,
+        "zone6": 0.0437
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0458,
+        "zone3": 0.1159,
+        "zone4": 0.8756,
+        "zone5": 0.0,
+        "zone6": 0.0437
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8938,
+        "zone2": 0.3805,
+        "zone3": 0.0973,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0322
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        },
+        "zone4": {
+          "book": 0.0489,
+          "bottle": 0.674,
+          "box": 0.2351,
+          "cup": 0.7829,
+          "footstool": 0.0262,
+          "mug": 0.8756,
+          "soapbottle": 0.0383,
+          "spoon": 0.0297,
+          "tabletopdecor": 0.0244,
+          "tissuebox": 0.0406
+        },
+        "zone5": {
+          "box": 0.4196,
+          "footstool": 0.0321,
+          "remotecontrol": 0.9633,
+          "tissuebox": 0.4075
+        },
+        "zone6": {
+          "book": 0.0322,
+          "box": 0.0587,
+          "cup": 0.0377,
+          "footstool": 0.0298,
+          "mug": 0.0437,
+          "papertowelroll": 0.0424,
+          "soapbottle": 0.8415
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 13,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8938,
+        "zone2": 0.3805,
+        "zone3": 0.0973,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0322
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8938,
+        "zone2": 0.3805,
+        "zone3": 0.0973,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0322
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3924,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9633,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        },
+        "zone4": {
+          "book": 0.0489,
+          "bottle": 0.674,
+          "box": 0.2351,
+          "cup": 0.7829,
+          "footstool": 0.0262,
+          "mug": 0.8756,
+          "soapbottle": 0.0383,
+          "spoon": 0.0297,
+          "tabletopdecor": 0.0244,
+          "tissuebox": 0.0406
+        },
+        "zone5": {
+          "box": 0.4196,
+          "footstool": 0.0321,
+          "remotecontrol": 0.9633,
+          "tissuebox": 0.4075
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 13,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3924,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9633,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.3924,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9633,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8961,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        },
+        "zone4": {
+          "book": 0.0489,
+          "bottle": 0.674,
+          "box": 0.2351,
+          "cup": 0.7829,
+          "footstool": 0.0262,
+          "mug": 0.8756,
+          "soapbottle": 0.0383,
+          "spoon": 0.0297,
+          "tabletopdecor": 0.0244,
+          "tissuebox": 0.0406
+        },
+        "zone5": {
+          "box": 0.4196,
+          "footstool": 0.0321,
+          "remotecontrol": 0.9633,
+          "tissuebox": 0.4075
+        },
+        "zone6": {
+          "book": 0.0322,
+          "box": 0.0587,
+          "cup": 0.0377,
+          "footstool": 0.0298,
+          "mug": 0.0437,
+          "papertowelroll": 0.0424,
+          "soapbottle": 0.8415
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 13,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8961,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone3",
+        "zone4",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8961,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0366,
+        "zone3": 0.1066,
+        "zone4": 0.674,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        },
+        "zone4": {
+          "book": 0.0489,
+          "bottle": 0.674,
+          "box": 0.2351,
+          "cup": 0.7829,
+          "footstool": 0.0262,
+          "mug": 0.8756,
+          "soapbottle": 0.0383,
+          "spoon": 0.0297,
+          "tabletopdecor": 0.0244,
+          "tissuebox": 0.0406
+        },
+        "zone5": {
+          "box": 0.4196,
+          "footstool": 0.0321,
+          "remotecontrol": 0.9633,
+          "tissuebox": 0.4075
+        },
+        "zone6": {
+          "book": 0.0322,
+          "box": 0.0587,
+          "cup": 0.0377,
+          "footstool": 0.0298,
+          "mug": 0.0437,
+          "papertowelroll": 0.0424,
+          "soapbottle": 0.8415
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": false,
+      "committed_or_belief_correct": false
+    },
+    {
+      "seed": 13,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0366,
+        "zone3": 0.1066,
+        "zone4": 0.674,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0366,
+        "zone3": 0.1066,
+        "zone4": 0.674,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0884,
+        "zone3": 0.9201,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0943,
+          "basketball": 0.0311,
+          "book": 0.8938,
+          "cup": 0.0445,
+          "footstool": 0.4564,
+          "pillow": 0.7855,
+          "teddybear": 0.5391,
+          "towel": 0.0344
+        },
+        "zone2": {
+          "book": 0.3805,
+          "bottle": 0.0366,
+          "bowl": 0.0884,
+          "box": 0.3387,
+          "cd": 0.2088,
+          "cellphone": 0.8961,
+          "cup": 0.0424,
+          "footstool": 0.1644,
+          "handtowel": 0.0313,
+          "laptop": 0.1264,
+          "mug": 0.0458,
+          "papertowelroll": 0.4711,
+          "plate": 0.1201,
+          "remotecontrol": 0.3924,
+          "soapbottle": 0.0552,
+          "spoon": 0.0476,
+          "tissuebox": 0.4421,
+          "toiletpaper": 0.0593,
+          "towel": 0.0456,
+          "vase": 0.0495
+        },
+        "zone3": {
+          "book": 0.0973,
+          "bottle": 0.1066,
+          "bowl": 0.9201,
+          "cup": 0.0763,
+          "footstool": 0.1012,
+          "handtowel": 0.9154,
+          "kettle": 0.0625,
+          "ladle": 0.2872,
+          "mug": 0.1159,
+          "papertowelroll": 0.2345,
+          "plate": 0.0399,
+          "pot": 0.3978,
+          "soapbar": 0.0358,
+          "soapbottle": 0.0697,
+          "spoon": 0.0921,
+          "statue": 0.0293,
+          "tabletopdecor": 0.0282,
+          "tissuebox": 0.2673,
+          "towel": 0.7496,
+          "wateringcan": 0.1276
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 13,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0884,
+        "zone3": 0.9201,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 13,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0884,
+        "zone3": 0.9201,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.066,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.7147
+      },
+      "unresolved_labels": 0,
+      "wall_s": 7.5,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        },
+        "zone3": {
+          "bottle": 0.0245,
+          "bowl": 0.0278,
+          "box": 0.0205,
+          "cellphone": 0.9546,
+          "footstool": 0.0755,
+          "handtowel": 0.8646,
+          "knife": 0.0845,
+          "ladle": 0.4506,
+          "pan": 0.0256,
+          "papertowelroll": 0.3316,
+          "plate": 0.1328,
+          "soapbottle": 0.0227,
+          "spatula": 0.2496,
+          "spoon": 0.3284,
+          "tabletopdecor": 0.0629,
+          "tissuebox": 0.4079,
+          "towel": 0.8299,
+          "vase": 0.0433,
+          "wateringcan": 0.0318
+        },
+        "zone4": {
+          "box": 0.0507,
+          "cellphone": 0.8123,
+          "laptop": 0.0267,
+          "plate": 0.0265,
+          "remotecontrol": 0.9537
+        },
+        "zone5": {
+          "bowl": 0.5851,
+          "box": 0.4368,
+          "plate": 0.0371,
+          "tissuebox": 0.201
+        },
+        "zone6": {
+          "book": 0.0362,
+          "box": 0.0665,
+          "cup": 0.741,
+          "keychain": 0.036,
+          "mug": 0.7147,
+          "towel": 0.0287
+        }
+      },
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.066,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.7147
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone5",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.066,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.7147
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0272,
+        "zone2": 0.951,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0362
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0272,
+        "zone2": 0.951,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0362
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 6,
+      "visited": [
+        "zone6",
+        "zone1",
+        "zone3",
+        "zone5",
+        "zone4",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0272,
+        "zone2": 0.951,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0362
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0319,
+        "zone2": 0.102,
+        "zone3": 0.0,
+        "zone4": 0.9537,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        },
+        "zone3": {
+          "bottle": 0.0245,
+          "bowl": 0.0278,
+          "box": 0.0205,
+          "cellphone": 0.9546,
+          "footstool": 0.0755,
+          "handtowel": 0.8646,
+          "knife": 0.0845,
+          "ladle": 0.4506,
+          "pan": 0.0256,
+          "papertowelroll": 0.3316,
+          "plate": 0.1328,
+          "soapbottle": 0.0227,
+          "spatula": 0.2496,
+          "spoon": 0.3284,
+          "tabletopdecor": 0.0629,
+          "tissuebox": 0.4079,
+          "towel": 0.8299,
+          "vase": 0.0433,
+          "wateringcan": 0.0318
+        },
+        "zone4": {
+          "box": 0.0507,
+          "cellphone": 0.8123,
+          "laptop": 0.0267,
+          "plate": 0.0265,
+          "remotecontrol": 0.9537
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0319,
+        "zone2": 0.102,
+        "zone3": 0.0,
+        "zone4": 0.9537,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0319,
+        "zone2": 0.102,
+        "zone3": 0.0,
+        "zone4": 0.9537,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.09,
+        "zone3": 0.9546,
+        "zone4": 0.8123,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        },
+        "zone3": {
+          "bottle": 0.0245,
+          "bowl": 0.0278,
+          "box": 0.0205,
+          "cellphone": 0.9546,
+          "footstool": 0.0755,
+          "handtowel": 0.8646,
+          "knife": 0.0845,
+          "ladle": 0.4506,
+          "pan": 0.0256,
+          "papertowelroll": 0.3316,
+          "plate": 0.1328,
+          "soapbottle": 0.0227,
+          "spatula": 0.2496,
+          "spoon": 0.3284,
+          "tabletopdecor": 0.0629,
+          "tissuebox": 0.4079,
+          "towel": 0.8299,
+          "vase": 0.0433,
+          "wateringcan": 0.0318
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.09,
+        "zone3": 0.9546,
+        "zone4": 0.8123,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.09,
+        "zone3": 0.9546,
+        "zone4": 0.8123,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8046,
+        "zone2": 0.072,
+        "zone3": 0.0245,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        },
+        "zone3": {
+          "bottle": 0.0245,
+          "bowl": 0.0278,
+          "box": 0.0205,
+          "cellphone": 0.9546,
+          "footstool": 0.0755,
+          "handtowel": 0.8646,
+          "knife": 0.0845,
+          "ladle": 0.4506,
+          "pan": 0.0256,
+          "papertowelroll": 0.3316,
+          "plate": 0.1328,
+          "soapbottle": 0.0227,
+          "spatula": 0.2496,
+          "spoon": 0.3284,
+          "tabletopdecor": 0.0629,
+          "tissuebox": 0.4079,
+          "towel": 0.8299,
+          "vase": 0.0433,
+          "wateringcan": 0.0318
+        },
+        "zone4": {
+          "box": 0.0507,
+          "cellphone": 0.8123,
+          "laptop": 0.0267,
+          "plate": 0.0265,
+          "remotecontrol": 0.9537
+        },
+        "zone5": {
+          "bowl": 0.5851,
+          "box": 0.4368,
+          "plate": 0.0371,
+          "tissuebox": 0.201
+        },
+        "zone6": {
+          "book": 0.0362,
+          "box": 0.0665,
+          "cup": 0.741,
+          "keychain": 0.036,
+          "mug": 0.7147,
+          "towel": 0.0287
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8046,
+        "zone2": 0.072,
+        "zone3": 0.0245,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone5",
+        "zone4",
+        "zone6",
+        "zone3",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8046,
+        "zone2": 0.072,
+        "zone3": 0.0245,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1163,
+        "zone3": 0.0278,
+        "zone4": 0.0,
+        "zone5": 0.5851,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1385,
+          "book": 0.0272,
+          "bottle": 0.8046,
+          "candle": 0.1012,
+          "footstool": 0.225,
+          "pillow": 0.7864,
+          "remotecontrol": 0.0319,
+          "soapbottle": 0.8036,
+          "teddybear": 0.4668
+        },
+        "zone2": {
+          "apple": 0.0387,
+          "book": 0.951,
+          "bottle": 0.072,
+          "bowl": 0.1163,
+          "box": 0.086,
+          "butterknife": 0.0843,
+          "cellphone": 0.09,
+          "cup": 0.2574,
+          "footstool": 0.0459,
+          "handtowel": 0.0307,
+          "knife": 0.032,
+          "laptop": 0.3331,
+          "mug": 0.066,
+          "pencil": 0.0387,
+          "pillow": 0.0792,
+          "plate": 0.0871,
+          "remotecontrol": 0.102,
+          "soapbottle": 0.0756,
+          "tissuebox": 0.2761,
+          "towel": 0.0355
+        },
+        "zone3": {
+          "bottle": 0.0245,
+          "bowl": 0.0278,
+          "box": 0.0205,
+          "cellphone": 0.9546,
+          "footstool": 0.0755,
+          "handtowel": 0.8646,
+          "knife": 0.0845,
+          "ladle": 0.4506,
+          "pan": 0.0256,
+          "papertowelroll": 0.3316,
+          "plate": 0.1328,
+          "soapbottle": 0.0227,
+          "spatula": 0.2496,
+          "spoon": 0.3284,
+          "tabletopdecor": 0.0629,
+          "tissuebox": 0.4079,
+          "towel": 0.8299,
+          "vase": 0.0433,
+          "wateringcan": 0.0318
+        },
+        "zone4": {
+          "box": 0.0507,
+          "cellphone": 0.8123,
+          "laptop": 0.0267,
+          "plate": 0.0265,
+          "remotecontrol": 0.9537
+        },
+        "zone5": {
+          "bowl": 0.5851,
+          "box": 0.4368,
+          "plate": 0.0371,
+          "tissuebox": 0.201
+        },
+        "zone6": {
+          "book": 0.0362,
+          "box": 0.0665,
+          "cup": 0.741,
+          "keychain": 0.036,
+          "mug": 0.7147,
+          "towel": 0.0287
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 29,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1163,
+        "zone3": 0.0278,
+        "zone4": 0.0,
+        "zone5": 0.5851,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 29,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone3",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1163,
+        "zone3": 0.0278,
+        "zone4": 0.0,
+        "zone5": 0.5851,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9066,
+        "zone2": 0.075,
+        "zone3": 0.1054,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 7.3,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9066,
+        "zone2": 0.075,
+        "zone3": 0.1054,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone4",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9066,
+        "zone2": 0.075,
+        "zone3": 0.1054,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.261,
+        "zone3": 0.8814,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0219
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        },
+        "zone2": {
+          "book": 0.261,
+          "bottle": 0.9291,
+          "bowl": 0.2831,
+          "box": 0.1951,
+          "cd": 0.1645,
+          "cellphone": 0.2177,
+          "cup": 0.0714,
+          "knife": 0.0289,
+          "laptop": 0.0476,
+          "mug": 0.075,
+          "pan": 0.0272,
+          "papertowelroll": 0.2667,
+          "peppershaker": 0.0594,
+          "plate": 0.0724,
+          "remotecontrol": 0.2325,
+          "soapbottle": 0.9215,
+          "spoon": 0.0923,
+          "tabletopdecor": 0.0382,
+          "tissuebox": 0.6168,
+          "toiletpaper": 0.1142
+        },
+        "zone3": {
+          "book": 0.8814,
+          "box": 0.0287,
+          "cellphone": 0.0238,
+          "cup": 0.1258,
+          "handtowel": 0.7637,
+          "ladle": 0.6258,
+          "laptop": 0.0945,
+          "mug": 0.1054,
+          "papertowelroll": 0.4958,
+          "pot": 0.1054,
+          "remotecontrol": 0.0639,
+          "soapbottle": 0.089,
+          "spatula": 0.1335,
+          "spoon": 0.0353,
+          "tabletopdecor": 0.076,
+          "tissuebox": 0.2148,
+          "towel": 0.7718,
+          "vase": 0.0821,
+          "wateringcan": 0.0472
+        },
+        "zone4": {
+          "bowl": 0.8369,
+          "knife": 0.0246,
+          "plate": 0.0433
+        },
+        "zone5": {
+          "box": 0.8614,
+          "cellphone": 0.5949,
+          "handtowel": 0.0255,
+          "laptop": 0.4046,
+          "remotecontrol": 0.1105,
+          "tissuebox": 0.1709,
+          "towel": 0.0303
+        },
+        "zone6": {
+          "book": 0.0219,
+          "box": 0.0676,
+          "laptop": 0.0886,
+          "remotecontrol": 0.9299
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.261,
+        "zone3": 0.8814,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0219
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone6",
+        "zone5",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.261,
+        "zone3": 0.8814,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0219
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2325,
+        "zone3": 0.0639,
+        "zone4": 0.0,
+        "zone5": 0.1105,
+        "zone6": 0.9299
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        },
+        "zone2": {
+          "book": 0.261,
+          "bottle": 0.9291,
+          "bowl": 0.2831,
+          "box": 0.1951,
+          "cd": 0.1645,
+          "cellphone": 0.2177,
+          "cup": 0.0714,
+          "knife": 0.0289,
+          "laptop": 0.0476,
+          "mug": 0.075,
+          "pan": 0.0272,
+          "papertowelroll": 0.2667,
+          "peppershaker": 0.0594,
+          "plate": 0.0724,
+          "remotecontrol": 0.2325,
+          "soapbottle": 0.9215,
+          "spoon": 0.0923,
+          "tabletopdecor": 0.0382,
+          "tissuebox": 0.6168,
+          "toiletpaper": 0.1142
+        },
+        "zone3": {
+          "book": 0.8814,
+          "box": 0.0287,
+          "cellphone": 0.0238,
+          "cup": 0.1258,
+          "handtowel": 0.7637,
+          "ladle": 0.6258,
+          "laptop": 0.0945,
+          "mug": 0.1054,
+          "papertowelroll": 0.4958,
+          "pot": 0.1054,
+          "remotecontrol": 0.0639,
+          "soapbottle": 0.089,
+          "spatula": 0.1335,
+          "spoon": 0.0353,
+          "tabletopdecor": 0.076,
+          "tissuebox": 0.2148,
+          "towel": 0.7718,
+          "vase": 0.0821,
+          "wateringcan": 0.0472
+        },
+        "zone4": {
+          "bowl": 0.8369,
+          "knife": 0.0246,
+          "plate": 0.0433
+        },
+        "zone5": {
+          "box": 0.8614,
+          "cellphone": 0.5949,
+          "handtowel": 0.0255,
+          "laptop": 0.4046,
+          "remotecontrol": 0.1105,
+          "tissuebox": 0.1709,
+          "towel": 0.0303
+        },
+        "zone6": {
+          "book": 0.0219,
+          "box": 0.0676,
+          "laptop": 0.0886,
+          "remotecontrol": 0.9299
+        }
+      },
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2325,
+        "zone3": 0.0639,
+        "zone4": 0.0,
+        "zone5": 0.1105,
+        "zone6": 0.9299
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2325,
+        "zone3": 0.0639,
+        "zone4": 0.0,
+        "zone5": 0.1105,
+        "zone6": 0.9299
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2177,
+        "zone3": 0.0238,
+        "zone4": 0.0,
+        "zone5": 0.5949,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        },
+        "zone2": {
+          "book": 0.261,
+          "bottle": 0.9291,
+          "bowl": 0.2831,
+          "box": 0.1951,
+          "cd": 0.1645,
+          "cellphone": 0.2177,
+          "cup": 0.0714,
+          "knife": 0.0289,
+          "laptop": 0.0476,
+          "mug": 0.075,
+          "pan": 0.0272,
+          "papertowelroll": 0.2667,
+          "peppershaker": 0.0594,
+          "plate": 0.0724,
+          "remotecontrol": 0.2325,
+          "soapbottle": 0.9215,
+          "spoon": 0.0923,
+          "tabletopdecor": 0.0382,
+          "tissuebox": 0.6168,
+          "toiletpaper": 0.1142
+        },
+        "zone3": {
+          "book": 0.8814,
+          "box": 0.0287,
+          "cellphone": 0.0238,
+          "cup": 0.1258,
+          "handtowel": 0.7637,
+          "ladle": 0.6258,
+          "laptop": 0.0945,
+          "mug": 0.1054,
+          "papertowelroll": 0.4958,
+          "pot": 0.1054,
+          "remotecontrol": 0.0639,
+          "soapbottle": 0.089,
+          "spatula": 0.1335,
+          "spoon": 0.0353,
+          "tabletopdecor": 0.076,
+          "tissuebox": 0.2148,
+          "towel": 0.7718,
+          "vase": 0.0821,
+          "wateringcan": 0.0472
+        },
+        "zone4": {
+          "bowl": 0.8369,
+          "knife": 0.0246,
+          "plate": 0.0433
+        },
+        "zone5": {
+          "box": 0.8614,
+          "cellphone": 0.5949,
+          "handtowel": 0.0255,
+          "laptop": 0.4046,
+          "remotecontrol": 0.1105,
+          "tissuebox": 0.1709,
+          "towel": 0.0303
+        },
+        "zone6": {
+          "book": 0.0219,
+          "box": 0.0676,
+          "laptop": 0.0886,
+          "remotecontrol": 0.9299
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2177,
+        "zone3": 0.0238,
+        "zone4": 0.0,
+        "zone5": 0.5949,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone4",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2177,
+        "zone3": 0.0238,
+        "zone4": 0.0,
+        "zone5": 0.5949,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9291,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        },
+        "zone2": {
+          "book": 0.261,
+          "bottle": 0.9291,
+          "bowl": 0.2831,
+          "box": 0.1951,
+          "cd": 0.1645,
+          "cellphone": 0.2177,
+          "cup": 0.0714,
+          "knife": 0.0289,
+          "laptop": 0.0476,
+          "mug": 0.075,
+          "pan": 0.0272,
+          "papertowelroll": 0.2667,
+          "peppershaker": 0.0594,
+          "plate": 0.0724,
+          "remotecontrol": 0.2325,
+          "soapbottle": 0.9215,
+          "spoon": 0.0923,
+          "tabletopdecor": 0.0382,
+          "tissuebox": 0.6168,
+          "toiletpaper": 0.1142
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9291,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone3",
+        "zone6",
+        "zone4",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.9291,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2831,
+        "zone3": 0.0,
+        "zone4": 0.8369,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.1048,
+          "box": 0.0545,
+          "cup": 0.8875,
+          "footstool": 0.3995,
+          "mug": 0.9066,
+          "pillow": 0.788,
+          "teddybear": 0.5403,
+          "towel": 0.0203
+        },
+        "zone2": {
+          "book": 0.261,
+          "bottle": 0.9291,
+          "bowl": 0.2831,
+          "box": 0.1951,
+          "cd": 0.1645,
+          "cellphone": 0.2177,
+          "cup": 0.0714,
+          "knife": 0.0289,
+          "laptop": 0.0476,
+          "mug": 0.075,
+          "pan": 0.0272,
+          "papertowelroll": 0.2667,
+          "peppershaker": 0.0594,
+          "plate": 0.0724,
+          "remotecontrol": 0.2325,
+          "soapbottle": 0.9215,
+          "spoon": 0.0923,
+          "tabletopdecor": 0.0382,
+          "tissuebox": 0.6168,
+          "toiletpaper": 0.1142
+        },
+        "zone3": {
+          "book": 0.8814,
+          "box": 0.0287,
+          "cellphone": 0.0238,
+          "cup": 0.1258,
+          "handtowel": 0.7637,
+          "ladle": 0.6258,
+          "laptop": 0.0945,
+          "mug": 0.1054,
+          "papertowelroll": 0.4958,
+          "pot": 0.1054,
+          "remotecontrol": 0.0639,
+          "soapbottle": 0.089,
+          "spatula": 0.1335,
+          "spoon": 0.0353,
+          "tabletopdecor": 0.076,
+          "tissuebox": 0.2148,
+          "towel": 0.7718,
+          "vase": 0.0821,
+          "wateringcan": 0.0472
+        },
+        "zone4": {
+          "bowl": 0.8369,
+          "knife": 0.0246,
+          "plate": 0.0433
+        },
+        "zone5": {
+          "box": 0.8614,
+          "cellphone": 0.5949,
+          "handtowel": 0.0255,
+          "laptop": 0.4046,
+          "remotecontrol": 0.1105,
+          "tissuebox": 0.1709,
+          "towel": 0.0303
+        },
+        "zone6": {
+          "book": 0.0219,
+          "box": 0.0676,
+          "laptop": 0.0886,
+          "remotecontrol": 0.9299
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 61,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2831,
+        "zone3": 0.0,
+        "zone4": 0.8369,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 61,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone5",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2831,
+        "zone3": 0.0,
+        "zone4": 0.8369,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.026,
+        "zone3": 0.0937,
+        "zone4": 0.9238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 7.5,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        },
+        "zone4": {
+          "book": 0.1861,
+          "bottle": 0.508,
+          "bowl": 0.0337,
+          "box": 0.4406,
+          "cellphone": 0.0489,
+          "cup": 0.8486,
+          "footstool": 0.0205,
+          "mug": 0.9238,
+          "papertowelroll": 0.037,
+          "soapbottle": 0.0428,
+          "tabletopdecor": 0.19,
+          "tomato": 0.0352
+        }
+      },
+      "best_belief_zone": "zone4",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.026,
+        "zone3": 0.0937,
+        "zone4": 0.9238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.026,
+        "zone3": 0.0937,
+        "zone4": 0.9238,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Book",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8818,
+        "zone2": 0.0535,
+        "zone3": 0.0,
+        "zone4": 0.1861,
+        "zone5": 0.0,
+        "zone6": 0.0515
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        },
+        "zone4": {
+          "book": 0.1861,
+          "bottle": 0.508,
+          "bowl": 0.0337,
+          "box": 0.4406,
+          "cellphone": 0.0489,
+          "cup": 0.8486,
+          "footstool": 0.0205,
+          "mug": 0.9238,
+          "papertowelroll": 0.037,
+          "soapbottle": 0.0428,
+          "tabletopdecor": 0.19,
+          "tomato": 0.0352
+        },
+        "zone5": {
+          "bowl": 0.5856,
+          "box": 0.4393,
+          "papertowelroll": 0.0342,
+          "plate": 0.0382,
+          "tissuebox": 0.2647
+        },
+        "zone6": {
+          "book": 0.0515,
+          "box": 0.0563,
+          "footstool": 0.0428,
+          "laptop": 0.1013,
+          "remotecontrol": 0.9535
+        }
+      },
+      "best_belief_zone": "zone1",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "Book",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8818,
+        "zone2": 0.0535,
+        "zone3": 0.0,
+        "zone4": 0.1861,
+        "zone5": 0.0,
+        "zone6": 0.0515
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Book",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8818,
+        "zone2": 0.0535,
+        "zone3": 0.0,
+        "zone4": 0.1861,
+        "zone5": 0.0,
+        "zone6": 0.0515
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2408,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9535
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        },
+        "zone4": {
+          "book": 0.1861,
+          "bottle": 0.508,
+          "bowl": 0.0337,
+          "box": 0.4406,
+          "cellphone": 0.0489,
+          "cup": 0.8486,
+          "footstool": 0.0205,
+          "mug": 0.9238,
+          "papertowelroll": 0.037,
+          "soapbottle": 0.0428,
+          "tabletopdecor": 0.19,
+          "tomato": 0.0352
+        },
+        "zone5": {
+          "bowl": 0.5856,
+          "box": 0.4393,
+          "papertowelroll": 0.0342,
+          "plate": 0.0382,
+          "tissuebox": 0.2647
+        },
+        "zone6": {
+          "book": 0.0515,
+          "box": 0.0563,
+          "footstool": 0.0428,
+          "laptop": 0.1013,
+          "remotecontrol": 0.9535
+        }
+      },
+      "best_belief_zone": "zone6",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2408,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9535
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone6",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone3",
+        "zone4",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2408,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9535
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "CellPhone",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1729,
+        "zone3": 0.9627,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        }
+      },
+      "best_belief_zone": "zone3",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "CellPhone",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1729,
+        "zone3": 0.9627,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "CellPhone",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1729,
+        "zone3": 0.9627,
+        "zone4": 0.0489,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8664,
+        "zone3": 0.0902,
+        "zone4": 0.508,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        },
+        "zone4": {
+          "book": 0.1861,
+          "bottle": 0.508,
+          "bowl": 0.0337,
+          "box": 0.4406,
+          "cellphone": 0.0489,
+          "cup": 0.8486,
+          "footstool": 0.0205,
+          "mug": 0.9238,
+          "papertowelroll": 0.037,
+          "soapbottle": 0.0428,
+          "tabletopdecor": 0.19,
+          "tomato": 0.0352
+        },
+        "zone5": {
+          "bowl": 0.5856,
+          "box": 0.4393,
+          "papertowelroll": 0.0342,
+          "plate": 0.0382,
+          "tissuebox": 0.2647
+        },
+        "zone6": {
+          "book": 0.0515,
+          "box": 0.0563,
+          "footstool": 0.0428,
+          "laptop": 0.1013,
+          "remotecontrol": 0.9535
+        }
+      },
+      "best_belief_zone": "zone2",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8664,
+        "zone3": 0.0902,
+        "zone4": 0.508,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 4,
+      "visited": [
+        "zone1",
+        "zone6",
+        "zone5",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8664,
+        "zone3": 0.0902,
+        "zone4": 0.508,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 7,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5",
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0349,
+        "zone3": 0.0,
+        "zone4": 0.0337,
+        "zone5": 0.5856,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.137,
+          "book": 0.8818,
+          "box": 0.0259,
+          "cup": 0.0524,
+          "footstool": 0.745,
+          "pillow": 0.7229,
+          "tabletopdecor": 0.0245,
+          "teddybear": 0.5194
+        },
+        "zone2": {
+          "apple": 0.027,
+          "book": 0.0535,
+          "bottle": 0.8664,
+          "bowl": 0.0349,
+          "box": 0.5185,
+          "cd": 0.3432,
+          "cellphone": 0.1729,
+          "footstool": 0.0663,
+          "ladle": 0.0753,
+          "laptop": 0.5858,
+          "mug": 0.026,
+          "pan": 0.0421,
+          "papertowelroll": 0.3812,
+          "plate": 0.0894,
+          "remotecontrol": 0.2408,
+          "soapbottle": 0.8865,
+          "spoon": 0.0679,
+          "tissuebox": 0.7002,
+          "wateringcan": 0.086
+        },
+        "zone3": {
+          "bottle": 0.0902,
+          "box": 0.0207,
+          "cellphone": 0.9627,
+          "cup": 0.1215,
+          "handtowel": 0.8737,
+          "kettle": 0.0675,
+          "ladle": 0.5525,
+          "laptop": 0.1916,
+          "mug": 0.0937,
+          "papertowelroll": 0.2937,
+          "pencil": 0.0516,
+          "soapbottle": 0.0348,
+          "spoon": 0.1336,
+          "tissuebox": 0.1223,
+          "toiletpaper": 0.0564,
+          "towel": 0.8161,
+          "vase": 0.0225
+        },
+        "zone4": {
+          "book": 0.1861,
+          "bottle": 0.508,
+          "bowl": 0.0337,
+          "box": 0.4406,
+          "cellphone": 0.0489,
+          "cup": 0.8486,
+          "footstool": 0.0205,
+          "mug": 0.9238,
+          "papertowelroll": 0.037,
+          "soapbottle": 0.0428,
+          "tabletopdecor": 0.19,
+          "tomato": 0.0352
+        },
+        "zone5": {
+          "bowl": 0.5856,
+          "box": 0.4393,
+          "papertowelroll": 0.0342,
+          "plate": 0.0382,
+          "tissuebox": 0.2647
+        },
+        "zone6": {
+          "book": 0.0515,
+          "box": 0.0563,
+          "footstool": 0.0428,
+          "laptop": 0.1013,
+          "remotecontrol": 0.9535
+        }
+      },
+      "best_belief_zone": "zone5",
+      "best_belief_correct": true,
+      "committed_or_belief_correct": true
+    },
+    {
+      "seed": 101,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone4",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0349,
+        "zone3": 0.0,
+        "zone4": 0.0337,
+        "zone5": 0.5856,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 101,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0349,
+        "zone3": 0.0,
+        "zone4": 0.0337,
+        "zone5": 0.5856,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    }
+  ]
+}

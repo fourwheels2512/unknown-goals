@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan203",
+      "target_class": "remotecontrol",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sidetable_1",
+      "ground_truth": [
+        "sidetable_1"
+      ],
+      "env_actions": 13,
+      "seeks": 1,
+      "receptacles": 21,
+      "log": [
+        "remotecontrol_1 resolved at sidetable_1",
+        "pick_up remotecontrol_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 42,
+      "wall_s": 367.0,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 7,
+        "detections": 142,
+        "matched": 26,
+        "claims": 19
+      },
+      "clip": "FloorPlan203_s42.gif"
+    }
+  ],
+  "fetched": 1,
+  "episodes": 1
+}

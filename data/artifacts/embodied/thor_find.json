@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan1",
+      "target_class": "kettle",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sinkbasin_1",
+      "ground_truth": [
+        "sinkbasin_1"
+      ],
+      "env_actions": 16,
+      "seeks": 1,
+      "receptacles": 37,
+      "log": [
+        "found kettle_1 at sinkbasin_1 (8 engine actions)",
+        "pick_up kettle_1: ok"
+      ],
+      "seed": 7,
+      "wall_s": 12.7,
+      "clip": "FloorPlan1_s7.gif"
+    }
+  ],
+  "fetched": 1,
+  "episodes": 1
+}

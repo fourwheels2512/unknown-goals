@@ -1,0 +1,250 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan2",
+      "target_class": "butterknife",
+      "found": true,
+      "picked_up": true,
+      "found_at": "garbagecan_1",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 29,
+      "seeks": 2,
+      "receptacles": 38,
+      "log": [
+        "found butterknife_1 at garbagecan_1 (2 engine actions)",
+        "pick_up butterknife_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 21.1,
+      "clip": "FloorPlan2_s137.gif"
+    },
+    {
+      "scene": "FloorPlan3",
+      "target_class": "soapbottle",
+      "found": true,
+      "picked_up": true,
+      "found_at": "garbagecan_1",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 20,
+      "seeks": 2,
+      "receptacles": 27,
+      "log": [
+        "found soapbottle_1 at garbagecan_1 (3 engine actions)",
+        "pick_up soapbottle_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 21.3,
+      "clip": "FloorPlan3_s137.gif"
+    },
+    {
+      "scene": "FloorPlan4",
+      "target_class": "soapbottle",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_1",
+      "ground_truth": [
+        "countertop_1"
+      ],
+      "env_actions": 14,
+      "seeks": 2,
+      "receptacles": 24,
+      "log": [
+        "found soapbottle_1 at countertop_1 (1 engine actions)",
+        "pick_up soapbottle_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 18.1,
+      "clip": "FloorPlan4_s137.gif"
+    },
+    {
+      "scene": "FloorPlan5",
+      "target_class": "knife",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_1",
+      "ground_truth": [
+        "countertop_1"
+      ],
+      "env_actions": 9,
+      "seeks": 2,
+      "receptacles": 42,
+      "log": [
+        "found knife_1 at countertop_1 (1 engine actions)",
+        "pick_up knife_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 16.0,
+      "clip": "FloorPlan5_s137.gif"
+    },
+    {
+      "scene": "FloorPlan201",
+      "target_class": "laptop",
+      "found": true,
+      "picked_up": true,
+      "found_at": "shelf_3",
+      "ground_truth": [
+        "floor_1",
+        "shelf_3"
+      ],
+      "env_actions": 136,
+      "seeks": 7,
+      "receptacles": 22,
+      "log": [
+        "found laptop_1 at shelf_3 (1 engine actions)",
+        "pick_up laptop_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 25.6,
+      "clip": "FloorPlan201_s137.gif"
+    },
+    {
+      "scene": "FloorPlan202",
+      "target_class": "box",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sidetable_1",
+      "ground_truth": [
+        "sidetable_1"
+      ],
+      "env_actions": 10,
+      "seeks": 2,
+      "receptacles": 8,
+      "log": [
+        "found box_1 at sidetable_1 (1 engine actions)",
+        "pick_up box_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 9.7,
+      "clip": "FloorPlan202_s137.gif"
+    },
+    {
+      "scene": "FloorPlan203",
+      "target_class": "cellphone",
+      "found": true,
+      "picked_up": true,
+      "found_at": "ottoman_1",
+      "ground_truth": [
+        "ottoman_1"
+      ],
+      "env_actions": 10,
+      "seeks": 1,
+      "receptacles": 21,
+      "log": [
+        "found cellphone_1 at ottoman_1 (3 engine actions)",
+        "pick_up cellphone_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 21.2,
+      "clip": "FloorPlan203_s137.gif"
+    },
+    {
+      "scene": "FloorPlan301",
+      "target_class": "basketball",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bed_1",
+      "ground_truth": [
+        "bed_1"
+      ],
+      "env_actions": 94,
+      "seeks": 4,
+      "receptacles": 30,
+      "log": [
+        "found basketball_1 at bed_1 (8 engine actions)",
+        "pick_up basketball_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 25.9,
+      "clip": "FloorPlan301_s137.gif"
+    },
+    {
+      "scene": "FloorPlan302",
+      "target_class": "bowl",
+      "found": true,
+      "picked_up": true,
+      "found_at": "shelf_1",
+      "ground_truth": [
+        "shelf_1"
+      ],
+      "env_actions": 6,
+      "seeks": 2,
+      "receptacles": 16,
+      "log": [
+        "found bowl_1 at shelf_1 (1 engine actions)",
+        "pick_up bowl_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 9.0,
+      "clip": "FloorPlan302_s137.gif"
+    },
+    {
+      "scene": "FloorPlan303",
+      "target_class": "pencil",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bed_1",
+      "ground_truth": [
+        "bed_1"
+      ],
+      "env_actions": 6,
+      "seeks": 2,
+      "receptacles": 25,
+      "log": [
+        "found pencil_1 at bed_1 (1 engine actions)",
+        "pick_up pencil_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 10.2,
+      "clip": "FloorPlan303_s137.gif"
+    },
+    {
+      "scene": "FloorPlan401",
+      "target_class": "spraybottle",
+      "found": true,
+      "picked_up": true,
+      "found_at": "toilet_1",
+      "ground_truth": [
+        "toilet_1"
+      ],
+      "env_actions": 11,
+      "seeks": 2,
+      "receptacles": 17,
+      "log": [
+        "found spraybottle_1 at toilet_1 (1 engine actions)",
+        "pick_up spraybottle_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 12.3,
+      "clip": "FloorPlan401_s137.gif"
+    },
+    {
+      "scene": "FloorPlan402",
+      "target_class": "toiletpaper",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_1",
+      "ground_truth": [
+        "bathtubbasin_1",
+        "countertop_1"
+      ],
+      "env_actions": 16,
+      "seeks": 2,
+      "receptacles": 18,
+      "log": [
+        "found toiletpaper_1 at countertop_1 (1 engine actions)",
+        "pick_up toiletpaper_1: ok"
+      ],
+      "seed": 137,
+      "wall_s": 20.0,
+      "clip": "FloorPlan402_s137.gif"
+    }
+  ],
+  "fetched": 12,
+  "episodes": 12
+}

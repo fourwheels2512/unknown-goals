@@ -1,0 +1,307 @@
+{
+  "scenario": {
+    "id": "wh_l5_20002",
+    "seed": 20002,
+    "level": 5,
+    "target": "wrench_12",
+    "truth": "bay_3",
+    "truth_note": "carrier_kept",
+    "locations": {
+      "storage": [
+        0,
+        0
+      ],
+      "bay_1": [
+        1,
+        0
+      ],
+      "bay_2": [
+        2,
+        0
+      ],
+      "workbench_7": [
+        0,
+        1
+      ],
+      "bay_3": [
+        1,
+        1
+      ],
+      "bay_4": [
+        2,
+        1
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "t": 0,
+      "source": "camera",
+      "text": "wrench_12 LOCATED_AT storage",
+      "conf": 0.867
+    },
+    {
+      "t": 2,
+      "source": "camera",
+      "text": "wrench_12 NEAR iris",
+      "conf": 0.766
+    },
+    {
+      "t": 2,
+      "source": "badge_reader",
+      "text": "dana ENTERED bay_1",
+      "conf": 0.812
+    },
+    {
+      "t": 4,
+      "source": "camera",
+      "text": "wrench_18 LOCATED_AT bay_2",
+      "conf": 0.932
+    },
+    {
+      "t": 5,
+      "source": "badge_reader",
+      "text": "iris ENTERED bay_3",
+      "conf": 0.934
+    },
+    {
+      "t": 5,
+      "source": "badge_reader",
+      "text": "dana ENTERED workbench_7",
+      "conf": 0.924
+    },
+    {
+      "t": 7,
+      "source": "camera",
+      "text": "wrench_12 ABSENT_FROM storage",
+      "conf": 0.851
+    },
+    {
+      "t": 7,
+      "source": "badge_reader",
+      "text": "dana ENTERED bay_4",
+      "conf": 0.97
+    },
+    {
+      "t": 7,
+      "source": "camera",
+      "text": "torch_8 LOCATED_AT bay_1",
+      "conf": 0.919
+    },
+    {
+      "t": 8,
+      "source": "badge_reader",
+      "text": "dana ENTERED bay_1",
+      "conf": 0.919
+    },
+    {
+      "t": 8,
+      "source": "camera",
+      "text": "tape_4 LOCATED_AT storage",
+      "conf": 0.87
+    },
+    {
+      "t": 9,
+      "source": "cart_tracker",
+      "text": "cart_1 EXITED bay_3",
+      "conf": 0.918
+    },
+    {
+      "t": 9,
+      "source": "cart_tracker",
+      "text": "cart_1 MOVED_TO bay_2",
+      "conf": 0.928
+    },
+    {
+      "t": 10,
+      "source": "camera_flaky",
+      "text": "wrench_12 LOCATED_AT bay_4",
+      "conf": 0.565
+    }
+  ],
+  "engine": {
+    "steps": [
+      {
+        "beliefs": {
+          "bay_4": 1.0
+        },
+        "hypotheses": [],
+        "verify": "bay_4",
+        "action": {
+          "type": "INSPECT_LOCATION",
+          "target": "bay_4",
+          "rationale": "belief(bay_4)=1.000, distance=3"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM bay_4"
+        ],
+        "found": false,
+        "robot": "bay_4"
+      },
+      {
+        "beliefs": {
+          "bay_2": 0.47,
+          "bay_3": 0.452,
+          "storage": 0.064,
+          "bay_4": 0.014
+        },
+        "hypotheses": [
+          {
+            "desc": "cart_1 transported wrench_12 from bay_3 to bay_2",
+            "belief": 0.47
+          },
+          {
+            "desc": "iris carried wrench_12 to bay_3",
+            "belief": 0.452
+          },
+          {
+            "desc": "wrench_12 remains at storage (absence may be a missed detection)",
+            "belief": 0.064
+          },
+          {
+            "desc": "wrench_12 remains at bay_4 (absence may be a missed detection)",
+            "belief": 0.014
+          }
+        ],
+        "action": {
+          "type": "SCAN_CONTAINER",
+          "target": "cart_1",
+          "rationale": "hypothesis 'cart_1 transported wrench_12 from bay_3 to bay_2' belief=0.470"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM cart_1"
+        ],
+        "found": false,
+        "robot": "bay_2"
+      },
+      {
+        "beliefs": {
+          "bay_3": 0.837,
+          "storage": 0.119,
+          "bay_4": 0.026,
+          "bay_2": 0.017
+        },
+        "hypotheses": [
+          {
+            "desc": "iris carried wrench_12 to bay_3",
+            "belief": 0.837
+          },
+          {
+            "desc": "wrench_12 remains at storage (absence may be a missed detection)",
+            "belief": 0.119
+          },
+          {
+            "desc": "wrench_12 remains at bay_4 (absence may be a missed detection)",
+            "belief": 0.026
+          },
+          {
+            "desc": "cart_1 transported wrench_12 from bay_3 to bay_2",
+            "belief": 0.017
+          }
+        ],
+        "action": {
+          "type": "INSPECT_LOCATION",
+          "target": "bay_3",
+          "rationale": "belief(bay_3)=0.837, distance=2"
+        },
+        "outcomes": [
+          "wrench_12 LOCATED_AT bay_3"
+        ],
+        "found": true,
+        "robot": "bay_3"
+      }
+    ],
+    "success": true,
+    "found_at": "bay_3",
+    "steps_used": 3
+  },
+  "llm": {
+    "model": "qwen2.5:7b-instruct",
+    "scaffold": "strong",
+    "steps": [
+      {
+        "thought": "",
+        "action": {
+          "type": "INSPECT_LOCATION",
+          "target": "storage"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM storage (confidence 0.95)"
+        ],
+        "robot": "storage"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "REPLAY_CAMERA",
+          "target": "bay_1"
+        },
+        "outcomes": [],
+        "robot": "storage"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "SCAN_CONTAINER",
+          "target": "cart_1"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM cart_1 (confidence 0.98)"
+        ],
+        "robot": "bay_2"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "INSPECT_LOCATION",
+          "target": "bay_4"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM bay_4 (confidence 0.95)"
+        ],
+        "robot": "bay_4"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "SCAN_CONTAINER",
+          "target": "cart_2"
+        },
+        "outcomes": [
+          "wrench_12 ABSENT_FROM cart_2 (confidence 0.98)"
+        ],
+        "robot": "bay_2"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "REPLAY_CAMERA",
+          "target": "bay_3"
+        },
+        "outcomes": [],
+        "robot": "bay_2"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "REPLAY_CAMERA",
+          "target": "bay_2"
+        },
+        "outcomes": [],
+        "robot": "bay_2"
+      },
+      {
+        "thought": "",
+        "action": {
+          "type": "REPLAY_CAMERA",
+          "target": "bay_1"
+        },
+        "outcomes": [],
+        "robot": "bay_2"
+      }
+    ],
+    "success": false,
+    "found_at": null,
+    "steps_used": 8
+  }
+}

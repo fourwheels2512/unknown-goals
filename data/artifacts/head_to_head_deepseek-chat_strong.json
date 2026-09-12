@@ -1,0 +1,815 @@
+[
+  {
+    "level": 2,
+    "seed": 20000,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.1,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20001,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20002,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20003,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 2.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20004,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20005,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20006,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.8,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20007,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20008,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.1,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20009,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 2.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20010,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 2,
+    "seed": 20011,
+    "truth": "carrier",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 2.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20000,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.7,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20002,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.2,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.7,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20005,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 16.1,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20006,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20007,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20008,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.3,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20009,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 5,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 23.6,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 3,
+    "seed": 20011,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 11.2,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20000,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 8.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 13.2,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20002,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 8.2,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20005,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.0,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20006,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 20.9,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20007,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 11.2,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20008,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20009,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.1,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(storage)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 8.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 4,
+    "seed": 20011,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.7,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20000,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 11.5,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.0,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_2)",
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20002,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 13.3,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.4,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 4,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 18.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20005,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.2,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20006,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 8,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 43.7,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(storage)",
+      "REPLAY_CAMERA(bay_3)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(workbench_7)",
+      "INSPECT_LOCATION(bay_1)",
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20007,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.9,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20008,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 1,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 8.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20009,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.0,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20010,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 4.3,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 5,
+    "seed": 20011,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.2,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_2)"
+    ]
+  }
+]

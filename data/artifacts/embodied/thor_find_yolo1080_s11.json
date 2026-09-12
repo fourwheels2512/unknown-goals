@@ -1,0 +1,354 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan2",
+      "target_class": "fork",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 250,
+      "seeks": 10,
+      "receptacles": 38,
+      "log": [],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 1234.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 198,
+        "detections": 2814,
+        "matched": 137,
+        "claims": 66
+      },
+      "clip": "FloorPlan2_s11.gif"
+    },
+    {
+      "scene": "FloorPlan3",
+      "target_class": "fork",
+      "found": true,
+      "picked_up": true,
+      "found_at": "stool_1",
+      "ground_truth": [
+        "stool_1"
+      ],
+      "env_actions": 90,
+      "seeks": 3,
+      "receptacles": 27,
+      "log": [
+        "fork_1 resolved at stool_1",
+        "pick_up fork_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 513.9,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 59,
+        "detections": 1977,
+        "matched": 70,
+        "claims": 44
+      },
+      "clip": "FloorPlan3_s11.gif"
+    },
+    {
+      "scene": "FloorPlan4",
+      "target_class": "bread",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_2",
+      "ground_truth": [
+        "countertop_2"
+      ],
+      "env_actions": 13,
+      "seeks": 1,
+      "receptacles": 24,
+      "log": [
+        "bread_1 resolved at countertop_2",
+        "pick_up bread_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 291.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 7,
+        "detections": 124,
+        "matched": 22,
+        "claims": 21
+      },
+      "clip": "FloorPlan4_s11.gif"
+    },
+    {
+      "scene": "FloorPlan5",
+      "target_class": "lettuce",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sinkbasin_1",
+      "ground_truth": [
+        "sinkbasin_1"
+      ],
+      "env_actions": 105,
+      "seeks": 4,
+      "receptacles": 42,
+      "log": [
+        "lettuce_1 resolved at sinkbasin_1",
+        "pick_up lettuce_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 691.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 79,
+        "detections": 1197,
+        "matched": 112,
+        "claims": 74
+      },
+      "clip": "FloorPlan5_s11.gif"
+    },
+    {
+      "scene": "FloorPlan201",
+      "target_class": "remotecontrol",
+      "found": true,
+      "picked_up": true,
+      "found_at": "armchair_2",
+      "ground_truth": [
+        "armchair_2"
+      ],
+      "env_actions": 67,
+      "seeks": 3,
+      "receptacles": 22,
+      "log": [
+        "remotecontrol_1 resolved at armchair_2",
+        "pick_up remotecontrol_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 320.1,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 59,
+        "detections": 831,
+        "matched": 128,
+        "claims": 65
+      },
+      "clip": "FloorPlan201_s11.gif"
+    },
+    {
+      "scene": "FloorPlan202",
+      "target_class": "box",
+      "found": true,
+      "picked_up": true,
+      "found_at": "shelf_1",
+      "ground_truth": [
+        "floor_1",
+        "shelf_1"
+      ],
+      "env_actions": 40,
+      "seeks": 2,
+      "receptacles": 8,
+      "log": [
+        "box_1 resolved at shelf_1",
+        "pick_up box_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 184.6,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 36,
+        "detections": 279,
+        "matched": 39,
+        "claims": 25
+      },
+      "clip": "FloorPlan202_s11.gif"
+    },
+    {
+      "scene": "FloorPlan203",
+      "target_class": "box",
+      "found": true,
+      "picked_up": true,
+      "found_at": "floor_1",
+      "ground_truth": [
+        "floor_1"
+      ],
+      "env_actions": 72,
+      "seeks": 3,
+      "receptacles": 21,
+      "log": [
+        "box_1 resolved at floor_1",
+        "pick_up box_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 748.5,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 50,
+        "detections": 740,
+        "matched": 116,
+        "claims": 70
+      },
+      "clip": "FloorPlan203_s11.gif"
+    },
+    {
+      "scene": "FloorPlan301",
+      "target_class": "basketball",
+      "found": true,
+      "picked_up": true,
+      "found_at": "desk_1",
+      "ground_truth": [
+        "desk_1"
+      ],
+      "env_actions": 14,
+      "seeks": 1,
+      "receptacles": 30,
+      "log": [
+        "basketball_1 resolved at desk_1",
+        "pick_up basketball_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 101.4,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 8,
+        "detections": 47,
+        "matched": 21,
+        "claims": 12
+      },
+      "clip": "FloorPlan301_s11.gif"
+    },
+    {
+      "scene": "FloorPlan302",
+      "target_class": "book",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bed_1",
+      "ground_truth": [
+        "bed_1"
+      ],
+      "env_actions": 9,
+      "seeks": 1,
+      "receptacles": 16,
+      "log": [
+        "book_1 resolved at bed_1",
+        "pick_up book_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 91.6,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 5,
+        "detections": 85,
+        "matched": 10,
+        "claims": 10
+      },
+      "clip": "FloorPlan302_s11.gif"
+    },
+    {
+      "scene": "FloorPlan303",
+      "target_class": "pencil",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bed_1",
+      "ground_truth": [
+        "bed_1"
+      ],
+      "env_actions": 71,
+      "seeks": 3,
+      "receptacles": 25,
+      "log": [
+        "pencil_1 resolved at bed_1",
+        "pick_up pencil_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 191.5,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 54,
+        "detections": 1248,
+        "matched": 76,
+        "claims": 47
+      },
+      "clip": "FloorPlan303_s11.gif"
+    },
+    {
+      "scene": "FloorPlan401",
+      "target_class": "soapbar",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bathtub_1",
+      "ground_truth": [
+        "bathtub_1"
+      ],
+      "env_actions": 61,
+      "seeks": 3,
+      "receptacles": 17,
+      "log": [
+        "soapbar_1 resolved at bathtub_1",
+        "pick_up soapbar_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 179.6,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 48,
+        "detections": 267,
+        "matched": 51,
+        "claims": 37
+      },
+      "clip": "FloorPlan401_s11.gif"
+    },
+    {
+      "scene": "FloorPlan402",
+      "target_class": "handtowel",
+      "found": true,
+      "picked_up": true,
+      "found_at": "garbagecan_1",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 44,
+      "seeks": 2,
+      "receptacles": 18,
+      "log": [
+        "handtowel_1 resolved at garbagecan_1",
+        "pick_up handtowel_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 11,
+      "wall_s": 394.9,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 35,
+        "detections": 384,
+        "matched": 13,
+        "claims": 10
+      },
+      "clip": "FloorPlan402_s11.gif"
+    }
+  ],
+  "fetched": 11,
+  "episodes": 12
+}

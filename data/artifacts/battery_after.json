@@ -1,0 +1,31 @@
+{
+  "tag": "after",
+  "T1_warehouse": {
+    "success": 1.0,
+    "actions": 1.728,
+    "proofs": 1.0
+  },
+  "T2_gaslight": {
+    "success": 1.0,
+    "actions": 2.72,
+    "proofs": 1.0
+  },
+  "T3_coffee_ladder": {
+    "rung1": 0.96,
+    "rung2": 0.84,
+    "rung3": 0.84
+  },
+  "T4_woz": {
+    "w1": 1.0,
+    "w1_coverage": 0.5146666666666667,
+    "w2": 0.88,
+    "w2_coverage": 0.9613333333333334,
+    "w3": 0.68,
+    "w3_coverage": 0.8733333333333333
+  },
+  "T5_selfimprove": {
+    "attempt1": 0.875,
+    "attempt6": 0.875,
+    "slope": 0.0
+  }
+}

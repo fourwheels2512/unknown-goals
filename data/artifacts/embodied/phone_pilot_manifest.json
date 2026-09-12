@@ -1,0 +1,292 @@
+{
+  "pre_registration": "NONE. This is a PILOT, not the pre-registered battery.",
+  "pilot": {
+    "what": "The first phone sitting (3 September 2026, Robotics_Clips/), which failed the pre-registered protocol and is run here only as a disclosed pilot.",
+    "why_not_the_battery": [
+      "Objects were rotated one zone per round by the owner, not placed from the committed tables; this placement record was written down from the footage on 5 September, before any detector ran on it, and is not a random draw.",
+      "Book was replaced by a Rubik's cube (not in the detector vocabulary) and CellPhone by a laptop; the pilot therefore grades Mug, RemoteControl, Bottle, Bowl and Laptop (five classes, 30 episodes).",
+      "Same-class fixtures stayed in the zones: a stack of books on the desk (zone 2), steel bowls and a teal cup on the marble table (zone 4), a candy dish, a soap bottle and bagged water bottles at the island (zone 3), a second laptop in the background of some desk clips. Wrong commitments caused by them count as measured.",
+      "Portrait HEVC with a rotation tag, transcoded to baked-portrait H.264 30 fps."
+    ],
+    "never": "the paper's headline result; reported only as a labelled pilot."
+  },
+  "scope": "This is a PERCEPTION-AND-COGNITION test on real camera pixels, NOT a robot result. Nothing moves: a person carries a phone to six fixed zones in one room and records a short clip of each. The engine chooses which zone's clip to look at next, accumulates OBSERVED and ABSENT_FROM claims, and commits to a zone. No navigation, no manipulation, no autonomy over a physical body is claimed or measured.",
+  "generator": "scratch script from the frame sheets, not scripts/make_phone_manifest.py",
+  "placement_sha256": "885e05e0d5452304d17ec742ed51f652b4d3cdf7031f063a6d21aff4840ba8c6",
+  "protocol": {
+    "room": "one room, six fixed zones, recorded by hand",
+    "zones": [
+      {
+        "zone": 1,
+        "name": "desk"
+      },
+      {
+        "zone": 2,
+        "name": "shelf"
+      },
+      {
+        "zone": 3,
+        "name": "dining table"
+      },
+      {
+        "zone": 4,
+        "name": "kitchen counter"
+      },
+      {
+        "zone": 5,
+        "name": "sofa"
+      },
+      {
+        "zone": 6,
+        "name": "bedside table"
+      }
+    ],
+    "targets": [
+      "Mug",
+      "RemoteControl",
+      "Bottle",
+      "Bowl",
+      "Laptop"
+    ],
+    "seeds": [
+      7,
+      11,
+      23,
+      42,
+      99,
+      137
+    ],
+    "rounds": 6,
+    "clips_total": 36,
+    "episodes_total": 36,
+    "placement_rule": "random.Random(seed).shuffle([1..6]); the shuffled list read off against targets in their fixed manifest order",
+    "recording_order": "1 -> 6 in every round (verified from embedded creation times)",
+    "clip_seconds": [
+      3,
+      5
+    ],
+    "camera": {
+      "hand_held": true,
+      "distance_m": 1.0,
+      "resolution": "1080p",
+      "motion": "slow pan across the zone"
+    },
+    "file_naming": "seed{SS}_zone{Z}.mp4, e.g. seed07_zone3.mp4",
+    "footage_dir": "data/phone_pilot/",
+    "re_record_rule": "If an object will not sit in its zone, or is knocked over, or the clip is unusable: re-record THAT clip with the object in the zone the manifest names. Never improvise a different placement, never skip a zone, never reorder."
+  },
+  "detector": {
+    "model": "YOLO-World yolov8x-worldv2",
+    "weights": "/root/yolo/yolov8x-worldv2.pt",
+    "imgsz": 1088,
+    "vocabulary": "the same fixed 62-class THOR_PICKUPABLE_TYPES prompt list as the simulator battery, unchanged",
+    "detect_conf": 0.02,
+    "claim_min_conf": 0.05,
+    "frame_stride": 10,
+    "iou_gate": null,
+    "iou_disclosure": "No IoU / instance-association gate. Every simulator run binds a detection to a rendered instance mask before it may become a claim, which makes detector hallucinations incapable of creating a sighting. Real footage has no instance masks, so that gate is absent here: a hallucinated detection CAN produce a false sighting and a wrong commitment. That is the point of the test - it is strictly harder than the simulator batteries on precisely the axis reviewers doubt."
+  },
+  "arms": [
+    "engine",
+    "sweep",
+    "random"
+  ],
+  "grading": "An episode is CORRECT when the engine's committed zone equals truth_zone. A commitment to any other zone is WRONG (it is not a miss). No commitment inside the visit budget is a MISS. Wrong commitments and misses are reported separately.",
+  "engine_unchanged": "The engine is used unmodified; only the sense model in experiments/embodied/phone_find.py is new.",
+  "episodes": [
+    {
+      "seed": 7,
+      "target": "Mug",
+      "truth_zone": 6
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "truth_zone": 1
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "truth_zone": 3
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "truth_zone": 5
+    },
+    {
+      "seed": 7,
+      "target": "Laptop",
+      "truth_zone": 4
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "truth_zone": 1
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "truth_zone": 2
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "truth_zone": 4
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "truth_zone": 6
+    },
+    {
+      "seed": 11,
+      "target": "Laptop",
+      "truth_zone": 5
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "truth_zone": 2
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "truth_zone": 3
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "truth_zone": 5
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "truth_zone": 1
+    },
+    {
+      "seed": 23,
+      "target": "Laptop",
+      "truth_zone": 6
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "truth_zone": 3
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "truth_zone": 4
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "truth_zone": 6
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "truth_zone": 2
+    },
+    {
+      "seed": 42,
+      "target": "Laptop",
+      "truth_zone": 1
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "truth_zone": 4
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "truth_zone": 5
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "truth_zone": 1
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "truth_zone": 3
+    },
+    {
+      "seed": 99,
+      "target": "Laptop",
+      "truth_zone": 2
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "truth_zone": 5
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "truth_zone": 6
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "truth_zone": 2
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "truth_zone": 4
+    },
+    {
+      "seed": 137,
+      "target": "Laptop",
+      "truth_zone": 3
+    }
+  ],
+  "placements": {
+    "7": {
+      "Mug": 6,
+      "RemoteControl": 1,
+      "Bottle": 3,
+      "Bowl": 5,
+      "Laptop": 4
+    },
+    "11": {
+      "Mug": 1,
+      "RemoteControl": 2,
+      "Bottle": 4,
+      "Bowl": 6,
+      "Laptop": 5
+    },
+    "23": {
+      "Mug": 2,
+      "RemoteControl": 3,
+      "Bottle": 5,
+      "Bowl": 1,
+      "Laptop": 6
+    },
+    "42": {
+      "Mug": 3,
+      "RemoteControl": 4,
+      "Bottle": 6,
+      "Bowl": 2,
+      "Laptop": 1
+    },
+    "99": {
+      "Mug": 4,
+      "RemoteControl": 5,
+      "Bottle": 1,
+      "Bowl": 3,
+      "Laptop": 2
+    },
+    "137": {
+      "Mug": 5,
+      "RemoteControl": 6,
+      "Bottle": 2,
+      "Bowl": 4,
+      "Laptop": 3
+    }
+  }
+}

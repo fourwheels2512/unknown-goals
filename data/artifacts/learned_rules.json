@@ -1,0 +1,16 @@
+[
+  {
+    "rule_id": "learned_cart_transport",
+    "description": "Measured: object last associated with a carrier is found at the departing container's destination.",
+    "reliability": 0.7133,
+    "status": "VALIDATED",
+    "support_count": 450,
+    "precision": 0.7133,
+    "recall": 0.7692,
+    "scope": {
+      "pattern": "carrier+container_chain",
+      "levels": "3-5"
+    },
+    "version": "1"
+  }
+]

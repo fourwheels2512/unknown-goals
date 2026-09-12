@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "seed": 7,
+      "policy": "engine",
+      "target": "flight_data_recorder",
+      "instance": "flight_data_recorder",
+      "moved_to": "sv_2_3",
+      "intended_truth": "sv_2_3",
+      "placed": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "ecm_pose": [
+        10.91,
+        -9.585,
+        -94.5
+      ],
+      "found_at": "sv_2_3",
+      "correct": true,
+      "env_actions": 11,
+      "wall_s": 11.5
+    }
+  ],
+  "summary": {
+    "engine": {
+      "episodes": 1,
+      "correct": 1,
+      "mean_visits": 11.0
+    }
+  },
+  "episodes": 1,
+  "stations": 70,
+  "grid": [
+    -5.0,
+    40.0,
+    -20.0,
+    12.0
+  ],
+  "station_pitch": 5.0,
+  "max_env_actions": 250,
+  "sonar": {
+    "range_m": 10.0,
+    "fov_rad": 2.26894,
+    "headings": 3,
+    "strength_curve": "0.95*0.5^((r/range)^2)",
+    "gate": 0.5
+  }
+}

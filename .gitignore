@@ -1,5 +1,12 @@
-# produced by `unknown-goals-demo benchmark` when run from a clone
-data/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.venv/
+venv/
+
 # binaries live on the Releases page, never in the tree
 *.exe
 unknown-goals-demo*

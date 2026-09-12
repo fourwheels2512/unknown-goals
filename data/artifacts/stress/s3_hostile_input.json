@@ -1,0 +1,20 @@
+{
+  "suite": "s3_hostile_input",
+  "elapsed_s": 15.5,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [
+    {
+      "kind": "LEDGER_REFUSES",
+      "detail": "garbage: DatabaseError"
+    },
+    {
+      "kind": "LEDGER_REFUSES",
+      "detail": "text: DatabaseError"
+    },
+    {
+      "kind": "LEDGER_REFUSES",
+      "detail": "partial_header: DatabaseError"
+    }
+  ]
+}

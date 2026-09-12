@@ -1,0 +1,13 @@
+# One typed claim into the engine's append-only evidence ledger. This is
+# the ONLY way perception reaches cognition — same contract as
+# ingestion/vision_adapter.py: structured claims, never raw sensor data.
+string subject                 # entity id, e.g. "wrench_1"
+string predicate               # LOCATED_AT | ABSENT_FROM | INSIDE | ...
+string object                  # location/container entity id
+float32 confidence             # source-reported, 0..1
+string source_id               # e.g. "frustum_sensor", "yolo_cam_front"
+int64 event_time               # when the fact was true (engine ticks)
+---
+bool accepted
+string claim_id                # ledger id (empty if rejected)
+string reject_reason           # why the claim was refused, if it was

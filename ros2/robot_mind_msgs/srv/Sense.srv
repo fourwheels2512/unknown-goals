@@ -1,0 +1,22 @@
+# Ask the platform's perception to report what it senses from the
+# robot's CURRENT pose. The cognition node turns the answer into typed
+# ledger claims; the sensor never sees the search target or the belief
+# state — same division of labor as every robot_mind adapter.
+---
+string[] seen                  # entity ids the sensor reports right now
+float32[] confidence           # per seen id, the sensor's own confidence
+                               # (a detector's score); empty for a logical
+                               # sensor, the cognition node then uses 0.95
+string at_location             # nearest registered location entity, if any
+bool ok true                   # true whenever the sensor actually looked.
+                               # false means it could NOT look (no frame,
+                               # an undecodable frame, no pose, busy with
+                               # another dwell) - the client MUST treat
+                               # this as a FAILED inspection, never as an
+                               # empty view: cognition_node writes
+                               # ABSENT_FROM at 0.9 for a target missing
+                               # from an answered view, so an unanswered
+                               # view reported as empty becomes a false
+                               # absence. Nodes that predate this field
+                               # never set it, so they stay ok=true.
+string error                   # why ok is false; empty when ok is true

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan2",
+      "target_class": "pot",
+      "found": true,
+      "picked_up": true,
+      "found_at": "stoveburner_1",
+      "ground_truth": [
+        "countertop_1",
+        "stoveburner_1",
+        "stoveburner_2",
+        "stoveburner_4"
+      ],
+      "env_actions": 10,
+      "seeks": 1,
+      "receptacles": 38,
+      "log": [
+        "pot_1 resolved at stoveburner_1",
+        "pick_up pot_1: ok"
+      ],
+      "seed": 7,
+      "wall_s": 68.7,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 6,
+        "detections": 53,
+        "matched": 10
+      },
+      "clip": "FloorPlan2_s7.gif"
+    }
+  ],
+  "fetched": 1,
+  "episodes": 1
+}

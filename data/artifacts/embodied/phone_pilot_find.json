@@ -1,0 +1,3260 @@
+{
+  "dry_run": false,
+  "dry_run_note": "",
+  "source": "data/phone_pilot",
+  "mode": "video",
+  "detector": {
+    "weights": "/root/yolo/yolov8x-worldv2.pt",
+    "imgsz": 1088,
+    "detect_conf": 0.02,
+    "claim_min_conf": 0.05,
+    "frame_stride": 10,
+    "iou_gate": null,
+    "absent_conf": 0.9,
+    "frames_detected": 555
+  },
+  "manifest_sha256": "885e05e0d5452304d17ec742ed51f652b4d3cdf7031f063a6d21aff4840ba8c6",
+  "seeds_missing_footage": [],
+  "by_arm": {
+    "engine": {
+      "n": 30,
+      "correct": 8,
+      "wrong": 22,
+      "miss": 0,
+      "visits": 136,
+      "mean_visits": 4.53
+    },
+    "sweep": {
+      "n": 30,
+      "correct": 8,
+      "wrong": 22,
+      "miss": 0,
+      "visits": 45,
+      "mean_visits": 1.5
+    },
+    "random": {
+      "n": 30,
+      "correct": 6,
+      "wrong": 24,
+      "miss": 0,
+      "visits": 46,
+      "mean_visits": 1.53
+    }
+  },
+  "rows": [
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone3",
+        "zone3",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0,
+        "zone3": 0.5588,
+        "zone4": 0.5649,
+        "zone5": 0.0,
+        "zone6": 0.9256
+      },
+      "unresolved_labels": 4,
+      "wall_s": 11.4,
+      "all_conf_by_zone": {
+        "zone1": {
+          "boots": 0.0208,
+          "box": 0.4639,
+          "cellphone": 0.7435,
+          "footstool": 0.4163,
+          "pillow": 0.403,
+          "plate": 0.0244,
+          "remotecontrol": 0.9406,
+          "teddybear": 0.5995,
+          "tissuebox": 0.4893,
+          "vase": 0.0512
+        },
+        "zone2": {
+          "book": 0.7248,
+          "bottle": 0.1709,
+          "bowl": 0.0456,
+          "box": 0.6071,
+          "cellphone": 0.0479,
+          "creditcard": 0.023,
+          "cup": 0.0724,
+          "laptop": 0.0969,
+          "pen": 0.6119,
+          "pencil": 0.6246,
+          "plate": 0.0704,
+          "remotecontrol": 0.1442,
+          "soapbottle": 0.087,
+          "tabletopdecor": 0.0202,
+          "tissuebox": 0.7311
+        },
+        "zone3": {
+          "apple": 0.2895,
+          "book": 0.2137,
+          "boots": 0.027,
+          "bottle": 0.8118,
+          "bowl": 0.834,
+          "box": 0.539,
+          "bread": 0.0389,
+          "butterknife": 0.0444,
+          "candle": 0.3557,
+          "cd": 0.0842,
+          "cellphone": 0.2849,
+          "cup": 0.5522,
+          "egg": 0.069,
+          "footstool": 0.1019,
+          "fork": 0.0201,
+          "handtowel": 0.0353,
+          "kettle": 0.9217,
+          "knife": 0.0997,
+          "ladle": 0.1985,
+          "lettuce": 0.0424,
+          "mug": 0.5588,
+          "pan": 0.7962,
+          "papertowelroll": 0.8021,
+          "pen": 0.8606,
+          "pencil": 0.9176,
+          "peppershaker": 0.0239,
+          "pillow": 0.0653,
+          "plate": 0.3966,
+          "pot": 0.7764,
+          "soapbottle": 0.718,
+          "spoon": 0.0705,
+          "tabletopdecor": 0.8922,
+          "teddybear": 0.0623,
+          "tissuebox": 0.585,
+          "tomato": 0.3271,
+          "towel": 0.1961,
+          "vase": 0.0752,
+          "wateringcan": 0.1773,
+          "winebottle": 0.0256
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0,
+        "zone3": 0.5588,
+        "zone4": 0.5649,
+        "zone5": 0.0,
+        "zone6": 0.9256
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone5",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0,
+        "zone3": 0.5588,
+        "zone4": 0.5649,
+        "zone5": 0.0,
+        "zone6": 0.9256
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9406,
+        "zone2": 0.1442,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "boots": 0.0208,
+          "box": 0.4639,
+          "cellphone": 0.7435,
+          "footstool": 0.4163,
+          "pillow": 0.403,
+          "plate": 0.0244,
+          "remotecontrol": 0.9406,
+          "teddybear": 0.5995,
+          "tissuebox": 0.4893,
+          "vase": 0.0512
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9406,
+        "zone2": 0.1442,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone6",
+        "zone5",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9406,
+        "zone2": 0.1442,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1709,
+        "zone3": 0.8118,
+        "zone4": 0.7472,
+        "zone5": 0.0,
+        "zone6": 0.3381
+      },
+      "unresolved_labels": 3,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "boots": 0.0208,
+          "box": 0.4639,
+          "cellphone": 0.7435,
+          "footstool": 0.4163,
+          "pillow": 0.403,
+          "plate": 0.0244,
+          "remotecontrol": 0.9406,
+          "teddybear": 0.5995,
+          "tissuebox": 0.4893,
+          "vase": 0.0512
+        },
+        "zone2": {
+          "book": 0.7248,
+          "bottle": 0.1709,
+          "bowl": 0.0456,
+          "box": 0.6071,
+          "cellphone": 0.0479,
+          "creditcard": 0.023,
+          "cup": 0.0724,
+          "laptop": 0.0969,
+          "pen": 0.6119,
+          "pencil": 0.6246,
+          "plate": 0.0704,
+          "remotecontrol": 0.1442,
+          "soapbottle": 0.087,
+          "tabletopdecor": 0.0202,
+          "tissuebox": 0.7311
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1709,
+        "zone3": 0.8118,
+        "zone4": 0.7472,
+        "zone5": 0.0,
+        "zone6": 0.3381
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1709,
+        "zone3": 0.8118,
+        "zone4": 0.7472,
+        "zone5": 0.0,
+        "zone6": 0.3381
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone3",
+        "zone3",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0456,
+        "zone3": 0.834,
+        "zone4": 0.5227,
+        "zone5": 0.9075,
+        "zone6": 0.4532
+      },
+      "unresolved_labels": 4,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "boots": 0.0208,
+          "box": 0.4639,
+          "cellphone": 0.7435,
+          "footstool": 0.4163,
+          "pillow": 0.403,
+          "plate": 0.0244,
+          "remotecontrol": 0.9406,
+          "teddybear": 0.5995,
+          "tissuebox": 0.4893,
+          "vase": 0.0512
+        },
+        "zone2": {
+          "book": 0.7248,
+          "bottle": 0.1709,
+          "bowl": 0.0456,
+          "box": 0.6071,
+          "cellphone": 0.0479,
+          "creditcard": 0.023,
+          "cup": 0.0724,
+          "laptop": 0.0969,
+          "pen": 0.6119,
+          "pencil": 0.6246,
+          "plate": 0.0704,
+          "remotecontrol": 0.1442,
+          "soapbottle": 0.087,
+          "tabletopdecor": 0.0202,
+          "tissuebox": 0.7311
+        },
+        "zone3": {
+          "apple": 0.2895,
+          "book": 0.2137,
+          "boots": 0.027,
+          "bottle": 0.8118,
+          "bowl": 0.834,
+          "box": 0.539,
+          "bread": 0.0389,
+          "butterknife": 0.0444,
+          "candle": 0.3557,
+          "cd": 0.0842,
+          "cellphone": 0.2849,
+          "cup": 0.5522,
+          "egg": 0.069,
+          "footstool": 0.1019,
+          "fork": 0.0201,
+          "handtowel": 0.0353,
+          "kettle": 0.9217,
+          "knife": 0.0997,
+          "ladle": 0.1985,
+          "lettuce": 0.0424,
+          "mug": 0.5588,
+          "pan": 0.7962,
+          "papertowelroll": 0.8021,
+          "pen": 0.8606,
+          "pencil": 0.9176,
+          "peppershaker": 0.0239,
+          "pillow": 0.0653,
+          "plate": 0.3966,
+          "pot": 0.7764,
+          "soapbottle": 0.718,
+          "spoon": 0.0705,
+          "tabletopdecor": 0.8922,
+          "teddybear": 0.0623,
+          "tissuebox": 0.585,
+          "tomato": 0.3271,
+          "towel": 0.1961,
+          "vase": 0.0752,
+          "wateringcan": 0.1773,
+          "winebottle": 0.0256
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0456,
+        "zone3": 0.834,
+        "zone4": 0.5227,
+        "zone5": 0.9075,
+        "zone6": 0.4532
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0456,
+        "zone3": 0.834,
+        "zone4": 0.5227,
+        "zone5": 0.9075,
+        "zone6": 0.4532
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0969,
+        "zone3": 0.0,
+        "zone4": 0.962,
+        "zone5": 0.0,
+        "zone6": 0.1335
+      },
+      "unresolved_labels": 3,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "boots": 0.0208,
+          "box": 0.4639,
+          "cellphone": 0.7435,
+          "footstool": 0.4163,
+          "pillow": 0.403,
+          "plate": 0.0244,
+          "remotecontrol": 0.9406,
+          "teddybear": 0.5995,
+          "tissuebox": 0.4893,
+          "vase": 0.0512
+        },
+        "zone2": {
+          "book": 0.7248,
+          "bottle": 0.1709,
+          "bowl": 0.0456,
+          "box": 0.6071,
+          "cellphone": 0.0479,
+          "creditcard": 0.023,
+          "cup": 0.0724,
+          "laptop": 0.0969,
+          "pen": 0.6119,
+          "pencil": 0.6246,
+          "plate": 0.0704,
+          "remotecontrol": 0.1442,
+          "soapbottle": 0.087,
+          "tabletopdecor": 0.0202,
+          "tissuebox": 0.7311
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0969,
+        "zone3": 0.0,
+        "zone4": 0.962,
+        "zone5": 0.0,
+        "zone6": 0.1335
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 7,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone4",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0969,
+        "zone3": 0.0,
+        "zone4": 0.962,
+        "zone5": 0.0,
+        "zone6": 0.1335
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8355,
+        "zone2": 0.0463,
+        "zone3": 0.4898,
+        "zone4": 0.1159,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 9.8,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.2423,
+          "book": 0.1534,
+          "bottle": 0.696,
+          "bowl": 0.7925,
+          "box": 0.33,
+          "candle": 0.0707,
+          "cellphone": 0.1022,
+          "cup": 0.913,
+          "footstool": 0.5592,
+          "laptop": 0.928,
+          "mug": 0.8355,
+          "pan": 0.0212,
+          "papertowelroll": 0.6804,
+          "pencil": 0.2332,
+          "pillow": 0.5406,
+          "plate": 0.053,
+          "pot": 0.03,
+          "remotecontrol": 0.1608,
+          "soapbottle": 0.3987,
+          "tabletopdecor": 0.2181,
+          "teddybear": 0.7773,
+          "tissuebox": 0.6503,
+          "towel": 0.2092,
+          "wateringcan": 0.0435,
+          "winebottle": 0.0521
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8355,
+        "zone2": 0.0463,
+        "zone3": 0.4898,
+        "zone4": 0.1159,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone2",
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8355,
+        "zone2": 0.0463,
+        "zone3": 0.4898,
+        "zone4": 0.1159,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1608,
+        "zone2": 0.948,
+        "zone3": 0.076,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.2423,
+          "book": 0.1534,
+          "bottle": 0.696,
+          "bowl": 0.7925,
+          "box": 0.33,
+          "candle": 0.0707,
+          "cellphone": 0.1022,
+          "cup": 0.913,
+          "footstool": 0.5592,
+          "laptop": 0.928,
+          "mug": 0.8355,
+          "pan": 0.0212,
+          "papertowelroll": 0.6804,
+          "pencil": 0.2332,
+          "pillow": 0.5406,
+          "plate": 0.053,
+          "pot": 0.03,
+          "remotecontrol": 0.1608,
+          "soapbottle": 0.3987,
+          "tabletopdecor": 0.2181,
+          "teddybear": 0.7773,
+          "tissuebox": 0.6503,
+          "towel": 0.2092,
+          "wateringcan": 0.0435,
+          "winebottle": 0.0521
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1608,
+        "zone2": 0.948,
+        "zone3": 0.076,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone4",
+        "zone6",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1608,
+        "zone2": 0.948,
+        "zone3": 0.076,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.696,
+        "zone2": 0.2074,
+        "zone3": 0.6685,
+        "zone4": 0.714,
+        "zone5": 0.0339,
+        "zone6": 0.439
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.2423,
+          "book": 0.1534,
+          "bottle": 0.696,
+          "bowl": 0.7925,
+          "box": 0.33,
+          "candle": 0.0707,
+          "cellphone": 0.1022,
+          "cup": 0.913,
+          "footstool": 0.5592,
+          "laptop": 0.928,
+          "mug": 0.8355,
+          "pan": 0.0212,
+          "papertowelroll": 0.6804,
+          "pencil": 0.2332,
+          "pillow": 0.5406,
+          "plate": 0.053,
+          "pot": 0.03,
+          "remotecontrol": 0.1608,
+          "soapbottle": 0.3987,
+          "tabletopdecor": 0.2181,
+          "teddybear": 0.7773,
+          "tissuebox": 0.6503,
+          "towel": 0.2092,
+          "wateringcan": 0.0435,
+          "winebottle": 0.0521
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.696,
+        "zone2": 0.2074,
+        "zone3": 0.6685,
+        "zone4": 0.714,
+        "zone5": 0.0339,
+        "zone6": 0.439
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone5",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.696,
+        "zone2": 0.2074,
+        "zone3": 0.6685,
+        "zone4": 0.714,
+        "zone5": 0.0339,
+        "zone6": 0.439
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.7925,
+        "zone2": 0.1654,
+        "zone3": 0.777,
+        "zone4": 0.7457,
+        "zone5": 0.0342,
+        "zone6": 0.8485
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.2423,
+          "book": 0.1534,
+          "bottle": 0.696,
+          "bowl": 0.7925,
+          "box": 0.33,
+          "candle": 0.0707,
+          "cellphone": 0.1022,
+          "cup": 0.913,
+          "footstool": 0.5592,
+          "laptop": 0.928,
+          "mug": 0.8355,
+          "pan": 0.0212,
+          "papertowelroll": 0.6804,
+          "pencil": 0.2332,
+          "pillow": 0.5406,
+          "plate": 0.053,
+          "pot": 0.03,
+          "remotecontrol": 0.1608,
+          "soapbottle": 0.3987,
+          "tabletopdecor": 0.2181,
+          "teddybear": 0.7773,
+          "tissuebox": 0.6503,
+          "towel": 0.2092,
+          "wateringcan": 0.0435,
+          "winebottle": 0.0521
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.7925,
+        "zone2": 0.1654,
+        "zone3": 0.777,
+        "zone4": 0.7457,
+        "zone5": 0.0342,
+        "zone6": 0.8485
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.7925,
+        "zone2": 0.1654,
+        "zone3": 0.777,
+        "zone4": 0.7457,
+        "zone5": 0.0342,
+        "zone6": 0.8485
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.928,
+        "zone2": 0.2001,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9701,
+        "zone6": 0.1176
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.2423,
+          "book": 0.1534,
+          "bottle": 0.696,
+          "bowl": 0.7925,
+          "box": 0.33,
+          "candle": 0.0707,
+          "cellphone": 0.1022,
+          "cup": 0.913,
+          "footstool": 0.5592,
+          "laptop": 0.928,
+          "mug": 0.8355,
+          "pan": 0.0212,
+          "papertowelroll": 0.6804,
+          "pencil": 0.2332,
+          "pillow": 0.5406,
+          "plate": 0.053,
+          "pot": 0.03,
+          "remotecontrol": 0.1608,
+          "soapbottle": 0.3987,
+          "tabletopdecor": 0.2181,
+          "teddybear": 0.7773,
+          "tissuebox": 0.6503,
+          "towel": 0.2092,
+          "wateringcan": 0.0435,
+          "winebottle": 0.0521
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.928,
+        "zone2": 0.2001,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9701,
+        "zone6": 0.1176
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 11,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.928,
+        "zone2": 0.2001,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9701,
+        "zone6": 0.1176
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1951,
+        "zone2": 0.9354,
+        "zone3": 0.6496,
+        "zone4": 0.4918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 11.3,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0698,
+          "book": 0.3795,
+          "boots": 0.0297,
+          "bottle": 0.1704,
+          "bowl": 0.8711,
+          "box": 0.4652,
+          "cup": 0.1669,
+          "footstool": 0.4592,
+          "laptop": 0.1601,
+          "mug": 0.1951,
+          "pillow": 0.4661,
+          "plate": 0.0729,
+          "remotecontrol": 0.1072,
+          "soapbottle": 0.1172,
+          "teddybear": 0.7744,
+          "tissuebox": 0.1625,
+          "towel": 0.1906,
+          "wateringcan": 0.1565
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1951,
+        "zone2": 0.9354,
+        "zone3": 0.6496,
+        "zone4": 0.4918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1951,
+        "zone2": 0.9354,
+        "zone3": 0.6496,
+        "zone4": 0.4918,
+        "zone5": 0.0,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1072,
+        "zone2": 0.0386,
+        "zone3": 0.9243,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0237
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0698,
+          "book": 0.3795,
+          "boots": 0.0297,
+          "bottle": 0.1704,
+          "bowl": 0.8711,
+          "box": 0.4652,
+          "cup": 0.1669,
+          "footstool": 0.4592,
+          "laptop": 0.1601,
+          "mug": 0.1951,
+          "pillow": 0.4661,
+          "plate": 0.0729,
+          "remotecontrol": 0.1072,
+          "soapbottle": 0.1172,
+          "teddybear": 0.7744,
+          "tissuebox": 0.1625,
+          "towel": 0.1906,
+          "wateringcan": 0.1565
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1072,
+        "zone2": 0.0386,
+        "zone3": 0.9243,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0237
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone2",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1072,
+        "zone2": 0.0386,
+        "zone3": 0.9243,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0237
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1704,
+        "zone2": 0.3789,
+        "zone3": 0.736,
+        "zone4": 0.739,
+        "zone5": 0.2591,
+        "zone6": 0.0371
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0698,
+          "book": 0.3795,
+          "boots": 0.0297,
+          "bottle": 0.1704,
+          "bowl": 0.8711,
+          "box": 0.4652,
+          "cup": 0.1669,
+          "footstool": 0.4592,
+          "laptop": 0.1601,
+          "mug": 0.1951,
+          "pillow": 0.4661,
+          "plate": 0.0729,
+          "remotecontrol": 0.1072,
+          "soapbottle": 0.1172,
+          "teddybear": 0.7744,
+          "tissuebox": 0.1625,
+          "towel": 0.1906,
+          "wateringcan": 0.1565
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1704,
+        "zone2": 0.3789,
+        "zone3": 0.736,
+        "zone4": 0.739,
+        "zone5": 0.2591,
+        "zone6": 0.0371
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1704,
+        "zone2": 0.3789,
+        "zone3": 0.736,
+        "zone4": 0.739,
+        "zone5": 0.2591,
+        "zone6": 0.0371
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8711,
+        "zone2": 0.0615,
+        "zone3": 0.8252,
+        "zone4": 0.8134,
+        "zone5": 0.0815,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0698,
+          "book": 0.3795,
+          "boots": 0.0297,
+          "bottle": 0.1704,
+          "bowl": 0.8711,
+          "box": 0.4652,
+          "cup": 0.1669,
+          "footstool": 0.4592,
+          "laptop": 0.1601,
+          "mug": 0.1951,
+          "pillow": 0.4661,
+          "plate": 0.0729,
+          "remotecontrol": 0.1072,
+          "soapbottle": 0.1172,
+          "teddybear": 0.7744,
+          "tissuebox": 0.1625,
+          "towel": 0.1906,
+          "wateringcan": 0.1565
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8711,
+        "zone2": 0.0615,
+        "zone3": 0.8252,
+        "zone4": 0.8134,
+        "zone5": 0.0815,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone5",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.8711,
+        "zone2": 0.0615,
+        "zone3": 0.8252,
+        "zone4": 0.8134,
+        "zone5": 0.0815,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1601,
+        "zone2": 0.0,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9779
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0698,
+          "book": 0.3795,
+          "boots": 0.0297,
+          "bottle": 0.1704,
+          "bowl": 0.8711,
+          "box": 0.4652,
+          "cup": 0.1669,
+          "footstool": 0.4592,
+          "laptop": 0.1601,
+          "mug": 0.1951,
+          "pillow": 0.4661,
+          "plate": 0.0729,
+          "remotecontrol": 0.1072,
+          "soapbottle": 0.1172,
+          "teddybear": 0.7744,
+          "tissuebox": 0.1625,
+          "towel": 0.1906,
+          "wateringcan": 0.1565
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1601,
+        "zone2": 0.0,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9779
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 23,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1601,
+        "zone2": 0.0,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.9779
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2456,
+        "zone3": 0.9218,
+        "zone4": 0.0484,
+        "zone5": 0.0,
+        "zone6": 0.4145
+      },
+      "unresolved_labels": 3,
+      "wall_s": 11.1,
+      "all_conf_by_zone": {
+        "zone1": {
+          "bottle": 0.5345,
+          "box": 0.4271,
+          "cellphone": 0.062,
+          "egg": 0.0208,
+          "footstool": 0.5773,
+          "laptop": 0.9649,
+          "pillow": 0.5644,
+          "remotecontrol": 0.0627,
+          "soapbottle": 0.5412,
+          "teddybear": 0.5934,
+          "tissuebox": 0.124,
+          "towel": 0.2277
+        },
+        "zone2": {
+          "apple": 0.0293,
+          "book": 0.6625,
+          "bottle": 0.3137,
+          "bowl": 0.8668,
+          "box": 0.6038,
+          "cd": 0.0305,
+          "cellphone": 0.3095,
+          "cup": 0.0908,
+          "footstool": 0.0221,
+          "kettle": 0.0383,
+          "laptop": 0.1383,
+          "mug": 0.2456,
+          "pen": 0.7092,
+          "pencil": 0.5102,
+          "plate": 0.0901,
+          "remotecontrol": 0.0787,
+          "soapbottle": 0.0373,
+          "tabletopdecor": 0.0955,
+          "tissuebox": 0.4624
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2456,
+        "zone3": 0.9218,
+        "zone4": 0.0484,
+        "zone5": 0.0,
+        "zone6": 0.4145
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone4",
+        "zone5",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.2456,
+        "zone3": 0.9218,
+        "zone4": 0.0484,
+        "zone5": 0.0,
+        "zone6": 0.4145
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0627,
+        "zone2": 0.0787,
+        "zone3": 0.0,
+        "zone4": 0.9358,
+        "zone5": 0.0221,
+        "zone6": 0.0231
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "bottle": 0.5345,
+          "box": 0.4271,
+          "cellphone": 0.062,
+          "egg": 0.0208,
+          "footstool": 0.5773,
+          "laptop": 0.9649,
+          "pillow": 0.5644,
+          "remotecontrol": 0.0627,
+          "soapbottle": 0.5412,
+          "teddybear": 0.5934,
+          "tissuebox": 0.124,
+          "towel": 0.2277
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0627,
+        "zone2": 0.0787,
+        "zone3": 0.0,
+        "zone4": 0.9358,
+        "zone5": 0.0221,
+        "zone6": 0.0231
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0627,
+        "zone2": 0.0787,
+        "zone3": 0.0,
+        "zone4": 0.9358,
+        "zone5": 0.0221,
+        "zone6": 0.0231
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5345,
+        "zone2": 0.3137,
+        "zone3": 0.6849,
+        "zone4": 0.6614,
+        "zone5": 0.0609,
+        "zone6": 0.6618
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "bottle": 0.5345,
+          "box": 0.4271,
+          "cellphone": 0.062,
+          "egg": 0.0208,
+          "footstool": 0.5773,
+          "laptop": 0.9649,
+          "pillow": 0.5644,
+          "remotecontrol": 0.0627,
+          "soapbottle": 0.5412,
+          "teddybear": 0.5934,
+          "tissuebox": 0.124,
+          "towel": 0.2277
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5345,
+        "zone2": 0.3137,
+        "zone3": 0.6849,
+        "zone4": 0.6614,
+        "zone5": 0.0609,
+        "zone6": 0.6618
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5345,
+        "zone2": 0.3137,
+        "zone3": 0.6849,
+        "zone4": 0.6614,
+        "zone5": 0.0609,
+        "zone6": 0.6618
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8668,
+        "zone3": 0.8255,
+        "zone4": 0.8359,
+        "zone5": 0.1121,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 3,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "bottle": 0.5345,
+          "box": 0.4271,
+          "cellphone": 0.062,
+          "egg": 0.0208,
+          "footstool": 0.5773,
+          "laptop": 0.9649,
+          "pillow": 0.5644,
+          "remotecontrol": 0.0627,
+          "soapbottle": 0.5412,
+          "teddybear": 0.5934,
+          "tissuebox": 0.124,
+          "towel": 0.2277
+        },
+        "zone2": {
+          "apple": 0.0293,
+          "book": 0.6625,
+          "bottle": 0.3137,
+          "bowl": 0.8668,
+          "box": 0.6038,
+          "cd": 0.0305,
+          "cellphone": 0.3095,
+          "cup": 0.0908,
+          "footstool": 0.0221,
+          "kettle": 0.0383,
+          "laptop": 0.1383,
+          "mug": 0.2456,
+          "pen": 0.7092,
+          "pencil": 0.5102,
+          "plate": 0.0901,
+          "remotecontrol": 0.0787,
+          "soapbottle": 0.0373,
+          "tabletopdecor": 0.0955,
+          "tissuebox": 0.4624
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8668,
+        "zone3": 0.8255,
+        "zone4": 0.8359,
+        "zone5": 0.1121,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.8668,
+        "zone3": 0.8255,
+        "zone4": 0.8359,
+        "zone5": 0.1121,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9649,
+        "zone2": 0.1383,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0821
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "bottle": 0.5345,
+          "box": 0.4271,
+          "cellphone": 0.062,
+          "egg": 0.0208,
+          "footstool": 0.5773,
+          "laptop": 0.9649,
+          "pillow": 0.5644,
+          "remotecontrol": 0.0627,
+          "soapbottle": 0.5412,
+          "teddybear": 0.5934,
+          "tissuebox": 0.124,
+          "towel": 0.2277
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9649,
+        "zone2": 0.1383,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0821
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 42,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone3",
+        "zone5",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.9649,
+        "zone2": 0.1383,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0821
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.189,
+        "zone3": 0.4737,
+        "zone4": 0.9353,
+        "zone5": 0.0,
+        "zone6": 0.3867
+      },
+      "unresolved_labels": 3,
+      "wall_s": 11.8,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0259,
+          "book": 0.0591,
+          "boots": 0.0823,
+          "bottle": 0.5736,
+          "box": 0.4012,
+          "butterknife": 0.0216,
+          "footstool": 0.8847,
+          "knife": 0.0286,
+          "papertowelroll": 0.4941,
+          "pillow": 0.5608,
+          "remotecontrol": 0.1024,
+          "soapbottle": 0.7219,
+          "teddybear": 0.0247,
+          "tissuebox": 0.3084,
+          "towel": 0.2806,
+          "vase": 0.0666,
+          "wateringcan": 0.2156
+        },
+        "zone2": {
+          "alarmclock": 0.0423,
+          "apple": 0.0691,
+          "book": 0.6528,
+          "bottle": 0.2486,
+          "bowl": 0.1393,
+          "box": 0.4924,
+          "cellphone": 0.1633,
+          "cup": 0.228,
+          "laptop": 0.963,
+          "mug": 0.189,
+          "pen": 0.7274,
+          "pencil": 0.2779,
+          "plate": 0.3648,
+          "remotecontrol": 0.0698,
+          "soapbar": 0.0307,
+          "soapbottle": 0.0327,
+          "tabletopdecor": 0.1668,
+          "tissuebox": 0.315,
+          "wateringcan": 0.0491
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.189,
+        "zone3": 0.4737,
+        "zone4": 0.9353,
+        "zone5": 0.0,
+        "zone6": 0.3867
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.189,
+        "zone3": 0.4737,
+        "zone4": 0.9353,
+        "zone5": 0.0,
+        "zone6": 0.3867
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1024,
+        "zone2": 0.0698,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9517,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0259,
+          "book": 0.0591,
+          "boots": 0.0823,
+          "bottle": 0.5736,
+          "box": 0.4012,
+          "butterknife": 0.0216,
+          "footstool": 0.8847,
+          "knife": 0.0286,
+          "papertowelroll": 0.4941,
+          "pillow": 0.5608,
+          "remotecontrol": 0.1024,
+          "soapbottle": 0.7219,
+          "teddybear": 0.0247,
+          "tissuebox": 0.3084,
+          "towel": 0.2806,
+          "vase": 0.0666,
+          "wateringcan": 0.2156
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1024,
+        "zone2": 0.0698,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9517,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone6",
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1024,
+        "zone2": 0.0698,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.9517,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5736,
+        "zone2": 0.2486,
+        "zone3": 0.7,
+        "zone4": 0.733,
+        "zone5": 0.029,
+        "zone6": 0.1532
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0259,
+          "book": 0.0591,
+          "boots": 0.0823,
+          "bottle": 0.5736,
+          "box": 0.4012,
+          "butterknife": 0.0216,
+          "footstool": 0.8847,
+          "knife": 0.0286,
+          "papertowelroll": 0.4941,
+          "pillow": 0.5608,
+          "remotecontrol": 0.1024,
+          "soapbottle": 0.7219,
+          "teddybear": 0.0247,
+          "tissuebox": 0.3084,
+          "towel": 0.2806,
+          "vase": 0.0666,
+          "wateringcan": 0.2156
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone1",
+      "commitment": "zone1",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5736,
+        "zone2": 0.2486,
+        "zone3": 0.7,
+        "zone4": 0.733,
+        "zone5": 0.029,
+        "zone6": 0.1532
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone1",
+      "commitment": "zone4",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone4"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.5736,
+        "zone2": 0.2486,
+        "zone3": 0.7,
+        "zone4": 0.733,
+        "zone5": 0.029,
+        "zone6": 0.1532
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone2",
+        "zone2",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1393,
+        "zone3": 0.9018,
+        "zone4": 0.799,
+        "zone5": 0.104,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 3,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0259,
+          "book": 0.0591,
+          "boots": 0.0823,
+          "bottle": 0.5736,
+          "box": 0.4012,
+          "butterknife": 0.0216,
+          "footstool": 0.8847,
+          "knife": 0.0286,
+          "papertowelroll": 0.4941,
+          "pillow": 0.5608,
+          "remotecontrol": 0.1024,
+          "soapbottle": 0.7219,
+          "teddybear": 0.0247,
+          "tissuebox": 0.3084,
+          "towel": 0.2806,
+          "vase": 0.0666,
+          "wateringcan": 0.2156
+        },
+        "zone2": {
+          "alarmclock": 0.0423,
+          "apple": 0.0691,
+          "book": 0.6528,
+          "bottle": 0.2486,
+          "bowl": 0.1393,
+          "box": 0.4924,
+          "cellphone": 0.1633,
+          "cup": 0.228,
+          "laptop": 0.963,
+          "mug": 0.189,
+          "pen": 0.7274,
+          "pencil": 0.2779,
+          "plate": 0.3648,
+          "remotecontrol": 0.0698,
+          "soapbar": 0.0307,
+          "soapbottle": 0.0327,
+          "tabletopdecor": 0.1668,
+          "tissuebox": 0.315,
+          "wateringcan": 0.0491
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1393,
+        "zone3": 0.9018,
+        "zone4": 0.799,
+        "zone5": 0.104,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone2",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.1393,
+        "zone3": 0.9018,
+        "zone4": 0.799,
+        "zone5": 0.104,
+        "zone6": 0.0
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.963,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0707
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0259,
+          "book": 0.0591,
+          "boots": 0.0823,
+          "bottle": 0.5736,
+          "box": 0.4012,
+          "butterknife": 0.0216,
+          "footstool": 0.8847,
+          "knife": 0.0286,
+          "papertowelroll": 0.4941,
+          "pillow": 0.5608,
+          "remotecontrol": 0.1024,
+          "soapbottle": 0.7219,
+          "teddybear": 0.0247,
+          "tissuebox": 0.3084,
+          "towel": 0.2806,
+          "vase": 0.0666,
+          "wateringcan": 0.2156
+        },
+        "zone2": {
+          "alarmclock": 0.0423,
+          "apple": 0.0691,
+          "book": 0.6528,
+          "bottle": 0.2486,
+          "bowl": 0.1393,
+          "box": 0.4924,
+          "cellphone": 0.1633,
+          "cup": 0.228,
+          "laptop": 0.963,
+          "mug": 0.189,
+          "pen": 0.7274,
+          "pencil": 0.2779,
+          "plate": 0.3648,
+          "remotecontrol": 0.0698,
+          "soapbar": 0.0307,
+          "soapbottle": 0.0327,
+          "tabletopdecor": 0.1668,
+          "tissuebox": 0.315,
+          "wateringcan": 0.0491
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.963,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0707
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 99,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone2",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone2"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.963,
+        "zone3": 0.0,
+        "zone4": 0.0,
+        "zone5": 0.0,
+        "zone6": 0.0707
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "engine",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1324,
+        "zone2": 0.179,
+        "zone3": 0.5226,
+        "zone4": 0.0639,
+        "zone5": 0.9493,
+        "zone6": 0.0655
+      },
+      "unresolved_labels": 0,
+      "wall_s": 11.1,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0251,
+          "book": 0.1593,
+          "bottle": 0.6488,
+          "bowl": 0.0411,
+          "box": 0.5178,
+          "bread": 0.0292,
+          "cup": 0.0457,
+          "footstool": 0.7118,
+          "mug": 0.1324,
+          "papertowelroll": 0.025,
+          "pillow": 0.4515,
+          "remotecontrol": 0.1662,
+          "soapbottle": 0.6993,
+          "tabletopdecor": 0.0549,
+          "teddybear": 0.3749,
+          "tissuebox": 0.6882,
+          "towel": 0.217,
+          "wateringcan": 0.0376
+        }
+      }
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "sweep",
+      "truth_zone": "zone5",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1324,
+        "zone2": 0.179,
+        "zone3": 0.5226,
+        "zone4": 0.0639,
+        "zone5": 0.9493,
+        "zone6": 0.0655
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Mug",
+      "arm": "random",
+      "truth_zone": "zone5",
+      "commitment": "zone5",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 1,
+      "visited": [
+        "zone5"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1324,
+        "zone2": 0.179,
+        "zone3": 0.5226,
+        "zone4": 0.0639,
+        "zone5": 0.9493,
+        "zone6": 0.0655
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "engine",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1662,
+        "zone2": 0.1041,
+        "zone3": 0.0952,
+        "zone4": 0.0645,
+        "zone5": 0.0,
+        "zone6": 0.9881
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0251,
+          "book": 0.1593,
+          "bottle": 0.6488,
+          "bowl": 0.0411,
+          "box": 0.5178,
+          "bread": 0.0292,
+          "cup": 0.0457,
+          "footstool": 0.7118,
+          "mug": 0.1324,
+          "papertowelroll": 0.025,
+          "pillow": 0.4515,
+          "remotecontrol": 0.1662,
+          "soapbottle": 0.6993,
+          "tabletopdecor": 0.0549,
+          "teddybear": 0.3749,
+          "tissuebox": 0.6882,
+          "towel": 0.217,
+          "wateringcan": 0.0376
+        }
+      }
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "sweep",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1662,
+        "zone2": 0.1041,
+        "zone3": 0.0952,
+        "zone4": 0.0645,
+        "zone5": 0.0,
+        "zone6": 0.9881
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "RemoteControl",
+      "arm": "random",
+      "truth_zone": "zone6",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.1662,
+        "zone2": 0.1041,
+        "zone3": 0.0952,
+        "zone4": 0.0645,
+        "zone5": 0.0,
+        "zone6": 0.9881
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "engine",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 5,
+      "visited": [
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1",
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.6488,
+        "zone2": 0.652,
+        "zone3": 0.6976,
+        "zone4": 0.6762,
+        "zone5": 0.1245,
+        "zone6": 0.3487
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0251,
+          "book": 0.1593,
+          "bottle": 0.6488,
+          "bowl": 0.0411,
+          "box": 0.5178,
+          "bread": 0.0292,
+          "cup": 0.0457,
+          "footstool": 0.7118,
+          "mug": 0.1324,
+          "papertowelroll": 0.025,
+          "pillow": 0.4515,
+          "remotecontrol": 0.1662,
+          "soapbottle": 0.6993,
+          "tabletopdecor": 0.0549,
+          "teddybear": 0.3749,
+          "tissuebox": 0.6882,
+          "towel": 0.217,
+          "wateringcan": 0.0376
+        }
+      }
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "sweep",
+      "truth_zone": "zone2",
+      "commitment": "zone1",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone1"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.6488,
+        "zone2": 0.652,
+        "zone3": 0.6976,
+        "zone4": 0.6762,
+        "zone5": 0.1245,
+        "zone6": 0.3487
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bottle",
+      "arm": "random",
+      "truth_zone": "zone2",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.6488,
+        "zone2": 0.652,
+        "zone3": 0.6976,
+        "zone4": 0.6762,
+        "zone5": 0.1245,
+        "zone6": 0.3487
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "engine",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 6,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3",
+        "zone3",
+        "zone3",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0411,
+        "zone2": 0.0452,
+        "zone3": 0.8338,
+        "zone4": 0.8683,
+        "zone5": 0.1322,
+        "zone6": 0.1425
+      },
+      "unresolved_labels": 4,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0251,
+          "book": 0.1593,
+          "bottle": 0.6488,
+          "bowl": 0.0411,
+          "box": 0.5178,
+          "bread": 0.0292,
+          "cup": 0.0457,
+          "footstool": 0.7118,
+          "mug": 0.1324,
+          "papertowelroll": 0.025,
+          "pillow": 0.4515,
+          "remotecontrol": 0.1662,
+          "soapbottle": 0.6993,
+          "tabletopdecor": 0.0549,
+          "teddybear": 0.3749,
+          "tissuebox": 0.6882,
+          "towel": 0.217,
+          "wateringcan": 0.0376
+        },
+        "zone2": {
+          "apple": 0.0439,
+          "book": 0.6874,
+          "bottle": 0.652,
+          "bowl": 0.0452,
+          "box": 0.5296,
+          "cellphone": 0.1451,
+          "cup": 0.5342,
+          "egg": 0.0266,
+          "footstool": 0.0289,
+          "laptop": 0.0273,
+          "mug": 0.179,
+          "papertowelroll": 0.0962,
+          "pen": 0.7862,
+          "pencil": 0.5288,
+          "plate": 0.1193,
+          "remotecontrol": 0.1041,
+          "soapbottle": 0.0503,
+          "tabletopdecor": 0.0771,
+          "tissuebox": 0.5481,
+          "vase": 0.0207,
+          "wateringcan": 0.1845
+        },
+        "zone3": {
+          "apple": 0.5779,
+          "book": 0.3173,
+          "bottle": 0.6976,
+          "bowl": 0.8338,
+          "box": 0.6365,
+          "bread": 0.1013,
+          "butterknife": 0.1709,
+          "candle": 0.3958,
+          "cd": 0.0444,
+          "cellphone": 0.541,
+          "cup": 0.5517,
+          "egg": 0.0206,
+          "footstool": 0.1131,
+          "fork": 0.1133,
+          "handtowel": 0.0763,
+          "kettle": 0.9179,
+          "knife": 0.1222,
+          "ladle": 0.1783,
+          "laptop": 0.9584,
+          "lettuce": 0.1171,
+          "mug": 0.5226,
+          "pan": 0.7826,
+          "papertowelroll": 0.9083,
+          "pen": 0.426,
+          "pencil": 0.4076,
+          "peppershaker": 0.0293,
+          "pillow": 0.1238,
+          "plate": 0.568,
+          "pot": 0.7519,
+          "remotecontrol": 0.0952,
+          "soapbar": 0.1742,
+          "soapbottle": 0.8282,
+          "spatula": 0.115,
+          "spoon": 0.2067,
+          "tabletopdecor": 0.7901,
+          "teddybear": 0.2034,
+          "tissuebox": 0.4167,
+          "tomato": 0.5721,
+          "towel": 0.455,
+          "vase": 0.425,
+          "wateringcan": 0.1373
+        }
+      }
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "sweep",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0411,
+        "zone2": 0.0452,
+        "zone3": 0.8338,
+        "zone4": 0.8683,
+        "zone5": 0.1322,
+        "zone6": 0.1425
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Bowl",
+      "arm": "random",
+      "truth_zone": "zone4",
+      "commitment": "zone3",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 1,
+      "visited": [
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0411,
+        "zone2": 0.0452,
+        "zone3": 0.8338,
+        "zone4": 0.8683,
+        "zone5": 0.1322,
+        "zone6": 0.1425
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Laptop",
+      "arm": "engine",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0273,
+        "zone3": 0.9584,
+        "zone4": 0.0449,
+        "zone5": 0.0,
+        "zone6": 0.6257
+      },
+      "unresolved_labels": 1,
+      "wall_s": 0.0,
+      "all_conf_by_zone": {
+        "zone1": {
+          "apple": 0.0251,
+          "book": 0.1593,
+          "bottle": 0.6488,
+          "bowl": 0.0411,
+          "box": 0.5178,
+          "bread": 0.0292,
+          "cup": 0.0457,
+          "footstool": 0.7118,
+          "mug": 0.1324,
+          "papertowelroll": 0.025,
+          "pillow": 0.4515,
+          "remotecontrol": 0.1662,
+          "soapbottle": 0.6993,
+          "tabletopdecor": 0.0549,
+          "teddybear": 0.3749,
+          "tissuebox": 0.6882,
+          "towel": 0.217,
+          "wateringcan": 0.0376
+        },
+        "zone2": {
+          "apple": 0.0439,
+          "book": 0.6874,
+          "bottle": 0.652,
+          "bowl": 0.0452,
+          "box": 0.5296,
+          "cellphone": 0.1451,
+          "cup": 0.5342,
+          "egg": 0.0266,
+          "footstool": 0.0289,
+          "laptop": 0.0273,
+          "mug": 0.179,
+          "papertowelroll": 0.0962,
+          "pen": 0.7862,
+          "pencil": 0.5288,
+          "plate": 0.1193,
+          "remotecontrol": 0.1041,
+          "soapbottle": 0.0503,
+          "tabletopdecor": 0.0771,
+          "tissuebox": 0.5481,
+          "vase": 0.0207,
+          "wateringcan": 0.1845
+        },
+        "zone3": {
+          "apple": 0.5779,
+          "book": 0.3173,
+          "bottle": 0.6976,
+          "bowl": 0.8338,
+          "box": 0.6365,
+          "bread": 0.1013,
+          "butterknife": 0.1709,
+          "candle": 0.3958,
+          "cd": 0.0444,
+          "cellphone": 0.541,
+          "cup": 0.5517,
+          "egg": 0.0206,
+          "footstool": 0.1131,
+          "fork": 0.1133,
+          "handtowel": 0.0763,
+          "kettle": 0.9179,
+          "knife": 0.1222,
+          "ladle": 0.1783,
+          "laptop": 0.9584,
+          "lettuce": 0.1171,
+          "mug": 0.5226,
+          "pan": 0.7826,
+          "papertowelroll": 0.9083,
+          "pen": 0.426,
+          "pencil": 0.4076,
+          "peppershaker": 0.0293,
+          "pillow": 0.1238,
+          "plate": 0.568,
+          "pot": 0.7519,
+          "remotecontrol": 0.0952,
+          "soapbar": 0.1742,
+          "soapbottle": 0.8282,
+          "spatula": 0.115,
+          "spoon": 0.2067,
+          "tabletopdecor": 0.7901,
+          "teddybear": 0.2034,
+          "tissuebox": 0.4167,
+          "tomato": 0.5721,
+          "towel": 0.455,
+          "vase": 0.425,
+          "wateringcan": 0.1373
+        }
+      }
+    },
+    {
+      "seed": 137,
+      "target": "Laptop",
+      "arm": "sweep",
+      "truth_zone": "zone3",
+      "commitment": "zone3",
+      "correct": true,
+      "wrong_commitment": false,
+      "visits": 3,
+      "visited": [
+        "zone1",
+        "zone2",
+        "zone3"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0273,
+        "zone3": 0.9584,
+        "zone4": 0.0449,
+        "zone5": 0.0,
+        "zone6": 0.6257
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    },
+    {
+      "seed": 137,
+      "target": "Laptop",
+      "arm": "random",
+      "truth_zone": "zone3",
+      "commitment": "zone6",
+      "correct": false,
+      "wrong_commitment": true,
+      "visits": 2,
+      "visited": [
+        "zone1",
+        "zone6"
+      ],
+      "target_conf_by_zone": {
+        "zone1": 0.0,
+        "zone2": 0.0273,
+        "zone3": 0.9584,
+        "zone4": 0.0449,
+        "zone5": 0.0,
+        "zone6": 0.6257
+      },
+      "unresolved_labels": 0,
+      "wall_s": 0.0
+    }
+  ]
+}

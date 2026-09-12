@@ -1,0 +1,148 @@
+{
+  "rows": [
+    {
+      "seed": 3,
+      "policy": "engine",
+      "target": "parkingtrolleymin",
+      "truth": "malepatientbed_1",
+      "tip": "toilet_1",
+      "tip_true": false,
+      "found": "malepatientbed_1",
+      "correct": true,
+      "visits": 22,
+      "wall_s": 225.3
+    },
+    {
+      "seed": 3,
+      "policy": "sweep",
+      "target": "parkingtrolleymin",
+      "truth": "malepatientbed_1",
+      "tip": "toilet_1",
+      "tip_true": false,
+      "found": "malepatientbed_1",
+      "correct": true,
+      "visits": 38,
+      "wall_s": 389.8
+    },
+    {
+      "seed": 3,
+      "policy": "tipfollow",
+      "target": "parkingtrolleymin",
+      "truth": "malepatientbed_1",
+      "tip": "toilet_1",
+      "tip_true": false,
+      "found": "malepatientbed_1",
+      "correct": true,
+      "visits": 39,
+      "wall_s": 394.8
+    },
+    {
+      "seed": 5,
+      "policy": "engine",
+      "target": "mopcart3",
+      "truth": "coffeetable_01_1",
+      "tip": "potatochipchair_5",
+      "tip_true": false,
+      "found": "coffeetable_01_1",
+      "correct": true,
+      "visits": 24,
+      "wall_s": 238.5
+    },
+    {
+      "seed": 5,
+      "policy": "sweep",
+      "target": "mopcart3",
+      "truth": "coffeetable_01_1",
+      "tip": "potatochipchair_5",
+      "tip_true": false,
+      "found": "coffeetable_01_1",
+      "correct": true,
+      "visits": 23,
+      "wall_s": 233.9
+    },
+    {
+      "seed": 5,
+      "policy": "tipfollow",
+      "target": "mopcart3",
+      "truth": "coffeetable_01_1",
+      "tip": "potatochipchair_5",
+      "tip_true": false,
+      "found": "coffeetable_01_1",
+      "correct": true,
+      "visits": 24,
+      "wall_s": 236.7
+    },
+    {
+      "seed": 6,
+      "policy": "engine",
+      "target": "bmwcart",
+      "truth": "cgmclassic_4",
+      "tip": "bedsidetable_1",
+      "tip_true": false,
+      "found": "cgmclassic_4",
+      "correct": true,
+      "visits": 1,
+      "wall_s": 11.2
+    },
+    {
+      "seed": 6,
+      "policy": "sweep",
+      "target": "bmwcart",
+      "truth": "cgmclassic_4",
+      "tip": "bedsidetable_1",
+      "tip_true": false,
+      "found": "cgmclassic_4",
+      "correct": true,
+      "visits": 6,
+      "wall_s": 61.5
+    },
+    {
+      "seed": 6,
+      "policy": "tipfollow",
+      "target": "bmwcart",
+      "truth": "cgmclassic_4",
+      "tip": "bedsidetable_1",
+      "tip_true": false,
+      "found": "cgmclassic_4",
+      "correct": true,
+      "visits": 1,
+      "wall_s": 10.0
+    },
+    {
+      "seed": 8,
+      "policy": "engine",
+      "target": "parkingtrolleymin",
+      "truth": "chair_4",
+      "tip": "xraymachine_1",
+      "tip_true": false,
+      "found": "chair_4",
+      "correct": true,
+      "visits": 9,
+      "wall_s": 81.8
+    },
+    {
+      "seed": 8,
+      "policy": "sweep",
+      "target": "parkingtrolleymin",
+      "truth": "chair_4",
+      "tip": "xraymachine_1",
+      "tip_true": false,
+      "found": "chair_4",
+      "correct": true,
+      "visits": 1,
+      "wall_s": 9.8
+    },
+    {
+      "seed": 8,
+      "policy": "tipfollow",
+      "target": "parkingtrolleymin",
+      "truth": "chair_4",
+      "tip": "xraymachine_1",
+      "tip_true": false,
+      "found": "chair_4",
+      "correct": true,
+      "visits": 2,
+      "wall_s": 22.3
+    }
+  ]
+}

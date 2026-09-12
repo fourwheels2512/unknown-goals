@@ -1,0 +1,267 @@
+{
+  "tag": "win_2c",
+  "timestamp": "2026-09-01 20:51:55",
+  "config_version": "0.2.0",
+  "rules_version": "0.2.0",
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "implementation": "CPython",
+    "is_wsl": false,
+    "cpu": "11th Gen Intel(R) Core(TM) i9-11900H @ 2.50GHz",
+    "physical_cores": 8,
+    "logical_cpus": 16,
+    "cpu_freq_mhz": 2496,
+    "total_ram_gib": 31.7,
+    "pinned_cpus": [
+      0,
+      1
+    ],
+    "class": "laptop CPU (no accelerator, no GPU used)",
+    "engine_import": "source checkout"
+  },
+  "workload": {
+    "seeds": [
+      10000,
+      10059
+    ],
+    "n_seeds": 60,
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "episodes": 360,
+    "warmup_episodes": 6
+  },
+  "system_load_during_pass": {
+    "per_cpu_percent": [
+      36.4,
+      79.5,
+      32.5,
+      28.0,
+      38.6,
+      28.9,
+      13.3,
+      8.4,
+      22.0,
+      16.9,
+      22.9,
+      14.5,
+      19.5,
+      14.6,
+      13.3,
+      8.3
+    ],
+    "pinned_cpus_mean_percent": 58.0,
+    "all_cpus_mean_percent": 24.9,
+    "note": "system-wide utilisation (all processes) averaged over the measured pass; values well above this process's own share mean other workloads shared the machine and latencies are upper bounds"
+  },
+  "memory": {
+    "rss_start_bytes": 52035584,
+    "rss_end_bytes": 62357504,
+    "peak_rss_bytes": 62357504,
+    "peak_rss_mib": 59.5,
+    "rss_end_mib": 59.5
+  },
+  "benchmark": {
+    "episodes": 360,
+    "success": 1.0,
+    "correct": 1.0,
+    "proof_validity": 1.0,
+    "avg_actions": 1.8472,
+    "avg_final_ledger_claims": 39.4,
+    "decisions": {
+      "n": 1025,
+      "mean_ms": 0.3075,
+      "median_ms": 0.3379,
+      "p95_ms": 0.7307,
+      "p99_ms": 1.0278,
+      "max_ms": 1.5227,
+      "min_ms": 0.0381
+    },
+    "decisions_per_level": {
+      "1": {
+        "n": 120,
+        "mean_ms": 0.0812,
+        "median_ms": 0.0869,
+        "p95_ms": 0.1467,
+        "p99_ms": 0.2751,
+        "max_ms": 0.3885,
+        "min_ms": 0.0381
+      },
+      "2": {
+        "n": 129,
+        "mean_ms": 0.22,
+        "median_ms": 0.2933,
+        "p95_ms": 0.4442,
+        "p99_ms": 0.5809,
+        "max_ms": 0.6425,
+        "min_ms": 0.0422
+      },
+      "3": {
+        "n": 169,
+        "mean_ms": 0.3253,
+        "median_ms": 0.4131,
+        "p95_ms": 0.5919,
+        "p99_ms": 0.7634,
+        "max_ms": 0.8845,
+        "min_ms": 0.0438
+      },
+      "4": {
+        "n": 171,
+        "mean_ms": 0.3649,
+        "median_ms": 0.4151,
+        "p95_ms": 0.7665,
+        "p99_ms": 1.1321,
+        "max_ms": 1.346,
+        "min_ms": 0.0467
+      },
+      "5": {
+        "n": 208,
+        "mean_ms": 0.3638,
+        "median_ms": 0.4219,
+        "p95_ms": 0.813,
+        "p99_ms": 1.0069,
+        "max_ms": 1.2201,
+        "min_ms": 0.0472
+      },
+      "6": {
+        "n": 228,
+        "mean_ms": 0.3684,
+        "median_ms": 0.4396,
+        "p95_ms": 0.798,
+        "p99_ms": 1.1383,
+        "max_ms": 1.5227,
+        "min_ms": 0.0502
+      }
+    },
+    "episode": {
+      "n": 360,
+      "mean_ms": 3.1971,
+      "median_ms": 3.0955,
+      "p95_ms": 4.7971,
+      "p99_ms": 6.6231,
+      "max_ms": 12.9708,
+      "min_ms": 1.506
+    },
+    "episode_per_level": {
+      "1": {
+        "n": 60,
+        "mean_ms": 2.0072,
+        "median_ms": 1.9335,
+        "p95_ms": 2.6354,
+        "p99_ms": 2.7784,
+        "max_ms": 3.4369,
+        "min_ms": 1.506
+      },
+      "2": {
+        "n": 60,
+        "mean_ms": 2.7454,
+        "median_ms": 2.4512,
+        "p95_ms": 3.6896,
+        "p99_ms": 4.0352,
+        "max_ms": 12.9708,
+        "min_ms": 1.8823
+      },
+      "3": {
+        "n": 60,
+        "mean_ms": 3.2697,
+        "median_ms": 3.1709,
+        "p95_ms": 4.2952,
+        "p99_ms": 4.5167,
+        "max_ms": 4.5343,
+        "min_ms": 2.2082
+      },
+      "4": {
+        "n": 60,
+        "mean_ms": 3.5626,
+        "median_ms": 3.4284,
+        "p95_ms": 4.7971,
+        "p99_ms": 5.7223,
+        "max_ms": 7.2889,
+        "min_ms": 2.4354
+      },
+      "5": {
+        "n": 60,
+        "mean_ms": 3.6735,
+        "median_ms": 3.596,
+        "p95_ms": 5.4752,
+        "p99_ms": 6.6231,
+        "max_ms": 7.4087,
+        "min_ms": 2.3531
+      },
+      "6": {
+        "n": 60,
+        "mean_ms": 3.9245,
+        "median_ms": 3.7803,
+        "p95_ms": 5.7015,
+        "p99_ms": 5.8932,
+        "max_ms": 6.6492,
+        "min_ms": 2.675
+      }
+    },
+    "wall_s": 1.292,
+    "process_cpu_s": 1.266,
+    "cpu_over_wall": 0.98
+  },
+  "import_time": {
+    "runs": 7,
+    "import_engine_median_s": 0.7334,
+    "import_engine_min_s": 0.7101,
+    "interpreter_start_median_s": 0.0785,
+    "start_plus_import_median_s": 0.8388
+  },
+  "install_size": {
+    "closure": {
+      "robot-mind": {
+        "version": "0.1.0",
+        "bytes": 457633,
+        "files": 74,
+        "counted_as": "source tree (editable install)"
+      },
+      "networkx": {
+        "version": "3.6.1",
+        "bytes": 7038797,
+        "files": 603
+      },
+      "pydantic": {
+        "version": "2.13.5",
+        "bytes": 1894125,
+        "files": 113
+      },
+      "annotated-types": {
+        "version": "0.8.0",
+        "bytes": 36539,
+        "files": 9
+      },
+      "pydantic-core": {
+        "version": "2.46.5",
+        "bytes": 5504532,
+        "files": 12
+      },
+      "typing-extensions": {
+        "version": "4.16.0",
+        "bytes": 182965,
+        "files": 7
+      },
+      "typing-inspection": {
+        "version": "0.4.4",
+        "bytes": 54734,
+        "files": 11
+      }
+    },
+    "total_bytes": 15169325,
+    "total_mib": 14.47,
+    "engine_source_bytes": 457633,
+    "engine_source_files": 74,
+    "engine_source_path": "C:\\dev\\robot_mind-engine\\src\\robot_mind",
+    "wheel": {
+      "path": "robot_mind-0.1.0-py3-none-any.whl",
+      "bytes": 174161
+    }
+  }
+}

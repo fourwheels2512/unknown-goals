@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "world": "urban_circuit_practice_01",
+      "seed": 7,
+      "target": "phone",
+      "tiles": 34,
+      "env_actions": 6,
+      "wall_s": 0.1,
+      "report": "phone_1",
+      "found_tile": "tile_12",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "urban_circuit_practice_01",
+      "seed": 11,
+      "target": "backpack",
+      "tiles": 34,
+      "env_actions": 2,
+      "wall_s": 0.0,
+      "report": "backpack_1",
+      "found_tile": "tile_4",
+      "dist_m": 0.0,
+      "scored": true
+    },
+    {
+      "world": "urban_circuit_practice_01",
+      "seed": 23,
+      "target": "vent",
+      "tiles": 34,
+      "env_actions": 7,
+      "wall_s": 0.0,
+      "report": "vent_2",
+      "found_tile": "tile_15",
+      "dist_m": 0.0,
+      "scored": true
+    }
+  ],
+  "scored": 3,
+  "episodes": 3
+}

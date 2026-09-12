@@ -1,0 +1,5194 @@
+[
+  {
+    "seed": 70000,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70001,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70002,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70003,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70004,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70005,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 3,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70006,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 3,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70007,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70008,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70009,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70010,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70011,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70012,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70013,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70014,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 3,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70015,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 4
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70016,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70017,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 3,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70018,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70019,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70020,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70021,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70022,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70023,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70024,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70025,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70026,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70027,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70028,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70029,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70030,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70031,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70032,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70033,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70034,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70035,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70036,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70037,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 2,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70038,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70039,
+    "rung": 1,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 1,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70000,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70001,
+    "rung": 2,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70002,
+    "rung": 2,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70003,
+    "rung": 2,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70004,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70005,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70006,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70007,
+    "rung": 2,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70008,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70009,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70010,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70011,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "office",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 11,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70012,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70013,
+    "rung": 2,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 6
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 11,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70014,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "office",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70015,
+    "rung": 2,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 4
+      }
+    ],
+    "search_actions": 10,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70016,
+    "rung": 2,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 4
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70017,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70018,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70019,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70020,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70021,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70022,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70023,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70024,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70025,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70026,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70027,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70028,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70029,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70030,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70031,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70032,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70033,
+    "rung": 2,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 15,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70034,
+    "rung": 2,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70035,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70036,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70037,
+    "rung": 2,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 15,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70038,
+    "rung": 2,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 12,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70039,
+    "rung": 2,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 0,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": false,
+    "brew_log": [],
+    "brewed": false,
+    "passed": true
+  },
+  {
+    "seed": 70000,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70001,
+    "rung": 3,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70002,
+    "rung": 3,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70003,
+    "rung": 3,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70004,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70005,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70006,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70007,
+    "rung": 3,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70008,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70009,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70010,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70011,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "office",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 11,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70012,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70013,
+    "rung": 3,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 6
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 11,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70014,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "office",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70015,
+    "rung": 3,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 4
+      }
+    ],
+    "search_actions": 10,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70016,
+    "rung": 3,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 4
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70017,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70018,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70019,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70020,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70021,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70022,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70023,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70024,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 7,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70025,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70026,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70027,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70028,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 5
+      }
+    ],
+    "search_actions": 8,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70029,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70030,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70031,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 4,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70032,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 6,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70033,
+    "rung": 3,
+    "items": [
+      {
+        "item": "kettle_2",
+        "order": 0,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 15,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70034,
+    "rung": 3,
+    "items": [
+      {
+        "item": "grounds_jar",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": false,
+        "found_at": null,
+        "truth": "hallway",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 2
+      }
+    ],
+    "search_actions": 13,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70035,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 3,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70036,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 1
+      }
+    ],
+    "search_actions": 5,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  },
+  {
+    "seed": 70037,
+    "rung": 3,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "bedroom",
+        "truth": "bedroom",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "filter_pack",
+        "order": 1,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 15,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70038,
+    "rung": 3,
+    "items": [
+      {
+        "item": "filter_pack",
+        "order": 0,
+        "found": true,
+        "found_at": "pantry",
+        "truth": "pantry",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "kettle_2",
+        "order": 1,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "mug_9",
+        "order": 2,
+        "found": true,
+        "found_at": "hallway",
+        "truth": "hallway",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "grounds_jar",
+        "order": 3,
+        "found": false,
+        "found_at": null,
+        "truth": "pantry",
+        "correct": false,
+        "actions": 8
+      }
+    ],
+    "search_actions": 12,
+    "collect_actions": 7,
+    "collect_failures": 0,
+    "all_found": false,
+    "all_collected": false,
+    "brew_log": [
+      "ABORT: not every item verified in the kitchen"
+    ],
+    "brewed": false,
+    "passed": false
+  },
+  {
+    "seed": 70039,
+    "rung": 3,
+    "items": [
+      {
+        "item": "mug_9",
+        "order": 0,
+        "found": true,
+        "found_at": "kitchen",
+        "truth": "kitchen",
+        "correct": true,
+        "actions": 1
+      },
+      {
+        "item": "grounds_jar",
+        "order": 1,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 2
+      },
+      {
+        "item": "kettle_2",
+        "order": 2,
+        "found": true,
+        "found_at": "office",
+        "truth": "office",
+        "correct": true,
+        "actions": 3
+      },
+      {
+        "item": "filter_pack",
+        "order": 3,
+        "found": true,
+        "found_at": "living_room",
+        "truth": "living_room",
+        "correct": true,
+        "actions": 3
+      }
+    ],
+    "search_actions": 9,
+    "collect_actions": 9,
+    "collect_failures": 0,
+    "all_found": true,
+    "all_collected": true,
+    "brew_log": [
+      "ok fill_kettle (needs kettle_2: verified in kitchen)",
+      "ok boil_water (needs kettle_2: verified in kitchen)",
+      "ok load_filter (needs filter_pack, coffee_machine: verified in kitchen)",
+      "ok add_grounds (needs grounds_jar: verified in kitchen)",
+      "ok brew (needs coffee_machine: verified in kitchen)",
+      "ok pour_into_mug (needs mug_9: verified in kitchen)",
+      "COFFEE SERVED."
+    ],
+    "brewed": true,
+    "passed": true
+  }
+]

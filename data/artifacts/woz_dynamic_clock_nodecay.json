@@ -1,0 +1,2622 @@
+{
+  "OFF": [
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 20,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: pantry -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 20
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 40,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: pantry -> bedroom",
+          "filter_box: pantry -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 40
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 36,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: laundry -> bedroom",
+          "filter_box: living_room -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 36
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 37,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: sunroom -> pantry",
+          "kettle_steel: pantry -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 37
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 1,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 42,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: pantry -> kitchen",
+          "machine_drip: pantry -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 37,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> laundry",
+          "mug_blue: den -> pantry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 37
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: den -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: pantry -> sunroom",
+          "grounds_bag: laundry -> hallway"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 36
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: sunroom -> pantry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: laundry -> kitchen",
+          "grounds_bag: hallway -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: den -> hallway"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 7
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> hallway"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 7
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> sunroom",
+          "kettle_steel: den -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 36
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: den -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 6,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: den -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 14
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 6,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: kitchen -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 6
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 20,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: sunroom -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 20
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: sunroom -> laundry",
+          "machine_drip: bedroom -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: sunroom -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 13,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 13
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 38,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: sunroom -> den",
+          "mug_green: sunroom -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 38
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> hallway",
+          "filter_box: den -> office"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 36
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 42,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: office -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 44,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: sunroom -> office"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 44
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 43,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: laundry -> office",
+          "kettle_glass: hallway -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 43
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: laundry -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: bedroom -> hallway",
+          "machine_press: laundry -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 36
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 37,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: laundry -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 37
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 42,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: laundry -> hallway"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 1,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 41,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: bedroom -> hallway",
+          "kettle_glass: hallway -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 41
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 22,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: office -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 22
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 43,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: office -> bedroom",
+          "grounds_tin: office -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 43
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 23,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: bedroom -> office",
+          "grounds_tin: den -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 23
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: office -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 43,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: kitchen -> living_room",
+          "mug_red: kitchen -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 43
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 22,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 22
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 22,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: hallway -> garage"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 22
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: hallway -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 40,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: hallway -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 40
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 42,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: den -> bedroom",
+          "mug_blue: living_room -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 20,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: bedroom -> laundry",
+          "machine_drip: garage -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 20
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 22,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 22
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 8,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 8
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: den -> sunroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 4,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: den -> sunroom",
+          "kettle_glass: den -> office"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 7
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 21,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 6,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 5,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: laundry -> den",
+          "filter_box: sunroom -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 5
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 20,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: laundry -> garage"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 20
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: laundry -> pantry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 23,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: garage -> hallway",
+          "mug_red: pantry -> garage"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 23
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 43,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: laundry -> office",
+          "grounds_tin: laundry -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 43
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 1,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 41,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: hallway -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 41
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: bedroom -> garage",
+          "mug_green: bedroom -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 35
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 21,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: garage -> living_room"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 42,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: bedroom -> sunroom",
+          "machine_press: bedroom -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 44,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: sunroom -> kitchen"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 44
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 42,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_press: laundry -> sunroom",
+          "filter_pack: kitchen -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 42
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 0,
+        "total_actions": 14
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 10,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: pantry -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 10
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 21,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: pantry -> den",
+          "mug_blue: pantry -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 21
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 38,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: pantry -> sunroom",
+          "filter_box: den -> bedroom"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 38
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 22,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: laundry -> pantry",
+          "machine_press: pantry -> den"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 22
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 22,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_press: den -> laundry"
+        ],
+        "patrol_actions": 0,
+        "total_actions": 22
+      }
+    ]
+  ],
+  "ON": [
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 5,
+        "bandit_states": 1,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 11
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.10): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 22,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: pantry -> laundry"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 27
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.00): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 37,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: pantry -> bedroom",
+          "filter_box: pantry -> living_room"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 43
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.10): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 35,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: laundry -> bedroom",
+          "filter_box: living_room -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.00): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 38,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: sunroom -> pantry",
+          "kettle_steel: pantry -> living_room"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 44
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 1,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 42,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: pantry -> kitchen",
+          "machine_drip: pantry -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 48
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 7,
+        "bandit_states": 2,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 13
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.00): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> laundry",
+          "mug_blue: den -> pantry"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 26
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.00): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 24,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: den -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 30
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.00): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 20,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: pantry -> sunroom",
+          "grounds_bag: laundry -> hallway"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 5,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 8,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: sunroom -> pantry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 14
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=1.10): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about grounds_bag at laundry"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 20,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: den -> laundry",
+          "grounds_bag: den -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 13,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 19
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: den -> hallway"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 13
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> hallway"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 13
+      },
+      {
+        "attempt": 4,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 17,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> sunroom",
+          "kettle_steel: den -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 23
+      },
+      {
+        "attempt": 5,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 8,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: den -> living_room"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 14
+      },
+      {
+        "attempt": 6,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: living_room -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 13
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 6,
+        "bandit_states": 2,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 5,
+        "total_actions": 11
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect kitchen (U=1.10): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 20,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> kitchen"
+        ],
+        "patrol_actions": 4,
+        "total_actions": 24
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 5,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: kitchen -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 11
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect kitchen (U=1.00): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 20,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: sunroom -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect kitchen (U=1.00): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 35,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: sunroom -> laundry",
+          "machine_drip: bedroom -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect kitchen (U=1.00): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen",
+          "[VERIFICATION] inspect kitchen (U=1.20): disputed report about kettle_glass at kitchen"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: sunroom -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 13,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 19
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.00): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 25,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: sunroom -> den",
+          "mug_green: sunroom -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 31
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 22,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> hallway",
+          "filter_box: den -> office"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 28
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 35,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: office -> living_room"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: sunroom -> office"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: laundry -> office",
+          "kettle_glass: hallway -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 13,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 19
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect bedroom (U=0.90): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 20,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: laundry -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect bedroom (U=1.00): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: bedroom -> hallway",
+          "machine_press: laundry -> den"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect bedroom (U=1.00): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom",
+          "[VERIFICATION] inspect bedroom (U=1.20): disputed report about filter_box at bedroom"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 37,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: laundry -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 43
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 2,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 42,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: laundry -> hallway"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 48
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 1,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 41,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: bedroom -> hallway",
+          "kettle_glass: hallway -> den"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 47
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 5,
+        "bandit_states": 1,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 11
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect living_room (U=1.00): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: office -> living_room"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 26
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 43,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: office -> bedroom",
+          "grounds_tin: office -> den"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 49
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect living_room (U=1.00): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 22,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: bedroom -> office",
+          "grounds_tin: den -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 28
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect living_room (U=1.10): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: office -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 27
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect living_room (U=1.00): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room",
+          "[VERIFICATION] inspect living_room (U=1.20): disputed report about kettle_glass at living_room"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 36,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: kitchen -> living_room",
+          "mug_red: kitchen -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 5,
+        "bandit_states": 1,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 11
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 10,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: hallway -> garage"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 15
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 9,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: garage -> living_room"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 14
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.00): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 21,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: garage -> den"
+        ],
+        "patrol_actions": 5,
+        "total_actions": 26
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[CURIOSITY] inspect bedroom (U=0.90): knowledge of bedroom is 122 ticks old (distance 1)",
+          "[VERIFICATION] inspect den (U=0.90): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 36,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: den -> bedroom",
+          "mug_blue: garage -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=0.90): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about kettle_steel at den"
+        ],
+        "rooms_known": 6,
+        "rooms_total": 6,
+        "actions": 35,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: bedroom -> laundry",
+          "machine_drip: garage -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 6,
+        "bandit_states": 2,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 12
+      },
+      {
+        "attempt": 2,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 8,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: den -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 14
+      },
+      {
+        "attempt": 3,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 6,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_drip: den -> sunroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 12
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect laundry (U=0.90): disputed report about kettle_glass at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about kettle_glass at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about kettle_glass at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about kettle_glass at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about kettle_glass at laundry",
+          "[VERIFICATION] inspect laundry (U=1.20): disputed report about kettle_glass at laundry"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 20,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_green: sunroom -> office",
+          "kettle_glass: sunroom -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 5,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 6,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: laundry -> office"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 12
+      },
+      {
+        "attempt": 6,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 9,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_glass: sunroom -> den",
+          "filter_box: sunroom -> den"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 15
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 6,
+        "bandit_states": 2,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 12
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=0.90): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 20,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: laundry -> garage"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[CURIOSITY] inspect den (U=0.90): knowledge of den is 86 ticks old (distance 1)",
+          "[VERIFICATION] inspect garage (U=1.00): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 35,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_red: laundry -> pantry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      },
+      {
+        "attempt": 4,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 7,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: garage -> hallway",
+          "mug_red: pantry -> garage"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 13
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[CURIOSITY] inspect den (U=0.90): knowledge of den is 87 ticks old (distance 1)",
+          "[VERIFICATION] inspect garage (U=1.00): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 36,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "kettle_steel: laundry -> office",
+          "grounds_tin: laundry -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 42
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=0.90): disputed report about filter_box at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about filter_box at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 38,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: laundry -> hallway"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 44
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 14,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 6,
+        "total_actions": 20
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=0.80): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 22,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: bedroom -> garage",
+          "mug_green: bedroom -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 28
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[CURIOSITY] inspect kitchen (U=0.90): knowledge of kitchen is 70 ticks old (distance 1)",
+          "[VERIFICATION] inspect garage (U=0.90): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 20,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_tin: garage -> living_room"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 26
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=0.80): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 23,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: bedroom -> sunroom",
+          "machine_press: bedroom -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 29
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=0.90): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 37,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_pack: sunroom -> kitchen"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 43
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect garage (U=1.00): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage",
+          "[VERIFICATION] inspect garage (U=1.20): disputed report about grounds_tin at garage"
+        ],
+        "rooms_known": 7,
+        "rooms_total": 7,
+        "actions": 22,
+        "bandit_states": 6,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_press: laundry -> sunroom",
+          "filter_pack: kitchen -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 28
+      }
+    ],
+    [
+      {
+        "attempt": 1,
+        "brewed": true,
+        "classes_found": 5,
+        "patrol": [],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 5,
+        "bandit_states": 1,
+        "rule": "nothing mined",
+        "moved_overnight": [],
+        "patrol_actions": 5,
+        "total_actions": 10
+      },
+      {
+        "attempt": 2,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 22,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: pantry -> den"
+        ],
+        "patrol_actions": 4,
+        "total_actions": 26
+      },
+      {
+        "attempt": 3,
+        "brewed": false,
+        "classes_found": 3,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 35,
+        "bandit_states": 3,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "filter_box: den -> laundry",
+          "mug_blue: pantry -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 41
+      },
+      {
+        "attempt": 4,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 38,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "grounds_bag: pantry -> sunroom",
+          "filter_box: laundry -> bedroom"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 44
+      },
+      {
+        "attempt": 5,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 22,
+        "bandit_states": 4,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "mug_blue: laundry -> pantry",
+          "machine_press: pantry -> den"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 28
+      },
+      {
+        "attempt": 6,
+        "brewed": false,
+        "classes_found": 4,
+        "patrol": [
+          "[VERIFICATION] inspect den (U=1.10): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den",
+          "[VERIFICATION] inspect den (U=1.20): disputed report about filter_box at den"
+        ],
+        "rooms_known": 5,
+        "rooms_total": 5,
+        "actions": 23,
+        "bandit_states": 5,
+        "rule": "nothing mined",
+        "moved_overnight": [
+          "machine_press: den -> laundry"
+        ],
+        "patrol_actions": 6,
+        "total_actions": 29
+      }
+    ]
+  ]
+}

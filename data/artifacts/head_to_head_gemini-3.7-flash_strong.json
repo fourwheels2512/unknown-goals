@@ -1,0 +1,212 @@
+[
+  {
+    "level": 6,
+    "seed": 20000,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 5.0,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20001,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.1,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20002,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 6.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20003,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.7,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20004,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 10.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_1)",
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20005,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 1,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 3.6,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_1)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20006,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 5,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 6,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 34.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_3)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(bay_4)",
+      "INSPECT_LOCATION(bay_1)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20007,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 6.6,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20008,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 2,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 7.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(storage)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20009,
+    "truth": "transport",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 3,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 12.4,
+    "llm_actions": [
+      "INSPECT_LOCATION(bay_4)",
+      "SCAN_CONTAINER(cart_1)",
+      "SCAN_CONTAINER(cart_2)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20010,
+    "truth": "occluded",
+    "engine_correct": true,
+    "engine_steps": 4,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 5,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 21.5,
+    "llm_actions": [
+      "INSPECT_LOCATION(workbench_7)",
+      "SCAN_CONTAINER(cart_1)",
+      "INSPECT_LOCATION(bay_2)",
+      "INSPECT_LOCATION(bay_3)",
+      "INSPECT_LOCATION(bay_4)"
+    ]
+  },
+  {
+    "level": 6,
+    "seed": 20011,
+    "truth": "carrier_kept",
+    "engine_correct": true,
+    "engine_steps": 3,
+    "llm_correct": true,
+    "llm_success_any": true,
+    "llm_steps": 2,
+    "llm_invalid": 0,
+    "llm_parse_failures": 0,
+    "llm_secs": 9.9,
+    "llm_actions": [
+      "SCAN_CONTAINER(cart_2)",
+      "INSPECT_LOCATION(workbench_7)"
+    ]
+  }
+]

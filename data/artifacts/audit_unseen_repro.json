@@ -1,0 +1,410 @@
+[
+  {
+    "game": "look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542",
+    "task": "examine the alarmclock with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found alarmclock_1 at desk_2 (8 engine actions)",
+      "take alarmclock_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222933_607649",
+    "task": "examine the alarmclock with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found alarmclock_1 at desk_2 (8 engine actions)",
+      "take alarmclock_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222951_616606",
+    "task": "look at alarmclock under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 3,
+    "log": [
+      "found alarmclock_1 at desk_1 (2 engine actions)",
+      "take alarmclock_1: 'ok'",
+      "desklamp_1 resolved at current spot desk_1",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Book-None-DeskLamp-308/trial_T20190908_020029_636862",
+    "task": "examine the book with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 4,
+    "log": [
+      "found book_1 at bed_1 (3 engine actions)",
+      "take book_1: 'ok'",
+      "found desklamp_1 at desk_1 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Book-None-DeskLamp-308/trial_T20190908_020048_814402",
+    "task": "examine the book with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 4,
+    "log": [
+      "found book_1 at bed_1 (3 engine actions)",
+      "take book_1: 'ok'",
+      "found desklamp_1 at desk_1 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Book-None-DeskLamp-308/trial_T20190908_144951_587345",
+    "task": "examine the book with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 25,
+    "seeks": 4,
+    "log": [
+      "found book_1 at bed_1 (3 engine actions)",
+      "take book_1: 'ok'",
+      "found desklamp_1 at desk_1 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Bowl-None-DeskLamp-308/trial_T20190907_133919_856963",
+    "task": "look at bowl under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found bowl_1 at desk_2 (8 engine actions)",
+      "take bowl_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Bowl-None-DeskLamp-308/trial_T20190907_133935_066606",
+    "task": "look at bowl under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found bowl_2 at desk_2 (8 engine actions)",
+      "take bowl_2: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Bowl-None-DeskLamp-308/trial_T20190907_133953_562557",
+    "task": "examine the bowl with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found bowl_1 at shelf_2 (5 engine actions)",
+      "take bowl_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-308/trial_T20190908_141942_810052",
+    "task": "look at cd under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 3,
+    "log": [
+      "found cd_1 at desk_2 (8 engine actions)",
+      "take cd_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-308/trial_T20190908_141958_463362",
+    "task": "examine the cd with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 13,
+    "seeks": 3,
+    "log": [
+      "found cd_2 at garbagecan_1 (1 engine actions)",
+      "take cd_2: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-CD-None-DeskLamp-308/trial_T20190908_142046_281296",
+    "task": "examine the cd with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 23,
+    "seeks": 3,
+    "log": [
+      "found cd_2 at desk_1 (2 engine actions)",
+      "take cd_2: 'ok'",
+      "desklamp_1 resolved at current spot desk_1",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Mug-None-DeskLamp-308/trial_T20190908_161733_213242",
+    "task": "look at mug under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 2,
+    "log": [
+      "found mug_2 at shelf_4 (3 engine actions)",
+      "take mug_2: 'ok'",
+      "found desklamp_1 at shelf_3 (4 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Mug-None-DeskLamp-308/trial_T20190908_201421_021646",
+    "task": "examine the mug with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 2,
+    "log": [
+      "found mug_2 at shelf_4 (3 engine actions)",
+      "take mug_2: 'ok'",
+      "found desklamp_1 at shelf_3 (4 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Mug-None-DeskLamp-308/trial_T20190908_201444_037645",
+    "task": "examine the mug with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found mug_1 at shelf_2 (5 engine actions)",
+      "take mug_1: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Pencil-None-DeskLamp-308/trial_T20190908_220545_153480",
+    "task": "look at pencil under the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 16,
+    "seeks": 3,
+    "log": [
+      "found pencil_2 at drawer_5 (3 engine actions)",
+      "take pencil_2: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Pencil-None-DeskLamp-308/trial_T20190908_220604_010430",
+    "task": "examine the pencil with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 6,
+    "seeks": 1,
+    "log": [
+      "found pencil_2 at shelf_3 (4 engine actions)",
+      "take pencil_2: 'ok'",
+      "desklamp_1 resolved at current spot shelf_3",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "look_at_obj_in_light-Pencil-None-DeskLamp-308/trial_T20190908_220656_510400",
+    "task": "examine the pencil with the desklamp",
+    "kind": "LOOK_AT",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 2,
+    "log": [
+      "found pencil_2 at shelf_2 (5 engine actions)",
+      "take pencil_2: 'ok'",
+      "found desklamp_1 at shelf_3 (1 engine actions)",
+      "use desklamp_1: 'You turn on the desklamp 1.'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-Desk-308/trial_T20190908_125200_737896",
+    "task": "put a mug in desk",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found mug_1 at shelf_2 (5 engine actions)",
+      "take mug_1: 'ok'",
+      "put mug_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-Desk-308/trial_T20190909_203041_433487",
+    "task": "put some mug on desk",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 9,
+    "seeks": 1,
+    "log": [
+      "found mug_1 at shelf_1 (6 engine actions)",
+      "take mug_1: 'ok'",
+      "put mug_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Mug-None-Desk-308/trial_T20190909_210238_431966",
+    "task": "put a mug in desk",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 8,
+    "seeks": 1,
+    "log": [
+      "found mug_1 at shelf_2 (5 engine actions)",
+      "take mug_1: 'ok'",
+      "put mug_1 in desk_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_121952_610012",
+    "task": "put a pencil in shelf",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 2,
+    "log": [
+      "found pencil_2 at desk_2 (8 engine actions)",
+      "take pencil_2: 'ok'",
+      "put pencil_2 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_122024_052056",
+    "task": "put a pencil in shelf",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 22,
+    "seeks": 2,
+    "log": [
+      "found pencil_2 at desk_2 (8 engine actions)",
+      "take pencil_2: 'ok'",
+      "put pencil_2 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-Pencil-None-Shelf-308/trial_T20190908_122154_042763",
+    "task": "put a pencil in shelf",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 3,
+    "log": [
+      "found pencil_1 at desk_1 (2 engine actions)",
+      "take pencil_1: 'ok'",
+      "put pencil_1 in shelf_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-PepperShaker-None-Drawer-10/trial_T20190906_184021_215264",
+    "task": "put some peppershaker on drawer",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 24,
+    "seeks": 2,
+    "log": [
+      "found peppershaker_1 at countertop_3 (8 engine actions)",
+      "take peppershaker_1: 'ok'",
+      "put peppershaker_1 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-PepperShaker-None-Drawer-10/trial_T20190918_154326_823501",
+    "task": "put a peppershaker in drawer",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 1,
+    "log": [
+      "found peppershaker_2 at shelf_2 (8 engine actions)",
+      "take peppershaker_2: 'ok'",
+      "put peppershaker_2 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-PepperShaker-None-Drawer-10/trial_T20190918_154424_844749",
+    "task": "put some peppershaker on drawer",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 26,
+    "seeks": 3,
+    "log": [
+      "found peppershaker_3 at countertop_1 (2 engine actions)",
+      "take peppershaker_3: 'ok'",
+      "put peppershaker_3 in drawer_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191429_743650",
+    "task": "put some saltshaker on cabinet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 11,
+    "seeks": 1,
+    "log": [
+      "found saltshaker_1 at shelf_2 (8 engine actions)",
+      "take saltshaker_1: 'ok'",
+      "put saltshaker_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191445_723170",
+    "task": "put some saltshaker on cabinet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 12,
+    "seeks": 2,
+    "log": [
+      "found saltshaker_1 at shelf_1 (1 engine actions)",
+      "take saltshaker_1: 'ok'",
+      "put saltshaker_1 in cabinet_1: 'ok'"
+    ]
+  },
+  {
+    "game": "pick_and_place_simple-SaltShaker-None-Cabinet-10/trial_T20190906_191501_563086",
+    "task": "put some saltshaker on cabinet",
+    "kind": "SIMPLE",
+    "won": true,
+    "env_steps": 21,
+    "seeks": 2,
+    "log": [
+      "found saltshaker_3 at drawer_2 (6 engine actions)",
+      "take saltshaker_3: 'ok'",
+      "put saltshaker_3 in cabinet_1: 'ok'"
+    ]
+  }
+]

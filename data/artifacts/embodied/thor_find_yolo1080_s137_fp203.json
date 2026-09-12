@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan203",
+      "target_class": "cellphone",
+      "found": true,
+      "picked_up": true,
+      "found_at": "ottoman_1",
+      "ground_truth": [
+        "ottoman_1"
+      ],
+      "env_actions": 13,
+      "seeks": 1,
+      "receptacles": 21,
+      "log": [
+        "cellphone_1 resolved at ottoman_1",
+        "pick_up cellphone_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 137,
+      "wall_s": 386.8,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 9,
+        "detections": 199,
+        "matched": 32,
+        "claims": 26
+      },
+      "clip": "FloorPlan203_s137.gif"
+    }
+  ],
+  "fetched": 1,
+  "episodes": 1
+}

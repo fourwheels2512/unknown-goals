@@ -1,0 +1,27 @@
+# Task-level goal for the cognition engine: locate (and optionally hand
+# off for grasping) one object entity or class. The engine owns every
+# search decision; navigation is delegated to whatever NavigateToPose
+# server is running (Nav2 on a real robot, the demo driver in sim).
+string target                  # entity id ("wrench_1") or class ("wrench")
+int32 max_visits 12            # search budget, engine gives up after this
+bool want_grasp_pose false     # publish the located object's pose for a
+                               # manipulation pipeline (MoveIt 2 pick)
+---
+bool found
+string entity_id               # resolved instance (empty if not found)
+string location                # resolved location entity id
+int32 visits                   # inspections actually spent
+string proof                   # the engine's machine-checked proof path
+geometry_msgs/PoseStamped grasp_pose   # valid when want_grasp_pose & found
+# WP-A audit finding A2: a search that ends unconfirmed (budget
+# exhaustion) can still leave the engine's own verdict resolved --
+# `location` above stays empty (it is only ever the CONFIRMED find), so
+# this is the belief the run ended on, whether or not it committed.
+# Defaults empty/0: byte-identical to every certification predating them.
+string best_location            # engine's verdict location, found or not
+float32 best_probability        # that location's belief (1.0 if resolved)
+---
+string status                  # "seeking" | "navigating" | "verifying"
+string current_location        # location entity the robot is inspecting
+string best_hypothesis         # engine's current top location hypothesis
+float32 best_probability

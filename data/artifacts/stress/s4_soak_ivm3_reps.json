@@ -1,0 +1,565 @@
+{
+ "suite": "s4_soak_increment3_repetitions",
+ "summary": {
+  "workload": "experiments/stress/s4_soak.py workload (1 house, seed 90000, 300 days, window 50), DynamicSession(seed, 2, EngineConfig(), night_minutes=480), timed with wall clock and process CPU time; no artifact written by the wrapper; 5 interleaved repetitions per build, uv-managed Python 3.12",
+  "life_wall_s_pre": [
+   33.6,
+   21.8,
+   24.6,
+   29.6,
+   28.7
+  ],
+  "life_wall_s_post": [
+   9.9,
+   8.8,
+   7.8,
+   12.0,
+   9.5
+  ],
+  "life_ratio_paired": [
+   3.39,
+   2.48,
+   3.15,
+   2.47,
+   3.02
+  ],
+  "day300_wall_s_pre": [
+   0.2476,
+   0.1565,
+   0.1682,
+   0.1783,
+   0.1983
+  ],
+  "day300_wall_s_post": [
+   0.0493,
+   0.0623,
+   0.0397,
+   0.0811,
+   0.0609
+  ],
+  "day300_ratio_paired": [
+   5.02,
+   2.51,
+   4.24,
+   2.2,
+   3.26
+  ],
+  "growth_first_to_last_pre": [
+   10.51,
+   10.66,
+   12.14,
+   12.96,
+   15.85
+  ],
+  "growth_first_to_last_post": [
+   4.97,
+   7.57,
+   4.52,
+   8.73,
+   7.37
+  ],
+  "claim_growth_first_to_last": 6.65,
+  "brewed": [
+   [
+    300,
+    300
+   ]
+  ],
+  "life_ratio_median": 3.02,
+  "day300_ratio_median": 3.26,
+  "growth_pre_median": 12.14,
+  "growth_post_median": 7.37
+ },
+ "runs": [
+  {
+   "build": "pre_increment3",
+   "rep": 1,
+   "cpu_load_before_pct": 59,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0236,
+     "cpu_s_per_day": 0.0231
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0567,
+     "cpu_s_per_day": 0.055
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0662,
+     "cpu_s_per_day": 0.0653
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0954,
+     "cpu_s_per_day": 0.0947
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.1821,
+     "cpu_s_per_day": 0.1803
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.2476,
+     "cpu_s_per_day": 0.2444
+    }
+   ],
+   "wall_s": 33.6,
+   "cpu_s": 33.1,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 10.51,
+   "growth_cpu": 10.57
+  },
+  {
+   "build": "pre_increment3",
+   "rep": 2,
+   "cpu_load_before_pct": 44,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0147,
+     "cpu_s_per_day": 0.0144
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0357,
+     "cpu_s_per_day": 0.0347
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.051,
+     "cpu_s_per_day": 0.0509
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0689,
+     "cpu_s_per_day": 0.0688
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.1083,
+     "cpu_s_per_day": 0.1078
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.1565,
+     "cpu_s_per_day": 0.1562
+    }
+   ],
+   "wall_s": 21.8,
+   "cpu_s": 21.6,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 10.66,
+   "growth_cpu": 10.87
+  },
+  {
+   "build": "pre_increment3",
+   "rep": 3,
+   "cpu_load_before_pct": 54,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0139,
+     "cpu_s_per_day": 0.0141
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0321,
+     "cpu_s_per_day": 0.0322
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0603,
+     "cpu_s_per_day": 0.0603
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.091,
+     "cpu_s_per_day": 0.09
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.1258,
+     "cpu_s_per_day": 0.125
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.1682,
+     "cpu_s_per_day": 0.1681
+    }
+   ],
+   "wall_s": 24.6,
+   "cpu_s": 24.5,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 12.14,
+   "growth_cpu": 11.96
+  },
+  {
+   "build": "pre_increment3",
+   "rep": 4,
+   "cpu_load_before_pct": 49,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0138,
+     "cpu_s_per_day": 0.0138
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0332,
+     "cpu_s_per_day": 0.0331
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0826,
+     "cpu_s_per_day": 0.0822
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.1107,
+     "cpu_s_per_day": 0.1097
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.1743,
+     "cpu_s_per_day": 0.1706
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.1783,
+     "cpu_s_per_day": 0.1781
+    }
+   ],
+   "wall_s": 29.6,
+   "cpu_s": 29.4,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 12.96,
+   "growth_cpu": 12.95
+  },
+  {
+   "build": "pre_increment3",
+   "rep": 5,
+   "cpu_load_before_pct": 14,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0125,
+     "cpu_s_per_day": 0.0125
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0334,
+     "cpu_s_per_day": 0.0331
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0563,
+     "cpu_s_per_day": 0.0559
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0999,
+     "cpu_s_per_day": 0.1
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.1728,
+     "cpu_s_per_day": 0.1713
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.1983,
+     "cpu_s_per_day": 0.1981
+    }
+   ],
+   "wall_s": 28.7,
+   "cpu_s": 28.5,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 15.85,
+   "growth_cpu": 15.85
+  },
+  {
+   "build": "increment3",
+   "rep": 1,
+   "cpu_load_before_pct": 40,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0099,
+     "cpu_s_per_day": 0.0097
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0156,
+     "cpu_s_per_day": 0.0153
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0356,
+     "cpu_s_per_day": 0.035
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0431,
+     "cpu_s_per_day": 0.0431
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.0448,
+     "cpu_s_per_day": 0.0447
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.0493,
+     "cpu_s_per_day": 0.0491
+    }
+   ],
+   "wall_s": 9.9,
+   "cpu_s": 9.8,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 4.97,
+   "growth_cpu": 5.06
+  },
+  {
+   "build": "increment3",
+   "rep": 2,
+   "cpu_load_before_pct": 34,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0082,
+     "cpu_s_per_day": 0.0081
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0145,
+     "cpu_s_per_day": 0.0144
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.023,
+     "cpu_s_per_day": 0.0231
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0261,
+     "cpu_s_per_day": 0.0259
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.0424,
+     "cpu_s_per_day": 0.0422
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.0623,
+     "cpu_s_per_day": 0.0616
+    }
+   ],
+   "wall_s": 8.8,
+   "cpu_s": 8.8,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 7.57,
+   "growth_cpu": 7.58
+  },
+  {
+   "build": "increment3",
+   "rep": 3,
+   "cpu_load_before_pct": 33,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0088,
+     "cpu_s_per_day": 0.0088
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0144,
+     "cpu_s_per_day": 0.0144
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0233,
+     "cpu_s_per_day": 0.0234
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0332,
+     "cpu_s_per_day": 0.0331
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.0368,
+     "cpu_s_per_day": 0.0369
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.0397,
+     "cpu_s_per_day": 0.0397
+    }
+   ],
+   "wall_s": 7.8,
+   "cpu_s": 7.8,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 4.52,
+   "growth_cpu": 4.54
+  },
+  {
+   "build": "increment3",
+   "rep": 4,
+   "cpu_load_before_pct": 46,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0093,
+     "cpu_s_per_day": 0.0091
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0189,
+     "cpu_s_per_day": 0.0191
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0302,
+     "cpu_s_per_day": 0.0297
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0454,
+     "cpu_s_per_day": 0.045
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.055,
+     "cpu_s_per_day": 0.055
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.0811,
+     "cpu_s_per_day": 0.0806
+    }
+   ],
+   "wall_s": 12.0,
+   "cpu_s": 11.9,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 8.73,
+   "growth_cpu": 8.9
+  },
+  {
+   "build": "increment3",
+   "rep": 5,
+   "cpu_load_before_pct": 33,
+   "windows": [
+    {
+     "day": 50,
+     "ledger_claims": 2544,
+     "wall_s_per_day": 0.0083,
+     "cpu_s_per_day": 0.0081
+    },
+    {
+     "day": 100,
+     "ledger_claims": 5418,
+     "wall_s_per_day": 0.0141,
+     "cpu_s_per_day": 0.0141
+    },
+    {
+     "day": 150,
+     "ledger_claims": 8271,
+     "wall_s_per_day": 0.0201,
+     "cpu_s_per_day": 0.0203
+    },
+    {
+     "day": 200,
+     "ledger_claims": 11161,
+     "wall_s_per_day": 0.0361,
+     "cpu_s_per_day": 0.0359
+    },
+    {
+     "day": 250,
+     "ledger_claims": 14023,
+     "wall_s_per_day": 0.0506,
+     "cpu_s_per_day": 0.0503
+    },
+    {
+     "day": 300,
+     "ledger_claims": 16905,
+     "wall_s_per_day": 0.0609,
+     "cpu_s_per_day": 0.06
+    }
+   ],
+   "wall_s": 9.5,
+   "cpu_s": 9.4,
+   "brewed": 300,
+   "days": 300,
+   "growth_wall": 7.37,
+   "growth_cpu": 7.38
+  }
+ ]
+}

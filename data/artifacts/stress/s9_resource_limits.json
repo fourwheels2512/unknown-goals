@@ -1,0 +1,36 @@
+{
+  "suite": "s9_resource_limits",
+  "elapsed_s": 3.2,
+  "n_breaks": 0,
+  "breaks": [],
+  "notes": [
+    {
+      "kind": "TIMING",
+      "detail": "wide_beliefs_score: 0.07s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "big_entropy: 0.02s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "resolver_20k_links: 0.09s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "deep_proof_3000: 0.28s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "fill_40000_claims: 1.25s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "query_all_claims: 0.38s"
+    },
+    {
+      "kind": "TIMING",
+      "detail": "graph_rebuild_40k: 0.97s"
+    }
+  ]
+}

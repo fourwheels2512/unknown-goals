@@ -1,0 +1,344 @@
+{
+  "results": [
+    {
+      "scene": "FloorPlan2",
+      "target_class": "tomato",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sinkbasin_1",
+      "ground_truth": [
+        "sinkbasin_1"
+      ],
+      "env_actions": 20,
+      "seeks": 1,
+      "receptacles": 38,
+      "log": [
+        "tomato_1 resolved at sinkbasin_1",
+        "pick_up tomato_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 394.5,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 16,
+        "detections": 252,
+        "matched": 15,
+        "claims": 12
+      },
+      "clip": "FloorPlan2_s23.gif"
+    },
+    {
+      "scene": "FloorPlan3",
+      "target_class": "winebottle",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_1",
+      "ground_truth": [
+        "countertop_1"
+      ],
+      "env_actions": 14,
+      "seeks": 1,
+      "receptacles": 27,
+      "log": [
+        "winebottle_1 resolved at countertop_1",
+        "pick_up winebottle_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 273.9,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 8,
+        "detections": 1005,
+        "matched": 16,
+        "claims": 15
+      },
+      "clip": "FloorPlan3_s23.gif"
+    },
+    {
+      "scene": "FloorPlan4",
+      "target_class": "dishsponge",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_2",
+      "ground_truth": [
+        "countertop_2"
+      ],
+      "env_actions": 21,
+      "seeks": 1,
+      "receptacles": 24,
+      "log": [
+        "dishsponge_1 resolved at countertop_2",
+        "pick_up dishsponge_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 284.4,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 15,
+        "detections": 387,
+        "matched": 17,
+        "claims": 14
+      },
+      "clip": "FloorPlan4_s23.gif"
+    },
+    {
+      "scene": "FloorPlan5",
+      "target_class": "plate",
+      "found": true,
+      "picked_up": true,
+      "found_at": "countertop_1",
+      "ground_truth": [
+        "countertop_1"
+      ],
+      "env_actions": 12,
+      "seeks": 1,
+      "receptacles": 42,
+      "log": [
+        "plate_1 resolved at countertop_1",
+        "pick_up plate_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 229.6,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 8,
+        "detections": 217,
+        "matched": 15,
+        "claims": 15
+      },
+      "clip": "FloorPlan5_s23.gif"
+    },
+    {
+      "scene": "FloorPlan201",
+      "target_class": "book",
+      "found": true,
+      "picked_up": true,
+      "found_at": "sofa_1",
+      "ground_truth": [
+        "sofa_1"
+      ],
+      "env_actions": 10,
+      "seeks": 1,
+      "receptacles": 22,
+      "log": [
+        "book_1 resolved at sofa_1",
+        "pick_up book_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 147.0,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 6,
+        "detections": 31,
+        "matched": 4,
+        "claims": 4
+      },
+      "clip": "FloorPlan201_s23.gif"
+    },
+    {
+      "scene": "FloorPlan202",
+      "target_class": "creditcard",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "coffeetable_1"
+      ],
+      "env_actions": 250,
+      "seeks": 14,
+      "receptacles": 8,
+      "log": [],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 776.9,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 250,
+        "detections": 2374,
+        "matched": 297,
+        "claims": 170
+      },
+      "clip": "FloorPlan202_s23.gif"
+    },
+    {
+      "scene": "FloorPlan203",
+      "target_class": "creditcard",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "diningtable_1"
+      ],
+      "env_actions": 250,
+      "seeks": 11,
+      "receptacles": 21,
+      "log": [],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 1910.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 182,
+        "detections": 2702,
+        "matched": 390,
+        "claims": 247
+      },
+      "clip": "FloorPlan203_s23.gif"
+    },
+    {
+      "scene": "FloorPlan301",
+      "target_class": "keychain",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "floor_1",
+        "garbagecan_1"
+      ],
+      "env_actions": 250,
+      "seeks": 11,
+      "receptacles": 30,
+      "log": [],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 492.3,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 209,
+        "detections": 1963,
+        "matched": 373,
+        "claims": 218
+      },
+      "clip": "FloorPlan301_s23.gif"
+    },
+    {
+      "scene": "FloorPlan302",
+      "target_class": "teddybear",
+      "found": true,
+      "picked_up": true,
+      "found_at": "bed_1",
+      "ground_truth": [
+        "bed_1"
+      ],
+      "env_actions": 12,
+      "seeks": 1,
+      "receptacles": 16,
+      "log": [
+        "teddybear_1 resolved at bed_1",
+        "pick_up teddybear_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 99.8,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 8,
+        "detections": 104,
+        "matched": 5,
+        "claims": 5
+      },
+      "clip": "FloorPlan302_s23.gif"
+    },
+    {
+      "scene": "FloorPlan303",
+      "target_class": "pen",
+      "found": true,
+      "picked_up": true,
+      "found_at": "shelf_7",
+      "ground_truth": [
+        "shelf_7"
+      ],
+      "env_actions": 11,
+      "seeks": 1,
+      "receptacles": 25,
+      "log": [
+        "pen_1 resolved at shelf_7",
+        "pick_up pen_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 111.0,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 7,
+        "detections": 233,
+        "matched": 9,
+        "claims": 9
+      },
+      "clip": "FloorPlan303_s23.gif"
+    },
+    {
+      "scene": "FloorPlan401",
+      "target_class": "candle",
+      "found": false,
+      "picked_up": false,
+      "found_at": "",
+      "ground_truth": [
+        "toilet_1"
+      ],
+      "env_actions": 250,
+      "seeks": 11,
+      "receptacles": 17,
+      "log": [],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 497.2,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 230,
+        "detections": 1413,
+        "matched": 180,
+        "claims": 96
+      },
+      "clip": "FloorPlan401_s23.gif"
+    },
+    {
+      "scene": "FloorPlan402",
+      "target_class": "toiletpaper",
+      "found": true,
+      "picked_up": true,
+      "found_at": "toiletpaperhanger_1",
+      "ground_truth": [
+        "countertop_1",
+        "toiletpaperhanger_1"
+      ],
+      "env_actions": 17,
+      "seeks": 1,
+      "receptacles": 18,
+      "log": [
+        "toiletpaper_1 resolved at toiletpaperhanger_1",
+        "pick_up toiletpaper_1: ok"
+      ],
+      "lifelong": {},
+      "seed": 23,
+      "wall_s": 89.8,
+      "perception": {
+        "mode": "yolo",
+        "weights": "/root/yolo/yolov8x-worldv2.pt",
+        "frames": 8,
+        "detections": 74,
+        "matched": 11,
+        "claims": 11
+      },
+      "clip": "FloorPlan402_s23.gif"
+    }
+  ],
+  "fetched": 8,
+  "episodes": 12
+}
