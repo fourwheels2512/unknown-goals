@@ -30,7 +30,9 @@ from unknown_goals.checker import (
     check_commitment,
     check_episode,
     check_export,
+    check_history,
     known_operators,
+    summary_line,
 )
 
 TARGET = "wrench_1"
@@ -472,6 +474,121 @@ def test_a_real_episode_with_an_input_ingested_too_late_is_caught(real):
     assert any(f"input {cited} reached the ledger at {late}, after the claim "
                f"it supports at {claim['ingested_at']}" in e
                for e in errors), errors
+
+
+# --------------------------------------------------------------------------
+# the claims an export calls older than itself
+# --------------------------------------------------------------------------
+# A second dive is flown on the first dive's ledger, so its export carries
+# the first dive's claims and says so in `history_claim_ids`. That is a door
+# a forger would use: call your own failing certificate history and the
+# episode stops being answerable for it. Each test below closes one way of
+# walking through it.
+
+def _second_dive() -> dict:
+    """The NOT-FOUND episode as a SECOND dive's export: every claim of the
+    first dive is history, and this dive has looked once and concluded
+    nothing yet."""
+    episode = _not_found_episode()
+    episode["episode_key"] = {"test": "TD2", "seed": 21, "level": 4}
+    episode["history_claim_ids"] = sorted(c["claim_id"]
+                                          for c in episode["claims"])
+    episode["claims"].append(
+        _claim("a2_bay_a", TARGET, "ABSENT_FROM", "bay_a", 30, 30, "OBSERVED",
+               source_id="robot_eyes", conf=0.97,
+               provenance={"via_action": True}))
+    episode["decisions"] = [{"step": 0, "action_type": "INSPECT_LOCATION",
+                             "target": "bay_a", "rationale": "dive two",
+                             "result": "SUCCESS",
+                             "new_claim_ids": ["a2_bay_a"],
+                             "claims_before": 8, "hypotheses": []}]
+    episode["result"] = {**episode["result"], "verdict": "UNDECIDED",
+                         "goal_status": "FAILED_BUDGET"}
+    return episode
+
+
+def test_the_first_dives_certificate_does_not_answer_for_the_second_dive():
+    episode = _second_dive()
+    assert check_history(episode) == []
+    assert check_commitment(episode) == ("checked", [])
+    assert check_certificate(episode) == ("none", [])
+
+
+def test_without_the_history_key_the_same_export_fails():
+    """What the defect looked like: the first dive's certificate read as this
+    episode's own."""
+    episode = _second_dive()
+    del episode["history_claim_ids"]
+    verdict, errors = check_commitment(episode)
+    assert verdict == "failed"
+    assert errors == ["cert_1: an absence certificate in an episode whose "
+                      "verdict is UNDECIDED"]
+
+
+def test_a_failing_certificate_hidden_as_history_still_fails_a_not_found():
+    """A NOT-FOUND verdict needs a certificate of its own; naming the only
+    one on the ledger as history leaves the verdict unbacked."""
+    episode = _not_found_episode()
+    episode["history_claim_ids"] = ["cert_1"]
+    verdict, errors = check_commitment(episode)
+    assert verdict == "failed"
+    assert errors == [f"verdict NOT_FOUND for {TARGET} with no absence "
+                      f"certificate on the ledger"]
+    assert check_certificate(episode) == ("none", [])
+
+
+def test_a_history_id_no_claim_carries_is_caught():
+    episode = _second_dive()
+    episode["history_claim_ids"] = sorted(episode["history_claim_ids"]
+                                          + ["ghost_1"])
+    episode["decisions"][0]["claims_before"] = 9      # one more claim, see below
+    assert check_history(episode) == [
+        "ghost_1: named as history, but no claim of this episode carries "
+        "that id"]
+
+
+def test_a_claim_this_episode_wrote_cannot_be_history():
+    episode = _second_dive()
+    episode["history_claim_ids"] = sorted(episode["history_claim_ids"]
+                                          + ["a2_bay_a"])
+    episode["decisions"][0]["claims_before"] = 9
+    assert check_history(episode) == [
+        "a2_bay_a: a decision of this episode wrote a claim the export says "
+        "predates it"]
+
+
+def test_more_history_than_the_first_decision_saw_is_caught():
+    episode = _second_dive()
+    episode["decisions"][0]["claims_before"] = 3
+    assert check_history(episode) == [
+        "the export names 8 claims as history, but its first decision was "
+        "taken with 3 claims on the ledger"]
+
+
+def test_a_history_claim_that_leans_on_this_episodes_work_is_caught():
+    """History cannot cite the future: a claim that predates the episode
+    cannot rest on a claim the episode wrote."""
+    episode = _second_dive()
+    _certificate(episode)["proof"]["input_claims"].append("a2_bay_a")
+    assert check_history(episode) == [
+        "cert_1: a claim the export says predates this episode cites "
+        "a2_bay_a, which this episode wrote"]
+
+
+def test_check_export_counts_history(tmp_path):
+    path = tmp_path / "twodives.jsonl"
+    with path.open("w", encoding="utf-8", newline="\n") as fh:
+        for episode in (_not_found_episode(), _second_dive()):
+            fh.write(json.dumps(episode) + "\n")
+    summary = check_export(path)
+    assert summary["n_episodes"] == 2
+    assert summary["history_claims"] == 8
+    assert summary["history_certificates"] == 1
+    assert summary["certificates_checked"] == 1
+    assert summary["certificates_failed"] == 0
+    assert summary["errors"] == []
+    assert summary_line(summary).endswith(
+        "; history: 8 claims, 1 certificates read as history")
 
 
 # --------------------------------------------------------------------------

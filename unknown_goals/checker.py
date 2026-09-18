@@ -60,6 +60,20 @@ because a carrier could have taken it anywhere. Without that line the rule
 above applies unchanged, so a certificate cannot be read under the weaker
 ordering without declaring the assumption in its own text.
 
+**Claims older than the episode.** A ledger can outlive an episode: two
+dives of one survey share one record, and the second dive's export carries
+the first dive's claims. An export says so in `history_claim_ids` -- the
+claims that were already on the ledger when this episode began. Their
+proofs are replayed like any other, and this episode's own conclusions may
+cite them (that is what a shared ledger is for), but the episode is not
+held to them: an absence certificate an earlier episode derived is not a
+certificate this one issued, and it is not re-judged against this
+episode's verdict or against the rooms this episode came to know. What the
+export cannot do is rewrite history to suit itself: a named id that is not
+on the ledger, a claim a decision of this episode wrote, a count that
+exceeds the ledger its first decision saw, or a history claim whose proof
+leans on a claim this episode wrote, each fails the episode.
+
 What this certifies and what it does not: the checker replays provenance
 and tests the two commitments above. It confirms that every conclusion the
 engine committed to is traceable to evidence that was on the ledger, under
@@ -84,9 +98,9 @@ import gzip
 import json
 import re
 import sys
+from collections.abc import Iterator
 from functools import lru_cache
 from pathlib import Path
-from typing import Iterator
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
@@ -259,15 +273,71 @@ def _claims_of(episode: dict) -> list[dict]:
     return list(episode.get("claims", []))
 
 
+def history_claim_ids(episode: dict) -> set[str]:
+    """The ids the export says were on the ledger before this episode began.
+
+    Absent from every export of an episode that started on its own ledger,
+    so the empty set is the ordinary case and nothing below changes for
+    it."""
+    return {str(x) for x in (episode.get("history_claim_ids") or [])}
+
+
 def certificate_claims(episode: dict) -> list[dict]:
-    """Every claim in the episode whose proof announces an absence
-    certificate."""
+    """Every claim THIS episode derived whose proof announces an absence
+    certificate. A certificate an earlier episode left on a shared ledger is
+    history, and `historical_certificate_claims` returns those."""
+    history = history_claim_ids(episode)
     out = []
     for claim in _claims_of(episode):
         proof = claim.get("proof") or {}
-        if proof.get("operator") == CERTIFICATE_OPERATOR:
+        if proof.get("operator") == CERTIFICATE_OPERATOR \
+                and str(claim.get("claim_id")) not in history:
             out.append(claim)
     return out
+
+
+def historical_certificate_claims(episode: dict) -> list[dict]:
+    """The absence certificates the export says predate this episode."""
+    history = history_claim_ids(episode)
+    return [c for c in _claims_of(episode)
+            if (c.get("proof") or {}).get("operator") == CERTIFICATE_OPERATOR
+            and str(c.get("claim_id")) in history]
+
+
+def check_history(episode: dict) -> list[str]:
+    """What an export may not say about the claims it calls older than
+    itself. Returns one description per problem; an export with no history
+    returns none."""
+    history = history_claim_ids(episode)
+    if not history:
+        return []
+    claims = {str(c.get("claim_id")): c for c in _claims_of(episode)}
+    errors: list[str] = []
+    for hid in sorted(history - set(claims)):
+        errors.append(f"{hid}: named as history, but no claim of this "
+                      f"episode carries that id")
+    written: set[str] = set()
+    for decision in episode.get("decisions", []) or []:
+        written.update(str(x) for x in (decision.get("new_claim_ids") or []))
+    for cid in sorted(written & history):
+        errors.append(f"{cid}: a decision of this episode wrote a claim the "
+                      f"export says predates it")
+    decisions = episode.get("decisions") or []
+    if decisions:
+        before = int(decisions[0].get("claims_before", 0))
+        if len(history) > before:
+            errors.append(
+                f"the export names {len(history)} claims as history, but its "
+                f"first decision was taken with {before} claims on the ledger")
+    for hid in sorted(history & set(claims)):
+        proof = claims[hid].get("proof") or {}
+        for cited in proof.get("input_claims", []):
+            cited = str(cited)
+            if cited in claims and cited not in history:
+                errors.append(
+                    f"{hid}: a claim the export says predates this episode "
+                    f"cites {cited}, which this episode wrote")
+    return errors
 
 
 def check_commitment(episode: dict) -> tuple[str, list[str]]:
@@ -276,7 +346,13 @@ def check_commitment(episode: dict) -> tuple[str, list[str]]:
     Returns one of "checked", "not checkable" or "failed", and the reasons
     where it failed. "not checkable" is what an export written before the
     verdict fields existed returns; it is not a failure, and the count is
-    reported so nobody mistakes an unchecked episode for a checked one."""
+    reported so nobody mistakes an unchecked episode for a checked one.
+
+    The certificates counted here are the ones this episode derived. A
+    certificate left on a shared ledger by an earlier episode is history and
+    says nothing about this episode's verdict; what witnesses a FOUND is
+    read from the whole ledger, history included, because an earlier dive's
+    sighting is evidence this one may act on."""
     result = episode.get("result") or {}
     target, verdict = result.get("target"), result.get("verdict")
     if target is None or verdict is None:
@@ -412,8 +488,13 @@ def placing_claims_by_place(claims: list[dict], target: str,
 def check_certificate(episode: dict) -> tuple[str, list[str]]:
     """Re-derive an absence certificate from the export it sits in.
 
-    Returns "none" when the episode carries no certificate, otherwise
-    "checked" or "failed" with the reasons. Nothing here reads the
+    Returns "none" when the episode derived no certificate, otherwise
+    "checked" or "failed" with the reasons. A certificate the export names
+    as history belongs to an earlier episode and is not re-derived here;
+    everything the episode's own certificate is measured against -- the
+    rooms, the placing claims, the clearing looks -- is recomputed from the
+    WHOLE export, history included, because a look from an earlier dive is
+    exactly what a two-dive certificate cites. Nothing here reads the
     certificate's own account of itself except the list of rooms it
     excluded as unreachable, which the export cannot settle either way,
     and the assumption it declares about its object -- static or not --
@@ -610,7 +691,8 @@ def check_export(path: str | Path) -> dict:
     artifact = None
     counts = {"commitments_checked": 0, "commitments_not_checkable": 0,
               "commitments_failed": 0,
-              "certificates_checked": 0, "certificates_failed": 0}
+              "certificates_checked": 0, "certificates_failed": 0,
+              "history_claims": 0, "history_certificates": 0}
     for ep in read_export(path):
         if ep.get("schema") != SCHEMA:
             raise ValueError(f"{path}: unexpected schema {ep.get('schema')!r}, "
@@ -621,6 +703,11 @@ def check_export(path: str | Path) -> dict:
         valid += v
         total += t
         errors += [f"[{label}] {e}" for e in errs]
+
+        herrs = check_history(ep)
+        counts["history_claims"] += len(history_claim_ids(ep))
+        counts["history_certificates"] += len(historical_certificate_claims(ep))
+        errors += [f"[{label}] history: {e}" for e in herrs]
 
         commitment, cerrs = check_commitment(ep)
         counts["commitments_" + commitment.replace(" ", "_")] += 1
@@ -641,12 +728,22 @@ def check_export(path: str | Path) -> dict:
 
 
 def summary_line(summary: dict) -> str:
-    """The commitment and certificate counts, for a printed report."""
-    return (f"commitments {summary['commitments_checked']} checked, "
+    """The commitment and certificate counts, for a printed report.
+
+    An artifact whose episodes share a ledger gets one more clause, so that
+    a reader can see how much of what was checked came from earlier
+    episodes; an artifact without history prints exactly what it always
+    printed."""
+    line = (f"commitments {summary['commitments_checked']} checked, "
             f"{summary['commitments_failed']} failed, "
             f"{summary['commitments_not_checkable']} not checkable; "
             f"certificates {summary['certificates_checked']} checked, "
             f"{summary['certificates_failed']} failed")
+    if summary.get("history_claims"):
+        line += (f"; history: {summary['history_claims']} claims, "
+                 f"{summary['history_certificates']} certificates read as "
+                 f"history")
+    return line
 
 
 def main(argv: list[str] | None = None) -> int:

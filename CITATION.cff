@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this benchmark kit, the demonstration build or their outputs, please cite the paper below."
 title: "Unknown Goals: benchmark kit and demonstration build of the robot_mind engine"
 type: software
-version: 0.5.0-kit.2
+version: 0.5.0-kit.3
 date-released: 2026-09-18
 authors:
   - family-names: Nayudu

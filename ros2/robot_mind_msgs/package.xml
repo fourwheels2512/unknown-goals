@@ -4,7 +4,9 @@
   <name>robot_mind_msgs</name>
   <version>0.1.0</version>
   <description>Typed interfaces for the robot_mind cognition engine:
-    find-object action, claim ingestion, and belief queries.</description>
+    find-object action, claim ingestion, belief queries, and the seabed
+    search node's detector contract (SeabedContact, one message per camera
+    frame) and coverage read-out (CellStatus / CellStatusArray).</description>
   <maintainer email="fourwheels2512@gmail.com">Kiran Nayudu</maintainer>
   <license>Apache-2.0</license>
 
@@ -12,6 +14,7 @@
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
 
   <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
   <exec_depend>rosidl_default_runtime</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
 

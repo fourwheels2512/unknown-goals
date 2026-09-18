@@ -215,6 +215,19 @@ the same rule place by place, with every refuted sighting named. Exit
 status is non-zero if any proof, commitment or certificate fails. No
 engine code runs.
 
+An episode may be flown on a ledger that outlived an earlier one — two
+dives of one survey are one record — and its export then names, in
+`history_claim_ids`, the claims that were already there when it began.
+Their proofs are replayed like any other and this episode may cite them
+(that is what the shared record is for), but the episode is not held to
+them: a certificate an earlier dive derived is that dive's, not this one's
+verdict. What an export cannot do is rewrite its own history — a named id
+that is not on the ledger, a claim one of this episode's own decisions
+wrote, a count larger than the ledger its first decision saw, or a history
+claim whose proof leans on a claim this episode wrote — and each of those
+fails the episode. An export with no such key, which is every export
+shipped here, is read exactly as before.
+
 ```
 python -m unknown_goals.replay data/exports/battery_final.jsonl.gz --list
 python -m unknown_goals.replay data/exports/battery_final.jsonl.gz --episode test=T2 seed=10007 level=6
@@ -257,6 +270,19 @@ rows in `data/artifacts/` are the engine's measured output, committed with
 the paper. What the kit gives you instead of trust is the ledger export
 behind them, which the checker and the replayer take apart episode by
 episode.
+
+**What changed since v0.5.0-kit.2.** The checker reads an episode whose
+ledger carried claims from an earlier one: an export may name those claims
+in `history_claim_ids`, and the commitment and certificate checks then
+judge what this episode derived rather than what it inherited, while every
+proof, this episode's and its history's, is replayed as before. Four ways
+of rewriting history are rejected, each with its own message, and
+`tests/test_checker_forgery.py` holds them. No export in this release
+carries the key, and none of the counts below moves: the release is the
+same artifacts under a checker that can also read a two-dive record.
+`ros2/robot_mind_msgs/` also gains the three message types a seabed search
+node speaks — one message per camera frame from whatever detector runs on
+the vehicle, and the per-cell coverage read-out it publishes back.
 
 **What changed since v0.5.0-kit.1.** The checker in that release (commit
 `191eea3`) validated proof paths alone: it did not test the order in which
