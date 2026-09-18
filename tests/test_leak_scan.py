@@ -1,10 +1,15 @@
-"""The kit does not carry anything the release withholds.
+"""The engine's module name is not in the kit's code.
 
-The authoritative gate is `scripts/export_kit.py` in the engine
-repository, which holds the withheld terms in clear and scans the whole
-build before it finishes. This test is the kit's own self-check: it keeps a
-later edit of the kit from reintroducing one of those terms, and it keeps
-the engine's module name out of the kit's code.
+The gate that keeps the withheld computation out of the kit is
+`scripts/export_kit.py` in the engine repository: it holds the withheld
+terms in clear and scans the whole build before anything is published.
+The kit itself carries no form of that list. The first release shipped
+the terms as SHA-256 digests for a self-test here; the digests were
+recovered by hashing the kit's own prose, so they withheld nothing, and
+the file and the self-test are gone. What this file still checks is the
+one thing the kit can check about itself without a list: that no kit code
+names the engine's module, except the two files whose purpose is to show
+it is absent.
 
 Copyright (c) 2026 Kiran Nayudu. Apache-2.0."""
 
@@ -14,15 +19,7 @@ import re
 from pathlib import Path
 
 import pytest
-from conftest import identifier_hits, leak_hashes, phrase_hits
 
-# The kit's own source and documents. The ledger exports have their own
-# contract test (test_exports.py), which checks the data's shape as well as
-# its words.
-SOURCE_DIRS = ["unknown_goals", "baselines", "tests", "ros2"]
-SOURCE_FILES = ["pyproject.toml", "README.md", "LICENSE", "LICENSE-DATA",
-                "LICENSE-DEMO"]
-DOC_DIRS = ["docs"]
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".srv", ".action",
                  ".msg", ".xml", ".cfg", ".yaml", ".yml", ""}
 
@@ -48,34 +45,16 @@ def _read(path: Path) -> str:
         return ""
 
 
-def test_the_hash_list_shipped():
-    h = leak_hashes()
-    assert h["words"], "no withheld identifiers to check against"
-    assert h["fields"], "no withheld configuration fields to check against"
-    assert h["phrases"], "no withheld phrases to check against"
-    assert h["phrase_max_words"] >= 1
-    assert all(len(d) == 64 for d in h["words"] + h["fields"] + h["phrases"])
-
-
-def test_no_withheld_identifier_in_the_kit_source(kit: Path):
-    h = leak_hashes()
-    words, fields = set(h["words"]), set(h["fields"])
-    bad: list[str] = []
-    for path in _files(kit, SOURCE_DIRS, SOURCE_FILES):
-        hits = identifier_hits(_read(path), words, fields)
-        bad += [f"{path.relative_to(kit).as_posix()}: {h}" for h in sorted(hits)]
-    assert not bad, "withheld identifiers in the kit source:\n" + "\n".join(bad)
-
-
-def test_no_withheld_phrase_in_the_kit_source_or_documents(kit: Path):
-    h = leak_hashes()
-    phrases, n = set(h["phrases"]), int(h["phrase_max_words"])
-    bad: list[str] = []
-    for path in _files(kit, SOURCE_DIRS + DOC_DIRS, SOURCE_FILES):
-        hits = phrase_hits(_read(path), phrases, n)
-        bad += [f"{path.relative_to(kit).as_posix()}: {x!r}"
-                for x in sorted(hits)]
-    assert not bad, "withheld phrases in the kit:\n" + "\n".join(bad)
+def test_the_kit_ships_no_list_of_withheld_names(kit: Path):
+    """Neither in clear nor as digests: the first release's hash file was
+    reversible from the kit's own vocabulary."""
+    data = kit / "unknown_goals" / "data"
+    assert not (data / "leak_hashes.json").exists(), \
+        "the withheld-name digest file is back in the kit"
+    for path in sorted(data.glob("*.json")):
+        text = _read(path).lower()
+        assert "withheld" not in text and "leak" not in text, \
+            f"{path.name} describes a withheld-name list"
 
 
 # Two files name the engine's module on purpose, in order to establish that

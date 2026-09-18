@@ -80,14 +80,15 @@ summarises.
 - The committed `alfworld_valid_unseen.json` carries the v2
   re-run (134/134). The first run's 129/134 is preserved in git history
   (commit `ebb9bb1`) and recomputes to the same numbers.
-- The pre-generated bulk artifact bundle is a 393 MB zip, 400 MB
-  and 575 files unpacked: every artifact JSON, the kept frames of the
-  AI2-THOR and gz-arena runs, and 122 run and certification logs from
-  both WSL distributions. A 2.4 GB companion bundle carries the
-  real-perception run animations.
-  `scripts/stage_artifact_bundle.py --logs-dir dist/wsl_logs`
-  rebuilds both with a manifest and SHA-256 sums. Both are available on
-  request via a data-access issue on the benchmark-kit repository.
+- The pre-generated bulk artifact bundle is a 393 MB zip, 404 MB
+  and 468 files unpacked: the artifact JSONs the benchmark kit ships,
+  the kept frames of the AI2-THOR and gz-arena runs, and the per-seed
+  battery console logs. A 2.4 GB companion bundle carries the
+  real-perception run animations. `scripts/stage_artifact_bundle.py`
+  rebuilds both with a manifest and SHA-256 sums, through the same leak
+  gate that builds this kit; the manifest names every artifact the gate
+  holds back and why. Both are available on request via a data-access
+  issue on the benchmark-kit repository.
 - The SubT and hospital worlds require minor world-file patches
   (reserved world name, legacy material scripts), recorded as scripts in
   the repository.

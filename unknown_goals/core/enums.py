@@ -63,6 +63,10 @@ class GoalStatus(StrEnum):
     ACHIEVED = "ACHIEVED"
     FAILED_BUDGET = "FAILED_BUDGET"
     ABORTED = "ABORTED"
+    # the robot looked in every place it knows of and the thing was in none
+    # of them, with the record of those looks attached. Distinct from
+    # FAILED_BUDGET, which means the search simply ran out of time.
+    NOT_FOUND = "NOT_FOUND"
 
 
 class ActionType(StrEnum):

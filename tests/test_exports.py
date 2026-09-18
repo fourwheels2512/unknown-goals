@@ -9,12 +9,10 @@ Copyright (c) 2026 Kiran Nayudu. Apache-2.0."""
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 import pytest
-from conftest import identifier_hits, leak_hashes, read_jsonl
-
+from conftest import read_jsonl
 from unknown_goals.checker import SCHEMA, builtin_rule_ids, check_episode
 
 TOP_LEVEL = ["schema", "engine", "artifact", "episode_key", "entities",
@@ -118,16 +116,6 @@ def test_every_proof_in_every_export_replays(exports):
         assert not errors, (f"{path.name}: {len(errors)} invalid proofs, "
                             f"first: {errors[0]}")
         assert valid == total
-
-
-def test_no_withheld_identifier_in_any_export(exports):
-    if not exports:
-        pytest.skip("no exports in this tree")
-    words = set(leak_hashes()["words"])
-    for path in exports:
-        text = "\n".join(json.dumps(ep) for ep in read_jsonl(path))
-        hits = identifier_hits(text, words)
-        assert not hits, f"{path.name}: withheld identifiers {sorted(hits)}"
 
 
 def test_the_export_names_an_artifact_that_ships(exports, kit: Path):

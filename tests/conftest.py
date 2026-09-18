@@ -5,65 +5,12 @@ Copyright (c) 2026 Kiran Nayudu. Apache-2.0."""
 from __future__ import annotations
 
 import gzip
-import hashlib
 import json
-import re
 from pathlib import Path
 
 import pytest
 
 KIT = Path(__file__).resolve().parent.parent
-
-_IDENT = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
-
-
-def digest(term: str) -> str:
-    return hashlib.sha256(term.strip().lower().encode("utf-8")).hexdigest()
-
-
-def digest_cs(term: str) -> str:
-    """Case-sensitive: a configuration field is always written in lower
-    case, and `ActionResult.INVALID_ACTION` is a public enum member, not a
-    reward weight."""
-    return hashlib.sha256(term.strip().encode("utf-8")).hexdigest()
-
-
-def leak_hashes() -> dict:
-    """The withheld terms, as digests.
-
-    The list of terms is itself part of what is withheld, so the kit ships
-    hashes and matches by hashing what it finds. The authoritative gate is
-    the export script in the engine repository, which holds the terms."""
-    import unknown_goals
-    path = Path(unknown_goals.__file__).parent / "data" / "leak_hashes.json"
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def identifier_hits(text: str, words: set[str],
-                    fields: set[str] | None = None) -> set[str]:
-    """The identifiers in `text` that are withheld terms: `words` matched
-    however they are capitalised, `fields` exactly as written."""
-    seen = {m.group(0) for m in _IDENT.finditer(text)}
-    hits = {t for t in seen if digest(t) in words}
-    if fields:
-        hits |= {t for t in seen if digest_cs(t) in fields}
-    return hits
-
-
-def phrase_hits(text: str, phrases: set[str], max_words: int) -> set[str]:
-    """Digests of the word windows in `text` that are withheld phrases.
-
-    A phrase is hashed after lowercasing and collapsing whitespace, and the
-    text is tokenised the same way, so the comparison is exact on word
-    boundaries. Punctuation stays attached to its word, which is why this
-    is a self-check and not the gate: the gate is the substring scan in the
-    engine repository's export script, which holds the phrases in clear."""
-    words = text.lower().split()
-    found: set[str] = set()
-    for n in range(1, max_words + 1):
-        windows = {" ".join(words[i:i + n]) for i in range(len(words) - n + 1)}
-        found |= {w for w in windows if digest(w) in phrases}
-    return found
 
 
 @pytest.fixture(scope="session")

@@ -17,52 +17,35 @@ as checkable traces (see the reproducibility statement). Development
 disclosure: the system was designed and implemented by an LLM assistant under
 the author's direction; the benchmarked artifact runs no language model (§6,
 item 7). Every number reproduces from single integer seeds (embodied caveats
-noted in §4.4). An arXiv-formatted version lives in `paper/main.tex`.*
+noted in §4.5). An arXiv-formatted version lives in `paper/main.tex`.*
 
 ## Abstract
 
-A robot sent to find an object decides from evidence that arrives late, in
-pieces and sometimes false. We report a decision layer for that task in which
-every commitment carries a derivation record that a checker outside the engine
-replays. **robot_mind** is a deterministic engine over an append-only,
-bi-temporal evidence ledger with typed epistemic statuses. Beliefs are views
-over the ledger, each derived claim records the claims, rules and time
-constraints it rests on, actions are chosen by information gain, and a report
-is verified before it is trusted. No language model runs at inference time. On
-a seeded warehouse benchmark graded against hidden truth the engine is 100%
-correct at 1.75 actions per episode over 300 held-out episodes, and under
-budgets that brute force cannot exhaust it holds 98–100% at four and five
-actions where an exact belief-space planner reaches 73–90% and scripted
-policies 27–61%. Switching off multi-anchor hypotheses or repetition decay one
-at a time cuts the four-action figure from 98.4% to 72.8% and 87.6%, with no
-wrong commitment in either arm, so the margin is measured, not inferred. On a
-hospital floor with staged same-class decoys it is correct on 30/30
-pre-registered seeds and fooled on 0/30, where class-matching policies are
-fooled on 16 and 26. On a hand-held phone camera's footage of a lived-in
-house, with no instance identity and no association step, it commits correctly
-in 36/36 pre-registered hunts, follows 18/18 true tips and debunks 18/18 false
-ones. Two hosted LLM agents match its accuracy over 48 episodes at about 2,000
-times its per-episode latency and without a replayable evidence-to-decision
-trail. A nine-suite stress battery finds it correct on all 1,860 unseen
-episodes and never confidently wrong under 320 planted lies per episode, and a
-mind kept across six days of nightly change holds 12/12 every day. Unchanged,
-the same build reaches 134/134 on ALFWorld's unseen split, 95/96 fetches in
-AI2-THOR (83/96 with a real open-vocabulary detector in the sensing slot, all
-83 commitments correct, identity from the simulator's instance masks), 12/12
-scored reports on DARPA SubT worlds and 8/8 on the hospital fetch benchmark,
-and as a ROS 2 lifecycle node it passes 20/20, 21/21 and 26/26 integration
-checks in simulation on a demo driver, stock Nav2 with SLAM Toolbox, and the
-detector under Nav2; one decision costs a third of a millisecond on a laptop
-core. Two boundaries were measured and each carries an acceptance test:
-per-decision cost still grows with lifetime memory after three increments cut
-it ~7×, 4× and ~3×, and at a raised resolve bar the engine names a room for an
-absent object in 121/300 episodes because its verdict vocabulary has no
-justified not-found. The benchmark kit, every baseline, the proof checker and
-per-episode ledger exports are released: every baseline regenerates byte for
-byte, and the checker re-validates the provenance of every proof in this paper
-with no engine code. The checker certifies provenance, not the belief
-arithmetic, which is withheld together with the engine's source; the engine
-ships as a demonstration build.
+A robot sent to find an object decides from late, partial, sometimes false
+evidence. We report a decision layer whose every commitment is one of three
+verdicts carrying a record a checker outside the engine re-derives: FOUND at a
+room, witnessed by a confirming look; NOT-FOUND, with a certificate that the
+robot's own looks covered every room; or UNDECIDED. **robot_mind** is
+deterministic over an append-only, bi-temporal evidence ledger with typed
+statuses and runs no language model. Against an exact belief-space planner over
+a belief that reads the same relations, its four-action margin on the warehouse
+benchmark falls inside the interval and at two actions that planner leads; what
+it keeps there is zero wrong commitments, justified abstention and the record.
+On a scenario family designed without reading the engine it alone missed the
+exhaustive budget; the defect is fixed and re-measured at 1.000 on seeds held
+back for it. At a raised resolve bar the engine named a room for an absent
+object in 121/300 episodes; the certified verdict makes that **0/300**, at one
+false refusal a second look removes. Unchanged, one build is 30/30 correct and
+0/30 fooled on staged decoys, 36/36 on hand-held-camera hunts with 18/18 true
+tips followed and 18/18 false ones debunked, 134/134 on ALFWorld's unseen
+split, 95/96 in AI2-THOR and 83/96 under a real detector, 12/12 on DARPA SubT,
+8/8 on a hospital floor, 20/20, 21/21 and 26/26 on ROS 2 integration checks,
+1.75 actions per warehouse episode, and 12/12 every day across six days of
+nightly change. The kit, the baselines, the checker and the ledger exports are
+released: the checker re-validates 228,989 proof paths over 10,008 episodes
+with no engine code, and now re-derives each verdict and certificate. The
+belief arithmetic is withheld with the engine's source, which ships as a
+demonstration build.
 
 ## 1. Introduction
 
@@ -87,7 +70,7 @@ timestamped sensor claims (camera sightings, badge events, cart-tracker
 reports). The agent chooses physical checks, such as inspecting a location or
 scanning a cart, to find the object within an action budget. The benchmark
 abstracts perception and locomotion so that the search policy is the variable
-under test; §4.4 removes each abstraction in turn with the engine unchanged.
+under test; §4.5 removes each abstraction in turn with the engine unchanged.
 
 The engine, robot_mind, is a deterministic program with no language model at
 inference time. Claims enter an append-only, bi-temporal evidence ledger with
@@ -105,10 +88,15 @@ low-latency, closed-domain object-search agent whose every decision carries a
 machine-checkable provenance trail, and that property, unlike accuracy, was
 supplied by none of the LLM agents evaluated here at any scale we tested.*
 
-The thesis held everywhere it was tested. On the warehouse benchmark the engine
-is 100% correct at 1.75 actions per episode. Where brute force cannot finish it
-keeps 98–100% of episodes at four and five actions, against 73–90% for an exact
-belief-space planner over the same evidence and 27–61% for scripted policies.
+The provenance half of that thesis held everywhere it was tested, and the
+efficiency half now has a control that bounds it. On the warehouse benchmark
+the engine is 100% correct at 1.75 actions per episode. Where brute force
+cannot finish it keeps 98–100% of episodes at four and five actions, against
+73–90% for an exact belief-space planner over a plain filter's belief and
+27–61% for scripted policies. Give that planner a belief that reads the same
+relations the engine reads and the four-action margin falls to 0.8 points,
+inside the interval, which locates the engine's advantage in how it reads the
+evidence rather than in how it plans over it.
 Two hosted LLM agents reach the same accuracy at about 2,000 times the latency
 and with no trail a checker can replay. The same build then left the warehouse
 unchanged: 134/134 on ALFWorld's unseen split, 95/96 fetches in AI2-THOR, 12/12
@@ -124,26 +112,44 @@ six days of nightly change holds 12/12 every day. A nine-suite stress battery
 finds it correct on all 1,860 unseen episodes and never confidently wrong under
 320 planted lies. One decision costs a third of a millisecond on a laptop core.
 
-The contributions are:
+The contributions are three claims and the apparatus that carries them.
 
-1. the decision layer (§2): an evidence ledger with typed statuses and proof
-   paths, an information-gain planner that verifies before it trusts, and three
-   mechanisms found by benchmarking, deterministic from one seed and released
-   as a demonstration build;
-2. a benchmark discipline (§3): hidden-truth grading, a declared seed split for
-   every evaluation, a fairness contract for LLM agents, scripted and exact
-   belief-space baselines under the identical episode contract, and
-   pre-registration wherever the world is not seeded;
-3. the measurements (§4): efficiency and necessity under a sub-exhaustive
-   budget, accuracy parity with two hosted LLM agents at three orders of
-   magnitude lower latency, one build unchanged across ALFWorld, AI2-THOR,
-   DARPA SubT worlds, a hospital floor, a Mars terrain and a seabed, the
-   robot's three seams crossed with real components, a persistent mind at
-   measured cost, a nine-suite stress battery, and the first measurement of the
-   commitment discipline against an absent object;
-4. a benchmark kit in which every baseline regenerates byte for byte and every
-   engine proof re-validates from its ledger export with no engine code, and a
-   research programme with an acceptance test per objective (§8).
+1. **Every commitment is one of three verdicts, and a checker outside the
+   engine re-derives it.** A verdict is FOUND at a room, witnessed by a
+   confirming look; NOT-FOUND, carrying a coverage certificate over the rooms;
+   or UNDECIDED. The certificate cites one empty-handed look of the robot's own
+   per room, none older than the last claim that placed the target, and the
+   kit's checker recomputes the room list, that claim and every cited look from
+   the export's own contents with no engine code. It rejects 29 forgery
+   mutations, among them certificates whose provenance replays cleanly (§4.7,
+   the reproducibility statement).
+2. **Under a matched reading of the evidence, what the engine keeps is the
+   abstention and the record rather than a better plan.** Against an exact
+   belief-space planner over a belief that reads the same relations, the
+   engine's four-action margin falls inside the interval and at two actions the
+   planner leads. What the engine retains there is zero wrong commitments, a
+   justified abstention and the provenance trail (§4.1).
+3. **The margin the engine does have is carried by one mechanism, and its
+   counterpart in a Bayesian belief is one relation.** A leave-one-out ablation
+   costs it more than a quarter of its four-action episodes without
+   multi-anchor hypotheses, and it does not recover at the full budget. On the
+   same grid, adding the departing-cart relation to a plain filter's belief is
+   worth 24 points, and every other relation in the ladder is worth at most 0.4
+   (§4.1).
+4. the benchmark discipline (§3) and the kit: hidden-truth grading, a declared
+   seed split per evaluation, a fairness contract for LLM agents, scripted and
+   exact belief-space baselines under the identical episode contract,
+   pre-registration wherever the world is not seeded, a scenario family
+   designed under a reading restriction, and a kit in which every baseline
+   regenerates byte for byte and every engine proof re-validates from its
+   ledger export with no engine code, beside a research programme with an
+   acceptance test per objective (§8).
+
+The other evaluations in §4 are portability and integration certifications and
+are introduced as such: one unchanged build across ALFWorld, AI2-THOR, DARPA
+SubT worlds, a hospital floor, a Mars terrain, a seabed and a ROS 2 stack, the
+robot's seams crossed with real components in the slot, a persistent mind at
+measured cost, and a nine-suite stress battery.
 
 §2 describes the decision layer. §3 states how every number in the paper was
 produced. §4 reports the results in the order of the uncertainties. §5
@@ -157,13 +163,16 @@ of the acronyms used.
 
 Six of the eight technical uncertainties open at the outset were resolved in
 the engine's favour, three of them only after a benchmark had exposed a failure
-and the fix had been built. The last two were measured to a boundary, and each
-boundary now carries an objective with an acceptance test (§8). None of this
+and the fix had been built. Of the last two, the absent-object boundary is now
+closed by a verdict that was built and measured, and the cost-of-memory
+boundary still carries an objective with an acceptance test (§8). Two further
+uncertainties were opened by the controls of this round and are listed with
+them. None of this
 was assured when the work began. To our knowledge no prior object-search system
 attaches a replayable derivation to its commitments, and the closest work (§7)
 either stores memory without closing the hypothesise–act–verify loop or plans
 over beliefs without keeping the evidence. Development was therefore organised
-around the ways the engine could fail. The table below lists the eight, how
+around the ways the engine could fail. The two tables below list them, how
 each was tested and what came out. The method was the same each time: state the
 hypothesis, build the mechanism, grade it against hidden truth, submit the
 result to adversarial review, fix, and re-verify every earlier battery byte for
@@ -171,17 +180,29 @@ byte before keeping the fix.
 
 | uncertainty | how it was tested | outcome | where |
 |---|---|---|---|
-| 1. **Sufficiency.** Can a compact deterministic engine, with no model in the loop, match LLM agents on temporal, identity and causal reasoning from unreliable sensors? | warehouse benchmark graded against hidden truth; head-to-head with Gemini 3.7 Flash and DeepSeek chat (August 2026) under the fairness contract, latency measured end to end through their APIs | yes: accuracy parity with two hosted LLM agents at three orders of magnitude lower latency, and a replayable evidence-to-decision trail that neither agent produced under this harness. The multi-anchor hypotheses that secured it (§2) were found by benchmarking, after one false low-confidence sighting had severed the true carrier chain: 52% success at the hardest level before, 92% after | §4.1–§4.2 |
-| 2. **Necessity.** Does the evidence machinery buy anything a for-loop does not? | budget sweep against an exact planner over the plain filter's belief and against scripted policies | yes, below the exhaustive budget: 98–100% at four and five actions against 73–90% for the exact planner and 27–61% for the scripted policies, and 70–90% at two and three against 41–53% and 11–34%. At the full budget every policy scores 100%, so success under a budget is the discriminating quantity. No policy commits wrongly in the sweep's 18,000 episodes, because success requires a confirming inspection. A leave-one-out ablation on the shipped build attributes the margin: multi-anchor hypotheses and repetition decay each carry a disjoint share, transport hand-off's share is within noise | §4.1 |
-| 3. **Deception.** Does evidence hygiene survive an adversary that plants confident false claims? | the gaslight level (L6); floods of planted lies | yes: 40/40 under gaslight, and never confidently wrong under up to 320 planted lies per episode | §4.7 |
-| 4. **Lifelong memory.** Is a memory that never forgets an asset in a changing world? | a persistent mind kept across days in a changing AI2-THOR world | yes, with two organs built for it: age-decayed evidence and refutation-driven search hold the same mind at 12/12 every day across six days of nightly change. Before them it fell from 12/12 on day 1 to 4, 1, 0, 2 and 0 of 12 on days 2–6 (2–6 of 12 with drives on) | §4.5 |
-| 5. **Perception seam.** Do commitments derived from a real detector's raw output, with no instance identities and no association step, stay correct? | pre-registered hunts on hand-held phone footage of one house | yes: 36/36 pre-registered hunts, 18/18 true tips followed and 18/18 false tips debunked. Three graded sittings (12/36, 29/36, 33/36) diagnosed and fixed a resolve-on-sighting rule that was right wherever an inspection could confirm a sighting and wrong when the same clip returned the same detection | §4.4 |
-| 6. **Navigation seam.** Do the decisions survive a navigation stack's timeouts, aborts and drift? | stock Nav2 with SLAM Toolbox in simulation, then with the detector in the loop as well | yes: 21/21 integration checks on stock Nav2 with SLAM Toolbox and 26/26 with the detector in the loop; the four failed bring-up runs are on record with their fixes in the simulated body and the stack's configuration | §4.4 |
-| 7. **Cost of memory.** Can per-decision cost stay bounded as the ledger grows without end? | a 300-day life; per-decision latency measured across three increments of incremental view maintenance | bounded in three increments, ~7×, 4× and ~3×, every decision byte-identical; the remaining growth has a named cause and a bounded-cost objective with an acceptance test (O2, limitation 11) | §4.5 |
-| 8. **Absent object.** Does the commitment discipline hold when the object is not in the building at all? | target removed from the world; raised resolve bar | measured to its boundary: the rule that closes an exhausted search names a room in 121/300 absent-object episodes at a raised bar, because the verdict vocabulary has no justified not-found. That verdict is specified, and this battery is its acceptance test (O1, limitation 13) | §4.6 |
+| 1. **Sufficiency.** Can a compact deterministic engine, with no model in the loop, match LLM agents on temporal, identity and causal reasoning from unreliable sensors? | warehouse benchmark graded against hidden truth; head-to-head with Gemini 3.7 Flash and DeepSeek chat (August 2026) under the fairness contract, latency measured end to end through their APIs | yes: accuracy parity with two hosted LLM agents at three orders of magnitude lower latency, and a replayable evidence-to-decision trail neither agent produced. The multi-anchor hypotheses that secured it were found by benchmarking, after one false low-confidence sighting had severed the true carrier chain: 52% → 92% at the hardest level | §4.1–§4.3 |
+| 2. **Necessity.** Does the evidence machinery buy anything a for-loop does not, and is the advantage the belief or the plan? | budget sweep against scripted policies, against an exact planner over the plain filter's belief and against the same planner over a belief that reads the same relations the engine reads; a leave-one-out ablation of the engine's own mechanisms | yes against every control below the exhaustive budget: 98–100% at four and five actions against 73–90% for the plain planner and 27–61% for the scripted policies, with no wrong commitment anywhere. Removing multi-anchor hypotheses costs over a quarter of the four-action episodes and is not recovered at the full budget. Against the matched planner the four-action margin is 0.8 points, inside the interval, and at two actions that planner leads: the advantage is the reading of the evidence, not the plan | §4.1 |
+| 3. **Deception.** Does evidence hygiene survive an adversary that plants confident false claims? | the gaslight level (L6); floods of planted lies | yes: 40/40 under gaslight, and never confidently wrong under up to 320 planted lies per episode | §4.8 |
+| 4. **Lifelong memory.** Is a memory that never forgets an asset in a changing world? | a persistent mind kept across days in a changing AI2-THOR world | yes, with two modules built for it: age-decayed evidence and refutation-driven search hold one mind at 12/12 every day across six days of nightly change, where before them it held day 1 and then collapsed | §4.6 |
+| 5. **Perception seam.** Do commitments derived from a real detector's raw output, with no instance identities and no association step, stay correct? | pre-registered hunts on hand-held phone footage of one house | yes: 36/36 pre-registered hunts, 18/18 true tips followed and 18/18 false tips debunked. Three earlier graded sittings diagnosed and fixed a resolve-on-sighting rule that is right wherever an inspection can confirm a sighting and wrong when the same clip returns the same detection | §4.5 |
 
-The eight technical uncertainties open at the outset: how each was tested
-against hidden ground truth, what came out, and where it is reported.
+The technical uncertainties open at the outset, part one: how each was tested
+against hidden ground truth, what came out, and where it is reported. The
+second table carries the rest. Rows 4 and 5 record a failure a benchmark
+exposed and the fix that followed.
+
+| uncertainty | how it was tested | outcome | where |
+|---|---|---|---|
+| 6. **Navigation seam.** Do the decisions survive a navigation stack's timeouts, aborts and drift? | stock Nav2 with SLAM Toolbox in simulation, then with the detector in the loop as well | yes: 21/21 integration checks on stock Nav2 with SLAM Toolbox and 26/26 with the detector in the loop; the four failed bring-up runs are on record with their fixes in the simulated body and the stack's configuration | §4.5 |
+| 7. **Cost of memory.** Can per-decision cost stay bounded as the ledger grows without end? | a 300-day life; per-decision latency measured across three increments of incremental view maintenance | bounded in three increments, ~7×, 4× and ~3×, every decision byte-identical; the remaining growth has a named cause and a bounded-cost objective with an acceptance test (O2, limitation 11) | §4.6 |
+| 8. **Absent object.** Does the commitment discipline hold when the object is not in the building at all? | target removed from the world; raised resolve bar | found, then fixed and re-measured. The rule that closes an exhausted search named a room in 121/300 absent-object episodes at a raised bar, because the verdict vocabulary had no justified not-found. A NOT-FOUND verdict carrying a coverage certificate takes that to 0/300, issues a refusal in 119/300 and in 300/300 with the stale reports stripped, and costs one false refusal in 300 present-object episodes (O1, limitation 13) | §4.7 |
+| 9. **External benchmark under pressure.** Does a reduced command allowance on ALFWorld separate the policies the standard allowance cannot? | the engine, a fixed alphabetical sweep and a seeded random order at 10, 15, 20, 30 and 50 commands on both splits | found, fixed and re-measured. It separates them, and on the unseen split against the engine until about 25 commands. Diagnosed: with no evidence every receptacle ties, and the acting policy settled that tie on the alphabetically last name while the sweep takes the first, which accounts for all 57 games the sweep wins at 20 commands. With the tie settled by the episode's own seed, and a class prior the mind learns from the training split out of its own confirmed finds, the unseen curve beats the fixed sweep at every allowance. The 134/134 at the standard allowance stands | §4.4 |
+| 10. **A distribution the rules were not designed on.** Does any of this survive a scenario family designed without reading the engine? | a seven-room family with two-hop hand-offs, a confidently wrong log source and a skewed clock, pre-registered before any policy ran, on development seeds and then on validation seeds | found, fixed and re-measured. The engine was the only policy not to reach 1.000 at the exhaustive budget, 0.970 against 1.000, because rooms it had never looked in were not offered to its planner. With the coverage rule, 1.000 on the development seeds and 1.000 on validation seeds not run until the fix was final, 0 of 3,000 warehouse episodes changed. At four actions the matched planner still leads | §4.2 |
+
+The technical uncertainties, part two: rows 6 and 7 were open at the outset,
+row 8 is the boundary this round closed, and rows 9 and 10 were opened by the
+controls of this round. Rows 8, 9 and 10 each record a failure a benchmark
+exposed; for rows 8 and 10 the fix is built and re-measured in this paper.
 
 ## 2. The decision layer
 
@@ -207,7 +228,12 @@ ages: an old sighting and an old absence both fade, while validated rules never
 decay. Every derived claim records the claim ids, rule ids, assumptions and
 time constraints it rests on, and a checker outside the engine replays that
 record against the ledger. The benchmark reports the resulting validity rate,
-1.000 in every run reported here.
+1.000 in every run reported here. The same checker tests the episode's verdict:
+a FOUND verdict must be witnessed by an observed sighting at the bar from
+something other than the reasoner, and a NOT-FOUND verdict's coverage
+certificate is re-derived from the export's own entities and claims rather than
+read back. It tests no belief value, so whether the room was the right one is
+graded against hidden truth instead.
 
 Gaps and refutations both create work. A missing variable becomes ranked
 hypotheses and an information-seeking action, never a terminal "cannot
@@ -215,7 +241,7 @@ determine". Repeated failed checks eventually widen the search to places the
 evidence never pointed at, and a single absence does not, because one absence
 still reads as possible occlusion. Without that widening an object moved
 overnight is unfindable, which is the failure the dynamic-house protocol of
-§4.5 exposed before the mechanism was built. The planner then picks one action
+§4.6 exposed before the mechanism was built. The planner then picks one action
 for the information it buys, over the belief the ledger defines.
 
 The executor carries that action out and verifies its postconditions, so a
@@ -223,7 +249,7 @@ fresh report is checked before it is trusted rather than after it has been
 acted on. Identity grounding is weighted and keeps ambiguity below a threshold
 instead of resolving it. The learned layer, rule induction and a contextual
 bandit, may reorder the candidates the planner already justifies and may never
-outvote evidence or create an observed fact. §4.7 describes the self-repair
+outvote evidence or create an observed fact. §4.8 describes the self-repair
 loop that audits the whole of it.
 
 **The language-model seam.** A language model has one designed seam, a
@@ -260,8 +286,12 @@ engine's own terms.
    high; only a new observation carries OBSERVED.
 3. **Proof paths, independently checked.** Every derived claim records its
    input claim ids, rule ids, assumptions and time constraints. A separate
-   checker replays every proof against the ledger, and the benchmark
-   reports the validity rate (1.000 in all reported runs).
+   checker replays every proof against the ledger: the operator must come from
+   a declared table, every cited input must be on that episode's ledger and
+   have reached it no later than the claim it supports, every rule must be one
+   the episode knew, and every time constraint must be satisfiable on the cited
+   claims' intervals. The benchmark reports the validity rate (1.000 in all
+   reported runs).
 4. **Unknown creates work.** A missing variable becomes ranked hypotheses
    and an information-seeking action, never a terminal "cannot determine."
 5. **Explainable belief arithmetic.** Every belief is a deterministic
@@ -314,29 +344,79 @@ that discipline once, so the results can be read without it.
 **Terms for verdicts, and what the checker certifies.**
 In this paper *commitment* names one event, and every count that
 carries the central invariant counts that event. The terms table below
-fixes the vocabulary; §4.6 reports each row's rate under
+fixes the verdict vocabulary; §4.7 reports each row's rate under
 the one condition that exercises them all. Four thresholds recur. The
-*resolve bar* (`sighting_resolves_at`: 0.0 in the
-warehouse and simulator batteries, 0.9 in the real-pixels harness and in
-§4.6) is the sighting confidence at which the direct path
-commits. The *claim gate* (0.05) is the detector confidence below
-which a detection never becomes a claim. The *confirmation
+*resolve bar* is the commitment confidence threshold on an observation: the
+sighting confidence at which the direct path commits (0.0 in the warehouse and
+simulator batteries, 0.9 in the real-pixels harness and in §4.7). The
+*claim gate* is the detection-score ingestion threshold (0.05): the detector
+confidence below which a detection never becomes a claim. The *confirmation
 confidence* (0.9) is what an inspection writes when it confirms a
-sighting. The *sighting bar* of §4.4 is the resolve
+sighting. The *sighting bar* of §4.5 is the resolve
 bar under that harness's name.
+
+**The engine's vocabulary against the standard one.** The vocabulary table
+below maps every term this paper coins to its closest counterpart in POMDP
+planning, active perception, tracking or database provenance. The standard term
+is the one to read the results with; the short name is kept where the paper's
+own tables and artifacts use it.
 
 | term | meaning | triggers an action | retractable | a wrong commitment if wrong |
 |---|---|---|---|---|
-| hypothesis | a ranked candidate holder or room in the beam | yes: actions discriminate among them | yes | no |
-| transient verdict | a resolved location held between two reasoning calls and re-examined at the next; it triggers the inspection that confirms or retracts it | yes | yes | no; reported separately (§4.6: 74/300 present-target episodes at bar 0.9; 799 firings in the absent arm) |
+| hypothesis | a ranked candidate holder or room in the belief's support | yes: actions discriminate among them | yes | no |
+| transient verdict | a resolved location held between two reasoning calls and re-examined at the next; it triggers the inspection that confirms or retracts it | yes | yes | no; reported separately (§4.7: 74/300 present-target episodes at bar 0.9; 799 firings in the absent arm) |
 | committed verdict (FOUND) | the resolved location when the episode ends: in the warehouse and the simulators only after a confirming inspection; in the real-pixels harness on a sighting that clears the resolve bar, or by exhaustion once every zone has been inspected | yes | only by a later episode | **yes: every "wrong commitment" count in this paper is this event** |
-| no verdict | the episode ends with no resolved location (budget spent, or the resolving sighting aged past the direct path's window); today indistinguishable from a judged absence | no | — | no; reported as a rate (§4.6: 104/300 in the length-matched control, 179/300 in the absent arm) |
-| NOT-FOUND (proposed, §8 O1) | a refusal carrying a coverage certificate over the rooms | yes | after a movement event touching the target | yes, if the object was present |
-| proof path | the derivation record behind a verdict: the cited claims, rule ids and time constraints. The kit's checker certifies *provenance integrity* (every cited claim and rule exists and the time constraints hold) and checks *logical consistency* structurally (rule ids and arity), not by re-deriving the conclusion; *empirical correctness* is measured against hidden truth and never inferred from validity (§4.1) | — | — | — |
+| no verdict (UNDECIDED) | the episode ends with no resolved location: the budget is spent, or the resolving sighting aged past the direct path's window | no | — | no; reported as a rate (§4.7) |
+| NOT-FOUND | a refusal carrying a coverage certificate over the rooms: one empty-handed look of the robot's own in every room the episode knows, none of them older than the last claim that placed the target. Measured in §4.7; the switch that issues it defaults to the behaviour every shipped number was measured under | yes | after a movement event touching the target | yes, if the object was present |
+| proof path | the derivation record behind a verdict: the cited claims, rule ids and time constraints. The kit's checker certifies *provenance integrity* (every cited claim and rule exists, was ingested no later than the claim it supports, and the time constraints hold), re-derives the *coverage certificate* behind a NOT-FOUND verdict from the export's own entities and claims, and requires a FOUND verdict to be witnessed by an observed sighting at the bar from something other than the reasoner. It does not re-derive any belief value; *empirical correctness* is measured against hidden truth and never inferred from validity (§4.1) | — | — | — |
 
 The verdict vocabulary. Every "zero wrong commitments" figure
 in this paper counts the third row; the second and fourth rows are
 reported as their own rates where they occur.
+
+| term in this paper | the standard term it names | literature |
+|---|---|---|
+| commitment / no verdict | a decision to accept rather than abstain, and the abstention itself: classification with a reject option, selective prediction | Chow 1970; Geifman and El-Yaniv, NeurIPS 2017 |
+| resolve bar, sighting bar | the commitment confidence threshold on an observation, the accept/reject threshold of a selective classifier | Geifman and El-Yaniv, NeurIPS 2017 |
+| claim gate | the detection-score ingestion threshold, the detector's operating point | Cheng et al., CVPR 2024 |
+| transient verdict | a commitment the next observation retracts: non-monotonic belief revision, dependency-directed retraction | Doyle 1979; de Kleer 1986 |
+| NOT-FOUND, coverage certificate | a certificate of non-existence; the planning analogue is an unsolvability certificate, and the proof-object form is a proof-carrying plan | Eriksson, Röger and Helmert, ICAPS 2017; Hill, Komendantskaya and Petrick, PPDP 2020 |
+| proof path | a derivation record: why-provenance, which inputs by which rules | Buneman, Khanna and Tan, ICDT 2001; Green, Karvounarakis and Tannen, PODS 2007 |
+| ledger | an append-only provenance store, bi-temporal in the database sense (valid time and transaction time) | Green, Karvounarakis and Tannen, PODS 2007; ECHO, arXiv:2608.21755 |
+| belief as a view | a belief state computed from the observation history rather than maintained recursively | Kaelbling & Lozano-Pérez 2013 |
+| the belief's support (the paper's "beam") | the candidate set carrying mass; in tracking, the live hypotheses | Kaelbling & Lozano-Pérez 2013; Reid 1979 |
+| multi-anchor hypotheses | multiple-hypothesis data association, kept over past sightings rather than over sensor returns | Reid 1979 |
+| refutation-driven widening | expansion of the belief's support on negative evidence; negative information in tracking | Kaelbling & Lozano-Pérez 2013; Reid 1979 |
+| contradiction bookkeeping | conflict recording, as a truth-maintenance system keeps it: the record of which claims cannot hold together, and which was marked CONTRADICTED | Doyle 1979; de Kleer 1986 |
+| verify-then-redirect | verification before exploitation: an information-gathering action taken before a report is acted on | Connolly 1985; Scott, Roth & Rivest 2003 |
+| the proposer (`CognitiveProposer`) | an LLM hypothesis proposer in a hybrid planner, behind a symbolic verifier. Not used in any measurement here | SayCan, Ahn et al. 2022; LLM+P, arXiv:2304.11477 |
+| metacognitive supervisor | a metacognitive controller over expectation violations; the autonomic MAPE-K loop | Cox 2005; Kephart & Chess 2003 |
+| exploration drive | an intrinsic exploration bonus, not a frontier map | — |
+| decoy, staged twin | a same-class distractor in data association | Reid 1979 |
+| closed ontology | a fixed entity registry and predicate vocabulary: the adapter contract of this paper | — |
+
+Every term this paper coins, against its closest standard counterpart. The
+right-hand column is the literature the term should be read against, not a
+claim of equivalence: multi-anchor hypotheses are multiple-hypothesis tracking
+over evidence rather than over sensor returns, and the exploration drive is not
+the frontier-map mechanism of the open-vocabulary line. How the mechanisms in
+rows 10–12 compute their numbers is withheld (see the reproducibility
+statement).
+
+**Scope: what the engine reasons over.** The engine reasons over a structured
+interface by design, and the interface is the adapter contract of Appendix A.
+An entity registry gives every location, container, person and object an id and
+a type, and a fixed predicate vocabulary types every claim. No model is in the
+loop, so free text never becomes an entity. Two consequences are worth
+separating from the limitations. An entity an adapter first reports part-way
+through a hunt is registered and searched like any other: the hospital, SubT
+and ALFWorld adapters all do this, and it is how a robot meets an object nobody
+declared. Open-vocabulary perception is the detector's job, on the seam §4.5
+crosses, and the phone battery exercises it with a commodity detector and no
+instance identity at all. Natural-language goals are out of scope: a goal is a
+typed record, and §8 (O5, O6) states what would bring language and learned
+semantic priors inside the boundary without letting either create an
+observation.
 
 **The generator and the levels.** A seeded generator produces warehouse scenarios in two separated
 layers. The *hidden truth* (actual object locations and causal
@@ -355,15 +435,23 @@ the order they are reported and states, for each, which seeds or worlds were
 available during design and debugging, which were used only for reporting, and
 which were declared before they ran. Where a fix followed a first run on a
 reporting set, the result says so. The primary benchmark's held-out and
-comparison sets are disjoint seeds from the same generator. A held-out
-generator family with different structural parameters (location count, carrier
-count, report reliability, delays) is future work.
+comparison sets are disjoint seeds from the same generator.
+
+One evaluation needed a stronger rule than a seed split, and §4.2 states it. A
+second generator family was designed under a reading restriction: its author
+read the world model, the executor, the baselines and the evaluation method,
+and did not open the engine's reasoning, planning, learning or configuration
+modules, so the family could not be shaped around the mechanisms it tests. The
+design and its predictions were written down before any policy ran on it. Its
+seeds are then split again: 70000–70099 are development seeds, on which a
+defect was diagnosed and a fix designed, and 70100–70199 are validation seeds,
+which were not run until the fix was final. Both are reported.
 
 | evaluation | development (design, debugging) | reporting only | declared before running |
 |---|---|---|---|
 | warehouse engine, learned layer | seeds 0–249 (rules designed on this distribution; the rule mined here) | held-out 10000–10074 × L2–5, 300 episodes per arm | — |
 | warehouse baselines, LLM contract, budget sweep | — (engine changes after the first campaign came from hand-built temporal probes; re-run figures reported beside the originals) | seeds 20000–20011 × L2–6 | — |
-| ALFWorld | one belief-hygiene fix after the first run; the first run kept in history | valid_unseen 134 games; random baseline on both splits, sweep on valid_seen | external benchmark |
+| ALFWorld | one belief-hygiene fix after the first run; first run kept in history | valid_unseen 134 games; random and sweep baselines on both splits | external benchmark |
 | AI2-THOR, oracle sensing | seeds 7, 11, 23, 42, 99, 256 (adapter fix loop) | seeds 137, 314 (no fix diagnosed on them) | — |
 | DARPA SubT | bridge fixed on tunnel_01 first, then the other worlds | 4 worlds × seeds 7, 11, 23 | external worlds and scoring rule |
 | hospital fetch, tips, decoys | sensor-model fix diagnosed on the seed-7 smoke; battery re-run | seeds 7, 11, 23, 42, 99, 137, 256, 314 × 3 policies; decoys on the six false-tip seeds | tip-coin addendum seeds 3, 5, 6, 8 chosen by coin alone before running; 30-seed decoy power run pre-registered (the first 30 seeds with a false tip coin; run to completion: engine 30/30, 0/30 fooled) |
@@ -371,6 +459,8 @@ count, report reliability, delays) is future work.
 | ROS 2 stack, Nav2, camera lane | four diagnostic Nav2 runs, resolved in the simulated body and in configuration; one CPU smoke of the camera projection on teleported views | staged truths bay_3/1/4/2 + one tip, three lanes (demo driver, Nav2, Nav2 + YOLO-World) | — |
 | AI2-THOR, lifelong | habit spot chosen by sweep; first curve shipped | the reported 30-episode curve, the 4-episode wrong-habit run | — |
 | stress battery, self-repair exam | v1 sabotage roster screened for detectability | sealed seeds and hidden-truth grading outside the loop's reach | exam v2 jitters every field before sabotage |
+| held-out generator family | seeds 70000–70099 (the re-look defect was diagnosed and its fix designed here) | validation seeds 70100–70199, not run until the fix was final | the family's design, and nine predictions about it, written before any policy ran; its author did not read the engine's reasoning, planning, learning or configuration code |
+| ALFWorld under reduced command allowances | valid_seen at every allowance, re-runnable | valid_unseen, one run per cell, never re-run | the allowance grid declared before the unseen runs |
 
 What was available to whom, per evaluation. "Reporting only"
 sets were not used to take design decisions; exceptions are stated in
@@ -425,37 +515,41 @@ L4 distractors, decoys and stale claims; L5 contradictions, occlusion and
 wrong-branch recovery; L6 the adversarial planted-report level ("gaslight").
 Version tags name engine milestones: v0.2.0 is the config version of the rule
 set after the temporal probes (limitation 4); v0.3 added evidence ageing and
-the persistent-mind organs; v0.4 closed the metacognitive loop (§4.7); v0.5 is
+the persistent-mind modules; v0.4 closed the metacognitive loop (§4.8); v0.5 is
 the build reported here. The engine is written robot_mind throughout, and
 Appendix C defines the acronyms.
 
 ## 4. Results
 
-The subsections below take the uncertainties of the table in §1.1 in order,
-each opening with the question it settles and the answer it reached. §4.3 is
-the exception. It reports what the same build did in worlds it was not built
-for, which no uncertainty in the table anticipated.
+The subsections below take the uncertainties of the two tables in §1.1 in
+order, each opening with the answer it reached and the control that bounds it.
+§4.4 is the exception. It reports what the same build did in worlds it was not
+built for, which no uncertainty anticipated until the reduced command
+allowances of row 9.
 
 ### 4.1 Does the evidence machinery matter?
 
+Under a budget brute force cannot exhaust, what carries the engine's margin is
+the way its belief reads the evidence, not the plan over it. The controls are
+an exact belief-space planner over a plain filter's belief, the same planner
+over a belief that reads the same relations the engine reads, four scripted
+policies, and the engine with one of its own mechanisms removed at a time.
 Uncertainties 1 and 2 asked whether a compact deterministic engine is
 sufficient for this task and whether its evidence machinery buys anything a
-for-loop does not. On the warehouse benchmark the answer to both is yes, and
-the discriminating measurement is efficiency under a budget brute force cannot
-exhaust.
+for-loop does not; on this benchmark the answer to both is yes, and the
+matched-planner table below is where the necessity claim is settled and
+bounded.
 
-**Held-out result and the learned layer.** The engine finds every target
-in 300 held-out episodes per arm (seeds 10000–10074 × levels 2–5, disjoint
-from training). Its learned layer cuts actions to success by 16% overall
-and by 19% on the hardest level (the learned-layer table below). The layer
-is a transport rule mined from the engine's own episodes and a contextual
-bandit over action types, evaluated frozen. The rule deploys at its
-measured reliability of 0.71, and proof paths cite it at that value. Two
-caveats apply. The proof checker validates provenance only: cited claims
-and rules exist in the ledger and the time constraints hold on replay. It
-does not re-derive conclusions, and a valid trail never says the inputs
-were true. The miner's labels are simulator ground truth; a physical
-deployment would need a labeling process.
+**Held-out result and the learned layer.** The engine finds every target in 300
+held-out episodes per arm. Its learned layer cuts actions to success by 16%
+(the learned-layer table below). The layer is a transport rule mined from the
+engine's own episodes and a contextual bandit over action types, evaluated
+frozen. The rule deploys at its measured reliability of 0.71, and proof paths
+cite it at that value. Two caveats apply. The proof checker validates
+provenance only: cited claims and rules exist in the ledger and the time
+constraints hold on replay. It does not re-derive conclusions, and a valid
+trail never says the inputs were true. The miner's labels are simulator ground
+truth; a physical deployment would need a labeling process.
 
 | metric | baseline | learned layer |
 |---|---|---|
@@ -464,98 +558,119 @@ deployment would need a labeling process.
 | L5 actions | 2.33 | **1.88** (−19%) |
 | proof validity | 1.000 | 1.000 |
 
-The learned layer keeps success and proof validity at 1.000 and cuts
-actions to success by 16% overall and 19% on L5 (300 held-out episodes per
-arm).
+The learned layer keeps success and proof validity at 1.000 and cuts actions to
+success by 16% overall and 19% on L5. 300 held-out episodes per arm, seeds
+10000–10074 × levels 2–5, disjoint from the seeds the rules were designed on.
 
-**Scripted baselines at the full budget.** Four scripted policies, named
-in the baselines table below and defined in Appendix B, run levels 2–6 on
-the head-to-head seeds under the LLM episode contract
-(`experiments/scripted_baselines.py`). Every policy reaches 60/60, because
-eight actions cover the six locations and two carts. Success does not
-discriminate at this budget, as on ALFWorld (§4.3); steps and the cost of
-deception do. A plain Bayesian belief filter, with argmax-posterior
-selection and none of the engine's machinery, needs 4.80 steps (4.40 on
-L2–5), 0.12 fewer than the random walk. The engine's 1.75 is 2.5× fewer
-still, so the efficiency comes from multi-anchor carrier chains, transport
-handoff and contradiction bookkeeping, not from belief updating in
-general. On the gaslight level the evidence-following heuristic chases the
-planted tip (6.92 steps) and the filter trusts the same tip (6.42). The
-evidence-ignoring sweep is unlucky in its fixed order (6.83). The random
-order pays 3.92, the smallest margin in the row, because it cannot be
-deceived. The engine pays 3.25: it verifies the tip once and redirects.
+**Scripted baselines at the full budget.** At the full budget success does not
+discriminate. Every policy in the baselines table below reaches 60/60, because
+eight actions cover the six locations and two carts, as on ALFWorld (§4.4);
+steps and the cost of deception do. A plain Bayesian belief filter, with
+argmax-posterior selection and none of the engine's machinery, spends barely
+fewer steps than the random walk, and the engine's 1.75 is 2.5× fewer than the
+filter's, so what buys the efficiency is not belief updating in general. On the
+gaslight level the two policies that read the evidence naively chase the
+planted tip, the evidence-ignoring sweep is unlucky in its fixed order, and the
+random order pays the least of the scripted five because it cannot be deceived.
+The engine pays 3.25: it verifies the tip once and redirects.
 
 | policy | correct (L2–6) | avg. steps | gaslight L6 steps |
 |---|---|---|---|
 | sweep (ignores evidence) | 60/60 | 5.88 | 6.83 |
 | random order | 60/60 | 4.92 | 3.92 |
 | last-seen-first | 60/60 | 5.97 | 6.92 |
-| belief filter (no ledger/statuses/proofs) | 60/60 | 4.80 | 6.42 |
+| belief filter (no ledger/statuses/proofs) | 60/60 | 4.80 (4.40 on L2–5) | 6.42 |
 | belief-space planner, exact (filter's belief + lookahead) | 60/60 | 3.13 (2.60 on L2–5) | 5.25 |
 | **engine** | **60/60** | **2.05 (L2–6; 1.75 on L2–5)** | **3.25** |
 
-Scripted baselines under the identical episode contract (12 seeds/level).
-Every policy reaches 100% because the 8-action budget covers the 6
-locations + 2 carts, so success does not discriminate here, as on
-ALFWorld; the discriminating columns are steps (engine 1.75 on L2–5
-against the exact planner's 2.60 and the belief filter's 4.40) and the
-cost of deception (engine 3.25; the belief filter, exact planner and
-evidence-following heuristic 5.25–6.92).
+Scripted baselines under the identical episode contract, 12 seeds per level on
+levels 2–6, with the same generator, executor, 8-action budget, success rule
+and hidden-truth grading as the LLM comparison
+(`experiments/scripted_baselines.py`; the policies are defined in Appendix B).
+Every policy reaches 100% because the budget covers the six locations and two
+carts, so the two right-hand columns are the discriminating ones.
 
-**Below the exhaustive budget.** Where brute force cannot finish, the
-benchmark discriminates. The budget table below and the budget figure cut
-the action budget from eight to two for every policy
-(`experiments/budget_sweep.py`), 500 episodes per cell over 100 seeds per
-level, with Wilson 95% intervals. At five actions, one fewer than the six
-locations, the scripted policies reach 34–61% and the engine stays at 100%
-[99.2, 100]. At four they reach 27–48% against the engine's 98.4% [96.9,
-99.2]. At three the engine still finds 90% against 20–42%. No policy
+**Below the exhaustive budget.** Where brute force cannot finish, the benchmark
+discriminates, and the engine keeps 98.4% of episodes at four actions where the
+scripted policies keep between a quarter and a half. The budget table and the
+budget figure below cut the action budget from eight to two for every policy
+(`experiments/budget_sweep.py`) and carry every cell and interval. No policy
 commits wrongly in any of the 18,000 episodes, because the success rule
-requires a confirming inspection. The count is 15,000 in the budget sweep,
-of which the engine ran 3,000, and 3,000 in the planner sweep.
+requires a confirming inspection.
 
-The strongest scripted competitor is an exact belief-space planner under
-the same contract (`experiments/belief_planner.py`). It maximizes the
-probability of finding the target within the remaining budget, looking
-ahead over what each check could reveal (solved to optimality; recursion
-and sensor constants in Appendix B). It starts from the belief filter's
-own reading of the evidence, with the true sensor model. So it is optimal
-for the POMDP the filter's model defines, and lookahead is the only thing
-it adds. Lookahead adds a lot: 73.4% [69.4, 77.1] at four actions and
-90.0% [87.1, 92.3] at five, against the filter's 42.6%. It does not reach
-the engine's 98.4% and 100% at the same budgets, or its 2.05 actions at
-eight. Lookahead closes about half of the filter's gap to the engine. What
-remains is the choice of belief the lookahead runs over: multi-anchor
-hypotheses, transport handoff, contradiction bookkeeping and
-verify-then-redirect.
+The strongest scripted competitor is an exact belief-space planner under the
+same contract (`experiments/belief_planner.py`). It maximizes the probability
+of finding the target within the remaining budget, looking ahead over what each
+check could reveal (solved to optimality; recursion and sensor constants in
+Appendix B). It starts from the belief filter's own reading of the evidence,
+with the true sensor model. So it is optimal for the POMDP the filter's model
+defines, and lookahead is the only thing it adds. Lookahead adds a lot and is
+not enough: it closes about half of the filter's gap to the engine and none of
+the rest. What remains is the choice of belief the lookahead runs over, and the
+next two paragraphs measure that choice from both sides.
 
 **Each mechanism's share.** A leave-one-out ablation on the shipped build
 measures what the three mechanisms of §2 contribute
 (`experiments/ablation_loo.py`; `data/artifacts/ablation_loo.json`). Each is
 switched off in turn and the engine runs the same 3,000 episodes as the sweep,
 learned rule loaded and every proof checked. The shipped arm reproduces every
-cell of the budget table. Without multi-anchor hypotheses the engine keeps
-70.0% of episodes at three actions, 72.8% at four and 74.0% at five, against
-89.8%, 98.4% and 100%, and it does not recover at the full budget: 78.8% at
-eight actions, where every scripted policy reaches 100%. Without repetition
-decay it keeps 80.6%, 87.6% and 89.0%, and 89.2% at eight. Both arms' intervals
-are disjoint from the shipped arm's at every budget from three upward. Without
-transport hand-off it keeps 89.0%, 98.0% and 99.8%, inside the shipped arm's
-interval at every budget, so that mechanism's share is not measurable on this
-family. No arm commits wrongly in any of its 3,000 episodes; every point of
-margin lost is a no-verdict. Multi-anchor hypotheses and repetition decay carry
-the sub-exhaustive margin, and the necessity claim rests on them.
+cell of the budget table. Multi-anchor hypotheses carry the margin, and the
+engine does not recover at the full budget without them: 78.8% at eight
+actions, where every scripted policy reaches 100%. Repetition decay carries a
+second, disjoint share, and both arms' intervals are disjoint from the shipped
+arm's at every budget from three upward. Transport hand-off's share is not
+measurable on this family: the arm without it sits inside the shipped arm's
+interval at every budget (the matched-planner table below). No arm commits
+wrongly in any of its 3,000 episodes; every point of margin lost is a
+no-verdict.
 
-The engine's step counts differ by build and seed family. The 1.75 (L2–5) and
-2.05 (L2–6) of the baselines table are the original campaign build on the 12
-head-to-head seeds. The current build with its learned rule loaded gives 1.83
-and 2.10 on the same seeds, and 1.80 and 2.05 over the sweep's 100 seeds. The
-1.47 of the learned-layer table is the learned layer on the 300 held-out
-episodes per arm (seeds 10000–10074, levels 2–5).
+**The same evidence, read the same way.** The exact planner above is optimal
+over a weaker reading of the evidence than the engine's, so it cannot separate
+a better plan from a better reading. A second exact planner closes that gap. It
+runs the same dynamic programme over a belief that reads the relations the
+engine reads: every past sighting as a live alternative, a carrier's movement
+only when the record postdates the association, an absence discounting only
+what was in the room before it, and a cart that leaves a carrier's room as
+evidence that the object may have gone with it
+(`experiments/matched_belief_planner.py`; its plain arm reproduces the
+published planner's sweep cell for cell and episode for episode). Against that
+control the engine's 25-point margin at four actions falls to 0.8 points,
+inside the interval: 9 episodes go to the engine alone and 5 to the planner,
+McNemar p = 0.42. At two actions the matched planner leads, 61 episodes to 15,
+p = 1 × 10⁻⁷. The cumulative ladder in the matched-planner table attributes the
+whole of that gain to one reading: adding the departing-cart relation is worth
+24.0 points at four actions, while the carrier reading is worth 0.0 and the
+absence reading 0.4, and keeping every sighting as a live alternative costs
+10.4 points on its own and is not separable from the cart relation. So the
+margin over the published planner was the belief's reading of the evidence, not
+the plan. The engine's own ablation agrees from the other side: removing its
+transport hand-off costs it 0.4 points, because it reaches the cart by other
+routes, and the plain filter has no such route at all.
 
-Under a budget that brute force cannot exhaust, and against these
-baselines on this generator, the machinery is necessary as well as
-efficient. A robot with a finite battery operates in that regime.
+**Why a horizon plan does not help.** A budget-aware lookahead inside the
+engine was built, measured and left off. Under this action model what one look
+can reveal and what another can reveal never overlap, so the probability of
+finding the object within k looks is additive over the looks taken: every
+ordering of the best k carries the same value, and no horizon plan can improve
+the first look. Measured, it is never better and is worse in the middle: the
+warehouse falls from 98.4% to 96.6% at four actions with the horizon plan on,
+and spends more actions doing it
+(`data/artifacts/budget_sweep_lookahead.json`). This is a statement about the
+problem rather than about one implementation, and it is the reason the engine's
+remaining margin does not live in deeper planning.
+
+**What is left at two and three actions.** At the tightest budgets the engine
+is behind the matched planner, and what it gives up there is coverage, not
+correctness. At two actions it holds no verdict in 152 of 500 episodes and
+commits wrongly in none, while the planner arms simply run out of actions with
+a guess already made. The two ways of not answering are graded the same here
+and are not the same thing, which is what §4.7 separates.
+
+Under a budget that brute force cannot exhaust, the machinery is necessary:
+without multi-anchor hypotheses the engine loses more than a quarter of its
+episodes and does not recover at the full budget. What it is not is a better
+plan. A robot with a finite battery operates in the budget-limited regime, and
+in that regime the reading of the evidence is what pays.
 
 | budget | engine | planner (exact) | belief filter | random | last-seen | sweep |
 |---|---|---|---|---|---|---|
@@ -566,38 +681,82 @@ efficient. A robot with a finite battery operates in that regime.
 | 6 | **100** [99.2, 100] (2.05) | 97.8 ± 1.4 (3.10) | 44.2 ± 4.4 (3.99) | 72.2 ± 3.9 (4.20) | 42.6 ± 4.3 (5.04) | 42.6 ± 4.3 (4.94) |
 | 8 (shipped) | 100 (2.05) | 100 (3.12) | 100 (4.80) | 100 (4.62) | 100 (5.88) | 100 (5.78) |
 
-Correct-commitment rate in % with the Wilson 95% half-width (mean actions
-in parentheses), 500 episodes per cell (100 seeds × levels 2–6, seeds
-20000–20099), as the action budget shrinks; at 100% the interval is
-one-sided and is printed as its bounds. The planner is the exact
-finite-horizon belief-space planner of §4.1 (the filter's reading of the
-evidence, the true sensor model, optimal lookahead). Engine on the current
-build with its learned rule loaded: 1.83 on L2–5 and 2.10 on L2–6 at
-budget 8 for the 12-seed subset, 1.80 and 2.05 for the 100 seeds; the 1.75
-and 2.05 of the baselines table are the original campaign build. Zero
-wrong commitments in every cell. `data/artifacts/budget_sweep_100.json`,
-`belief_planner_sweep.json`; the 12-seed runs that match the baselines
-table at budget 8 are `budget_sweep.json` and
-`belief_planner_sweep_12.json`.
+Correct-commitment rate in % with the Wilson 95% half-width (mean actions in
+parentheses), 500 episodes per cell (100 seeds × levels 2–6, seeds
+20000–20099), as the action budget shrinks; at 100% the interval is one-sided
+and is printed as its bounds. The planner is the exact finite-horizon
+belief-space planner of §4.1 (the filter's reading of the evidence, the true
+sensor model, optimal lookahead). Zero wrong commitments in every cell. The
+engine's step counts differ by build and by seed family, and Appendix B
+tabulates the three builds side by side.
+`data/artifacts/budget_sweep_100.json`, `belief_planner_sweep.json`; the
+12-seed runs that match the baselines table at budget 8 are
+`budget_sweep.json` and `belief_planner_sweep_12.json`.
+
+*Correct-commitment rate [Wilson 95%], 500 episodes per cell:*
+
+| budget | engine | engine, no multi-anchor | exact planner, plain belief | exact planner, matched belief | exact planner, matched, informed |
+|---|---|---|---|---|---|
+| 2 | .696 [.65,.74] | .600 [.56,.64] | .406 [.36,.45] | .734 [.69,.77] | **.788** [.75,.82] |
+| 3 | .898 [.87,.92] | .700 [.66,.74] | .528 [.48,.57] | .910 [.88,.93] | **.920** [.89,.94] |
+| 4 | **.984** [.97,.99] | .728 [.69,.77] | .734 [.69,.77] | .976 [.96,.99] | .972 [.95,.98] |
+| 5 | **1.000** [.99,1.0] | .740 [.70,.78] | .900 [.87,.92] | .998 [.99,1.0] | **1.000** [.99,1.0] |
+| 6 | **1.000** [.99,1.0] | .752 [.71,.79] | .978 [.96,.99] | **1.000** [.99,1.0] | **1.000** [.99,1.0] |
+| 8 | **1.000** [.99,1.0] | .788 [.75,.82] | **1.000** [.99,1.0] | **1.000** [.99,1.0] | **1.000** [.99,1.0] |
+
+*Mean actions spent:*
+
+| budget | engine | exact planner, plain belief | exact planner, matched belief | exact planner, matched, informed |
+|---|---|---|---|---|
+| 2 | 1.63 | 1.67 | 1.53 | 1.48 |
+| 4 | 2.03 | 2.74 | 1.89 | 1.77 |
+| 8 | 2.05 | 3.12 | 1.91 | 1.80 |
+
+*Cumulative reading, at four actions: each rung adds one relation to the plain
+belief.*
+
+| rung | correct rate | delta |
+|---|---|---|
+| plain belief | .734 | — |
+| + the matched frame, with the plain reading of every relation | .836 | +10.2 |
+| + every past sighting kept as a live alternative | .732 | −10.4 |
+| + the carrier's movement read in time order | .732 | 0.0 |
+| + an absence discounting only what preceded it | .736 | +0.4 |
+| + a departing cart read as transport | **.976** | **+24.0** |
+| + an inspection revealing the carts parked there | .964 | −1.2 |
+
+The necessity claim with its matched control. Same grid as the budget table
+(seeds 20000–20099, levels 2–6, 500 episodes per cell, hidden-truth grading).
+"engine, no multi-anchor" is the leave-one-out arm of
+`data/artifacts/ablation_loo.json`; the arm without repetition decay reads
+.806/.876/.890 at three, four and five actions and the arm without transport
+hand-off .890/.980/.998, inside the shipped arm's interval throughout. The
+three planner columns are the exact dynamic programme of §4.1 over three
+beliefs: the plain filter's, a belief that reads the same relations the engine
+reads, and the same with the generator's own transport rate supplied as a prior
+(`matched_planner_sweep.json`). The plain column reproduces
+`belief_planner_sweep.json` cell for cell. The last block is the cumulative
+ladder at four actions on the same 500 episodes per cell, in points of correct
+rate. Wrong commitments: 0 in every cell of every arm.
 
 The budget figure plots the benchmark below the exhaustive budget:
-correct-commitment rate against action budget, 500 episodes per point,
-bands are Wilson 95% intervals. Brute force finishes at eight actions and
-every policy reaches 100%; below six, the scripted policies lose most
-episodes while the engine keeps them. The exact belief-space planner,
-optimal lookahead over the filter's own belief, closes about half of the
-filter's gap to the engine and none of the rest. The belief filter's
-plateau is the cost of argmax-posterior without transport handoff; the
-random walk's slope is plain coverage. Figure: `paper/figs/budget_sweep.pdf`.
+correct-commitment rate against action budget, 500 episodes per point, bands
+are Wilson 95% intervals. Brute force finishes at eight actions and every
+policy reaches 100%; below six, the scripted policies lose most episodes while
+the engine keeps them. The exact belief-space planner, optimal lookahead over
+the filter's own belief, closes about half of the filter's gap to the engine
+and none of the rest. The belief filter's plateau is the cost of
+argmax-posterior without transport handoff; the random walk's slope is plain
+coverage. Figure: `paper/figs/budget_sweep.pdf`.
 
 **Confidence and counterfactuals.** The engine's stated beliefs are calibrated,
 and every answer is attributable to named claims. Calibration against hidden
-truth gives ECE 0.047 on levels 1–5 and 0.065 under gaslighting, and beliefs
-above 0.7 are right 100% of the time (the calibration figure below). The
-`robot-mind whatif` command re-computes beliefs with a claim subset removed: on
-gaslight episodes the planted tip accounts for 100% of the belief in the fake
-location, and removing it leaves the true chain's ranking unchanged. Appendix B
-gives the calibration methodology.
+truth gives ECE 0.047 on levels 1–5 (the calibration figure below); the
+gaslight cell, the Brier scores and the shape of the miscalibration are in
+Appendix B. The `robot-mind whatif` command re-computes beliefs with a claim
+subset removed: on gaslight episodes the planted tip accounts for all of the
+belief in the fake location, and removing it leaves the true chain's ranking
+unchanged.
 
 The calibration figure shows reliability diagrams with bin counts, from
 `data/artifacts/calibration.json`; dots above the diagonal are
@@ -605,11 +764,113 @@ underconfident. The engine stays conservative under gaslighting: high
 confidence is never wrong, and the miscalibration that exists sits in the
 low-confidence bins. Figure: `paper/figs/calibration.pdf`.
 
-Accuracy and efficiency against scripted opponents settle necessity on this
-generator. The next question is what the same evidence buys against an agent
-that reasons in language.
+Necessity is settled on this generator and its scope is now stated: the
+machinery is necessary against every control raced here, and against the
+matched control what remains at the headline budget is inside the interval. Two
+questions follow. §4.2 asks whether any of it survives a family designed
+without reading the engine, and §4.3 asks what the same evidence buys against
+an agent that reasons in language.
 
-### 4.2 Against LLM agents
+### 4.2 A family designed without reading the engine
+
+On a scenario family designed under a reading restriction, the engine led the
+three scripted walks at every budget, trailed the belief-based planners between
+two and six actions, and was the only policy that did not finish at the
+exhaustive budget. That failure named a defect which is now fixed and
+re-measured on seeds held back for the purpose. The controls are the same seven
+policies as §4.1, including both exact planners. Every number in this
+subsection is in the held-out table below.
+
+**The family.** Seven rooms on a corridor with three spurs, so travel costs
+real time; three containers, two of which travel and one of which never moves;
+three or four people and eight to twelve objects from name pools the warehouse
+family does not share. Six levels add, in turn, a two-person relay, two
+plausible carriers at once, objects that end inside containers, a machine log
+that is confident and wrong at a stated rate beside a hand-held recorder whose
+clock runs six minutes slow, a level on which the object never moves and every
+movement report is about something else, and a level that combines them. The
+exhaustive budget is ten actions, seven rooms and three containers, and every
+level is solvable at ten. The design, the branch rates and nine predictions
+about how the policies would order were written down before any policy ran
+(`docs/HELDOUT_GENERATOR.md`); their author read the world model, the executor,
+the baselines and the evaluation method and did not open the engine's
+reasoning, planning, learning or configuration code. Of the nine predictions,
+three held, three held in part, two failed and one was not assessed. One of the
+two that failed was the prediction of the final ordering of the policies.
+
+**Found: the engine was the only policy that did not finish.** At the
+exhaustive budget the engine reached 0.970 on the development seeds against
+1.000 for all six other policies, and the intervals are disjoint. At four
+actions it reached 0.880, behind the matched planner's 0.908 and the plain
+exact planner's 0.898 and well ahead of the scripted policies. At the
+exhaustive budget the whole of the shortfall was one level and one branch: the
+level whose machine log is confidently wrong, on the episodes where it is
+wrong. On that level at four actions the engine scored 0.50 against the plain
+filter's 1.00. On those episodes the engine looked in the same room twice while
+rooms it had never entered were never offered to its planner at all: 146 second
+looks across 600 episodes at the exhaustive budget, and a mean of 4.2 distinct
+rooms of seven on the episodes it failed.
+
+**Fixed: the robot's own looks decide when to widen.** The diagnosis was that
+the rule which widens a refuted search asks a question about a decayed score,
+and a score that decays can also come back, so the widening could fire and then
+un-fire with nothing learned in between. The rule now asks a question about the
+ledger: once every lead the evidence gave the robot has been checked by a look
+of the robot's own, every place it has never looked in becomes a candidate and
+stays one until it is looked in. A report is not a look and neither is somebody
+else's sensor. Being a fact about the ledger rather than about a number, it
+cannot un-fire, and one look per lead is enough, so the robot never has to look
+somewhere twice to earn the right to look somewhere new. The change ships
+behind a switch whose default reproduces every number measured before it.
+
+**Re-measured, on seeds held back.** With the rule on, the engine reaches 1.000
+at the exhaustive budget on the development seeds and 1.000 on validation seeds
+70100–70199, which were not run until the fix was final. At four actions on the
+validation seeds it reaches 0.888, against the matched planner's 0.908 and the
+plain exact planner's 0.890. Second looks over the development range fall from
+146 to 11 at the exhaustive budget. On the warehouse family the rule changes
+nothing: 0 of 3,000 episodes differ, action sequence included. The cost is
+stated once and it is real: on the relay level the fix loses episodes at the
+middle budgets, 0.95 to 0.89 at four actions on the validation seeds, because
+the room a second carrier walks to reaches the planner only through the
+movement model and its lead is diluted once unvisited rooms compete for the
+same actions. Both are back to 1.00 by eight actions.
+
+**What stays broken, and what the family does not test.** The level with the
+slow clock keeps one episode class the engine cannot solve by reasoning: a
+carrier's movement record is stamped six minutes before the association it
+should follow, so the chain to the right room is never built and the room is
+reached by coverage instead. That is a property of the data and the ordering
+rule that rejects a badge record from before a hand-off, and it is not fixed.
+Across 37,800 episodes on this family no policy committed wrongly, and that
+figure is weaker than it looks: this simulator writes a confirming sighting
+only where the object really is, so no policy *can* commit to a wrong room
+here. The family grades finding, not commitment discipline, and the batteries
+that grade commitment discipline are §4.5 and §4.7.
+
+| seeds | budget | engine, shipped | engine, coverage fix | exact planner, plain belief | matched planner | belief filter | sweep | random |
+|---|---|---|---|---|---|---|---|---|
+| development 70000–70099 | 4 | .880 | .905 | .898 | **.908** | .810 | .453 | .405 |
+| development 70000–70099 | 10 | .970 | **1.000** | **1.000** | **1.000** | **1.000** | **1.000** | **1.000** |
+| validation 70100–70199 | 4 | .875 | .888 | .890 | **.908** | .795 | .440 | .427 |
+| validation 70100–70199 | 10 | .965 | **1.000** | **1.000** | **1.000** | **1.000** | **1.000** | **1.000** |
+| level 4 (the confidently wrong log), development | 4 | .50 | .67 | 1.00 | .49 | 1.00 | .57 | .44 |
+| level 4 (the confidently wrong log), development | 10 | .82 | **1.00** | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| level 1 (the relay), validation: the cost of the fix | 4 | .95 | .89 | | | | | |
+| level 1 (the relay), validation: the cost of the fix | 8 | 1.00 | 1.00 | | | | | |
+
+The held-out family. Correct rate under hidden-truth grading, 600 episodes per
+cell over six levels and 100 seeds. Wilson 95% intervals at the exhaustive
+budget: engine as shipped .970 [.953, .981] on the development seeds and .965
+[.947, .977] on the validation seeds, against 1.000 [.994, 1.000] for every
+other column, disjoint in both ranges. The coverage fix defaults to the shipped
+behaviour and changes 0 of 3,000 warehouse episodes. Wrong commitments: 0 in
+every cell of every arm, 37,800 episodes in the first sweep alone, a figure
+this simulator cannot falsify (see the text).
+`data/artifacts/heldout_sweep.json`, `heldout_sweep_fix.json`;
+`docs/HELDOUT_GENERATOR.md`.
+
+### 4.3 Against LLM agents
 
 Uncertainty 1 asked whether the engine could match LLM agents on temporal,
 identity and causal reasoning from unreliable sensors. Over 48 episodes under
@@ -648,24 +909,23 @@ short; the two hosted API models match the engine's accuracy at
 proofs. Figure: `paper/figs/ladder.pdf`.
 
 The engine's ~5 ms is the campaign's per-episode wall-clock on an
-unpinned machine. The pinned-core profile of §4.7 gives 2.8–3.1 ms
-median and 4.8–5.4 ms p95 per episode. The LLM figures are end-to-end
+unpinned machine, and the latency table of §4.8 gives the pinned-core profile
+beside it. The LLM figures are end-to-end
 wall-clock through the provider's API, with network, queueing and the
 tool loop included. The ratio is therefore about 2,000× per episode,
 not a hardware-normalised inference benchmark.
 
 The strong scaffold coaches the 7B model in the engine's own strategy,
-to control for prompting. It does not change the result: 39/48 against
-40/48, one episode, inside binomial noise at n = 48. Knowing the
+to control for prompting. It does not change the result: the difference is
+one episode, inside binomial noise at n = 48. Knowing the
 strategy is not the bottleneck at this model scale; holding calibrated
 belief state across steps is.
 
-Between 8B and the two hosted models the measured gap vanishes. Both
-gemini-3.7-flash and deepseek-chat go 48/48, and Gemini stays perfect
-under the L6 gaslighting campaign (12/12 at 2.50 steps against the
-engine's 3.25 on the same seeds). By the same noise standard the
-45/48-versus-48/48 comparison is not significant at n = 48 (Fisher
-exact p = 0.24). The precise claim is that no accuracy gap is
+Between 8B and the two hosted models the measured gap vanishes. Both hosted
+models reach 48/48, and Gemini stays perfect under the L6 gaslighting campaign,
+at fewer steps than the engine. By the same noise standard the best local
+model's shortfall is not significant at n = 48 (Fisher exact p = 0.24). The
+precise claim is that no accuracy gap is
 *detectable* for the two hosted agents at this sample size. The step difference
 is the engine's verify-before-trusting discipline: one inspection that
 disproves the planted tip, recorded on the ledger. Gemini ignores the
@@ -675,10 +935,9 @@ safe.
 The gaslight campaign (L6) adds an adversary who knows the true final
 location and plants a confident fake sighting steering away from it,
 with further moves listed in Appendix B. Over 40 seeded episodes the
-engine goes **40/40** with 100% proof validity at 3.1 actions on
-average, against ~1.9 undeceived on the same seeds. The average moves
-with the seed set (2.76 on the 25-seed battery artifact, 3.25 on the 12
-head-to-head seeds), and this 40-episode run is regenerate-to-verify.
+engine goes **40/40** with 100% proof validity, at about 1.2 more actions than
+it spends undeceived on the same seeds. The average moves with the seed set
+(Appendix B), and this 40-episode run is regenerate-to-verify.
 Fresh reports are verified before being trusted, conflicting sightings of
 one object are marked CONTRADICTED on the ledger by a fixed rule rather than
 averaged, and multi-anchor hypothesis generation keeps the
@@ -690,18 +949,25 @@ latency gap and the absence of a replayable trail remain (§5). Those 48
 episodes come from one generator and one set of worlds. The next question is
 whether the same build travels.
 
-### 4.3 One build, unchanged, in other worlds
+### 4.4 One build, unchanged, in other worlds
 
 One build left the warehouse with nothing changed and was correct wherever it
-committed: 134/134 on ALFWorld's unseen split, 95/96 fetches in AI2-THOR, 12/12
-scored reports on DARPA SubT worlds, 8/8 on a hospital floor, and every target
-on a Mars terrain and a seabed. These evaluations grade the transfer of the
-search policy under the adapter contract of §3. Their discriminating evidence
-is the planted-tip and staged-decoy rounds, where a wrong commitment is
-possible and the policies separate.
+committed, on an external text benchmark and in six simulators; the embodied
+table below carries every count. The baselines in each are an evidence-ignoring
+sweep and a seeded random order under identical adapter mechanics. Most of
+these evaluations are portability and integration certifications and are
+introduced as such: under uniform priors and an always-present target they
+grade completeness and correct commitment, and a complete searcher that commits
+only on sightings passes them by construction. Two do more. The planted-tip and
+staged-decoy rounds make a wrong commitment possible, and the reduced command
+allowances of ALFWorld separate the policies where the standard allowance does
+not.
 
 **ALFWorld's unseen split.**
-The warehouse and its levels are worlds we built, so v0.4 also entered
+At the standard command allowance the engine solves every unseen task, and so
+does almost everything else: a seeded random walk under identical adapter
+mechanics scores 133 of the same 134. The warehouse and its levels are worlds
+we built, so v0.4 also entered
 ALFWorld (Shridhar et al. 2021, arXiv:2010.03768), the text-world twin
 of ALFRED (Shridhar et al. 2020). It has 134 unseen household tasks, a
 standard 50-step budget, and success judged by the game. The adapter
@@ -709,38 +975,124 @@ turns template text into claims and engine actions into the game's
 admissible-command menu, and hand-codes six task recipes (the fixed
 clean/heat/cool/examine/place mechanics). Which receptacle to try next,
 and when to give up, are the engine's calls. Development used the
-train/seen splits. The first run scored **129/134** (96.3%) one-shot.
-For scale, verified against the cited papers, the best single-attempt
-LLM results are AutoRefine's 100% (134/134, GPT-5.6-terra backbone with
-compiled typed artifacts) (Qiu et al. 2026, arXiv:2601.22758) and
-AutoManual's 97.4% (GPT-4-turbo with learned manuals) (Chen et al.
-2024, arXiv:2405.16247). Reflexion's 97% is cumulative over 12 retry
-trials (Shinn et al. 2023, arXiv:2303.11366). ReAct-style agents report
-57% on average and 71% best-of-six with a PaLM-540B backbone (Yao et
-al. 2023, Table 3; arXiv:2210.03629), and 79.9% with a current backbone
-in AutoRefine's harness (Qiu et al. 2026, Table 1). No verified system
-that is LLM-free at runtime exceeds BUTLER's 37% (best of eight seeds on
-the unseen split; Shridhar et al. 2021, Table 4, as reproduced in Yao
-et al. 2023, Table 3). BUTLER learns the task mechanics our adapter
-hand-codes, so that comparison scopes the search policy only.
+train/seen splits. The first run scored **129/134** one-shot. Tracing the
+seen-split two-object losses exposed an engine defect, a stale class-level
+sighting that resurrected already-checked rooms (Appendix B gives the
+mechanism). The fix is belief hygiene, and it was developed and validated on
+the seen split only. The unseen split was then evaluated a second time, a
+second run of the test set: **134/134**. That matches the only other verified
+perfect score, AutoRefine's, with no language model running at inference time
+and milliseconds per decision (the ALFWorld table below, lower panel). The
+engine's edge over a memoryless random walk at this allowance is +1 game unseen
+and +4 seen, consistent in direction and bounded by a benchmark at ceiling.
 
-Scripted ablations show what the benchmark measures. Under identical
-adapter mechanics a fixed alphabetical sweep scores 124/140 (88.6%) on
-valid_seen and a seeded random-order walk 134/140 (95.7%), a tie with
-the engine. Six recipes plus any systematic non-repeating search solve
-text-ALFWorld, so it cannot separate belief machinery from a random
-walk. Tracing the seen-split two-object losses exposed an engine
-defect, a stale class-level sighting that resurrected already-checked
-rooms (Appendix B gives the mechanism). The fix was developed and
-validated on the seen split only (134→138/140). The unseen split was
-then evaluated a second time, a second run of the test set:
-**134/134** (100.0%). The random-order baseline scores 133/134 (99.3%)
-unseen. The engine's edge over a memoryless random walk is therefore +1
-and +4 games on the two splits, consistent in direction and bounded by
-a benchmark at ceiling. The 100% matches the only other verified
-perfect score, AutoRefine's 134/134 with a GPT-5.6-terra backbone (Qiu
-et al. 2026), with no language model running at inference time and
-milliseconds per decision.
+**ALFWorld under a reduced command allowance.** The standard allowance does not
+separate the policies; a reduced one does, and on the unseen split it separates
+against the engine until about 25 commands. The upper panel of the ALFWorld
+table below runs all three policies at 10, 15, 20, 30 and 50 commands on both
+splits, one run per unseen cell. On the seen split the engine beats the fixed
+sweep at 20, 30 and 50 commands and nothing separates it from the random walk
+at any allowance. On the unseen split the sweep beats the engine at 10, 15 and
+20, by 34 games at 20, and the random walk beats it at 20; the engine leads at
+30.
+
+That result has one cause and it was found. With no evidence about a household
+it has never seen, every receptacle carries the same score, so the choice falls
+to whatever settles a tie, and the acting policy settled it on the
+alphabetically last name while the scripted sweep takes the first. 108 of the
+134 unseen hunts walked the receptacle list backwards. Under the forward order,
+with the engine's own machinery otherwise untouched, every one of the 57 games
+the sweep wins at 20 commands and the engine does not comes in at or under 20
+commands, so that single inversion accounts for all of them. Two facts bound
+how much the allowance curves can carry. The unseen split is four households
+holding 134 task instances, against 76 households on the seen split, so the
+curves are four households' worth of evidence about search order. And the
+direction in which a tie is settled is arbitrary in both policies: forward
+alphabetical is not better in principle, it is a different arbitrary order that
+happens to suit where ALFWorld puts things. What the engine brings that neither
+walk does is visible in the same traces: it never walks to a place twice before
+it finds the thing, it re-treads 8.2% of its walks over a whole game against
+the sweep's 13.7% and the random order's 11.8%, and its second hunt in a
+two-object task costs 3.94 commands against 5.11 and 10.37. That bookkeeping is
+what carries it past both at 30 commands. It does not make it cheaper: over the
+games each policy wins at the standard allowance, the random walk on the unseen
+split averages 18.38 commands against the engine's 19.51, so search cost does
+not favour the engine on this benchmark either. The 134/134 at the standard
+allowance stands.
+
+**Fixed, and re-measured at every allowance.** Two changes were built and
+measured, and the ALFWorld table below is their acceptance test. A tie between
+equally supported places is now settled by the episode's own seed rather than
+by an identifier, so the order of the names carries no information. Beside it,
+a class prior the mind learns from the training split out of its own confirmed
+finds, advisory and consulted only where there is no evidence, on the template
+of the lifelong-mind result of §4.6. One mind played the 200 training-split
+games once and recorded 258 finds the game itself confirmed over 44 kinds of
+thing, never an answer key and never either evaluation split, and was then
+loaded read-only. Both are default-preserving switches, and each split was run
+once per allowance under each. On the unseen split the seeded settlement alone
+recovers most of the deficit, and with the class prior as well the engine beats
+the fixed sweep at every allowance, by 28, 35 and 16 games at 10, 15 and 20
+commands. The knee between 20 and 30 commands is gone in every task kind. The
+cost is stated once: the seeded settlement gives back five games at the
+standard allowance on the seen split, 138 to 133, and the class prior recovers
+one of them. Neither switch is the shipped default in this build. The defect
+was found by reading traces of the games the engine lost on the unseen split,
+and the class prior was trained on the training split alone, in one pass, from
+finds the robot made and the game confirmed.
+
+A fourth arm settles what a name is worth. Run with the forward alphabetical
+order the sweep takes, and the engine's own machinery otherwise untouched, the
+engine is the worst arm on the seen split at every allowance above ten, losing
+to the shipped settings by 19, 20 and 13 games at 20, 30 and 50 commands. The
+two splits disagree about that order for the reason the household counts give,
+so the measurement, not the assertion, is what says a name is not evidence.
+
+*Games won at a reduced command allowance.*
+
+| split | policy | 10 | 15 | 20 | 30 | 50 |
+|---|---|---|---|---|---|---|
+| valid_unseen (n = 134) | engine, as shipped | 22 | 46 | 68 | 127 | **134** |
+| | + a seeded settlement | 46 | 77 | 96 | 121 | **134** |
+| | + the class prior too | **76** | **101** | **118** | **128** | **134** |
+| | fixed sweep | 48 | 66 | 102 | 120 | 129 |
+| | random order | 30 | 56 | 83 | 115 | 133 |
+| valid_seen (n = 140) | engine, as shipped | 34 | 68 | 85 | 116 | **138** |
+| | + a seeded settlement | 48 | 72 | 91 | 118 | 133 |
+| | + the class prior too | **85** | **100** | **110** | **126** | 134 |
+| | fixed sweep | 33 | 54 | 63 | 96 | 124 |
+| | random order | 36 | 66 | 83 | 115 | 134 |
+| | forward alphabetical | 38 | 59 | 66 | 96 | 125 |
+
+*Published unseen-split scores, verified against the cited papers.*
+
+| system | model at inference | attempts | score |
+|---|---|---|---|
+| AutoRefine (Qiu et al. 2026, arXiv:2601.22758) | GPT-5.6-terra | single | 134/134 |
+| robot_mind (this paper) | none | single | 134/134 |
+| AutoManual (Chen et al. 2024, arXiv:2405.16247) | GPT-4-turbo | single | 97.4% |
+| Reflexion (Shinn et al. 2023, arXiv:2303.11366) | GPT-4 | 12 trials | 97% |
+| ReAct (Qiu et al. 2026, Table 1) | current backbone | single | 79.9% |
+| ReAct (Yao et al. 2023, Table 3) | PaLM-540B | best of six | 71% |
+| BUTLER (Shridhar et al. 2021) | none | best of eight | 37% |
+
+ALFWorld. Upper panel: `data/artifacts/alfworld_budget_sweep.json` for the
+shipped, sweep and random rows and `alfworld_budget_sweep_fix.json` for the
+rest. Fifty commands is the benchmark's standard allowance. Unseen cells were
+run once and never re-run; the unseen engine and random cells at 50 are quoted
+from the committed standard-allowance artifacts. Paired exact McNemar on the
+same games, unseen split: as shipped the sweep beats the engine at 10, 15 and
+20 (p = 0.0007, 0.019, 0.0002) and the random order at 20 (p = 0.036), and the
+engine beats the random order at 30 (p = 0.008); with the seeded settlement
+nothing separates the engine from the sweep at any allowance, and with the
+class prior as well the engine beats it at 10, 15 and 20 (p = 5.0 × 10⁻⁴,
+5.1 × 10⁻⁶, 7.0 × 10⁻³). Seen split: as shipped the engine beats the sweep at
+20, 30 and 50 (p = 0.005, 0.005, 0.001) and nothing separates it from the
+random order (p ≥ 0.29 at every allowance); the forward alphabetical arm loses
+to it at 20, 30 and 50 (p = 0.013, 0.0037, 0.0010). Lower panel: BUTLER learns
+the task mechanics this adapter hand-codes, so that row scopes the search
+policy only; ReAct's 57% average over its six seeds is the figure behind its
+71% best-of-six.
 
 **Six simulated environments.** The embodied table below lists every embodied
 evaluation with its sensing abstraction, its result and its scope, and the
@@ -778,12 +1130,53 @@ discriminating embodied evidence.
 The embodied-summary figure shows one unchanged engine across every
 embodied evaluation in this paper. Points are observed success, bars
 are Wilson 95% intervals; k/n at right. The detector row is the
-eight-seed battery of §4.4, five of the seeds held out; the ROS 2 rows
+eight-seed battery of §4.5, five of the seeds held out; the ROS 2 rows
 are the checked episodes of each lane (four staged finds and the
 false-tip episode), the typed-client check counts (20/20, 21/21, 26/26)
 being in the text; the last three rows are the pre-registered fourth
 sitting of the real-pixels battery, a hand-held phone camera in a
 house. Figure: `paper/figs/embodied_summary.pdf`.
+
+**What is real in each battery.** The abstractions are stated per battery
+rather than in one blanket sentence, because they differ along six axes and no
+battery is abstract on all of them. Three readings are worth taking from the
+table below. No real drive base runs anywhere, and no battery uses a real
+multi-object tracker; the two axes a deployed robot is hardest on are the two
+this work stands in for. Under Nav2 the localization is real and the sensor's
+vantage is not: SLAM Toolbox localizes the robot and Nav2 plans on its map,
+while the frustum and the camera lane both look from the body's physics pose,
+so measured drift and SLAM error are reported beside the result and do not move
+the sensor. And the real-pixels row is the one place where the battery is
+*harder* than every simulator row on an axis: it has no instance association at
+all, so a hallucinated detection can create a false sighting and drive a wrong
+commitment, and that is what the battery grades. Limitation 12 states the
+boundary this table draws: no physical robot has been run.
+
+| battery | locomotion | viewpoint | detection | identity | mapping | physics |
+|---|---|---|---|---|---|---|
+| ALFWorld text | n.a.: a `go to` command | n.a.: no camera, no pose | abstracted: objects parsed from the game's text | abstracted: the game's own noun phrase | abstracted: receptacle list, no coordinates | none: a live TextWorld game |
+| AI2-THOR fetch | abstracted: teleport | abstracted: precomputed NBV list | abstracted: the simulator's visibility flag | abstracted: the simulator's instance id | abstracted: receptacle graph | **real**: Unity PhysX |
+| AI2-THOR + YOLO-World | abstracted: teleport | abstracted: same NBV list | **real**: YOLO-World on 1080² renders | abstracted: IoU against the simulator's instance masks | abstracted: receptacle graph | **real**: Unity PhysX |
+| AI2-THOR lifelong | abstracted: teleport | abstracted: same NBV list | abstracted: visibility flag | abstracted: instance ids, plus the robot's own confirmed pickups | abstracted: receptacle graph | **real**: Unity PhysX |
+| DARPA SubT | abstracted: teleport | none: a proximity read of exact poses | abstracted: proximity read at a fixed confidence | abstracted: the scene service's model name | abstracted: section graph parsed from DARPA's world | **real**: gz-sim |
+| AWS hospital | abstracted: teleport | abstracted: a 6 m bubble at the teleported pose | abstracted: proximity read at a fixed confidence | abstracted: the simulator's instance ids | abstracted: furniture spots parsed from the world | not determined: the world file is outside this repository |
+| Mars, seabed | none: placement only | sim pose, read back and verified | abstracted: a declared footprint, a declared sonar curve | abstracted: the simulator's instance name | abstracted: a declared station grid | **real**: gz-sim |
+| Gazebo box hunt | abstracted: teleport | sim pose, commanded | abstracted: logical-camera frustum over physics state | abstracted: model names | abstracted: four declared bays | **real**: gz-sim |
+| ROS 2 demo-driver lanes | simulated diff-drive over `/cmd_vel`, no teleports | odometry | abstracted: frustum over bridged poses | abstracted: model names | odometry, declared bays | **real**: gz-sim |
+| ROS 2 on Nav2 + SLAM | **real stack**: Nav2 drives the base | sim pose: the sensor looks from physics | abstracted: frustum over physics poses | abstracted: model names | **real**: SLAM Toolbox | **real**: gz-sim |
+| ROS 2 on Nav2 + YOLO-World | **real stack**: Nav2 drives the base | sim pose plus a fixed camera mount | **real**: YOLO-World on 640 × 480 renders | abstracted: IoU against the entity's projected physics box | **real**: SLAM Toolbox | **real**: gz-sim |
+| Real pixels: phone in a house | none: a person carried the camera | abstracted: declared zones, no pose of any kind | **real**: YOLO-World on real 1080p footage | **none**: no association step exists | abstracted: six declared zones | none: video replayed from disk |
+
+What is real and what stands in, per battery and per axis. **real** names a
+real component doing the work. *sim pose* is the simulator's own pose supplied
+to the adapter rather than estimated by the robot. *abstracted* is a teleport,
+a precomputed vantage list, a frustum or proximity test over physics state, a
+label or instance id from the simulator, or a declared graph of rooms, bays,
+zones or stations. *not determined* means this repository does not fix the
+answer. Every cell is cited to its adapter, harness, node or world file in
+`docs/EMBODIED.md` and the adapters' own docstrings. Rows 2–12 all launch a
+live simulator process and read its state back; the phone row is replay of
+pre-recorded video with no simulator at all.
 
 **AI2-THOR find-and-fetch.** Twelve unseen iTHOR scenes (Kolve et al.
 2017) span all four room types, with placements shuffled per episode
@@ -802,32 +1195,30 @@ worlds (Chung, Orekhov and Maio, 2023) run under DARPA's scoring rule:
 a report scores iff the artifact class is right and the position is
 within 5 m of truth. The engine gets the tile list as bare locations
 and hunts a seeded target class per episode. Four worlds (two tunnel,
-one urban, one cave) and three seeds give **12/12** reports scored, in
-2–87 of a 250-visit budget. Sensing is section-granular and reads
-simulator state, so the position half of the rule is inherited from the
+one urban, one cave) and three seeds give **12/12** reports scored. Sensing is section-granular and
+reads simulator state, so the position half of the rule is inherited from the
 sensor and the graded quantity is the search. Duplicate-class seeds are
-deterministic replays (12 episodes, 9 distinct searches), and targets
-are always present.
+deterministic replays, and targets are always present, so this battery
+certifies portability rather than discriminating among policies.
 
 **Hospital fetch and planted tips.** The AWS RoboMaker hospital world
 has, to our knowledge, no prior published fetch benchmark. Per episode
 the evaluator relocates one unique-instance item beside a seeded
 furniture spot, and the engine, told only the class, must find it among
-102 real hospital furniture locations. Eight seeds give **8/8** correct
-at depths of 1–21 visits. The planted-tip variant adds an anonymous
+102 real hospital furniture locations. Eight seeds give **8/8** correct.
+The planted-tip variant adds an anonymous
 REPORTED claim to the ledger naming a spot, true with seeded
 probability one half. It runs the engine, an evidence-ignoring sorted
 sweep and a naive tip-follower on twelve seeds, six true and six false
-tips. All three find every target, 12/12, so visits are the
-discriminating quantity (the planted-tip figure below). With a true tip
-the engine confirms the reported spot in 1.00 visits, matching the
-tip-follower, against the sweep's 6.17. With a false tip it checks the
-spot once, records the absence and redirects: 14.67 visits to the
-scripted policies' 15.50. No policy committed to a
-reported-but-unverified location anywhere in the campaign. The
-false-tip counts do not separate the policies (paired sign-flip
-permutation test over the six false-tip seeds, p = 0.91 against the
-sweep and p = 1.0 against the tip-follower).
+tips. All three find every target, so visits are the discriminating quantity
+(the tips table and the planted-tip figure below). A true tip collapses the
+engine's search to one visit, matching the tip-follower and six times fewer
+than the sweep. With a false tip it checks the spot once, records the absence
+and redirects. No policy committed to a
+reported-but-unverified location anywhere in the campaign, and the false-tip
+visit counts do not separate the policies at this sample size: one debunked tip
+is too little evidence structure for belief arithmetic to beat a fixed fallback
+order.
 
 The planted-tip figure shows the planted-tip hospital protocol: mean
 visits per policy with per-episode draws as dots (12 seeds per policy;
@@ -840,28 +1231,39 @@ disbelieved. Figure: `paper/figs/hospital_tips.pdf`.
 each false-tip seed a same-class look-alike is staged beside the
 lied-about spot and the briefing names the specific asset id. A fourth
 decider joins: a tip-follower that checks instance identity but carries
-no belief machinery. Over six decoy episodes
-(`hospital_tips_twin.json`) the class-matching tip-follower commits to
-the look-alike in five of six and the sweep in four of six. The engine
-is fooled in none, **6/6** correct at 14.7 visits, its false-tip cost
-without the decoy. The identity-checking control is never fooled
-either, at an indistinguishable 15.5 visits, so commitment discipline
-is what separates safe from fooled. The pre-registered thirty-seed run
-(`hospital_tips_twin_30.json`) gives the engine **30/30** correct and
-0/30 fooled (Wilson 95% [0.00, 0.11]) at 11.7 visits. The
-identity-checking control is 30/30 correct, and the class-committing
-sweep and tip-follower are fooled 16/30 and 26/30 times. On the six
-seeds shared with the first round the engine's visit count reproduced
-on four and moved on two (Appendix B gives the counts and the likeliest
-cause).
+no belief machinery. The pre-registered thirty-seed run gives the engine
+**30/30** correct and **0/30** fooled, at the same false-tip cost it pays
+without a decoy (the tips table below). The identity-checking control is never
+fooled either, so what separates safe from fooled is commitment discipline
+rather than belief machinery, and the two class-committing policies are fooled
+in most of their episodes. On the six seeds shared with the first round the
+engine's visit count reproduced on four and moved on two (Appendix B gives the
+counts and the likeliest cause).
+
+| policy | planted tip, visits: true | planted tip, visits: false | decoy, 6 seeds: correct | decoy, 6 seeds: fooled | decoy, 30 seeds: correct | decoy, 30 seeds: fooled |
+|---|---|---|---|---|---|---|
+| **engine** | **1.00** | 14.67 | **6/6** | **0/6** | **30/30** | **0/30** |
+| tip-follower, checks instance identity | — | — | 6/6 | 0/6 | 30/30 | — |
+| tip-follower, class only | 1.00 | 15.50 | — | 5/6 | — | 26/30 |
+| evidence-ignoring sweep | 6.17 | 15.50 | — | 4/6 | — | 16/30 |
+
+The two hospital rounds in which a wrong commitment is possible. Visits are
+means over the six true-tip and six false-tip seeds; the identity-checking
+control joins only for the decoy round. The engine's decoy visit counts are
+14.7 over the six seeds and 11.7 over the pre-registered thirty, which is its
+false-tip cost without a decoy. Wilson 95% on 0/30 fooled is [0.00, 0.11]; on
+0/6 it is [0.00, 0.39], which is why the thirty-seed run was run. The false-tip
+visit counts do not separate the policies (paired sign-flip permutation over
+the six false-tip seeds, p = 0.91 against the sweep and p = 1.0 against the
+tip-follower). `hospital_tips_twin.json`, `hospital_tips_twin_30.json`.
 
 **Planetary and underwater analogues.** The same adapter contract was
 carried to the Space ROS Mars rover demonstration's Curiosity terrain
 (169 stations) and to Project DAVE's ocean-objects seabed (70
 stations). Engine, sweep and random-order arms share executor, budget
-and sensor. Every arm goes **4/4** on four seeds in both worlds, with
-zero wrong commitments in 24 episodes (Wilson 95% [0.51, 1.00] per
-arm). As in the plain SubT and hospital protocols (limitation 10),
+and sensor. Every arm finds every target, with zero wrong commitments in either
+world (the embodied table above; Appendix B gives the visit counts and the
+intervals). As in the plain SubT and hospital protocols (limitation 10),
 uniform priors and an always-present target grade completeness and
 correct commitment only. A random order can beat the engine by luck at
 n = 4, so no efficiency claim is made. The batteries show transfer of
@@ -872,16 +1274,21 @@ Transfer holds under the adapter contract. What the contract still abstracts
 away is the robot itself, and the next subsection puts real components in its
 place.
 
-### 4.4 The robot's seams
+### 4.5 The robot's seams
 
+With a real detector on the perception seam and a real navigation stack on the
+navigation seam, every commitment the engine made was correct, and the engine
+binary was unchanged in every run below. The controls are the same batteries
+with the simulator's own oracle in the slot, and, on the real-pixels clips, a
+zone-by-zone sweep and a seeded random order reading the same detections.
 Uncertainties 5 and 6 asked whether commitments derived from a real detector's
 raw output stay correct, and whether the decisions survive a navigation stack's
-timeouts, aborts and drift. They do, with the engine binary unchanged in every
-run below. A deployed robot reaches the engine through three seams. Perception
+timeouts, aborts and drift. A deployed robot reaches the engine through three
+seams. Perception
 turns pixels into typed claims. Navigation turns "inspect here" into motion in
 a map. Time matters because a mind that runs for weeks is not the mind that
 runs for one episode. This subsection crosses the first two with a real
-component in each slot, and §4.5 crosses the third. YOLO-World stood in for
+component in each slot, and §4.6 crosses the third. YOLO-World stood in for
 AI2-THOR's visibility oracle. Stock Nav2 with SLAM Toolbox in simulation stood
 in for the demo driver. A last battery films a house with a hand-carried phone,
 with no simulator anywhere in sensing.
@@ -896,29 +1303,23 @@ ledger at the detector's own confidence once it passes a 0.05 claim gate.
 This association stands in for a tracker. The detector supplies
 localization and a coarse label, the simulator's instance segmentation
 supplies identity, and the association can only accept detector output,
-never add to it. Seeds 7, 11 and 23 were the development seeds. Seeds 42,
-99, 137, 256 and 314 were declared before any ran and launched on the
-frozen build at commit `8b4a83f`, held out from every fix. The engine
-binary was unchanged throughout. The adapter-side changes (synonym table,
-claim gate, confirmation ordering) are listed in Appendix B and in
-`docs/EMBODIED.md`.
+never add to it. Five of the eight seeds were declared before any ran and held
+out from every fix; the engine binary was unchanged throughout, and the
+adapter-side changes are listed in Appendix B and in `docs/EMBODIED.md`.
 
-The development seeds fetched 31/36 (86.1%) with 31/31 commitments correct.
-The held-out seeds fetched **52/60 (86.7%) with 52/52 commitments
-correct**. All eight seeds together stand at 83/96 (86.5%) with 83/83
-commitments correct. The median is 19 actions per fetch and the mean 30
-(the per-seed table below and the real-perception figure). Association is
-gated by the simulator's instance boxes, so a wrong-instance commitment
-cannot occur here. Precision is by construction, and 83/83 checks the seam
-end to end. The search itself is measured by recall, 83/96 (Wilson 95%
-[0.78, 0.92]; the held-out seeds alone 52/60, [0.76, 0.93]), and by actions
-per fetch. Every miss was probed to the detector and reported not-found
-after the full budget. Eight sit below the detector's recall from every
-reachable vantage, four are mislabels localized at IoU 0.84–0.93 but named
-as something else, and one, a CD sealed inside a box, was never rendered.
-The 480² first campaign, two start-up crash reruns, one adapter defect,
-each miss with its detector scores, and the operating point are in
-Appendix B.
+The held-out seeds fetched **52/60 with 52/52 commitments correct**, and all
+eight seeds together stand at 83/96 with 83/83 correct (the per-seed table
+below and the real-perception figure). Association is gated by the simulator's
+instance boxes, so a wrong-instance commitment cannot occur here: precision is
+by construction, and what 83/83 checks is the seam end to end. The search
+itself is measured by recall and by actions per fetch. Every miss was probed to
+the detector and reported not-found after the full budget, and every one of the
+thirteen is a perception failure rather than a reasoning error: eight sit below
+the detector's recall from every reachable vantage, four are mislabels
+localized accurately and named as something else, and one, a CD sealed inside a
+box, was never rendered. The 480² first campaign, two start-up crash reruns,
+one adapter defect, each miss with its detector scores, and the operating point
+are in Appendix B.
 
 | seed | fetched | commitments correct | median actions | misses, each probed |
 |---|---|---|---|---|
@@ -930,6 +1331,7 @@ Appendix B.
 | 137 | 11/12 | 11/11 | 19 | butter knife inside a garbage can |
 | 256 | 8/12 | 8/8 | 17 | butter knife on a dining table (mislabel, "Pen"), CD sealed inside a box on a bed, alarm clock on a shelf (never named), plunger on a shelf (mislabel) |
 | 314 | 10/12 | 10/10 | 19.5 | pepper shaker on a dining table (mislabel, "SoapBottle" 0.92), credit card on a chair |
+| dev. (3) | 31/36 | 31/31 | — | |
 | held out (5) | 52/60 | 52/52 | 19.5 | |
 | all (8) | **83/96** | **83/83** | 19 | |
 
@@ -940,7 +1342,9 @@ diagnosed on their misses); the five below them were declared before they
 ran and touched by no fix. Every commitment was correct; every miss was
 probed to the detector and reported not-found after the 250-action budget.
 Seeds 42 and 137 each had one scene rerun as a fresh draw after a simulator
-start-up crash.
+start-up crash. Wilson 95% on the recall: 83/96 [0.78, 0.92], the held-out
+seeds alone 52/60 [0.76, 0.93]. Mean actions per fetch is 30 against a median
+of 19, the gap being the hard cases of panel (C) of the figure below.
 
 The real-perception figure shows (A) the outcome per scene and seed, the
 target class drawn afresh per seed: filled circles are fetches; crosses are
@@ -960,31 +1364,30 @@ packaged as a managed ROS 2 lifecycle node with a `FindObject` action and
 a `nav2_msgs/NavigateToPose` client, so Nav2 replaces the demo driver one
 for one. A typed certification client (an integration-test suite run
 against the live stack; the repository's name for it is kept) passes 20/20
-checks. Lifecycle gates hold. Four staged finds succeed at 2, 4, 1 and 3
-inspections with proof paths and grasp poses. A false tip injected
+checks. Lifecycle gates hold. Four staged finds succeed with proof paths and
+grasp poses, and a false tip injected
 mid-episode names a bay already inspected and found empty; the engine
 re-verifies it once, abandons it, and finds the truth (the two-backend
-table below). The demo driver's stepwise commands let wheel odometry drift
-to 27 m within the session, so this lane grades arrival and sensing in the
-odometry frame.
+table below). The demo driver's stepwise commands let wheel odometry drift by
+tens of metres within the session, so this lane grades arrival and sensing in
+the odometry frame.
 
 **Lane two: stock Nav2 with SLAM Toolbox in simulation.** The same stack
-then ran with navigation served by stock Nav2 in simulation (1.3.12:
-bt_navigator, NavFn planner, DWB controller, behaviors, velocity smoother).
-Localization came from SLAM Toolbox over a roof lidar. The demo driver was
-not launched, and the cognition node changed only its goal frame. Result:
-**21/21 checks**. The four finds and the tip episode reproduced the same
-inspection sequences the engine chose against the demo driver.
-Wheel-odometry drift stayed ≤ 0.099 m and SLAM pose error ≤ 0.082 m at
-every arrival, in one launch attempt at a load average of 0.7 on 16 cores.
-Each inspection costs 24–38 s of wall time, almost all of it driving at no
-more than 0.8 m/s. The engine's decision inside it takes a third of a
-millisecond (§4.7). A `NavigateToPose` goal that is rejected, aborts, or
+then ran with navigation served by stock Nav2 in simulation and localization by
+SLAM Toolbox over a roof lidar (Appendix A inventories the stack). The demo
+driver was not launched, and the cognition node changed only its goal frame.
+Result: **21/21 checks**. The four finds and the tip episode reproduced the
+same inspection sequences the engine chose against the demo driver, with
+localization accurate to within a tenth of a metre at every arrival (the
+two-backend table below). Almost all the wall time per inspection is driving;
+the engine's decision inside it takes a third of a
+millisecond (§4.8), and the Nav2 parameters are in Appendix B. A
+`NavigateToPose` goal that is rejected, aborts, or
 exceeds the node's 120 s result timeout returns to the engine as a failed
 action. It costs one unit of visit budget and records no claim, and the
 engine re-plans from the unchanged ledger. The tip episode contains one
 such timeout, on the re-verification leg: five navigation attempts for four
-inspections, 246 s against 56 s under the demo driver.
+inspections.
 
 | episode | truth | inspection sequence (identical under both) | demo driver (odom frame): wall (s) | demo driver: odom drift (m) | Nav2 1.3 + SLAM Toolbox (map frame): wall (s) | Nav2: odom drift (m) | Nav2: SLAM err. (m) |
 |---|---|---|---|---|---|---|---|
@@ -1028,19 +1431,17 @@ are specified in Appendix B.
 
 Result: **26/26 checks**. The four finds were correct with the same
 inspection sequences as under the logical sensor. The tip episode verified
-and abandoned the tip and found the truth. A navigation timeout on its
-first leg reordered its inspections: bay_3, bay_4, bay_4, bay_2 against
-bay_4, bay_3, bay_4, bay_2 under the frustum sensor. The decisions were
-the same, in five attempts for four inspections. The detector named the
-target at 0.12–0.60 and the look-alikes at 0.32–0.65. Two same-mesh boxes
-shared the frame at an inspection in 4 of the five episodes, and 11 frames
-held two or more box detections. Every detection was bound to its own
-projected entity, with 0 wrong-instance sightings, and each of the 5
-confirmations followed the engine's verdict. Wheel-odometry drift stayed
-≤ 0.099 m and SLAM error ≤ 0.048 m. Detector time was 49–403 ms per frame
-after a 2.0 s first-frame warm-up, in one launch attempt at a load average
-of 0.86 (`ros2_stack_cert_nav2_yolo.json`; the camera-lane frame below).
-The timeout's cause is in Appendix B.
+and abandoned the tip and found the truth; a navigation timeout on its first
+leg reordered its inspections without changing any decision, and the
+reordering and its cause are in Appendix B. The detector could not separate
+the target from its look-alikes on the score alone, naming the target at
+0.12–0.60 and the look-alikes at 0.32–0.65, and two same-mesh boxes shared the
+frame at an inspection in four of the five episodes. Every detection was
+nevertheless bound to its own projected entity, with **0 wrong-instance
+sightings**, and each confirmation followed the engine's verdict
+(`ros2_stack_cert_nav2_yolo.json`; the camera-lane frame below). Drift and
+SLAM error stayed within a tenth of a metre, and the detector's per-frame cost
+is in Appendix B.
 
 The camera-lane frame is from episode 1, the inspection of bay_1 that
 settled the find: the target box (left, staged 1.0 m beside the bay
@@ -1054,89 +1455,91 @@ the find. It is one of the twelve frames the check run keeps.
 Figure: `paper/figs/ros2_yolo_frame.png`.
 
 **Real pixels: a phone camera in a house.** The batteries above still let
-the simulator tell the adapter which entity a detection belonged to. The
-phone battery removes that too. The owner filmed six declared zones of a
+the simulator tell the adapter which entity a detection belonged to, and this
+one removes that too. The owner filmed six declared zones of a
 lived-in house (a sofa, a desk, a kitchen island, a marble table, a blue
-bin, a navy bench) with a hand-held phone camera. Six object classes (mug,
-book, bowl, remote, bottle, phone) were placed over six rounds per sitting,
-with placements drawn from a seed and committed as a manifest before
-filming. Each round is one 3–5 s 1080p pan per zone, 36 clips per sitting,
-under a recording sheet that keeps look-alikes out of the zones. The engine
-is briefed with the target class and the six zone names, nothing else. An
-inspection decodes one zone's clip and runs YOLO-World on every tenth
-frame. The per-zone maximum enters the ledger as an OBSERVED sighting at
-the detector's own number, with no instance id, no IoU gate and no
-association step. A wrong commitment is therefore possible, and it is what
-the battery grades. The baselines are a zone-by-zone sweep and a seeded
-random order that commit on the first accepted sighting. A tip variant
-reports one zone at 0.75 per episode, half of them true, with a
-tip-follower as a third arm.
+bin, a navy bench) with a hand-held phone, placing six object classes over six
+rounds per sitting from a seed committed as a manifest before filming. An
+inspection decodes one zone's clip, runs YOLO-World on every tenth
+frame, and enters the per-zone maximum in the ledger as an OBSERVED sighting
+at the detector's own number. There is no instance id, no IoU gate and no
+association step, so a wrong commitment is possible, and that is what
+the battery grades. The filming procedure, the recording sheet and the sense
+model are in `docs/PHONE_PROTOCOL.md`, and the engine is briefed with the
+target class and the six zone names, nothing else. The baselines are a
+zone-by-zone sweep and a seeded random order that commit on the first accepted
+sighting, and a tip variant reports one zone at 0.75 per episode, half of them
+true, with a tip-follower as a third arm.
 
 The phone adapter sets a sighting bar of 0.9, the loop's own confirmation
 confidence, leaving the engine default unchanged and every native suite
 byte-identical. Below the bar a sighting is a hypothesis, the search goes
 on, and an exhausted search commits to its uniquely best-supported zone.
-The bar and sense model v3 were chosen on the graded footage of earlier
-sittings, then pre-registered with the manifest
-(`docs/PHONE_PROTOCOL.md`). Model v3 uses one label per object across
-every class, with synonym folding, on the same weights and prompt list.
-The first graded sitting scored 12/36, and three fixes preceded
-the pre-registered fourth; the sitting-by-sitting record is in
-Appendix B.
+The bar and the sense model were chosen on the graded footage of earlier
+sittings, then pre-registered with the manifest. Three graded sittings preceded
+the pre-registered fourth, and the sitting-by-sitting record, with the three
+fixes between them, is in Appendix B.
 
 The fourth sitting was one run, with nothing changed after seeing it. The
-engine commits to the right zone in **36/36** hunts (Wilson lower bound
-0.90; every class 6/6). It takes 5.03 inspections per hunt, against 2.5
-for a sweep that stops at its first accepted sighting. It follows 18/18
-true tips and debunks 18/18 false ones, with 0 of 18 commitments at a
-false tip's zone. On the same clips the sweep scores 24/36 finds, 11/18
-true-tip and 13/18 false-tip hunts correct. The random order scores 27/36
-finds. The tip-follower scores 18/18 true-tip and 13/18 false-tip hunts
-correct. Seventeen of the 36 true sightings were under the bar (the
-tumbler in every round, 0.83–0.89). Those hunts ended by exhaustion at
-seven inspections rather than on arrival, and none was decided wrongly.
-One was close. In round 19 the phone on the bin read 0.750 and the tumbler
-on the sofa read "cellphone" at 0.752. An argmax over the detector would
-have named the sofa. The engine's belief after the room was searched stood
-at 0.51 to 0.49 for the bin, which it returned to and confirmed. That
-episode's false tip pointed at the sofa; the engine still committed to the
-bin, where the sweep and the tip-follower did not. Two footage facts were
-recorded from the frames before the run. The remote also lay on the light
-placemat in five of its six clips, a contrast aid the sheet did not ask
-for. Every round was filmed with the bin last, the same order each time,
-so nothing about a placement leaks.
+engine commits to the right zone in **36/36** hunts, follows **18/18** true
+tips and debunks **18/18** false ones, and commits at a false tip's zone in
+none of them. It pays for that with twice the inspections of a sweep that stops
+at its first accepted sighting, and the sweep is wrong in a third of its hunts
+(the phone table below). Seventeen of the 36 true sightings were under the bar,
+the tumbler in every round; those hunts ended by exhaustion after every zone
+had been inspected rather than on arrival, and none was decided wrongly.
 
-On identical pixels, and with a commodity detector's raw output through the
-same seam, the search discipline and not the detector separates 36/36 from
-the sweep's 24/36. This is one house, one camera and one sitting.
+| policy | finds | tip hunts correct: true | tip hunts correct: false | committed at a false tip's zone | inspections per hunt |
+|---|---|---|---|---|---|
+| **engine** | **36/36** | **18/18** | **18/18** | **0/18** | 5.03 |
+| zone-by-zone sweep | 24/36 | 11/18 | 13/18 | — | 2.5 |
+| seeded random order | 27/36 | — | — | — | — |
+| tip-follower | — | 18/18 | 13/18 | — | — |
+
+The pre-registered fourth real-pixels sitting, every policy on identical pixels
+through the same seam: one house, one hand-held camera, six declared zones, six
+object classes over six rounds, no instance identity and no association step.
+The engine's Wilson lower bound on 36/36 is 0.90 and every class is 6/6.
+Seventeen of the 36 true sightings sat below the resolve bar, the tumbler in
+every round at 0.83–0.89. `docs/PHONE_PROTOCOL.md` carries the manifest, the
+filming procedure and the sense model.
+
+One was close. In round 19 the phone on the bin read 0.750 and the tumbler on
+the sofa read "cellphone" at 0.752, so an argmax over the detector would have
+named the sofa. The engine's belief after the room was searched stood at 0.51
+to 0.49 for the bin, which it returned to and confirmed. That episode's false
+tip pointed at the sofa, and the engine still committed to the bin, where the
+sweep and the tip-follower did not. On identical pixels, and with a commodity
+detector's raw output through the same seam, the search discipline and not the
+detector separates 36/36 from the sweep's 24/36. This is one house, one camera
+and one sitting.
 
 Both seams held with a real component in the slot. The third seam is time, and
 it is what the next subsection measures.
 
-### 4.5 A mind that persists
+### 4.6 A mind that persists
 
-Uncertainty 4 asked whether a memory that never forgets is an asset in a
-changing world. The asset is a memory that ages beside a search that widens on
-refutation. With both organs, one mind kept across six days of nightly change
-holds 12/12 every day; without them, a memory that only accumulates does not.
+A memory that ages, beside a search that widens on refutation, keeps one mind
+at **12/12 every day** across six days of nightly change; a memory that only
+accumulates does not. The control is the same mind with those two modules
+removed, on the same houses and the same seeds, and the lifelong table below
+carries every count in this subsection. Uncertainty 4 asked whether a memory
+that never forgets is an asset in a changing world, and the answer is that it
+is a liability until it can forget.
 
-**Transfer and persistence.** Two organs separate a mind that cannot enter an
+**Transfer and persistence.** Two modules separate a mind that cannot enter an
 unseen room from one that clears a house it has never seen: an exploration
-drive, then ageing memory. A home world gives find-one 0.96, find-all-five 0.88
-and find-collect-brew 0.88 (25 seeds per rung). Procedurally generated houses
-entered with an empty ledger score 1.00 (W2) and 0.96 (W3) with the v0.3 memory
-organs, against 0.88 and 0.68 with the exploration drive alone and 0.20 and
-0.00 with neither (Appendix B). Re-taking one house daily scores 1.00 with the
-memory organs, against 0.875 with the drive and fallback organs alone and 0.25
-before them.
+drive, then ageing memory. The upper block of the lifelong table below is the
+ladder. Entering a procedurally generated house with an empty ledger fails
+almost completely before the exploration drive, and re-taking the same house
+daily needs the memory modules on top of it.
 
 **The dynamic house.** The dynamic-house protocol keeps one mind across twelve
-houses, six days each, with 1–2 items moved nightly. Without the memory organs
-that mind scored 12/12 on day 1 and 0–4/12 on days 2–6 with drives off, 2–6/12
-with drives on (`woz_dynamic.json`). Per-episode budgets, refutation-driven
-beam widening and age-decayed evidence restore **12/12 every day**. With
-realistic 8-hour nights the drive-less mind erodes to 4/12 by day 6, while the
-patrolling mind holds 10/12.
+houses, six days each, with 1–2 items moved nightly. Without the memory modules
+that mind holds day 1 and then collapses (`woz_dynamic.json`). Per-episode
+budgets, refutation-driven widening and age-decayed evidence restore **12/12
+every day**, and under realistic 8-hour nights a patrolling mind holds most of
+that while a drive-less one erodes.
 
 **Habits kept across episodes.** Every result in this paper is a cold
 start. The opt-in lifelong mode (default off, so every number
@@ -1150,41 +1553,72 @@ counter as the receptacle the cold-start search reaches latest among those
 it finds within budget (the floor it never finds). So 95 is the worst-case
 cold cost of a fetchable placement, and the gain is an upper bound. The
 lifelong mind is indistinguishable from a cold start for twenty episodes.
-Once the habit validates on held-out fetches (precision 0.80, held-out
-0.73), every visit to the habitual counter costs **10 actions instead of
-95**. Both arms are 30/30 with zero wrong commitments. A deliberately
-wrong habit (four episodes off the counter, one on a coffee machine whose
-parent is another countertop) changes cost by +1, −13, +7 and −15 actions.
-It never costs a commitment. The learning is the engine's own: no
+Once the habit validates on held-out fetches, every visit to the habitual
+counter costs **10 actions instead of 95**, with no loss of success and no
+wrong commitment in either arm. A deliberately wrong habit, four episodes off
+the counter, costs actions and never costs a commitment.
+The learning is the engine's own: no
 demonstrations, no labels, no evaluator truth. Two protocol facts that
 bound the reading, and a first curve that validated and saved nothing, are
 in Appendix B.
 
-**The cost of memory.** Per-decision latency grows with accumulated memory (the lifelong-memory
-latency figure below). Caching the append-only ledger and linearising a
-contradiction scan cut per-day soak latency about 4×. Three increments of
-incremental view maintenance followed, all byte-identical in their decisions.
-The first made a 300-day life about 7× faster and day 300 about 8× faster (4.46 s → 0.54 s), and the second made the life a further 4.0× faster (day 300: 0.548 s → 0.153 s). The third cut the
-claim-rows walked over days 81–120 from 9,000,154 to 1,014,180. Over five
-interleaved paired repetitions under 33–59% background load it ran the life a
-further 2.5–3.4× faster (median 3.0×), day 300 falling from 0.157–0.248 s to
-0.040–0.081 s. The shipped pair (`s4_soak_pre_ivm3.json` → `s4_soak.json`,
-repetitions in `s4_soak_ivm3_reps.json`) reads 35.0 s → 10.0 s and 0.241 →
-0.053 s/day. First-to-last-window growth, the least stable number here, read
-10.5–15.9× before and 4.5–8.7× after, against 6.6× in claims. The slope has moved and is not yet reliably below the growth of the ledger. The figure plots the cost of lifelong memory across the
-three increments on the 300-day soak, every run byte-identical in its
-decisions. The full-rebuild and increment-one curves are one session's paired
+*Transfer ladder, 25 seeds per rung: success rate.*
+
+| rung | before the drives | drive and fallback only | + memory modules |
+|---|---|---|---|
+| home world, find one item | — | — | 0.96 |
+| home world, find all five | — | — | 0.88 |
+| home world, find, collect and brew in order | — | — | 0.88 |
+| procedurally generated house W2, empty ledger | 0.20 | 0.88 | **1.00** |
+| procedurally generated house W3, empty ledger | 0.00 | 0.68 | **0.96** |
+| re-taking one house daily | 0.25 | 0.875 | **1.00** |
+
+*Dynamic house, 12 houses × 6 days, 1–2 items moved nightly: finds of 12.*
+
+| arm | day 1 | days 2–6 | source |
+|---|---|---|---|
+| before the memory modules, drives off | 12 | 4, 1, 0, 2, 0 | `woz_dynamic` |
+| before the memory modules, drives on | 12 | 6, 5, 4, 2, 3 | `woz_dynamic` |
+| with the memory modules | **12** | **12 every day** | `woz_dynamic` |
+| 8-hour nights, no exploration drive | 12 | down to 4 by day 6 | `night480` |
+| 8-hour nights, patrolling | 12 | 10 at day 6 | `night480` |
+
+*Habit world, one house, oracle sensing, 30 episodes.*
+
+| arm | success | wrong | actions at the habit |
+|---|---|---|---|
+| cold start | 30/30 | 0 | 95 |
+| validated habit (precision 0.80, held out 0.73) | 30/30 | 0 | **10** |
+| a deliberately wrong habit, 4 episodes | 4/4 | 0 | +1, −13, +7, −15 |
+
+The persistent mind, in one place. The ladder's three arms are the engine
+before the exploration drive and fallback plans existed, with them, and with
+the v0.3 memory modules (age-decayed evidence and refutation-driven widening)
+on top. Staleness-sized patrols cut patrol spend from 5.8 to 2.6 actions per
+day at identical success. Zero wrong commitments in every row. The lifelong
+mode is off by default, so every other number in this paper is a cold start.
+
+**The cost of memory.** Keeping a mind costs time per decision, and three
+increments of incremental view maintenance have paid most of it back. Caching
+the append-only ledger and linearising a contradiction scan came first, for
+about 4× per simulated day. Increment one then made a 300-day life about 7×
+faster, increment two a further 4×, and increment three a further 2.5–3.4× over
+five interleaved paired repetitions. Every run is byte-identical in its
+decisions. The profiling, the mechanism and the equivalence check behind each
+increment, with the per-increment figures, are in Appendix B and in
+`docs/STRESS_LATENCY_NOTES.md`. The figure plots the cost of lifelong memory
+across the three increments on the 300-day soak, every run byte-identical in
+its decisions. The full-rebuild and increment-one curves are one session's paired
 runs. The increment-two curve is a later session's run whose own paired
 before-run reproduced the increment-one curve to within machine-load noise.
 The increment-three curve is the harness pair of a third session, bracketed by
 the five paired repetitions in `s4_soak_ivm3_reps.json`. The upper axis gives
 the ledger's claim count at each checkpoint, identical in every run, and the
 marked 8× is increment one's day-300 ratio (4.46 → 0.54 s), the band it spans
-being the time that increment returned per decision.
+being the time that increment returned per decision. The remaining growth has a
+named cause: the drives' and meta-controller's contradicted-claim search and
+the per-subject sighting walk still walk full claim lists.
 Figure: `paper/figs/ivm_latency.pdf`.
-The profiling, the mechanism and the equivalence check behind each
-increment, with the per-increment figures, are in Appendix B and in
-`docs/STRESS_LATENCY_NOTES.md`.
 
 The maintained views now cost, per decision, O(Δ) for the belief graph and
 effective statuses and O(Δ·k) for contradiction detection. Here Δ counts the
@@ -1194,102 +1628,175 @@ over R rooms costs O(R). Two operations still walk the whole ledger of N
 claims. They are the contradicted-location-claim search in the drive manager
 and the meta-controller, and the per-subject sighting walk over a history of
 order N. Per-day cost therefore still grows about linearly with N on this
-workload, 4.5–8.7× for 6.6× in claims (2.5k → 16.9k). The per-checkpoint chain
-across the four sessions' curves in the lifelong-memory latency figure reads
-0.13 → 0.0125 s/day at day 50 and 4.46 → 0.053 s/day at day 300. It is
-cross-session, so indicative rather than paired.
+workload (the latency table in §4.8), which is the boundary O2 in §8 sets out
+to close. The chain of per-checkpoint figures across the four sessions' curves
+in the lifelong-memory latency figure is cross-session, so it is indicative
+rather than paired.
 
 Every battery to this point places the target somewhere in the world. The next
 one does not.
 
-### 4.6 The absent target
+### 4.7 The absent target
 
-Uncertainty 8 asked whether the commitment discipline holds when the object is
-not in the building at all. The discipline held in every battery above, and
-every one of them put the target somewhere in the world. This battery takes it
-away deliberately, and locates where the discipline ends. The
-engine has two ways to commit. The direct path commits on a fresh,
-uncontradicted room sighting whose confidence reaches the resolve bar. The
-exhaustion path opens only when that bar is above zero. It fires once no
-sighting reaches the bar and every room is either named by a hypothesis or
-already observed (sighted or found empty). It then commits to the uniquely
-best-supported candidate rather than return no verdict.
+Requiring a coverage certificate before the engine will name a place takes
+wrong verdicts on an absent object from 121/300 to **0/300** at eight actions
+and from 79/300 to **0/300** at three. The control is the same battery under
+the shipped verdict rule, on the same seeds, and the verdict table below
+carries every count. Uncertainty 8 asked whether the commitment discipline
+holds when the object is not in the building at all; the discipline held in
+every battery above, and every one of them put the target somewhere in the
+world. This battery takes it away deliberately.
 
-At the shipped default of 0.0 the exhaustion path cannot run. The two
-instrumented sites behind its guard record 0 entries across 3,000 reasoning
-calls at that bar, so the warehouse results of §4.1 are untouched by what
-follows. The real-pixels harness of §4.4 raises the bar to 0.9, its own
-confirmation confidence. The battery sweeps both bars over 100 seeds × levels
-3–5. Every verdict is classified on the engine's own resolved location, never
-on a truth-grounded field (`experiments/absent_target.py`; every episode row
-ships in `data/artifacts/absent_target.json`).
+**Controls, target present.** With the target in the world the engine finds it
+in 300/300 episodes at each bar, with and without the deployed learned rule,
+and shrinking the action budget breaks that figure, so it is falsifiable. But
+it measures search success, not commitment correctness: the control confirms
+early and never spends its budget. A length-matched control therefore
+suppresses confirmation, spends all eight actions with the object present, and
+scores the final verdict against live world truth. At bar 0.9 it holds a
+verdict in 196/300 episodes, all from the direct path, and none names a wrong
+room. The rest end with no verdict: their sighting aged past the direct path's
+freshness window, and the exhaustion path stays gated off once a sighting has
+cleared the bar.
 
-**Controls, target present.** With the target in the world the engine finds
-it in 300/300 episodes at each bar, with and without the deployed learned
-rule. Shrinking the action budget breaks that figure (120/120 → 74/120 →
-53/120 → 23/120 at budgets 3, 2, 1 on 40 seeds), so it is falsifiable. But it
-measures search success, not commitment correctness: the control confirms
-after 3.5 actions on average and never spends its budget. A length-matched
-control therefore suppresses confirmation, spends all eight actions with the
-object present, and scores the final verdict against live world truth. At
-bar 0.9 it holds a verdict in 196/300 episodes, all from the direct path, and
-0/300 name a wrong room. The other 104 end with no verdict: their sighting
-aged past the direct path's freshness window, and the exhaustion path stays
-gated off once a sighting has cleared the bar.
+**Found: an exhausted search names a room.** The engine has two ways to commit.
+The direct path commits on a fresh, uncontradicted room sighting whose
+confidence reaches the resolve bar. The exhaustion path opens only when that
+bar is above zero. It fires once no sighting reaches the bar and every room is
+either named by a hypothesis or already observed (sighted or found empty). It
+then commits to the uniquely best-supported candidate rather than return no
+verdict. At bar 0.9, with the target nowhere and its stale in-building reports
+left in place, that rule names a place for the missing object in **121/300**
+episodes. The split is 43, 43 and 35 at levels 3, 4, 5, all naming rooms rather
+than containers, and the count is 126/300 on a disjoint seed range and
+unchanged with the learned rule removed. The rule fires 799 times across the
+arm's 3,000 reasoning calls; all but the 121 are retracted by the inspection
+they trigger, which finds the room empty. World truth reads *unknown* in
+300/300 episodes and the seed streams are byte-identical to the controls
+(Appendix B), so absent and present worlds are the same worlds.
 
-**The boundary, located.** At bar 0.9, with the target nowhere and the stale
-in-building reports left in place, the exhaustion rule names a place for the missing object in 121/300 episodes (the verdict-accounting table below). The split is 43, 43 and 35 at levels 3,
-4, 5, all exhaustion verdicts naming rooms rather than containers. Belief on
-the phantom is 0.226 / 0.509 / 0.743 (min / median / max). The count is
-126/300 on a disjoint seed range and 121/300 with the learned rule removed.
-The rule fires 799 times across the arm's 3,000 reasoning calls; all but the
-121 are retracted by the inspection they trigger, which finds the room empty.
-World truth reads *unknown* in 300/300 episodes and the seed streams are
-byte-identical to the controls (Appendix B), so absent and present worlds are
-the same worlds.
+**The same rule, seen from the other side.** The failure is not absence alone.
+The exhaustion rule also fires with the object present, whenever the candidate
+rooms are refuted before the object is seen. At bar 0.9 it fires transiently in
+74/300 control episodes and names a room that is wrong at that moment. The
+inspection it triggers retracts it, and every such episode still ends on the
+right room. Under a three-action budget there is no time for the retraction:
+the rule decides 24/120 control episodes and is wrong in 19 of them. So the
+boundary is the exhaustion rule at a raised bar whenever the candidates run out
+before a sighting clears it, and absence is the condition under which that
+always happens. The one published run of the rule at a raised bar with the
+target present is the fourth real-pixels sitting (§4.5), where the hunts that
+ended by exhaustion all ended on the right zone at a budget that always allows
+a re-inspection.
 
-**The same rule, seen from the other side.** The exhaustion rule also fires
-with the object present, whenever the beam's candidate rooms are refuted
-before the object is seen. At bar 0.9 it fires transiently in 74/300 control
-episodes and names a room that is wrong at that moment. The inspection it
-triggers retracts it, and every such episode still ends on the right room.
-Under a three-action budget there is no time for the retraction: the rule
-decides 24/120 control episodes and is wrong in 19 of them. So the boundary
-is not absence alone. It is the exhaustion rule at a raised bar whenever the
-candidates run out before a sighting clears it, and absence is the condition
-under which that always happens. The one published run of the rule at a
-raised bar with the target present is the fourth real-pixels sitting (§4.4).
-There, 17 of the 36 hunts ended by exhaustion after every zone had been
-inspected, all on the right zone. That budget, twelve actions over six zones,
-always allows a re-inspection. No published number runs the rule with an
-absent target or with a budget too small to re-inspect.
+**Fixed: a refusal that carries its own proof.** The verdict vocabulary gains a
+third terminal state. Where the engine would have named its best-supported
+candidate it can instead decline, and the refusal carries a coverage
+certificate: one derived claim on the ledger that cites, for every room the
+episode knows and has not excluded as unreachable, one empty-handed look of the
+robot's own, none of them older than the last claim that placed the target
+anywhere. The rules are worth stating exactly, because they are what a checker
+re-derives. A report is not a look: a third party's "not here" is evidence, and
+it cannot clear a room. Neither is somebody else's sensor, even when it is
+filed OBSERVED; only an absence one of the robot's own actions returned counts,
+and the engine and both checkers enforce that identically. A certificate that
+cites a subset of the rooms, cites a second-hand report, or ignores a later
+sighting is invalid. The coverage question is asked at the end of every
+reasoning call that names no place, at any bar, so it is not a special case of
+the exhausted search.
 
-**Verdict accounting at bar 0.9 (`absent_target.json`, 300 episodes per
-arm), in the rows of the vocabulary of the terms table in §3.**
+**Re-measured.** Under the certified verdict no episode of the absent battery
+names a wrong place, at either budget. A certificate is issued in 119/300
+episodes at eight actions; every one of the remaining open episodes still had
+one to three rooms it had never looked in, which is a budget limit rather than
+a rule limit. With the object's own stale reports stripped as well, so that the
+robot searches on nothing at all, it sweeps the building, finds it empty and
+says so in 300/300 episodes, and stops before the budget is out. With the
+coverage fix of §4.2 also on, so that rooms never looked in are always on the
+planner's menu, the evidence-kept arm reaches 297/300 at the raised bar and
+299/300 at the warehouse default bar. On the present-object arms the
+three-action wrong verdicts fall from 60/300 to 0/300, and on the paper's own
+40-seed arm from 19/120 to 0/120, while correct finds rise from 176 to 178.
 
-| arm | held verdict at the end | wrong at the end | no verdict at the end | transient wrong verdicts, retracted |
-|---|---|---|---|---|
-| control: target present, confirmation on | 300 (direct path, all confirmed) | 0 | 0 | 74 episodes (exhaustion path) |
-| length-matched control: confirmation suppressed | 196 (direct path) | 0 | 104 | 74 episodes, the same ones as the row above: the transient precedes the sighting, after which the exhaustion path is gated off |
-| absent: stale reports left in place | 121 (exhaustion path) | 121 | 179 | 799 exhaustion firings across 3,000 reasoning calls, 678 of them retracted by the inspection they triggered |
-| control at a three-action budget (40 seeds, 120 episodes) | 24 exhaustion decisions | 19 | — | — |
+**What it costs.** One false NOT-FOUND in 300 present-object episodes at eight
+actions, and the certificate that produced it is faithful. In that episode the
+robot looked in the room the object was in, the inspection missed it, and the
+certificate cites that miss: the certificate certifies coverage, not
+perception. A second look at the favoured room before declaring absence removes
+it, and does better than remove it, because the second look finds the object
+and the episode ends on the right room: false refusals over the whole certified
+matrix fall from 2 of 2,400 present-object episodes to 0. The price is
+certificates the budget cannot pay for. At eight actions the count falls from
+119 to 101 on the evidence-kept arm, every certificate lost is an episode that
+stopped still owing the second look, and the look costs one extra action per
+episode. Give the hunt twelve actions with the coverage fix and the second look
+together and every objective line holds at once: a certificate in 300/300 on
+both absent arms, 0 wrong verdicts and 0 false refusals.
 
-**What the measurement specifies.** The mechanism is a missing capability,
-not a defect: when the candidates are exhausted the engine commits to the
-best-supported one because the type system has no vocabulary to decline. A
-justified not-found verdict is the top item of future work, and this battery
-is its acceptance test (limitation 13). The 121/300 was re-derived by a classifier that does not use the harness's reporting code (Appendix B).
+**On real pixels, nothing changes, and one thing is not yet reachable.** The
+two real-pixels replays score 29/36 and 35/36 under the certified verdict,
+identical row by row to the shipped rule. The coverage question is asked at the
+end of every one of those hunts and answers "no" every time, for two reasons.
+No hunt reads all six zones empty: after synonym folding the detector fires for
+the target class in at least one zone of every clip set, and the most any hunt
+clears is five of six. And the phone adapter does not yet mark which of its
+observations one of the robot's own actions produced, so under the own-look
+rule none of its absences can clear a zone at all. A justified refusal is
+therefore unreachable on the real-pixels path until each adapter stamps its own
+looks. That is one line per adapter and it is not done.
 
-Two arms of the sweep are diagnostics rather than results (Appendix B). At bar
-0.0 the absent arm shows 36/300 transient direct-path verdicts and 0/300
-held at the end. They rest on a level-5 camera artefact (0.45–0.62) that
-passes the freshness test while the confidence test is vacuous at zero, so
-the 0/300 is an anchor-freshness window, not restraint. The evidence-stripped
-arm returns the same uniform belief vector in 300/300 episodes, a wiring
-check that no verdict is invented from nothing. Worlds are synthetic
-warehouses; only the resolve bar is shared with the real-pixels battery.
+| arm | actions | verdict rule | wrong | NOT-FOUND | no verdict | correct find |
+|---|---|---|---|---|---|---|
+| absent: its stale reports left in place | 8 | shipped | **121** | 0 | 179 | 0 |
+| | 8 | certified | **0** | 119 | 181 | 0 |
+| | 8 | certified, coverage fix on | **0** | **297** | 3 | 0 |
+| | 3 | shipped | **79** | 0 | 221 | 0 |
+| | 3 | certified | **0** | 0 | 300 | 0 |
+| absent: its own reports stripped too | 8 | shipped | 0 | 0 | 300 | 0 |
+| | 8 | certified | 0 | **300** | 0 | 0 |
+| control: target present, confirmation on | 8 | shipped | 0 | 0 | 0 | 300 |
+| | 8 | certified | 0 | 1 | 0 | 299 |
+| | 8 | certified, second look on | 0 | **0** | 0 | **300** |
+| | 3 | shipped | **60** | 0 | 47 | 176 |
+| | 3 | certified | **0** | 0 | 122 | 178 |
+| length-matched control: confirmation suppressed | 8 | shipped | 0 | 0 | 104 | — |
+| | 8 | certified | 0 | 1 | 107 | — |
+| absent, reports kept: twelve actions, coverage fix and second look together | 12 | certified | 0 | **300** | 0 | 0 |
+| absent, reports stripped: the same | 12 | certified | 0 | **300** | 0 | 0 |
+| both present-object arms: the same | 12 | certified | 0 | **0** | — | — |
 
-### 4.7 Robustness and cost
+Verdict accounting at bar 0.9, 300 episodes per cell, levels 3–5, seeds 0–99,
+in the rows of the terms table of §3. "shipped" is the rule every other number
+in this paper was measured under, and it reproduces `absent_target.json` row
+for row. "certified" requires a coverage certificate before the engine will
+decline, and the three-action present-object row corresponds to the paper's own
+40-seed arm going from 19/120 wrong to 0/120. The exhaustion rule fires 799
+times across the absent arm's 3,000 reasoning calls; 678 of those are retracted
+by the inspection they trigger and 121 are still held when the budget ends. The
+same rule fires transiently in 74/300 present-object episodes, always
+retracted. The single false NOT-FOUND is one episode seen in both
+present-object arms, and the second look removes it. Search success on the
+present-target control as the budget shrinks, over 40 seeds: 120/120 at eight
+actions, then 74, 53 and 23 of 120 at three, two and one, which is what makes
+the 300/300 falsifiable. Every switch here defaults to the shipped rule.
+`absent_target_certify.json`, `absent_target_certify_fix.json`,
+`absent_target_certify_dc.json`.
+
+**What is settled and what is not.** The missing capability is built and
+measured, and it is not yet the shipped default. The certificate is a proof
+object that a checker re-derives from the ledger export with no engine code,
+which is the first half of objective O1; the statistical half, a conformal
+bound on the false-refusal rate, is open (§8). The 121/300 was re-derived by a
+classifier that does not use the harness's reporting code, and the two
+diagnostic arms of the sweep, with their bar-0.0 readings and the wiring check
+that no verdict is invented from nothing, are in Appendix B. Worlds are
+synthetic warehouses; only the resolve bar is shared with the real-pixels
+battery.
+
+The boundary now carries a verdict with a proof behind it. What the engine does
+under attack, and what it costs, are the last measurements.
+
+### 4.8 Robustness and cost
 
 Uncertainty 3 asked whether evidence hygiene survives an adversary who plants
 confident false claims, and the engine's price per decision had to be measured
@@ -1308,11 +1815,11 @@ beam in 0.07 s, validated a 3,000-deep proof chain in 0.28 s and queried a
 40,000-claim ledger in 0.38 s. The ninth is an unscreened self-repair sabotage
 sweep (120 random corruptions).
 
-All 1,860 unseen episodes were correct, each under 32 ms in the worst case,
-and byte-identical across four processes. Under floods of up to 40 waves of
-eight planted claims (320 lies per episode) the engine never reported success
-at a fabricated location. It was 100% correct through 160 lies per episode and
-93% at 320, not-found in the rest. The ledger survived hard kills and
+Every one of those unseen episodes was correct, each under 32 ms in the worst
+case, and byte-identical across four processes. Under the floods the engine
+never reported success at a fabricated location. It was 100% correct through
+160 lies per episode and 93% at 320, not-found in the rest, and the degradation
+is graded rather than sudden. The ledger survived hard kills and
 concurrent access. Across the 120 config sabotages the self-repair loop never
 crashed, never adopted a regression and never adopted its placebo.
 
@@ -1335,35 +1842,34 @@ basis.
 |---|---|---|
 | one decision, fresh ledger | 0.33–0.34 ms median; p95 0.70–0.77 ms; p99 < 1.1 ms | 1,025 decisions over 360 held-out episodes, one pinned laptop core, near-idle machine |
 | one episode, fresh ledger | 2.8–3.1 ms median; 4.8–5.4 ms p95 | the same run |
-| one episode, head-to-head campaign | ~5 ms wall-clock | the head-to-head table's session (§4.2), unpinned, beside the LLM harness |
+| one episode, head-to-head campaign | ~5 ms wall-clock | the head-to-head table's session (§4.3), unpinned, beside the LLM harness |
 | one episode, hosted LLM agent | ~9–12 s | end to end through the provider's API, network, queueing and tool loop included; local 7–8B models 11–94 s |
 | one simulated day at day 300 of the soak, after increment three | 0.040–0.081 s (0.157–0.248 s before) | five interleaved paired repetitions, 33–59% background load |
 | first-to-last-window growth of that cost | 4.5–8.7× after (10.5–15.9× before), against 6.6× in claims | the same five repetitions; the least stable number in the battery |
 
-On the 360 held-out warehouse episodes (levels 1–6, seeds 10000–10059; 1,025
-decisions) one decision on a fresh ledger takes 0.33–0.34 ms median on one
-pinned laptop core. The p95 is 0.70–0.77 ms, the p99 under 1.1 ms, and the
-adversarial level costs 0.40–0.47 ms. Peak resident memory is 53–60 MiB, the
+One decision on a fresh ledger takes a third of a millisecond on one pinned
+laptop core, over 1,025 decisions across 360 held-out episodes, and the
+adversarial level costs under half a millisecond (the latency table above and
+the per-level figure below). Peak resident memory is 53–60 MiB, the
 runtime dependency closure 14 MiB and the wheel 170 KiB. These are laptop-CPU
-figures. No embedded or ARM board was measured and none is claimed
-(`docs/EDGE.md`). The per-level figure plots per-decision latency by benchmark
+figures. No embedded or ARM board was measured (`docs/EDGE.md`), and the
+profile's run details are in Appendix B. The per-level figure plots per-decision latency by benchmark
 level on one pinned laptop core (Intel i9-11900H), median as the point and
 whisker to the p95, on Windows 11 and WSL 2 Ubuntu 24.04. The adversarial
 level costs under half a millisecond, and the two platforms agree to within a
 few percent. Figure: `paper/figs/edge_latency.pdf`.
 
-**Self-repair.** v0.4 closes the metacognitive loop with no language model and
-no human inside it. Each organ's implicit predictions become settled
-expectation records, and systematic gaps become typed violations naming the
+**Self-repair.** v0.4 closes a metacognitive loop with no language model and
+no human inside it. Each module's implicit predictions become settled
+expectation records, and systematic gaps become typed violations that name the
 implicated constants. Each violation scopes a finite menu of one-edit repairs,
 which race on the failing scenarios and are adopted only if every guard suite
 holds and held-out validation does not regress. Each cycle also races one
-placebo (a mutation of a non-implicated field) through the same gate, never
-adopted and always recorded. Its one departure from its sources (related work)
-replaces the Darwin Gödel Machine's LLM mutator with a typed deterministic
-repair vocabulary (Zhang et al. 2025, arXiv:2505.22954). The exam is fault
-injection with sealed grading: one constant is sabotaged, the engine is not
-told which, and the seeds and hidden-truth scoring sit outside its reach. Two sealed
+placebo, a mutation of a non-implicated field, which is never adopted and
+always recorded. Its one departure from the Darwin Gödel Machine is a typed
+deterministic repair vocabulary in place of that system's LLM mutator (Zhang et
+al. 2025, arXiv:2505.22954), and the exam is fault injection with sealed
+grading. Two sealed
 fault-injection exams recover every detectable single-field sabotage at 98–100%
 with zero false repairs and zero placebo adoptions; one no-archive lane fails
 by construction; the exams are in Appendix B. Limitation 9 states the four
@@ -1398,11 +1904,47 @@ properties neither of them supplied here: about 2,000× lower per-episode
 latency (5 ms locally against 9–12 s end to end through the API),
 byte-identical replay, no per-call model fee, and a machine-checkable
 derivation record behind every answer. Below the exhaustive budget the
-machinery is necessary as well as efficient, because an exact belief-space
-planner over the same evidence closes about half of the plain filter's gap to
-the engine and none of the rest. And one build crossed the perception and
+machinery is necessary as well as efficient against every control raced here,
+because an exact belief-space planner over a plain filter's belief closes about
+half of that filter's gap to the engine and none of the rest, and because
+removing one of the engine's own mechanisms costs more than a quarter of its
+four-action episodes. And one build crossed the perception and
 navigation seams with real components in the slot, and stayed correct wherever
 it committed.
+
+**Does explicit provenance improve the tradeoff?** Under matched perception,
+identity handling and prior knowledge, the answer this paper can support is
+narrower than the machinery is. Search cost: no. Give an exact planner a belief
+that reads the relations the engine reads and it matches the engine at four
+actions to within 0.8 points, leads at two by 9 points, and finishes every
+budget in fewer actions. Correct findings: no separation at the headline
+budget, and at two actions the matched planner is ahead. Justified abstention:
+yes, and it is the one leg that separates. At two actions the engine's
+shortfall is 152 episodes on which it declines to name a place and none on
+which it names a wrong one, where the planner arms have already guessed; with
+the target absent from the building the same discipline, given a certificate to
+stand on, takes wrong verdicts from 121/300 to 0/300 and issues a refusal in
+119/300 that a checker re-derives, at the price of one false refusal in 300
+present-object episodes. So explicit provenance does not buy a cheaper search.
+What it buys is a verdict a third party can audit, and the ability to decline
+with a reason rather than by running out of budget. That is a smaller claim
+than the 25-point margin over the published planner suggested, and it is the
+one the controls support.
+
+**What the seams do and do not establish.** The decision layer is not the hard
+part of a robot, and this paper does not claim it is. The what-is-real table of
+§4.4 states per battery what is real and what stands in, and the honest summary
+is that no real drive base and no real multi-object tracker appear anywhere in
+it. What the seam experiments establish is narrower and is worth separating
+from what they do not. Substituting a real open-vocabulary detector for a
+simulator's visibility oracle left every commitment correct and cost actions
+rather than correctness. Substituting a real navigation stack, with its
+timeouts, aborts and drift, left the engine's inspection sequences unchanged
+and turned a failed goal into one unit of spent budget and no claim. Removing
+instance identity entirely, on real footage of a real house, left the
+commitments correct where a detector argmax would not have been. None of that
+measures perception under occlusion, SLAM drift that moves a sensor's vantage,
+or a tracker's binding errors, and §8 states which objective closes each.
 
 What the LLM comparison means is bounded by what it measured. On these 48
 episodes no accuracy gap is detectable for the two hosted agents, so what
@@ -1410,7 +1952,7 @@ separates them from the engine is structural rather than a difference in
 reasoning quality: latency, cost per call, offline operation and the trail.
 Against trained robotics stacks the comparison is one of requirements rather
 than benchmarks. The one learned component inside the decision loop is a
-drop-in detector on the perception seam (§4.4). The classical belief-space line
+drop-in detector on the perception seam (§4.5). The classical belief-space line
 is raced directly as an exact planner, and the open-vocabulary line supplies
 front-ends for that detector slot rather than rivals at this layer.
 
@@ -1420,7 +1962,7 @@ closed ontology, no demonstrations, no data collection and no fleet. Operation
 is offline and private, every run replays byte-identically, and every decision
 is contestable afterwards from its ledger. The engine fits inside a control
 loop at a third of a millisecond per fresh-ledger decision on one laptop core
-(§4.7). That holds for a fresh ledger per task or for consolidation between
+(§4.8). That holds for a fresh ledger per task or for consolidation between
 tasks; an unbounded lifelong ledger's cost grows until the remaining
 view-maintenance increments land (limitation 11). Hospital logistics and
 SubT-style search, the two settings modelled here, need exactly those
@@ -1442,10 +1984,11 @@ holds only while learning stays outside the safety function.
 
 ## 6. Limitations and threats to validity
 
-Read as threats to validity, items 1, 2, 4, 5 and 10 bound *external*
+Read as threats to validity, items 1, 2, 4, 5, 10, 16 and 17 bound *external*
 validity, and items 3 and 8 and the detector run's by-construction precision
-bound *construct* validity. Items 6, 9 and 11 are measured ceilings, item 12
-bounds the evidence, and item 13 is a measured missing capability. Items 7
+bound *construct* validity. Items 6, 9, 11, 13 and 15 are measured ceilings,
+item 12 bounds the evidence, and item 18 states which results are behind
+switches that are off by default. Items 7
 and 14 are disclosures, of provenance and of the audits' independence.
 
 1. **Home-field advantage.** The engine's rules were designed for the world
@@ -1455,7 +1998,7 @@ and 14 are disclosures, of provenance and of the audits' independence.
 2. **Bounded world, one task family.** Six locations, LOCATE goals, a closed
    ontology. The larger embodied worlds (102 hospital furniture spots, the
    SubT tile lists) run under the same ontology and the same goal type
-   (§4.3).
+   (§4.4).
 3. **The LLM comparison is bounded by our scaffolds.** The two hosted LLM
    agents already match the engine's accuracy here, and stronger agentic
    scaffolds could lower their step counts further. The harness accepts any
@@ -1490,7 +2033,7 @@ and 14 are disclosures, of provenance and of the audits' independence.
    The ordering-preserving variant is the recommended setting for multi-day
    ledgers; making it the default is a config-version bump and a re-baseline.
 5. **The dynamic house is one change model.** Items move uniformly at
-   random; organs that would learn movement structure are untested.
+   random; modules that would learn movement structure are untested.
 6. **Consolidation is measured neutral here.** Nightly consolidation
    compresses repeated-observation runs into summary claims, with the
    originals superseded, never deleted. It is behaviour-neutral in the
@@ -1506,13 +2049,14 @@ and 14 are disclosures, of provenance and of the audits' independence.
    about the *artifact*, never about its development process.
 8. **No error bars beyond binomial intervals.** Every table reports raw
    counts from single deterministic runs; Wilson 95% intervals for the key
-   proportions are in the captions and in Appendix B. The decoy protocol
+   proportions are in the captions and in Appendix B, whose interval table
+   collects every one of them. The decoy protocol
    is directional, not powered: 0 of 6 fooled has a Wilson upper bound of
-   0.39. The pre-registered 30-seed run gives 0/30 fooled at 11.7 visits,
-   upper bound 0.11 (§4.3; launch log in Appendix B). Seed-family variance
+   0.39, which is why the pre-registered 30-seed run was run
+   (§4.4; launch log in Appendix B). Seed-family variance
    is unquantified and single-machine, with one visible instance in
    Appendix B, and one-episode deltas are labelled as inside binomial noise,
-   in the LLM comparison of §4.2 too.
+   in the LLM comparison of §4.3 too.
 9. **Self-repair has four ceilings no published system removes.** The loop
    can only fix defects expressible in its mutation space and visible to
    its expectation monitor. It cannot invent a missing representation, fix
@@ -1524,7 +2068,7 @@ and 14 are disclosures, of provenance and of the audits' independence.
     battery, whose instance association is a tracker stand-in (Appendix B).
     Under uniform priors the plain SubT and hospital protocols grade search
     completeness and correct commitment only. The planted-tip variant
-    (§4.3) discriminates on true-tip exploitation, and its staged-decoy
+    (§4.4) discriminates on true-tip exploitation, and its staged-decoy
     round measures commitment discipline directly: engine 0/6 fooled,
     class-matching policies fooled in 4–5 of 6. A full-stack robot could
     fail where these adapters succeed. Mapping, control and vision are
@@ -1548,20 +2092,19 @@ and 14 are disclosures, of provenance and of the audits' independence.
     margin of 0.02. Physical deployment follows from the ROS 2 blueprint of
     Appendix A, and the repository, seeds and artifacts let an independent
     group reproduce every number before that step (the reproducibility statement).
-13. **A justified not-found verdict is specified but not yet built.** The
-    engine's verdict vocabulary covers where a thing *is*; the top item of
-    future work is "it is not here, and here is the proof I looked
-    properly." `GoalStatus` carries no refusal state, and a null verdict
-    spans "no verdict" and "budget exhausted mid-search", so no commitment
-    in §4.6 is a silence, not a judgement. That section measures the
-    boundary at the raised bar of 0.9: 121/300 phantom verdicts for an
-    absent object, against 0/300 wrong among the length-matched control's
-    196/300 held verdicts. With the object present the rule fires
-    transiently in 74/300 episodes and decides wrongly in 19/120 under a
-    three-action budget, so the boundary is not absence alone (Appendix B).
-    What remains is a named addition to the type system and its proof
-    obligation, exhaustiveness over the rooms rather than the beam, and its
-    acceptance test exists.
+13. **The justified not-found verdict is built and measured, and three
+    things bound it.** §4.7 measures the boundary it closes: under the
+    shipped rule 121/300 phantom verdicts for an absent object at the raised
+    bar of 0.9, and 19/120 wrong under a three-action budget, against 0/300
+    and 0/120 under the certified verdict. The certificate inherits the
+    sensor's recall. It certifies that the robot looked in every room, never
+    that it would have seen the object had it been there, and the one false
+    refusal in 300 present-object episodes is exactly that failure, cited
+    faithfully by the certificate that produced it. A refusal is also
+    unreachable on any adapter that does not yet mark which observations its
+    own actions returned, which is every real-pixels path today. And the
+    statistical half of objective O1, a conformal bound on the false-refusal
+    rate, does not exist (§8).
 14. **Every audit was a separate session of the same assistant.** The
     engine, the benchmarks, the adapters, the red-team reviews, the
     pre-submission audit and this paper share one author and one LLM
@@ -1570,6 +2113,37 @@ and 14 are disclosures, of provenance and of the audits' independence.
     outside group. The artifacts and the kit are shipped so that this can
     change, and no outside group has yet regenerated the kit's numbers; §8
     makes that regeneration a gate on every objective.
+15. **The matched belief was written after reading the generator.** The exact
+    planner that closes the engine's margin in §4.1 reads relations its
+    author found by reading the generator and the executor, and one of those
+    relations exists only because this benchmark has carts. It is therefore a
+    strong control on the question "is the advantage the belief or the
+    plan?" and a weak one on "would this belief generalise?". The engine
+    never sees the generator. §4.2 is the control for the whole arrangement:
+    a family designed without reading the engine, on which the matched
+    planner still leads at four actions.
+16. **The held-out family cannot falsify a wrong commitment.** Its simulator
+    writes a confirming sighting only where the object really is, so no
+    policy can commit to a wrong room on it. The 37,800 episodes with zero
+    wrong commitments there test whether a policy finds the thing, not
+    whether it commits safely; the batteries that test commitment safety are
+    the staged decoys, the real-pixels sittings and the absent-target
+    battery.
+17. **ALFWorld's unseen split is four households.** Its 134 task instances
+    live in one kitchen, one bedroom, one bathroom and one living room,
+    against 76 distinct households on the seen split. The reduced-allowance
+    curves of §4.4 are therefore four households' worth of evidence about
+    search order, and the seen and unseen splits disagree about the fixed
+    alphabetical sweep for a reason that is one household's furniture. The
+    134/134 at the standard allowance is a ceiling result and is unaffected.
+18. **Three of this round's results are behind switches that are off by
+    default.** The certified verdict of §4.7, the coverage rule of §4.2 and
+    the second look before declaring absence are each a configuration field
+    whose default reproduces the behaviour every other number in this paper
+    was measured under, and each is reported as measured rather than as
+    shipped. The budget-aware lookahead of §4.1 is likewise off, and is
+    reported because it does not help. Making any of them a default is a
+    re-baseline of every battery, and none has been taken.
 
 ## 7. Related work
 
@@ -1594,7 +2168,7 @@ searches unstructured outdoor terrain onboard (arXiv:2602.19308). SCOUT
 distils relational knowledge into lightweight scorers, keeping the
 language model out of inference, and ships the SymSearch benchmark
 (arXiv:2603.05642). R2F scores ray frontiers with embeddings
-(arXiv:2603.08475). These are front-ends for the detector slot of §4.4,
+(arXiv:2603.08475). These are front-ends for the detector slot of §4.5,
 not rivals at the decision layer. OSG Navigator casts the task as a POMDP
 over open scene graphs (arXiv:2508.04678). The confidence-calibrated
 evidence arbitration of Zhao et al. (arXiv:2509.20739) is nearest in
@@ -1647,7 +2221,7 @@ from LLM-generated hypothesis trees and plans over an open-ended POMDP
 is not new. It lacks the evidence ledger, the typed statuses and the
 replayable record. LLM+P hands language-described planning problems to a
 classical planner (arXiv:2304.11477), the LLM-to-formal line beside which
-the hybrid mode of §4.2 belongs.
+the hybrid mode of §4.3 belongs.
 
 **Agent memory systems and cognitive architectures.** Cognitive
 architectures (Soar, Laird 2012; ACT-R, Anderson et al. 2004) pioneered
@@ -1723,10 +2297,11 @@ knowledge these have not been published together.
 The results establish the first half of the innovation of §1.1: a commitment,
 "the object is in room X", that carries a machine-checkable derivation record,
 at accuracy parity with two hosted LLM agents and with the best published
-ALFWorld score. The second half exists nowhere yet. It is a refusal, "it is not
-here, and here is the proof I looked properly", with a certificate of the same
-kind, and it is the next objective. Two boundaries were measured rather than
-resolved. §4.6 located the first, where an exhausted search names a room
+ALFWorld score. The second half is a refusal, "it is not here, and here is the
+proof I looked properly". Its proof object now exists and is measured (§4.7);
+what does not exist is a statistical bound on how often that refusal is wrong.
+Two boundaries were measured rather than
+resolved. §4.7 located the first, where an exhausted search names a room
 instead of declining, and it becomes O1. §6 states the second, a per-decision
 cost that still grows with lifetime memory, and it becomes O2. The remaining
 objectives carry the work to a real tracker, to a physical robot and to
@@ -1736,39 +2311,41 @@ every result here used: hypothesis, mechanism, hidden-truth grading
 (pre-registered where the world is not seeded), adversarial review, fix, then
 byte-for-byte re-verification of every earlier battery before the fix is kept.
 
-**O1. Certified refusal.** *Task:* extend the verdict type from {found at
-X, no verdict} to {FOUND(X, proof), NOT-FOUND(coverage certificate),
-UNDECIDED(budget)}, with a refusal state in `GoalStatus`. Exhaustiveness
-is defined over the location registry, not the hypothesis beam: only the
-robot's own OBSERVED absences within a freshness window count as
-coverage, never reported tips. The certificate is a proof object (absence
-claims, their times, the declared sensor recall, the movement-event
-window) that the kit's checker validates from the ledger export with no
-engine code. A commitment requires a valid coverage claim on every other
-room and a belief margin above a threshold, else UNDECIDED, replacing the
-exhaustion argmax. *Challenge:* a criterion strict enough to refuse
-correctly may be too strict to find present objects within budget.
-Sensors cannot prove absence (eight of the 96 AI2-THOR episodes sat below
-the detector's recall floor), and objects move. *Management:* the
-criterion is developed on present-target arms first, and every
-present-target battery is a regression gate. The declared recall is
+**O1. Certified refusal: the proof object done, the bound open.** *Done:* the
+verdict type now runs {FOUND(X, proof), NOT-FOUND(coverage certificate),
+UNDECIDED(budget)}, with a refusal state in `GoalStatus`. Exhaustiveness is
+defined over the location registry rather than the live candidate set, and only
+an absence one of the robot's own actions returned counts as coverage, never a
+reported tip and never another sensor's reading. The certificate is a proof
+object that the kit's checker re-derives from the ledger export with no engine
+code. §4.7 reports what it moved and what it cost, and Appendix B the forgeries
+it rejects. Of the acceptance test set out before it was built, two lines are
+met at the eight-action budget and all three are met at twelve: 0/300 wrong on
+the absent battery against 121/300, 0/120 wrong under a three-action budget
+against 19/120, and a checked NOT-FOUND in at least 250/300, which the
+evidence-kept arm reaches only once the coverage rule of §4.2 is on as well. One
+present-target regression gate moved: 300/300 became 299/300 at the raised bar,
+and the second look before declaring absence restores it to 300/300.
+*Open:* the statistical layer. Above the proof, conformal prediction
+on the present-target arms calibrates the refusal threshold, the KnowNo
+construction (arXiv:2307.01928) moved from plan options to room coverage, so
+the false-refusal rate carries a user-set bound as well as a certificate.
+*Challenge:* a criterion strict enough to refuse correctly may be too strict to
+find present objects within budget, which is exactly what the certificate count
+buys and the second look pays for. Sensors cannot prove absence: eight of the
+96 AI2-THOR episodes sat below the detector's recall floor, and the one false
+refusal measured here is a missed inspection of the right room. *Management:*
+every present-target battery stays a regression gate. The declared recall is
 itself a claim with provenance, so the checker can reject an unsupported
 one. The certificate carries its window, and any later movement event
-touching the target invalidates it. Above the proof, conformal prediction
-on the present-target arms calibrates the refusal threshold, the KnowNo
-construction (arXiv:2307.01928) moved from plan options to room coverage.
-The false-refusal rate then carries a user-set bound as well as a
-certificate. The bound assumes exchangeable calibration and deployment
-episodes, which nightly object movement violates, so it holds per
-movement window and is re-calibrated when a window closes. O1 can pass
+touching the target invalidates it. The bound assumes exchangeable calibration
+and deployment episodes, which nightly object movement violates, so it holds
+per movement window and is re-calibrated when a window closes. O1 can pass
 this synthetic test and still fail in a deployment whose declared recall
-is wrong, so O3 precedes any real-world claim for O1. *Acceptance:* on
-the absent-target battery at bar 0.9, 0/300 wrong commitments (today
-121/300) with a checked NOT-FOUND in at least 250/300, and 0/120 wrong
-under a three-action budget (today 19/120). The 300/300 controls, 36/36
-real-pixels hunts, 83/83 AI2-THOR commitments and the 360-episode
-benchmark stay byte-identical, or every difference is reported with its
-proof.
+is wrong, so O3 precedes any real-world claim for O1. *Acceptance for the open
+half:* a user-set false-refusal bound held on the present-target arms at the
+stated rate, with the certificate unchanged and every shipped number
+byte-identical when the layer is off.
 
 **O2. Bounded per-decision cost over an unbounded lifetime.** *Task:* the
 two remaining maintained views, an ordered contradicted-claim index kept
@@ -1786,7 +2363,7 @@ most 2× (today 4.5–8.7× over 300 days), with decisions byte-identical or
 every difference reported.
 
 **O3. Identity without instance ids.** *Task:* replace the physics-pose
-association stand-in of §4.4 with a real multi-object tracker with
+association stand-in of §4.5 with a real multi-object tracker with
 re-identification, whose identity claims enter the ledger with confidence
 and typed status. The real-pixels protocol gains same-class decoys placed
 by manifest. *Challenge:* a tracker's binding errors are a new source of
@@ -1846,19 +2423,31 @@ POUCT planner's at matched budget and false-positive rate. That arm also
 requires 0 wrong commitments and every proof path checked. On SymSearch,
 the engine's success rate reported beside the reference system's under
 the benchmark's own protocol. Both are committed before the paper cites
-them, whichever way they fall. The first arm is a held-out generator
-family for the warehouse benchmark (location count, carrier count, report
-reliability and delays drawn from ranges the rules were not designed on).
-It carries the same zero-wrong gate and requires success within five
-points of the home family at every budget, a threshold set here before
-the family exists.
+them, whichever way they fall. The first arm is done. It is the held-out
+generator family of §4.2: a different location count, carrier count, report
+reliability and set of delays, designed under a reading restriction and
+pre-registered before any policy ran. Against the threshold set for it before
+it existed, success within five points of the home family at every budget, the
+result splits. At each family's own exhaustive budget the gate is met, 1.000
+against 0.970 as shipped and against 1.000 with the coverage rule. At matched
+action counts it is not: the held-out family is harder, and at three and four
+actions the engine falls more than five points short of its home figures. The
+threshold did not anticipate a family whose exhaustive budget is ten actions
+rather than eight, and the split is reported as measured. The zero-wrong gate
+held, in the weak sense limitation 16 states. What remains of O6 is a
+third-party opponent on a third-party benchmark.
 
-**Mechanism ablations, done.** The leave-one-out control that O6 needed is in
+**Mechanism ablations and the matched control, done.** The leave-one-out
+control that O6 needed is in
 §4.1: on the shipped build, multi-anchor hypotheses and repetition decay each
 carry a disjoint share of the sub-exhaustive margin, and transport hand-off's
-share is within noise on the home family. O6's held-out family re-runs the same
-three arms, since a mechanism that is idle on the home family need not be idle
-on one with more carriers.
+share is within noise on the home family. The matched belief-space planner in
+the same subsection is the other half of that control and reads the opposite
+way round: the relation whose removal costs the engine nothing is the relation
+whose addition is worth 24 points to a plain filter, because the engine reaches
+the same conclusion by other routes and the filter has none. Running the
+leave-one-out arms on the held-out family is the outstanding piece, since a
+mechanism idle on the home family need not be idle on one with more carriers.
 
 **Sequencing and completion criterion.** O1 comes first, since it needs
 no hardware and is the missing half of the innovation. O2 runs in
@@ -1882,8 +2471,12 @@ proof paths and a verify-then-redirect search policy is sufficient for a
 correct, efficient and auditable closed-domain object-search agent. On the
 warehouse benchmark it is 100% correct at 1.75 actions and abandons planted
 lies at 3.25, and under budgets brute force cannot exhaust it holds 98–100% at
-four and five actions where an exact belief-space planner over the same
-evidence reaches 73–90%. No policy, the engine included, commits wrongly in the
+four and five actions where an exact belief-space planner over a plain filter's
+belief reaches 73–90%. Give that planner a belief that reads the same relations
+and the margin at four actions is inside the interval: what the engine keeps
+under that control is zero wrong commitments, a justified refusal and the
+record behind both.
+No policy, the engine included, commits wrongly in the
 sweep's 18,000 episodes, because success requires a confirming inspection. Two
 hosted LLM agents match its accuracy and not its ~5 ms episodes, its
 determinism or its proofs. Unchanged, the same build scores 134/134 on
@@ -1917,10 +2510,49 @@ Wizard-of-Oz house batteries (`woz_test`, `woz_selfimprove`, `woz_dynamic`,
 episodes and 228,989 proof paths. The remaining evaluations ship as
 per-episode artifacts rather than ledger exports: ALFWorld, AI2-THOR (whose
 placements are not bit-stable), SubT, the hospital battery, Mars and seabed,
-the ROS 2 lanes, the phone battery, the stress battery, the self-repair exams
-and the edge profile. What the checker certifies is provenance: every cited
-claim and rule exists and the stated time constraints hold on replay. It does
-not certify the conclusion, which is graded against hidden truth instead.
+the ROS 2 lanes, the phone battery, the held-out family, the stress battery,
+the self-repair exams and the edge profile.
+
+What the checker certifies, and what it does not, is worth stating precisely.
+For every derived claim it requires a proof whose operator comes from a
+declared table, whose cited inputs are on that episode's ledger and reached it
+no later than the claim they support, whose rules the episode knew, and whose
+time constraints are satisfiable on the cited claims' intervals. All 228,989
+shipped proof paths re-validate under those checks, across the 16 exports and
+10,008 episodes the kit ships, with 0 ingestion-order violations. For every
+episode whose export records a verdict it requires a FOUND verdict to be
+witnessed by an observed sighting at the resolve bar from something other than
+the reasoner, and a NOT-FOUND verdict's certificate to be re-derivable: the
+room list recomputed from the export's own LOCATION entities minus the
+certificate's declared exclusions, the last claim that placed the target
+recomputed from the export's own claims, and one cited first-hand empty-handed
+look per room no older than it. A certificate that covers a subset of the
+rooms, leans on a second-hand report or ignores a later sighting fails, and it
+fails even when its own constraint list has been rewritten to look sound,
+because nothing in the re-derivation reads that list. Twenty-nine forgery
+mutations are rejected on that basis. Two limits are measured rather than
+claimed away. The shipped exports predate the verdict fields, so the commitment
+and certificate checks apply to the exports made for §4.7 and not to the ten
+thousand older episodes, which are counted as not checkable rather than passed
+in silence. And 79.3% of the shipped derived proofs assert no time constraint
+at all, because 148,136 of them cite a single input and 31,338 cite none, which
+is a limit of the constraint vocabulary and not of the checker. Above all that,
+the checker certifies no belief value: how much a hypothesis was worth, and
+whether the room was the right one, are the engine's arithmetic and the hidden
+truth respectively, and neither is inferred from proof validity.
+
+Every configuration switch introduced for the results of this round defaults to
+the behaviour under which every other number in this paper was measured, and
+every shipped number reproduces with those switches in place: the warehouse
+budget sweep reproduces cell for cell and episode for episode, the held-out
+family's shipped arm reproduces its committed artifact row for row, and the two
+real-pixels replays are unchanged. The artifacts added for this round are the
+matched belief-space planner's sweep, the held-out family's two sweeps, the
+certified-verdict battery in its three arms, the ALFWorld allowance sweep with
+the two measured switches beside it (`alfworld_budget_sweep_fix.json`) and the
+warehouse grid they leave unchanged (`budget_sweep_ties.json`), and the
+measured budget-aware lookahead, all under `data/artifacts/` with a provenance
+block naming the commit, the command line and the clock.
 
 A few figures in this paper come from earlier builds and are labelled where
 they appear. The head-to-head's original measurement session and the
@@ -1942,7 +2574,7 @@ command block, the regenerate-to-verify list and the artifact bundle's contents
 with its manifest and SHA-256 sums. Appendix A is the integration note for a
 ROS 2 stack. A pre-submission audit recomputed every artifact-backed number
 from the 2026-09-01 shipped JSONs, and all agreed (the soak growth ratios in
-§4.5 and the staleness re-rank counts in limitation 4 are quoted from the
+§4.6 and the staleness re-rank counts in limitation 4 are quoted from the
 author's stress-test and design notes rather than from a shipped JSON); the
 regenerate-to-verify figures are listed in Appendix B.
 
@@ -1961,7 +2593,7 @@ scoring. The hospital-logistics benchmark involves no patient data or
 clinical decisions. It is a fetch task on a synthetic floor. The engine's
 determinism and offline operation reduce data-exfiltration and
 prompt-injection surfaces relative to LLM-agent deployments. Its
-guarantees hold at its typed input boundary, whose failure modes §4.7
+guarantees hold at its typed input boundary, whose failure modes §4.8
 stress-tests and reports.
 
 ## Acknowledgments
@@ -2075,9 +2707,9 @@ real-detector battery exercises (`ingestion/vision_adapter.py`: a
 `DetectionEvent` with label, camera id, confidence, and time becomes an
 OBSERVED claim at the detector's confidence, and the association between
 detections and entities is the tracker, whose failure modes the engine's verify
-loop exists to catch). Nothing else changes between the demo driver, stock Nav2 in simulation and the camera lane; the same client would run the same list on hardware. The integration checks are one list (20 checks; 21 with Nav2 readiness; 26 with the camera lane's detector facts, a frame per inspection, two boxes in view, verdict-gated confirmations and no wrong-instance commitment), and the numbers in §4.4 are what it read.
+loop exists to catch). Nothing else changes between the demo driver, stock Nav2 in simulation and the camera lane; the same client would run the same list on hardware. The integration checks are one list (20 checks; 21 with Nav2 readiness; 26 with the camera lane's detector facts, a frame per inspection, two boxes in view, verdict-gated confirmations and no wrong-instance commitment), and the numbers in §4.5 are what it read.
 
-**The Nav2 stack behind the 21/21, and one caveat.** Lane two of §4.4 ran stock
+**The Nav2 stack behind the 21/21, and one caveat.** Lane two of §4.5 ran stock
 Nav2 1.3.12 (`bt_navigator`, the NavFn planner, the DWB controller, the
 behavior server and the velocity smoother), with localization from SLAM Toolbox
 over a roof lidar. One caveat bounds the 21/21. Under Nav2 the frustum sensor
@@ -2111,10 +2743,10 @@ grasp-pose hand-off, and any run on hardware.
 
 This appendix carries the chronology that the main text summarises: the development history of each battery, the runs that failed and what was changed, with every number that left the main text.
 
-### Architecture: module inventory and later organs
+### Architecture: module inventory and the capabilities added later
 
 §2 describes only the loop that runs on every decision; this
-block lists the modules and the organs added after v0.
+block lists the modules and the capabilities added after v0.
 
 **Modules.** The single Python application (74 source files)
 has ten modules. Five handle input and memory: ingestion and
@@ -2122,19 +2754,20 @@ normalization, entity and time grounding, the SQLite evidence ledger,
 the belief-graph view over trusted claims, and salience. Grounding uses
 weighted identity that preserves ambiguity below threshold, and
 salience detects contradictions and gaps. Five reason and act: the
-hypothesis engine, the multi-hop reasoner, the information-gain planner, the
+hypothesis engine, the relational reasoner over carrier chains, the
+information-gain planner, the
 simulated-warehouse executor with verified postconditions, and the
 evaluator and learner. Version v0 shipped the deterministic template
 implementation of the `CognitiveProposer` protocol, with no model
 dependency.
 
-**Organs of a persistent mind.** Later versions added temporal
+**The modules of a persistent mind.** Later versions added temporal
 decay of evidence, run-compression of repeated observations, drives
 with utility arbitration, staleness-sized patrols, declarative plans
 with fallbacks and a calibration meter. A metacognitive layer keeps
-expectation records that settle every organ's predictions, diagnoses
+expectation records that settle every module's predictions, diagnoses
 typed violations, and drives the gated self-repair loop of
-§4.7.
+§4.8.
 
 ### The learned rule and the three guarantees of a valid proof
 
@@ -2172,12 +2805,12 @@ provides, given the same evidence, and none of the engine's machinery: no
 ledger, no epistemic statuses, no contradiction bookkeeping, no proof
 paths, no multi-anchor hypotheses, no transport handoff. Scripted
 baselines were run before the engine's number was read, because they show
-what a benchmark measures; the ALFWorld ablation of §4.3 is the case in
+what a benchmark measures; the ALFWorld ablation of §4.4 is the case in
 point. On the gaslight level the random order cannot be deceived and has
 no fixed order to be unlucky in, which is why it pays the least of the
 scripted policies. Naive evidence use is worse than no evidence use, and
 disciplined evidence use beats both. The LLM rows of the head-to-head
-table in §4.2 read in this light: the 7–8B models fail episodes that a
+table in §4.3 read in this light: the 7–8B models fail episodes that a
 for-loop passes, so their deficit is sustained systematicity, not search
 skill.
 
@@ -2188,9 +2821,9 @@ The budget sweep changes one field of the benchmark's configuration
 generator, executor, success rule and grading are those of the LLM
 contract. At eight actions every policy is at 100%, and the 12-seed subset
 of the sweep reproduces the scripted and planner rows of the baselines
-table in §4.1. The engine row differs by build: 2.10 on the current build
-against the original campaign's 2.05 on L2–6, as the note under the budget
-table in §4.1 states. Zero wrong commitments is a structural property of
+table in §4.1. The engine's step count differs by build and by seed family,
+and the builds table below puts every figure this paper quotes in one place.
+Zero wrong commitments is a structural property of
 the success rule, shared by the random walk; what a smaller budget removes
 is the chance to inspect everything. Two shapes in the budget figure
 (`paper/figs/budget_sweep.pdf`) carry the mechanism. The random walk
@@ -2199,6 +2832,18 @@ at 42–44% from four actions to six, because argmax-posterior over the same
 evidence locks onto the wrong branch of a transport chain and keeps
 confirming it. The engine's multi-anchor hypotheses and transport handoff
 turn that same evidence into the right first look.
+
+| build and seed family | L2–5 | L2–6 |
+|---|---|---|
+| original campaign build, 12 head-to-head seeds | 1.75 | 2.05 |
+| current build with its learned rule, the same 12 seeds | 1.83 | 2.10 |
+| current build with its learned rule, sweep seeds 20000–20099 | 1.80 | 2.05 |
+| learned layer, 300 held-out episodes, seeds 10000–10074 | 1.47 | — |
+
+Mean actions to success at the eight-action budget, by build and seed family.
+Every step figure quoted in §4.1, the baselines table, the learned-layer table
+and the budget table is a row of this table. The 1.75 of the abstract is the
+first row.
 
 ### The exact belief-space planner
 
@@ -2213,12 +2858,22 @@ programme over subsets of the eight-action menu
 (`experiments/belief_planner.py`). It starts from the belief filter's
 reading of the briefing evidence and uses the true sensor model, so it is
 the optimal policy for the POMDP the filter's model defines. At the full
-budget it finds everything in 3.12 actions to the filter's 4.80. Per level
-at four actions: on the gaslight level the planner finds 37% and the
-engine 95%; on levels 4 and 5 (stale claims and decoys; contradictions and
-occlusion) the planner finds 73% and 57% against the engine's 98% and 99%;
-on the carrier and cart-chain levels both find everything. The filter
-finds 42.6% at the same budget.
+budget it finds everything in 3.12 actions to the filter's 4.80. The table
+below breaks the four-action cell of the matched-planner table down by level,
+which is where the arms separate: the carrier and cart-chain levels are solved
+by everything, and the deceptive levels are the whole of the difference.
+
+| arm, at four actions | L2 | L3 | L4 | L5 | L6 |
+|---|---|---|---|---|---|
+| engine | 1.00 | 1.00 | 0.98 | 0.99 | 0.95 |
+| engine without multi-anchor hypotheses | 1.00 | 1.00 | 0.98 | 0.59 | 0.07 |
+| exact planner over the plain belief | 1.00 | 1.00 | 0.73 | 0.57 | 0.37 |
+| exact planner over the matched belief | 1.00 | 1.00 | 1.00 | 1.00 | 0.88 |
+
+The four-action cell of the matched-planner table by level, 100 seeds per cell.
+L4 is stale claims and decoys, L5 contradictions and occlusion, L6 the
+adversarial planted report. The plain filter finds 42.6% overall at this
+budget.
 
 ### Calibration methodology
 
@@ -2234,19 +2889,17 @@ calibration slightly and never inverts it.
 
 Beyond the static benchmark, a transfer ladder drove the engine's growth:
 each rung exposed a missing capability, each capability was built as a
-general organ, and the warehouse battery was held at 100% throughout. A
-home world (dishwashers that hide items, wandering people) tests transfer:
-find one item 0.96; find all five 0.88; find, collect and brew in
-dependency order 0.88 (25 seeds per rung). The rung-3 procedure also runs
+general module, and the warehouse battery was held at 100% throughout. A
+home world (dishwashers that hide items, wandering people) tests transfer; the
+lifelong table of §4.6 gives every rung's score. The rung-3 procedure also runs
 as data, a declarative plan with dependency edges and fallback branches
 interpreted by a generic plan runner, with measured pass/fail parity
 against the hand-coded sequencer on every seed (`battery_plans.json`).
 Procedurally generated houses entered with an empty ledger failed at first
 (W2 5/25, W3 0/25); the missing capability was an exploration drive. The
-engine's governor clustered its failures into machine-readable capability
-requests, the requested organs were built, and the battery re-measured W2
-0.20→0.88 and W3 0.00→0.68. The v0.3 memory organs (age-decayed evidence)
-lifted them to 1.00 and 0.96.
+metacognitive supervisor clustered its failures into machine-readable capability
+requests and the requested modules were built, which is the middle column of
+that table's upper block; the v0.3 memory modules are its right-hand column.
 
 Re-taking the same house daily with memory persisting separates two
 claims. On the pre-drive engine the ten-attempt curve was flat, 4/15 on
@@ -2254,16 +2907,17 @@ every attempt, a deterministic fixpoint: a house whose rooms were all
 known was still never entered beyond its last sighting, because nothing
 connected an unseen goal to an unvisited room. Tuning choices among
 conceivable actions cannot conceive new ones. The drive and fallback
-organs did, and the battery's self-improvement test rose from 0.25 to
-0.875 with them and to 1.00 with the memory organs, passing on the first
+modules did, and the battery's self-improvement test rose across the three arms
+of the lifelong table's last ladder row, passing on the first
 attempt (attempt 1 = attempt 6, slope 0; `woz_selfimprove.json`,
 `battery_final.json`).
 
 ### The dynamic house
 
 The dynamic-house protocol separates memory from learning: twelve houses,
-six days each, 1–2 items moved nightly, the mind persisting. The pre-v0.3 engine scored 12/12 on day 1 and 4, 1, 0, 2 and 0 of 12 on days 2–6 with drives off (6, 5, 4, 2 and 3 of 12 with drives on). Per-episode
-budgets and refutation-driven beam widening were the first two fixes.
+six days each, 1–2 items moved nightly, the mind persisting. The middle block
+of the lifelong table of §4.6 gives the day-by-day counts for every arm.
+Per-episode budgets and refutation-driven widening were the first two fixes.
 Age-decayed evidence completed the
 set: with all three in place the same mind recovers to 12/12 every day.
 With realistic 8-hour nights the drive-less mind erodes to 4/12 by day 6
@@ -2274,7 +2928,7 @@ refutation-driven search turned it into an asset.
 
 ### Head-to-head: the reasoning model, the scaffold, the adversary and the hybrid seam
 
-These details from §4.2 do not change its numbers. Two local models
+These details from §4.3 do not change its numbers. Two local models
 were run: an older instruct-only 7B and a newer ~8B reasoning model
 whose explicit chain of thought is the belief tracking at issue. The
 reasoning model scores 45/48 against the 7B's 40/48 at roughly 8× the
@@ -2297,7 +2951,7 @@ resolved against the entity registry rather than guessed.
 
 ### ALFWorld: what the benchmark tests, and the seen-split defect
 
-The scripted ablations of §4.3 support one reading of the benchmark,
+The scripted ablations of §4.4 support one reading of the benchmark,
 and the second run followed one engine fix. ALFWorld's difficulty for
 LLM agents is sustained systematicity, durable state tracking and never
 rechecking. A ledger-based mind, a for-loop and a random walk all
@@ -2310,9 +2964,23 @@ mechanism, and the give-up condition was corrected. Both were developed
 and validated on the seen split alone (134→138/140) before the unseen
 split was run a second time.
 
+The reduced-allowance diagnosis of §4.4 came from replaying all 134 unseen
+games under each policy and recording the ranking in front of the engine at
+every decision (`experiments/alfworld_trace.py`; the replays reproduce the
+committed per-game rows on both `won` and `env_steps`). Of 1,712 decisions on
+that split, 1,411 were taken with every remaining candidate carrying the
+identical value, 166 with one place already settled by evidence and 135 with
+the candidates' values actually differing. The adapter registers every
+receptacle at the same coordinate, so the planner's cost term is constant and
+cannot break the tie either. The four unseen households are a kitchen (77
+tasks), a bedroom (27), a bathroom (19) and a living room (11); the two splits
+disagree about the fixed alphabetical sweep because a seen kitchen holds 14.1
+cabinets on average and the one unseen kitchen holds six, so the forward order
+opens far fewer doors before it reaches a countertop.
+
 ### AI2-THOR: planner, verification seeds and the fix campaign
 
-The 95/96 battery of §4.3 carried two verification seeds, and its
+The 95/96 battery of §4.4 carried two verification seeds, and its
 planner has a classical form. The next-best-view planner is active
 perception in its classic set-cover formulation (Connolly, ICRA 1985;
 Scott, Roth and Rivest, ACM Computing Surveys 2003). Seeds 137 and 314
@@ -2320,7 +2988,7 @@ were never used to diagnose a fix; 137 ran 12/12, and the campaign's
 one miss fell on 314. The engine was untouched throughout. The
 planner's construction and the adapter-side fix campaign, including the
 two vantage strategies that were tested and rejected, are documented in
-`docs/EMBODIED.md`. The text-world result of §4.3 carries over to the
+`docs/EMBODIED.md`. The text-world result of §4.4 carries over to the
 3D and physics simulators it abstracts.
 
 ### SubT: stack status and visit-count audit
@@ -2336,7 +3004,7 @@ derivation.
 ### Hospital campaign: protocol rules, seeds, artifacts, reproduction and the adapter fix
 
 These are the protocol rules and run-level facts behind the hospital
-numbers of §4.3. In the plain fetch protocol, targets come only from
+numbers of §4.4. In the plain fetch protocol, targets come only from
 classes with one instance in the world, since a resident sibling would
 satisfy a class-level find while grading demands the relocated item.
 Two episodes drew truth spots inside the first visit's sensing bubble,
@@ -2392,7 +3060,7 @@ recorded for the visited spot alone, at lower confidence than the
 positive channel of the same read. With the sensor reported faithfully
 that episode fell from 96 to 24 visits. The whole hospital campaign,
 plain fetch included, was re-run on the fixed build, so every hospital
-number in the paper and in the embodied table in §4.3 is post-fix. The
+number in the paper and in the embodied table in §4.4 is post-fix. The
 engine also re-verifies a debunked tip up to three times across its
 seek restarts, because repetition-decay state resets per seek and, with
 no positive evidence anywhere, the debunked tip briefly returns to the
@@ -2400,7 +3068,7 @@ argmax. Those checks are counted in the 14.67 and cost no commitment.
 
 ### Mars and seabed: worlds, placements, visit counts and what is not claimed
 
-The two field-geometry batteries of §4.3 are specified here in full.
+The two field-geometry batteries of §4.4 are specified here in full.
 The Space ROS Mars rover demonstration's Curiosity terrain runs from
 the demo packages built on ROS 2 Jazzy with gz-sim Harmonic. The
 terrain is a 304 m square with 28 m of relief, of which a 72 m square
@@ -2415,11 +3083,9 @@ entity state back before the first sense, and truth is the station
 nearest the read-back pose.
 
 Visit counts, four seeds per arm with engine, sweep and random-order
-arms sharing the executor, budget and sensor. Mars: 4/4 correct in
-every arm, engine 21–58 visits with mean 31.0, sweep 45.0, random 26.0.
-Seabed: 4/4 in every arm, engine 2–12 visits with mean 7.75, sweep
-21.25, random 4.25. Zero wrong commitments in all 24 episodes (Wilson
-95% [0.51, 1.00] per arm). Until evidence arrives the engine's order is
+arms sharing the executor, budget and sensor, are in the table below. Every arm
+is 4/4 in both worlds with zero wrong commitments in all 24 episodes. Until
+evidence arrives the engine's order is
 a nearest-first sweep, which is why a random order can beat it by luck
 at n = 4. The planted-tip and staged-decoy variants for both worlds are
 pre-registered with tip coins drawn and seeds fixed, and have not been
@@ -2428,10 +3094,21 @@ Space ROS itself (the demo packages run on vanilla Jazzy), or lunar
 worlds. HoloOcean is blocked on WSL2 and Stonefish is the viable
 fallback (`docs/SPACE_MARINE.md`).
 
+| world | stations | pitch | engine | sweep | random | engine range |
+|---|---|---|---|---|---|---|
+| Mars terrain (Curiosity demo) | 169 | 6 m | 31.0 | 45.0 | 26.0 | 21–58 |
+| Seabed (Project DAVE) | 70 | 5 m | 7.75 | 21.25 | 4.25 | 2–12 |
+
+The two field-geometry batteries, four seeds per arm, all three arms sharing
+executor, budget and sensor. Mean visits per arm. Every arm is 4/4 correct in
+both worlds with 0 wrong commitments in all 24 episodes. Under uniform priors a
+random order can beat the engine by luck at n = 4, so no efficiency claim rests
+on these columns.
+
 ### The AI2-THOR detector battery: history, misses and operating point
 
 This block carries the development history, the per-miss detector scores
-and the operating point of the real-detector battery in §4.4.
+and the operating point of the real-detector battery in §4.5.
 
 - *Fresh draws.* AI2-THOR redraws placements per launch. The eight seeds
   are therefore fresh draws of each configuration, not replays of the
@@ -2486,12 +3163,12 @@ and the operating point of the real-detector battery in §4.4.
   platform with a tracker that field is filled. The track is then linked
   to an entity through the same weighted resolver the warehouse benchmark
   uses, and the association step described above does not exist. That
-  configuration is the next build (the failure-modes table in §4.7, last
+  configuration is the next build (the failure-modes table in §4.8, last
   row).
 
 ### ROS 2 bring-up: bridge runs, the packaged node, Nav2 parameters, plugin names, the four diagnostic runs, and the camera lane's sensor node
 
-This block is the bring-up record behind the ROS 2 lanes of §4.4;
+This block is the bring-up record behind the ROS 2 lanes of §4.5;
 `ros2/README.md` annotates every parameter change.
 
 - *Bridge runs before the packaged node.* A logical-camera scout hunted a
@@ -2547,8 +3224,14 @@ This block is the bring-up record behind the ROS 2 lanes of §4.4;
   battery's 0.02 floor, 0.05 claim gate and 0.35 gate are untouched for
   this world. The node answers with the entity ids and the detector's own
   confidence. The cognition node writes that number into the `LOCATED_AT`
-  claim. Detector time was measured on the laptop GPU, and the annotated
-  frames ship in the artifact bundle.
+  claim. Across the five episodes 11 frames held two or more box detections and
+  every one was bound to its own projected entity, with all 5 confirmations
+  following the engine's verdict. Detector time was 49–403 ms per frame after a
+  2.0 s first-frame warm-up, measured on the laptop GPU at a load average of
+  0.86, and the annotated frames ship in the artifact bundle. Odometry drift
+  stayed ≤ 0.099 m and SLAM error ≤ 0.048 m in this lane, against ≤ 0.099 m and
+  ≤ 0.082 m under the frustum sensor; each inspection cost 24–38 s of wall time,
+  almost all of it driving at no more than 0.8 m/s.
 - *The camera lane's confirmation rule.* The episode runner settles a find
   only on an observation at ≥ 0.9. A detector score of 0.3–0.6 never is,
   and must not be inflated to it. The executor therefore writes the raw
@@ -2562,13 +3245,16 @@ This block is the bring-up record behind the ROS 2 lanes of §4.4;
   Nav2 reported "Failed to make progress" on the 135° reversal out of the
   bay_2 stand-off. It cleared its costmap and recovered, and the retry
   outran the node's 120 s result wait. The engine took the failed action
-  and re-planned, which is what reordered the inspections. The decisions
+  and re-planned, which is what reordered the inspections: bay_3, bay_4,
+  bay_4, bay_2 against bay_4, bay_3, bay_4, bay_2 under the frustum sensor, in
+  five attempts for four inspections. The decisions
   were the same as under the frustum sensor: verify the tip twice, then
-  redirect.
+  redirect. The tip episode under the frustum sensor cost 246 s against 56 s
+  under the demo driver, which includes its own 120 s timeout.
 
 ### The phone battery: sittings one to four
 
-This block records the four phone sittings of §4.4 in order, with the
+This block records the four phone sittings of §4.5 in order, with the
 three fixes made between the first graded sitting and the pre-registered
 fourth.
 
@@ -2601,11 +3287,11 @@ fourth.
    the graded footage of sittings two and three (29/36 unchanged; 33/36 to
    35/36), then pre-registered for sitting four.
 5. *Sitting four.* One run, nothing changed after seeing it: 36/36 finds,
-   18/18 true tips followed, 18/18 false tips debunked (§4.4).
+   18/18 true tips followed, 18/18 false tips debunked (§4.5).
 
 ### The lifelong curve: two protocol facts
 
-Two protocol facts bound the reading of the 95-to-10 habit result in §4.5.
+Two protocol facts bound the reading of the 95-to-10 habit result in §4.6.
 
 - The seeded coin drew habit episodes for all ten post-validation
   episodes. The validated habit's off-habit cost therefore rests on the
@@ -2616,10 +3302,10 @@ Two protocol facts bound the reading of the 95-to-10 habit result in §4.5.
 
 ### Stress battery: per-episode figures, the defects and the sabotage sweep
 
-This block carries the details of the nine-suite battery of §4.7 that its
+This block carries the details of the nine-suite battery of §4.8 that its
 three paragraphs leave out. The under-32 ms figure for the 1,860 fuzzed
 episodes is a worst case per episode. The ~5 ms in the head-to-head table
-(§4.2) is the typical fresh-ledger figure on the benchmark distribution, and
+(§4.3) is the typical fresh-ledger figure on the benchmark distribution, and
 the edge profile puts the per-episode cost at 2.8–3.1 ms median and 4.8–5.4 ms
 p95 on levels 1–6. Of the five defects, the timestamp fields had no upper
 bound, so a value outside the database's 64-bit range reached the ledger and
@@ -2638,7 +3324,7 @@ adopted a regression and never adopted its placebo.
 
 ### Latency increments: profiling, mechanism and equivalence
 
-This block records, for each latency increment of §4.5, what profiling found,
+This block records, for each latency increment of §4.6, what profiling found,
 what changed and how equivalence was checked. Every run is byte-identical in
 its decisions. Before any maintenance, first-to-last-window growth of the
 300-day soak was 33.7×. The first fix cached the append-only ledger and
@@ -2701,7 +3387,7 @@ bounded temporal horizon is needed to make the slope zero, is left open.
 
 ### Edge profile: run details
 
-The fresh-ledger profile of §4.7 was taken as follows. Each of its 1,025
+The fresh-ledger profile of §4.8 was taken as follows. Each of its 1,025
 decisions is a full cycle of contradiction detection, incremental belief-graph
 refresh, hypothesis generation and scoring, and planner choice. The 0.33–0.34
 ms median is on one laptop core (Intel i9-11900H) pinned by affinity. Across
@@ -2717,7 +3403,7 @@ engine is single-threaded, with CPU s/wall s ≈ 1.0.
 ### Self-repair exams v1 and v2
 
 This block carries the two sealed fault-injection exams behind the self-repair
-paragraph of §4.7, and the review that turned the first into the second.
+paragraph of §4.8, and the review that turned the first into the second.
 
 | sabotage | damage | diagnosis | repair adopted | recovery |
 |---|---|---|---|---|
@@ -2751,7 +3437,7 @@ assistant, raised four objections. The sabotage roster was screened for
 detectability. A one-line config diff against the archive would solve every v1
 lane. The v1 candidate repairs were selected by the exam's hidden-truth score.
 The violation vocabulary names ~25% of the numeric config surface. Exam v2 was
-built to answer them by construction (§4.7). In exam v1 the sub-threshold lane
+built to answer them by construction (§4.8). In exam v1 the sub-threshold lane
 weakened the repetition-decay constant fourfold, which cut success from 0.965 to
 0.826. That damage sits under the violation threshold, so no violation was
 raised, no repair was proposed, and recovery is 0%, the correct outcome. The
@@ -2762,7 +3448,7 @@ sweep of the stress battery, above, shows the loop's restraint at scale.
 
 ### The absent-target battery: verification of the manipulation, gate counts and review history
 
-This block carries the detail that left §4.6, with every number. The sweep
+This block carries the detail that left §4.7, with every number. The sweep
 labels every arm with the bar it ran at and every verdict with the path,
 direct or exhaustion, that produced it. The absence manipulation was
 verified rather than assumed: every write path into world state was
@@ -2803,10 +3489,29 @@ alone, and containers could not be located. Both were fixed before the
 budget sweep and the planner race. Original-campaign and post-fix engine
 figures are both reported (1.75 and 1.80 actions on L2–5).
 
-**Limitation 8, the Wilson 95% intervals.** The intervals quoted in the
-table captions: 95/96 → [0.94, 1.0]; 12/12 → [0.76, 1.0]; 8/8 → [0.68, 1.0];
-83/96 → [0.78, 0.92]; 6/6 → [0.61, 1.0]; 20/20 checks → [0.84, 1.0]. The
-embodied intervals are wide at these sample sizes.
+**Limitation 8, the Wilson 95% intervals.** The table below collects every
+interval the paper quotes for a k/n count in one place. The embodied intervals
+are wide at these sample sizes, which is the limitation.
+
+| what it counts | k/n | Wilson 95% |
+|---|---|---|
+| AI2-THOR fetches, oracle sensing | 95/96 | [0.94, 1.00] |
+| AI2-THOR fetches, real detector | 83/96 | [0.78, 0.92] |
+|  held-out seeds alone | 52/60 | [0.76, 0.93] |
+| SubT reports scored | 12/12 | [0.76, 1.00] |
+| hospital fetches | 8/8 | [0.68, 1.00] |
+| staged decoys, first round: not fooled | 6/6 | [0.61, 1.00] |
+| staged decoys, pre-registered run: fooled | 0/30 | [0.00, 0.11] |
+| Mars and seabed, per arm | 4/4 | [0.51, 1.00] |
+| ROS 2 packaged-stack checks | 20/20 | [0.84, 1.00] |
+| real-pixels hunts, fourth sitting | 36/36 | lower bound 0.90 |
+| head-to-head, engine and both hosted models | 48/48 | [0.93, 1.00] |
+|  the 8B reasoning model | 45/48 | [0.83, 0.98] |
+|  the 7B instruct model | 40/48 | [0.70, 0.91] |
+
+Every Wilson 95% interval quoted in this paper for a k/n count, in one place.
+The warehouse and held-out sweeps carry their intervals in their own tables,
+where the cell counts are 500 and 600 episodes rather than single digits.
 
 **Limitation 8, the decoy power run.** The six-seed decoy round is
 directional rather than powered: 0 of 6 fooled has a Wilson upper bound of
@@ -2817,12 +3522,15 @@ running, and its launches are recorded there with their logs. Two launches
 aborted, one by a process-cleanup pattern and one by machine load. A third
 and a fourth completed eleven and eighteen seeds before stalling on a Gazebo
 transport fault, and their rows were recovered from the console logs. A
-fifth ran the last seed. The pre-registered thirty seeds give 0/30 fooled
-(Wilson upper bound 0.11) at 11.7 visits (§4.3).
+fifth ran the last seed. Its counts are in the tips table of §4.4 and its
+interval in the interval table above.
 
-**Limitation 8, seed-family variance.** One visible instance: the learned
+**Limitation 8, seed-family variance.** Two visible instances. The learned
 build's 1.47 actions on the held-out family 10000–10074 against 1.80 on the
-budget-sweep family 20000–20099, both on levels 2–5. Variance across seed
+budget-sweep family 20000–20099, both on levels 2–5. And the gaslight action
+average of §4.3: 3.1 on the 40-seed L6 battery, 2.76 on the 25-seed battery
+artifact, 3.25 on the 12 head-to-head seeds, against ~1.9 undeceived on the
+same seeds. Variance across seed
 families is otherwise unquantified and single-machine.
 
 **Limitation 10, SLAM and the SubT score.** SLAM runs only in the Nav2
@@ -2865,7 +3573,7 @@ uv run robot-mind benchmark                     # trains + compares on held-out 
 uv run robot-mind coffee                        # rung-3 brew, dishwasher rescue included
 uv run robot-mind whatif --seed 11 --level 6    # evidence-influence counterfactuals
 uv run python experiments/battery.py --tag mine # the 5-test scorecard
-uv run python experiments/absent_target.py --json data/artifacts/absent_target.json   # the absent-target battery (§4.6)
+uv run python experiments/absent_target.py --json data/artifacts/absent_target.json   # the absent-target battery (§4.7)
 uv run python experiments/woz_test.py           # unfamiliar houses, empty ledger
 uv run python experiments/woz_dynamic.py --night-minutes 480    # the changing world
 uv run python experiments/calibration.py        # ECE / Brier / reliability table
@@ -2896,7 +3604,7 @@ python experiments/embodied/phone_tips.py --clips-dir data/phone_s4 --manifest d
   `experiments/scripted_baselines.py`. The warehouse benchmark,
   calibration and stress suites reproduce with the engine-side commands
   listed above.
-- The absent-target battery of §4.6 reproduces with
+- The absent-target battery of §4.7 reproduces with
   `uv run python experiments/absent_target.py`, which regenerates
   `data/artifacts/absent_target.json`.
 - The real-pixels battery ships its per-episode artifacts
@@ -2918,14 +3626,15 @@ python experiments/embodied/phone_tips.py --clips-dir data/phone_s4 --manifest d
 - The committed `alfworld_valid_unseen.json` carries the v2 re-run
   (134/134). The first run's 129/134 is preserved in git history (commit
   `ebb9bb1`) and recomputes to the same numbers.
-- The pre-generated bulk artifact bundle is a 393 MB zip, 400 MB and 575
-  files unpacked: every artifact JSON, the kept frames of the AI2-THOR and
-  gz-arena runs, and 122 run and certification logs from both WSL
-  distributions. A 2.4 GB companion bundle carries the real-perception
-  run animations. `scripts/stage_artifact_bundle.py --logs-dir
-  dist/wsl_logs` rebuilds both with a manifest and SHA-256 sums. Both are
-  available on request via a *Data access request* issue on the
-  benchmark-kit repository.
+- The pre-generated bulk artifact bundle is a 393 MB zip, 404 MB and 468
+  files unpacked: the artifact JSONs the benchmark kit ships, the kept
+  frames of the AI2-THOR and gz-arena runs, and the per-seed battery
+  console logs. A 2.4 GB companion bundle carries the real-perception run
+  animations. `scripts/stage_artifact_bundle.py` rebuilds both with a
+  manifest and SHA-256 sums, through the same leak gate that builds the
+  public kit; the manifest names every artifact the gate holds back and
+  why. Both are available on request via a *Data access request* issue on
+  the benchmark-kit repository.
 - The SubT and hospital worlds require minor world-file patches (reserved
   world name, legacy material scripts), recorded as scripts in the
   repository.

@@ -1,14 +1,14 @@
 {
  "schema": "unknown-goals-ledger-export-index/1",
- "note": "One gzipped JSON-lines file per artifact, one line per engine episode, in the artifact's own row order. `checker_fraction` is filled in by the kit's checker (unknown_goals.checker), not by the engine.",
+ "note": "One gzipped JSON-lines file per artifact, one line per engine episode, in the artifact's own row order. `checker_fraction` is filled in by the kit's checker (unknown_goals.checker), not by the engine. Regenerated 2026-09-18 on the shipped build with the verdict fields; see each entry's `regenerated_2026_09_18` note.",
  "files": [
   {
    "file": "absent_target.jsonl.gz",
    "artifact": "data/artifacts/absent_target.json",
    "invocation": "python experiments/absent_target.py --json <tmp>/absent_target.json --export-dir data/exports",
    "episodes": 2400,
-   "gz_bytes": 5541950,
-   "raw_bytes": 94021692,
+   "gz_bytes": 5574463,
+   "raw_bytes": 94128180,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -18,15 +18,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": ""
+   "note": "",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "audit_unseen_repro.jsonl.gz",
    "artifact": "data/artifacts/audit_unseen_repro.json",
    "invocation": "wsl -d Ubuntu -- /root/alfworld-env/bin/python experiments/alfworld_run.py --split valid_unseen --limit 30 --policy engine --out <tmp>/audit_unseen_repro.json --export-dir /mnt/c/dev/robot_mind/data/exports",
    "episodes": 71,
-   "gz_bytes": 136895,
-   "raw_bytes": 3038326,
+   "gz_bytes": 139294,
+   "raw_bytes": 3076560,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -34,15 +35,16 @@
     "source_event"
    ],
    "leak_scan": "clean",
-   "note": "ALFWorld valid_unseen games 1-30 of the sorted split, 30/30 won, 71 engine seeks; the artifact regenerates exactly"
+   "note": "ALFWorld valid_unseen games 1-30 of the sorted split, 30/30 won, 71 engine seeks; the artifact regenerates exactly",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result, apart from one provenance key: the ALFWorld adapter now marks every look it returned with via_action, as the other adapters do); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "battery_final.jsonl.gz",
    "artifact": "data/artifacts/battery_final.json",
    "invocation": "python experiments/battery.py --tag repro --export-dir data/exports",
    "episodes": 1059,
-   "gz_bytes": 1365271,
-   "raw_bytes": 28905339,
+   "gz_bytes": 1375162,
+   "raw_bytes": 28952114,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -53,15 +55,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "compared as battery_repro.json against the committed battery_final.json with the volatile key `tag` stripped; T1-T5 all identical"
+   "note": "compared as battery_repro.json against the committed battery_final.json with the volatile key `tag` stripped; T1-T5 all identical",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "budget_sweep.jsonl.gz",
    "artifact": "data/artifacts/budget_sweep.json",
    "invocation": "python experiments/budget_sweep.py --out <tmp>/budget_sweep.json --export-dir data/exports",
    "episodes": 360,
-   "gz_bytes": 420452,
-   "raw_bytes": 8761977,
+   "gz_bytes": 423328,
+   "raw_bytes": 8776995,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -71,15 +74,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": ""
+   "note": "",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "budget_sweep_100.jsonl.gz",
    "artifact": "data/artifacts/budget_sweep_100.json",
    "invocation": "python experiments/budget_sweep.py --seeds 100 --out <tmp>/budget_sweep_100.json --export-dir data/exports",
    "episodes": 3000,
-   "gz_bytes": 3416538,
-   "raw_bytes": 72171519,
+   "gz_bytes": 3445207,
+   "raw_bytes": 72296491,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -89,15 +93,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": ""
+   "note": "",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "calibration.jsonl.gz",
    "artifact": "data/artifacts/calibration.json",
    "invocation": "python experiments/calibration.py --export-dir <abs>/data/exports (run from a scratch directory: the script writes a CWD-relative artifact path)",
    "episodes": 150,
-   "gz_bytes": 148033,
-   "raw_bytes": 3218690,
+   "gz_bytes": 148961,
+   "raw_bytes": 3224898,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -107,15 +112,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": ""
+   "note": "",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head.jsonl.gz",
    "artifact": "data/artifacts/head_to_head.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 2,3,4,5 --seeds 12 --export-dir data/exports --export-stem head_to_head",
    "episodes": 48,
-   "gz_bytes": 51844,
-   "raw_bytes": 1097853,
+   "gz_bytes": 52190,
+   "raw_bytes": 1099838,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -124,15 +130,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine_correct 48/48 reproduces exactly; engine_steps differ in 9 of 48 episodes (mean 1.833 vs committed 1.750). The same difference appears with the export hook absent, so it is a property of the committed artifact (2026-08-31 build), not of the export."
+   "note": "engine_correct 48/48 reproduces exactly; engine_steps differ in 9 of 48 episodes (mean 1.833 vs committed 1.750). The same difference appears with the export hook absent, so it is a property of the committed artifact (2026-08-31 build), not of the export.",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head_deepseek-chat_strong.jsonl.gz",
    "artifact": "data/artifacts/head_to_head_deepseek-chat_strong.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 2,3,4,5 --seeds 12 --export-dir data/exports --export-stem head_to_head_deepseek-chat_strong",
    "episodes": 48,
-   "gz_bytes": 51986,
-   "raw_bytes": 1098861,
+   "gz_bytes": 52332,
+   "raw_bytes": 1100846,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -141,15 +148,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine_correct 48/48 reproduces; engine_steps differ in 9 of 48; hook-independent."
+   "note": "engine_correct 48/48 reproduces; engine_steps differ in 9 of 48; hook-independent.",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head_gemini-3.7-flash_strong.jsonl.gz",
    "artifact": "data/artifacts/head_to_head_gemini-3.7-flash_strong.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 6 --seeds 12 --export-dir data/exports --export-stem head_to_head_gemini-3.7-flash_strong",
    "episodes": 12,
-   "gz_bytes": 22335,
-   "raw_bytes": 384173,
+   "gz_bytes": 22450,
+   "raw_bytes": 384673,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -159,15 +167,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine_correct 12/12 reproduces; engine_steps differ in 5 of 12 (mean 3.167 vs committed 3.250); hook-independent."
+   "note": "engine_correct 12/12 reproduces; engine_steps differ in 5 of 12 (mean 3.167 vs committed 3.250); hook-independent.",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head_gemini-3.7-flash_strong_l2345.jsonl.gz",
    "artifact": "data/artifacts/head_to_head_gemini-3.7-flash_strong_l2345.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 2,3,4,5 --seeds 12 --export-dir data/exports --export-stem head_to_head_gemini-3.7-flash_strong_l2345",
    "episodes": 48,
-   "gz_bytes": 52042,
-   "raw_bytes": 1099293,
+   "gz_bytes": 52393,
+   "raw_bytes": 1101278,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -176,15 +185,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine columns identical episode by episode"
+   "note": "engine columns identical episode by episode",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head_qwen2.5_7b-instruct_strong_l2345.jsonl.gz",
    "artifact": "data/artifacts/head_to_head_qwen2.5_7b-instruct_strong_l2345.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 2,3,4,5 --seeds 12 --export-dir data/exports --export-stem head_to_head_qwen2.5_7b-instruct_strong_l2345",
    "episodes": 48,
-   "gz_bytes": 52055,
-   "raw_bytes": 1099437,
+   "gz_bytes": 52409,
+   "raw_bytes": 1101422,
    "regeneration": "IDENTICAL",
    "checker_fraction": null,
    "provenance_keys": [
@@ -193,15 +203,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine columns identical episode by episode"
+   "note": "engine columns identical episode by episode",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "head_to_head_strong.jsonl.gz",
    "artifact": "data/artifacts/head_to_head_strong.json",
    "invocation": "python experiments/head_to_head.py --engine-only --levels 2,3,4,5 --seeds 12 --export-dir data/exports --export-stem head_to_head_strong",
    "episodes": 48,
-   "gz_bytes": 51867,
-   "raw_bytes": 1098189,
+   "gz_bytes": 52213,
+   "raw_bytes": 1100174,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -210,15 +221,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "engine_correct 48/48 reproduces; engine_steps differ in 9 of 48; hook-independent (control run without --export-dir is identical to the run with it)."
+   "note": "engine_correct 48/48 reproduces; engine_steps differ in 9 of 48; hook-independent (control run without --export-dir is identical to the run with it).",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "woz_dynamic.jsonl.gz",
    "artifact": "data/artifacts/woz_dynamic.json",
    "invocation": "python experiments/woz_dynamic.py --out <tmp>/woz_dynamic.json --export-dir data/exports",
    "episodes": 758,
-   "gz_bytes": 3555466,
-   "raw_bytes": 67361306,
+   "gz_bytes": 3566993,
+   "raw_bytes": 67395402,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -230,15 +242,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "the committed artifact has no `claims_superseded` or `meta_rationale` key, so it predates nightly consolidation and the meta-controller. Daily brews regenerate as 12/12 on every day in both conditions against the committed 12,4,1,0,2,0 (drives off) and 12,6,5,4,2,3 (drives on)."
+   "note": "the committed artifact has no `claims_superseded` or `meta_rationale` key, so it predates nightly consolidation and the meta-controller. Daily brews regenerate as 12/12 on every day in both conditions against the committed 12,4,1,0,2,0 (drives off) and 12,6,5,4,2,3 (drives on).",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "woz_dynamic_night480.jsonl.gz",
    "artifact": "data/artifacts/woz_dynamic_night480.json",
    "invocation": "python experiments/woz_dynamic.py --night-minutes 480 --out <tmp>/woz_dynamic_night480.json --export-dir data/exports",
    "episodes": 756,
-   "gz_bytes": 3031821,
-   "raw_bytes": 57188449,
+   "gz_bytes": 3044486,
+   "raw_bytes": 57222515,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -250,15 +263,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "every key and value committed in the artifact is reproduced exactly (0 mismatches over the whole file); the current script writes two keys the artifact predates (claims_superseded, meta_rationale)."
+   "note": "every key and value committed in the artifact is reproduced exactly (0 mismatches over the whole file); the current script writes two keys the artifact predates (claims_superseded, meta_rationale).",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "woz_selfimprove.jsonl.gz",
    "artifact": "data/artifacts/woz_selfimprove.json",
    "invocation": "python experiments/woz_selfimprove.py --export-dir <abs>/data/exports (run from a scratch directory: CWD-relative artifact path)",
    "episodes": 767,
-   "gz_bytes": 2679531,
-   "raw_bytes": 48221754,
+   "gz_bytes": 2692629,
+   "raw_bytes": 48256151,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -268,15 +282,16 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "the committed artifact has no `patrol` key at all, so it predates the current script; its attempt-1 rows report brewed=false where every current run brews. Hook-independent (control run identical)."
+   "note": "the committed artifact has no `patrol` key at all, so it predates the current script; its attempt-1 rows report brewed=false where every current run brews. Hook-independent (control run identical).",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   },
   {
    "file": "woz_test.jsonl.gz",
    "artifact": "data/artifacts/woz_test.json",
    "invocation": "python experiments/woz_test.py --export-dir <abs>/data/exports (run from a scratch directory: CWD-relative artifact path)",
    "episodes": 435,
-   "gz_bytes": 149990,
-   "raw_bytes": 6222159,
+   "gz_bytes": 153156,
+   "raw_bytes": 6241987,
    "regeneration": "DIFFERS",
    "checker_fraction": null,
    "provenance_keys": [
@@ -286,7 +301,8 @@
     "via_action"
    ],
    "leak_scan": "clean",
-   "note": "the run with the hook and the run without it are byte-equal, so the difference is the committed artifact's: it names different item instances (mug_blue vs mug_red) and different room-discovery counts. The battery's own T4 aggregates over the same houses reproduce exactly (w1 1.00 / coverage 0.524, w2 1.00 / 1.0, w3 0.96 / 1.0)."
+   "note": "the run with the hook and the run without it are byte-equal, so the difference is the committed artifact's: it names different item instances (mug_blue vs mug_red) and different room-discovery counts. The battery's own T4 aggregates over the same houses reproduce exactly (w1 1.00 / coverage 0.524, w2 1.00 / 1.0, w3 0.96 / 1.0).",
+   "regenerated_2026_09_18": "2026-09-18: re-exported by the same recorded invocation on the shipped build. Every episode is the same run modulo the per-run claim identifiers (compared claim by claim with the ids resolved to the claims they name: same claims, proofs, decisions and result); the export gains result.target and result.verdict, which the kit's checker reads to test the commitment against the ledger."
   }
  ],
  "no_export": [
@@ -318,8 +334,8 @@
  "totals": {
   "files": 16,
   "episodes": 10008,
-  "gz_bytes": 20728076,
-  "raw_bytes": 394989017
+  "gz_bytes": 20847666,
+  "raw_bytes": 395459524
  },
  "provenance_keys_all": {
   "consolidated": 4297,

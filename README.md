@@ -131,7 +131,7 @@ pip install -e .          # Python 3.12+, pydantic and networkx
 |---|---|
 | `unknown_goals/` | the scenario generator, the world and executor, the episode contract, the evidence ledger and belief graph, the proof checker, the decision replayer, the verifier |
 | `baselines/` | every policy the engine is measured against: sweep, random, last-seen, a Bayesian filter, the exact finite-horizon belief-space planner, and the LLM comparison harness |
-| `data/artifacts/` | the per-episode results of every suite the paper reports |
+| `data/artifacts/` | the per-episode results of the suites the paper reports, less the five artifacts that serialise tuned configuration, one superseded rerun, and one partner's survey data that is not the author's to publish; `docs/ARTIFACTS.md` names each with its reason |
 | `data/exports/` | the ledger export of every engine episode whose commitment the paper counts: its entities, every claim with status, confidence, times and provenance, the rules in force, every decision with its rationale and outcome, and the proof path of every derived claim |
 | `docs/`, `paper/` | the paper's public rendering and the protocol documents |
 | `ros2/robot_mind_msgs/` | the typed ROS 2 interfaces the engine speaks on a robot |
@@ -140,11 +140,11 @@ pip install -e .          # Python 3.12+, pydantic and networkx
 
 | ledger export | artifact | episodes | compressed | artifact vs. this build |
 |---|---|---:|---:|---|
-| `absent_target.jsonl.gz` | `data/artifacts/absent_target.json` | 2400 | 5.54 MB | identical |
+| `absent_target.jsonl.gz` | `data/artifacts/absent_target.json` | 2400 | 5.57 MB | identical |
 | `audit_unseen_repro.jsonl.gz` | `data/artifacts/audit_unseen_repro.json` | 71 | 0.14 MB | identical |
-| `battery_final.jsonl.gz` | `data/artifacts/battery_final.json` | 1059 | 1.37 MB | identical |
+| `battery_final.jsonl.gz` | `data/artifacts/battery_final.json` | 1059 | 1.38 MB | identical |
 | `budget_sweep.jsonl.gz` | `data/artifacts/budget_sweep.json` | 360 | 0.42 MB | identical |
-| `budget_sweep_100.jsonl.gz` | `data/artifacts/budget_sweep_100.json` | 3000 | 3.42 MB | identical |
+| `budget_sweep_100.jsonl.gz` | `data/artifacts/budget_sweep_100.json` | 3000 | 3.45 MB | identical |
 | `calibration.jsonl.gz` | `data/artifacts/calibration.json` | 150 | 0.15 MB | identical |
 | `head_to_head.jsonl.gz` | `data/artifacts/head_to_head.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
 | `head_to_head_deepseek-chat_strong.jsonl.gz` | `data/artifacts/head_to_head_deepseek-chat_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
@@ -152,15 +152,16 @@ pip install -e .          # Python 3.12+, pydantic and networkx
 | `head_to_head_gemini-3.7-flash_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_gemini-3.7-flash_strong_l2345.json` | 48 | 0.05 MB | identical |
 | `head_to_head_qwen2.5_7b-instruct_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_qwen2.5_7b-instruct_strong_l2345.json` | 48 | 0.05 MB | identical |
 | `head_to_head_strong.jsonl.gz` | `data/artifacts/head_to_head_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
-| `woz_dynamic.jsonl.gz` | `data/artifacts/woz_dynamic.json` | 758 | 3.56 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
-| `woz_dynamic_night480.jsonl.gz` | `data/artifacts/woz_dynamic_night480.json` | 756 | 3.03 MB | **differs** -- every key and value in the artifact is reproduced exactly; the current script writes two keys the artifact predates |
-| `woz_selfimprove.jsonl.gz` | `data/artifacts/woz_selfimprove.json` | 767 | 2.68 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_dynamic.jsonl.gz` | `data/artifacts/woz_dynamic.json` | 758 | 3.57 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_dynamic_night480.jsonl.gz` | `data/artifacts/woz_dynamic_night480.json` | 756 | 3.04 MB | **differs** -- every key and value in the artifact is reproduced exactly; the current script writes two keys the artifact predates |
+| `woz_selfimprove.jsonl.gz` | `data/artifacts/woz_selfimprove.json` | 767 | 2.69 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
 | `woz_test.jsonl.gz` | `data/artifacts/woz_test.json` | 435 | 0.15 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
 
 #### Artifacts not in the kit
 
 | file | why it is not in the kit |
 |---|---|
+| `data/artifacts/vk/` (the whole directory) | a partner's survey data (an AUV eelgrass survey run for a client, with the site's coordinates, the vehicle's logs and the team's own labels): not part of the paper and not the author's to publish; the engine's results on it are reported to the partner, not here |
 | `data/artifacts/evolved_config.json` | a full serialisation of the engine's tuned configuration |
 | `data/artifacts/self_repair_exam.json` | names configuration fields and the values repaired to |
 | `data/artifacts/self_repair_exam2.json` | names configuration fields and the values repaired to |
@@ -198,10 +199,21 @@ suites.
 python -m unknown_goals.checker data/exports/battery_final.jsonl.gz
 ```
 
-The independent proof checker. For every claim the engine derived, it
-confirms the proof exists, names an operator, cites only claims that were
-on that episode's ledger, applies only rules that episode knew, and asserts
-only time constraints the cited claims satisfy. No engine code runs.
+The independent checker. For every claim the engine derived, it confirms
+the proof exists, names an operator the engine emits, cites only claims
+that were on that episode's ledger and reached it no later than the claim
+they support, applies only rules that episode knew, and asserts only time
+constraints the cited claims satisfy. For every episode that ends FOUND it
+requires the ledger to witness the commitment: an observation of the
+object at the committed place, at the resolve bar or above, made by
+something other than the reasoner. For every episode that ends NOT-FOUND
+it re-derives the coverage certificate from the export's own entities and
+claims rather than reading it back: one empty-handed look of the robot's
+own per place, none older than the last claim that placed the object; a
+certificate that declares the object static in its own text is read under
+the same rule place by place, with every refuted sighting named. Exit
+status is non-zero if any proof, commitment or certificate fails. No
+engine code runs.
 
 ```
 python -m unknown_goals.replay data/exports/battery_final.jsonl.gz --list
@@ -222,12 +234,16 @@ Any baseline can also be run on its own, on any seeds, at any budget.
 
 ### What the checker certifies, and what it does not
 
-The checker **replays provenance. It does not re-derive conclusions.** It
-establishes that every conclusion the engine committed to is traceable to
-evidence that was on the ledger at the time, under rules that episode
-declared, in an order time allows — and that nothing in the chain is
-missing, dangling or anachronistic. That is what makes a commitment
-auditable after the fact.
+The checker **replays provenance and tests the two kinds of commitment.
+It does not re-derive belief values.** It establishes that every
+conclusion the engine committed to is traceable to evidence that was on
+the ledger at the time, under rules that episode declared, in an order
+time allows — and that nothing in the chain is missing, dangling or
+anachronistic; that a FOUND was witnessed by an observed sighting at the
+bar; and that a NOT-FOUND rests on a complete, current sweep of the places
+the episode knew. `tests/test_checker_forgery.py` holds the mutations it
+has to reject, among them certificates whose provenance replays cleanly.
+That is what makes a commitment auditable after the fact.
 
 It does not recompute the belief arithmetic, and it cannot: how support,
 contradiction, age and rule reliability combine into a belief, and the
@@ -241,6 +257,17 @@ rows in `data/artifacts/` are the engine's measured output, committed with
 the paper. What the kit gives you instead of trust is the ledger export
 behind them, which the checker and the replayer take apart episode by
 episode.
+
+**What changed since v0.5.0-kit.1.** The checker in that release (commit
+`191eea3`) validated proof paths alone: it did not test the order in which
+cited claims reached the ledger, and it had no commitment or certificate
+check, so every "proof steps valid" total quoted against it is that check
+and no more. This release adds the three. The digest file
+`unknown_goals/data/leak_hashes.json` and the self-test that read it are
+gone: the digests were reversible from the kit's own vocabulary, so they
+withheld nothing. The gate that keeps the withheld computation out of the
+kit runs in the engine repository when the kit is built and is not part of
+the kit.
 
 ### Licensing
 

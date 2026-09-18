@@ -129,6 +129,12 @@ class ActionSpec(BaseModel):
     risk: float = 0.0
     value: float = 0.0            # planner's combined score (EIG + success) / cost
     rationale: str = ""
+    # The planner's own order among candidates it scored the same, smallest
+    # first. None (the default, and what every other producer of an
+    # ActionSpec leaves it at) means the planner declared no order, and the
+    # acting policy settles an equal-value choice as it always has. See
+    # the planner's setting for settling an equal-value choice.
+    tie_rank: int | None = None
 
 
 class Outcome(BaseModel):

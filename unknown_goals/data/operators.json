@@ -1,0 +1,42 @@
+{
+ "schema": "unknown-goals-proof-operators/1",
+ "note": "Every operator name a proof may carry. A proof names the operator that produced the claim; the checker rejects a proof whose operator is not in this table, so a forged export cannot invent a step and call it reasoning. The descriptions say what the robot concluded, not how the conclusion was scored.",
+ "operators": [
+  {
+   "operator": "temporal_graph_traversal",
+   "description": "A chain of observations about the object and about the people, carts or containers that handled it, walked in an order the recorded times allow."
+  },
+  {
+   "operator": "identity_analysis",
+   "description": "The sighting a hypothesis rests on may have been a different object on the same sensor track; the alternative reading is recorded."
+  },
+  {
+   "operator": "refuted_fallback_search",
+   "description": "Every room the evidence pointed at has been looked at and the object was not there; a room the evidence never pointed at is proposed so the search can continue."
+  },
+  {
+   "operator": "weak_sighting_search",
+   "description": "No sighting of the object is firm enough to settle the hunt; a room nothing has looked at yet is proposed."
+  },
+  {
+   "operator": "habitual_prior",
+   "description": "Nothing in this episode places the object, but its own history says it usually turns up in this room."
+  },
+  {
+   "operator": "uniform_search_prior",
+   "description": "Nothing places the object and nothing about it is habitual; every room the robot knows about is a candidate, and a closed container is a candidate for the room it sits in."
+  },
+  {
+   "operator": "llm_proposal",
+   "description": "A language model suggested a room the evidence had not raised. The suggestion is a candidate like any other and carries the proposer's name and its stated reason."
+  },
+  {
+   "operator": "memory_consolidation",
+   "description": "An unbroken run of repeated observations that said the same thing was folded into one summary claim spanning their times."
+  },
+  {
+   "operator": "coverage_certificate",
+   "description": "Every room the robot knows about, minus the ones it recorded as unreachable, was observed to be empty of the object no earlier than the last report that placed it anywhere. This is the absence certificate behind a NOT-FOUND verdict."
+  }
+ ]
+}

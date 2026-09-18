@@ -21,11 +21,11 @@ artifact is the older one; the reason is in the row.
 
 | ledger export | artifact | episodes | compressed | artifact vs. this build |
 |---|---|---:|---:|---|
-| `absent_target.jsonl.gz` | `data/artifacts/absent_target.json` | 2400 | 5.54 MB | identical |
+| `absent_target.jsonl.gz` | `data/artifacts/absent_target.json` | 2400 | 5.57 MB | identical |
 | `audit_unseen_repro.jsonl.gz` | `data/artifacts/audit_unseen_repro.json` | 71 | 0.14 MB | identical |
-| `battery_final.jsonl.gz` | `data/artifacts/battery_final.json` | 1059 | 1.37 MB | identical |
+| `battery_final.jsonl.gz` | `data/artifacts/battery_final.json` | 1059 | 1.38 MB | identical |
 | `budget_sweep.jsonl.gz` | `data/artifacts/budget_sweep.json` | 360 | 0.42 MB | identical |
-| `budget_sweep_100.jsonl.gz` | `data/artifacts/budget_sweep_100.json` | 3000 | 3.42 MB | identical |
+| `budget_sweep_100.jsonl.gz` | `data/artifacts/budget_sweep_100.json` | 3000 | 3.45 MB | identical |
 | `calibration.jsonl.gz` | `data/artifacts/calibration.json` | 150 | 0.15 MB | identical |
 | `head_to_head.jsonl.gz` | `data/artifacts/head_to_head.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
 | `head_to_head_deepseek-chat_strong.jsonl.gz` | `data/artifacts/head_to_head_deepseek-chat_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
@@ -33,9 +33,9 @@ artifact is the older one; the reason is in the row.
 | `head_to_head_gemini-3.7-flash_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_gemini-3.7-flash_strong_l2345.json` | 48 | 0.05 MB | identical |
 | `head_to_head_qwen2.5_7b-instruct_strong_l2345.jsonl.gz` | `data/artifacts/head_to_head_qwen2.5_7b-instruct_strong_l2345.json` | 48 | 0.05 MB | identical |
 | `head_to_head_strong.jsonl.gz` | `data/artifacts/head_to_head_strong.json` | 48 | 0.05 MB | **differs** -- accuracy is identical; `engine_steps` differs in a minority of episodes because the artifact predates the shipped build |
-| `woz_dynamic.jsonl.gz` | `data/artifacts/woz_dynamic.json` | 758 | 3.56 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
-| `woz_dynamic_night480.jsonl.gz` | `data/artifacts/woz_dynamic_night480.json` | 756 | 3.03 MB | **differs** -- every key and value in the artifact is reproduced exactly; the current script writes two keys the artifact predates |
-| `woz_selfimprove.jsonl.gz` | `data/artifacts/woz_selfimprove.json` | 767 | 2.68 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_dynamic.jsonl.gz` | `data/artifacts/woz_dynamic.json` | 758 | 3.57 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
+| `woz_dynamic_night480.jsonl.gz` | `data/artifacts/woz_dynamic_night480.json` | 756 | 3.04 MB | **differs** -- every key and value in the artifact is reproduced exactly; the current script writes two keys the artifact predates |
+| `woz_selfimprove.jsonl.gz` | `data/artifacts/woz_selfimprove.json` | 767 | 2.69 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
 | `woz_test.jsonl.gz` | `data/artifacts/woz_test.json` | 435 | 0.15 MB | **differs** -- the artifact is from an earlier build and is kept as the development record; the export is the shipped build's rerun of the same command |
 
 ## What each export records
@@ -76,6 +76,7 @@ paper does not cite it.
 
 | file | why it is not in the kit |
 |---|---|
+| `data/artifacts/vk/` (the whole directory) | a partner's survey data (an AUV eelgrass survey run for a client, with the site's coordinates, the vehicle's logs and the team's own labels): not part of the paper and not the author's to publish; the engine's results on it are reported to the partner, not here |
 | `data/artifacts/evolved_config.json` | a full serialisation of the engine's tuned configuration |
 | `data/artifacts/self_repair_exam.json` | names configuration fields and the values repaired to |
 | `data/artifacts/self_repair_exam2.json` | names configuration fields and the values repaired to |

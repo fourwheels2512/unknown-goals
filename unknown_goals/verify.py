@@ -14,11 +14,16 @@ and machine fields a second run cannot reproduce. A baseline that does not
 come back identical is a failure, and the failure is the kit's, never the
 artifact's: the artifacts are the record of what was measured.
 
-**It re-validates the proofs.** For every ledger export in
-`data/exports/`, the kit's own checker replays the provenance of every
-claim the engine derived, with no engine code. Where the summary artifact
-records a proof-validity fraction of its own, the checker's fraction has to
-equal it exactly.
+**It re-validates the proofs, and the commitments.** For every ledger
+export in `data/exports/`, the kit's own checker replays the provenance of
+every claim the engine derived, with no engine code. Where the summary
+artifact records a proof-validity fraction of its own, the checker's
+fraction has to equal it exactly. Beside the proofs it tests what each
+episode committed to: a find has to be witnessed by an observation of the
+object in the room named, and a NOT-FOUND has to carry an absence
+certificate whose content the checker re-derives from the export. Episodes
+exported before those fields existed are counted as "not checkable" rather
+than passed in silence.
 
 The engine arm of the budget sweep is not recomputed: those rows are the
 engine's measured output and are read from the shipped artifact (see
@@ -40,7 +45,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from unknown_goals.checker import check_export, read_export
+from unknown_goals.checker import check_export, read_export, summary_line
 
 # ---------------------------------------------------------------- comparison
 
@@ -288,11 +293,17 @@ def export_rows(root: Path, exports_dir: Path) -> list[dict]:
         status = (f"{summary['valid']}/{summary['total']} proofs replay "
                   f"over {summary['n_episodes']} episodes")
         if summary["errors"]:
-            status = (f"{len(summary['errors'])} INVALID proofs; first: "
+            status = (f"{len(summary['errors'])} INVALID; first: "
                       f"{summary['errors'][0]}")
         rows.append({"suite": f"proofs: {f.name}", "artifact": summary["artifact"]
                      or f.name, "status": status, "ok": ok,
                      "seconds": round(time.time() - t0, 1)})
+        # what the episodes committed to, beside how they got there
+        rows.append({"suite": f"commitments: {f.name}",
+                     "artifact": summary["artifact"] or f.name,
+                     "status": summary_line(summary),
+                     "ok": (summary["commitments_failed"] == 0
+                            and summary["certificates_failed"] == 0)})
 
         # the artifact's own `proofs` fraction, where it records one
         art_rel = summary["artifact"]
